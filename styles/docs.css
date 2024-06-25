@@ -1,0 +1,112 @@
+#mainContent > h2 {
+  @apply border-b border-b-metal-200 pb-2 text-body-2 font-semibold text-metal-900;
+}
+#mainContent > p {
+  @apply mt-4 text-body-3 font-normal text-metal-600;
+}
+
+#mainContent > p a {
+  @apply text-primary-600 underline;
+}
+#mainContent > ul li {
+  @apply mb-3 mt-4 text-body-4 font-normal text-metal-600;
+}
+
+#mainContent code {
+  @apply rounded  bg-metal-50 px-2 py-1;
+}
+
+#mainContent pre > code {
+  @apply !pl-0;
+}
+#mainContent #cssCode {
+  @apply bg-transparent;
+}
+
+#mainContent #sectionLink {
+  @apply ml-2 text-primary-700 opacity-0 transition-opacity group-hover:opacity-100;
+}
+
+#mainContent > #table-of-contents {
+  @apply hidden;
+}
+
+#mainContent > #table-of-contents + ul {
+  @apply hidden;
+}
+
+#visible-table-of-contents {
+  @apply list-none pl-0;
+}
+
+#visible-table-of-contents ul ul li a {
+  @apply pl-6;
+}
+
+#visible-table-of-contents ul ul ul li a {
+  @apply pl-9;
+}
+
+#visible-table-of-contents + ul {
+  @apply -ml-3 list-outside list-none pl-0;
+}
+
+#visible-table-of-contents ul ul {
+  @apply pt-3;
+}
+
+#visible-table-of-contents li {
+  @apply my-2 -ml-px border-l border-l-transparent pl-3 text-body-4 text-metal-500 hover:border-l-metal-900 hover:text-metal-900 active:text-metal-900;
+}
+
+#visible-table-of-contents li:has(.active-link) {
+  @apply border-l-metal-900 text-metal-900 transition-colors duration-300 hover:text-metal-900  active:text-metal-900;
+}
+
+#componentListSidebar::-webkit-scrollbar {
+  display: none;
+}
+
+#linkPage::-webkit-scrollbar {
+  display: none;
+  width: 4px !important;
+}
+#linkPage::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+#linkPage::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #e9eff6 !important;
+}
+
+body::-webkit-scrollbar {
+  width: 8px !important;
+}
+body::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #333 !important;
+}
+
+.tabActive {
+  @apply border-b-metal-900 !text-metal-900;
+}
+
+.docs-page {
+  @apply fixed left-0 right-0 top-24 -z-0 mx-auto max-w-[1240px] rounded-2xl bg-gradient-to-t from-primary-25 to-white xl:!h-2/4  2xl:top-40 2xl:!h-3/4 2xl:max-w-[1560px] 4k:max-w-[2000px];
+}
+
+/* Blog Post */
+
+.post h2 {
+  @apply mb-3 mt-4 text-body-2 font-semibold text-metal-900;
+}
+.post p {
+  @apply mb-2 text-body-3 font-normal text-metal-600;
+}
+
+.post ul li {
+  @apply ml-6 list-disc text-body-3 font-normal text-metal-600;
+}
