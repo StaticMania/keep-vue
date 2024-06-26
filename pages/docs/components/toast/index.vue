@@ -4,9 +4,9 @@ definePageMeta({
 });
 
 const metadata = reactive({
-  title: "Button - Keep Vue",
+  title: "Toast - Keep Vue",
   description:
-    "The Buttons component in the Keep React offers a variety of button types, sizes, and states to meet your design needs. With options for icons and destructiveness, you can create visually appealing and functional buttons for your product.",
+    "Toasts typically appear as small, non-intrusive pop-up notifications that appear near the edge of the screen and disappear automatically after a short period of time or when dismissed by the user.",
 });
 
 useHead({ ...metadata });
@@ -17,6 +17,6 @@ useHead({ ...metadata });
     :title="metadata.title"
     :description="metadata.description"
   >
-    Button
+    Toast
   </DocsContentLayout>
 </template>

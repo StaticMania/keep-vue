@@ -4,9 +4,9 @@ definePageMeta({
 });
 
 const metadata = reactive({
-  title: "Button - Keep Vue",
+  title: "Tabs - Keep Vue",
   description:
-    "The Buttons component in the Keep React offers a variety of button types, sizes, and states to meet your design needs. With options for icons and destructiveness, you can create visually appealing and functional buttons for your product.",
+    "The Tab Group Component in the Keep React allows you to organize and display content in a tabbed interface. It provides a convenient way to switch between different sections or views within a single container.",
 });
 
 useHead({ ...metadata });
@@ -17,6 +17,6 @@ useHead({ ...metadata });
     :title="metadata.title"
     :description="metadata.description"
   >
-    Button
+    Tabs
   </DocsContentLayout>
 </template>

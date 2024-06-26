@@ -4,9 +4,9 @@ definePageMeta({
 });
 
 const metadata = reactive({
-  title: "Button - Keep Vue",
+  title: "Sidebar - Keep Vue",
   description:
-    "The Buttons component in the Keep React offers a variety of button types, sizes, and states to meet your design needs. With options for icons and destructiveness, you can create visually appealing and functional buttons for your product.",
+    "Sidebar Component is a user interface element commonly found in web and mobile applications. It provides a dedicated space at the side of the main content area to display navigation links, menu items, or other relevant information.",
 });
 
 useHead({ ...metadata });
@@ -17,6 +17,6 @@ useHead({ ...metadata });
     :title="metadata.title"
     :description="metadata.description"
   >
-    Button
+    Sidebar
   </DocsContentLayout>
 </template>

@@ -4,9 +4,9 @@ definePageMeta({
 });
 
 const metadata = reactive({
-  title: "Button - Keep Vue",
+  title: "Navbar - Keep Vue",
   description:
-    "The Buttons component in the Keep React offers a variety of button types, sizes, and states to meet your design needs. With options for icons and destructiveness, you can create visually appealing and functional buttons for your product.",
+    "The Navbar component is a fundamental UI element used in web development to create a navigation bar at the top of a webpage. It provides a structured and organized way to display links, menus, and other navigation-related content to users.",
 });
 
 useHead({ ...metadata });
@@ -17,6 +17,6 @@ useHead({ ...metadata });
     :title="metadata.title"
     :description="metadata.description"
   >
-    Button
+    Navbar
   </DocsContentLayout>
 </template>

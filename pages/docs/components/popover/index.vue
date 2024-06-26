@@ -4,9 +4,9 @@ definePageMeta({
 });
 
 const metadata = reactive({
-  title: "Button - Keep Vue",
+  title: "Popover - Keep Vue",
   description:
-    "The Buttons component in the Keep React offers a variety of button types, sizes, and states to meet your design needs. With options for icons and destructiveness, you can create visually appealing and functional buttons for your product.",
+    "Popover component is a user interface element that displays additional information or options when a user interacts with a specific trigger, such as hovering over text or clicking a button.",
 });
 
 useHead({ ...metadata });
@@ -17,6 +17,6 @@ useHead({ ...metadata });
     :title="metadata.title"
     :description="metadata.description"
   >
-    Button
+    Popover
   </DocsContentLayout>
 </template>
