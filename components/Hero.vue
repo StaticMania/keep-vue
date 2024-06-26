@@ -63,4 +63,6 @@
     </div>
   </section>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { PhClipboard } from "@phosphor-icons/vue";
+</script>
