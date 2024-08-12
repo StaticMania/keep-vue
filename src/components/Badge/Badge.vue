@@ -1,70 +1,26 @@
-<template>
-  <div
-    :aria-disabled="disabled"
-    :class="
-      cn(
-        disabled && badgeTheme.disabled,
-        badgeTheme.base,
-        badgeTheme.size[size],
-        badgeTheme.variant[variant][color],
-        props.class
-      )
-    "
-    v-bind="$attrs"
-    ref="badgeRef"
-  >
-    <div
-      v-if="showIcon && iconPosition === 'left'"
-      :class="
-        cn(
-          badgeTheme.icon.base,
-          badgeTheme.icon.size[size],
-          badgeTheme.icon.color[color],
-          'mr-1',
-          dotStyle
-        )
-      "
-    ></div>
-    <slot></slot>
-    <div
-      v-if="showIcon && iconPosition === 'right'"
-      :class="
-        cn(
-          badgeTheme.icon.base,
-          badgeTheme.icon.size[size],
-          badgeTheme.icon.color[color],
-          'ml-1',
-          dotStyle
-        )
-      "
-    ></div>
-  </div>
-</template>
-
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../helpers/cn";
-import { badgeTheme } from "./badgeTheme";
+import { badgeTheme, badgeVariants } from "./badgeTheme";
 
 interface BadgeProps {
-  dotStyle?: string;
-  color?: "primary" | "secondary" | "success" | "warning" | "error";
-  showIcon?: boolean;
-  iconPosition?: "left" | "right";
-  size?: "sm" | "md";
-  variant?: "base" | "border" | "background";
-  disabled?: boolean;
+  color?: keyof typeof badgeTheme.color.base;
+  variant?: keyof typeof badgeTheme.color;
 }
 
 const props = defineProps<BadgeProps & { class?: HTMLAttributes["class"] }>();
 
-const {
-  color = "primary",
-  disabled = false,
-  dotStyle,
-  showIcon = false,
-  iconPosition = "left",
-  size = "md",
-  variant = "base",
-} = props;
+const { color = "secondary", variant } = props;
+
+const badgeRef = ref<HTMLDivElement | null>(null);
 </script>
+
+<template>
+  <div
+    :class="cn(badgeVariants({ color, variant }), props.class)"
+    v-bind="$attrs"
+    ref="badgeRef"
+  >
+    <slot></slot>
+  </div>
+</template>
