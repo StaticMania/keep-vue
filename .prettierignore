@@ -1,0 +1,5 @@
+# Ignore artifacts:
+.nuxt/
+
+# Ignore specific files:
+package-lock.json
