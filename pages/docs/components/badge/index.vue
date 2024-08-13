@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import BadgeDots from "./Variants/BadgeDots.vue";
-import BadgeSizes from "./Variants/BadgeSizes.vue";
-import BadgeVariants from "./Variants/BadgeVariants.vue";
+import ColorsOfBadge from "./Variants/ColorsOfBadge.vue";
 import DefaultBadge from "./Variants/DefaultBadge.vue";
+import VariantOfBadge from "./Variants/VariantOfBadge.vue";
 
 definePageMeta({
   layout: "docs",
@@ -27,16 +26,12 @@ useHead({ ...metadata });
         <DefaultBadge />
       </div>
       <div class="space-y-3">
-        <h1 class="text-2xl font-medium">Sizes of Badge</h1>
-        <BadgeSizes />
+        <h1 class="text-2xl font-medium">Colors of Badge</h1>
+        <ColorsOfBadge />
       </div>
       <div class="space-y-3">
-        <h1 class="text-2xl font-medium">Variants of Badge</h1>
-        <BadgeVariants />
-      </div>
-      <div class="space-y-3">
-        <h1 class="text-2xl font-medium">Badge With Dot</h1>
-        <BadgeDots />
+        <h1 class="text-2xl font-medium">Variant of Badge</h1>
+        <VariantOfBadge />
       </div>
     </div>
   </DocsContentLayout>

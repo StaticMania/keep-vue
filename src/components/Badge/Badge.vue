@@ -11,16 +11,13 @@ interface BadgeProps {
 const props = defineProps<BadgeProps & { class?: HTMLAttributes["class"] }>();
 
 const { color = "secondary", variant } = props;
-
-const badgeRef = ref<HTMLDivElement | null>(null);
 </script>
 
 <template>
   <div
     :class="cn(badgeVariants({ color, variant }), props.class)"
     v-bind="$attrs"
-    ref="badgeRef"
-  >
+    ref="badgeRef">
     <slot></slot>
   </div>
 </template>
