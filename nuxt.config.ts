@@ -1,7 +1,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/styles/main.css"],
-
+  googleFonts: {
+    display: "swap",
+    families: {
+      Inter: {
+        wght: "100..900",
+      },
+    },
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -20,5 +27,10 @@ export default defineNuxtConfig({
     },
   ],
 
-  modules: ["@nuxt/content", "@nuxt/eslint", "@nuxt/image"],
+  modules: [
+    "@nuxt/content",
+    "@nuxt/eslint",
+    "@nuxt/image",
+    "@nuxtjs/google-fonts",
+  ],
 });
