@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/styles/main.css"],
+  //adding font through next plugIn
   googleFonts: {
     display: "swap",
     families: {
