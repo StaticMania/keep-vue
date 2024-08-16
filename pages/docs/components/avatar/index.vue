@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AvatarGroup from "~/src/components/Avatar/AvatarGroup.vue";
+import AvatarWithGroup from "./variant/AvatarWithGroup.vue";
 import AvatarWithImage from "./variant/AvatarWithImage.vue";
 import AvatarWithStatus from "./variant/AvatarWithStatus.vue";
 import DefaultAvatar from "./variant/DefaultAvatar.vue";
@@ -36,7 +36,7 @@ useHead({ ...metadata });
       </div>
       <div class="space-y-3 bg-white p-6">
         <h1 class="text-2xl font-medium">Avatar Group</h1>
-        <AvatarGroup />
+        <AvatarWithGroup />
       </div>
     </div>
   </DocsContentLayout>
