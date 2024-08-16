@@ -3,16 +3,41 @@ import type { HTMLAttributes } from "vue";
 import { cn } from "~/src/helpers/cn";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 
-const props = defineProps<{
+interface AlertLinkProps {
   class?: HTMLAttributes["class"];
   href: string;
-}>();
+  asChild?: boolean;
+}
+const props = withDefaults(defineProps<AlertLinkProps>(), {
+  asChild: false,
+  class: "",
+  href: "#",
+});
 
 const color = inject("alertContext");
+
+// get the ref
+const alertLinkRef = ref<HTMLAnchorElement | null>(null);
 </script>
 
 <template>
+  <!-- default alert link icon  -->
   <a
+    v-if="props.asChild"
+    :href="props.href"
+    v-bind="$attrs"
+    :class="
+      cn(
+        alertTheme.link.base,
+        alertTheme.link.color[color as keyof ColorVariant],
+        props.class,
+      )
+    "
+    ref="alertLinkRef">
+    <slot></slot>
+  </a>
+  <a
+    v-else
     :href="props.href"
     v-bind="$attrs"
     :class="

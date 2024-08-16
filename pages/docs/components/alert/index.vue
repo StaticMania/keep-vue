@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import Alert from "~/src/components/Alert/Alert.vue";
-import AlertContainer from "~/src/components/Alert/AlertContainer.vue";
-import AlertDescription from "~/src/components/Alert/AlertDescription.vue";
-import AlertIcon from "~/src/components/Alert/AlertIcon.vue";
-import AlertTitle from "~/src/components/Alert/AlertTitle.vue";
-import AlertWithDismissIcon from "./AlertWithDismissIcon.vue";
+import AlertColorVariant from "./varient/AlertColorVariant.vue";
+import AlertCustomLinkIcon from "./varient/AlertCustomLinkIcon.vue";
+import AlertWithBgColor from "./varient/AlertWithBgColor.vue";
+import AlertWithDismissIcon from "./varient/AlertWithDismissIcon.vue";
+import DefaultAlert from "./varient/DefaultAlert.vue";
 
 definePageMeta({
   layout: "docs",
@@ -23,23 +22,30 @@ useHead({ ...metadata });
   <DocsContentLayout
     :title="metadata.title"
     :description="metadata.description">
-    <!-- alert default -->
-    <Alert>
-      <AlertContainer>
-        <AlertIcon />
-        <AlertTitle>Primary Alert</AlertTitle>
-        <AlertDescription>
-          A short description followed by two actions items.
-        </AlertDescription>
-      </AlertContainer>
+    <div class="space-y-8">
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Default Alert</h1>
+        <DefaultAlert />
+      </div>
 
-      <AlertContainer>
-        <AlertLink href="/">Learn More</AlertLink>
-        <AlertDismiss></AlertDismiss>
-      </AlertContainer>
-    </Alert>
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Color Variants of Alerts</h1>
+        <AlertColorVariant />
+      </div>
 
-    <!-- alert dismiss -->
-    <AlertWithDismissIcon />
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Alert With Background Color</h1>
+        <AlertWithBgColor />
+      </div>
+
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Dismissible Alerts</h1>
+        <AlertWithDismissIcon />
+      </div>
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Custom Link Icon Alerts</h1>
+        <AlertCustomLinkIcon />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
