@@ -1,5 +1,5 @@
 <template>
-  <div className="space-y-5">
+  <div class="space-y-5">
     <Alert :with-bg="true" color="primary">
       <AlertContainer>
         <AlertIcon />

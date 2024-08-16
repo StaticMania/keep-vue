@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<!-- <script lang="ts" setup>
 export type BoxProps = {
   asChild?: true | undefined;
 };
@@ -21,4 +21,6 @@ const setRef = (value: HTMLElement | null) => (node.value = value);
   <div v-else v-bind="$attrs" ref="node">
     <slot>default Value</slot>
   </div>
-</template>
+</template> -->
+
+<template></template>
