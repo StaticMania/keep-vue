@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import Alert from "~/src/components/Alert/Alert.vue";
+import AlertContainer from "~/src/components/Alert/AlertContainer.vue";
+import AlertDescription from "~/src/components/Alert/AlertDescription.vue";
+import AlertIcon from "~/src/components/Alert/AlertIcon.vue";
+import AlertTitle from "~/src/components/Alert/AlertTitle.vue";
+import AlertWithDismissIcon from "./AlertWithDismissIcon.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +22,24 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Alert
+    :description="metadata.description">
+    <!-- alert default -->
+    <Alert>
+      <AlertContainer>
+        <AlertIcon />
+        <AlertTitle>Primary Alert</AlertTitle>
+        <AlertDescription>
+          A short description followed by two actions items.
+        </AlertDescription>
+      </AlertContainer>
+
+      <AlertContainer>
+        <AlertLink href="/">Learn More</AlertLink>
+        <AlertDismiss></AlertDismiss>
+      </AlertContainer>
+    </Alert>
+
+    <!-- alert dismiss -->
+    <AlertWithDismissIcon />
   </DocsContentLayout>
 </template>
