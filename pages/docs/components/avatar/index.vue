@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import AvatarGroup from "~/src/components/Avatar/AvatarGroup.vue";
+import AvatarWithImage from "./variant/AvatarWithImage.vue";
+import AvatarWithStatus from "./variant/AvatarWithStatus.vue";
+import DefaultAvatar from "./variant/DefaultAvatar.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +20,24 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Avatar
+    :description="metadata.description">
+    <div class="space-y-8">
+      <div class="space-y-3 bg-white p-6">
+        <h1 class="text-2xl font-medium">Default Avatar</h1>
+        <DefaultAvatar />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1 class="text-2xl font-medium">Using User Images</h1>
+        <AvatarWithImage />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1 class="text-2xl font-medium">Avatar Status</h1>
+        <AvatarWithStatus />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1 class="text-2xl font-medium">Avatar Group</h1>
+        <AvatarGroup />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
