@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 
 interface AlertIconProps {

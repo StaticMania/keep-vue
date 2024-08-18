@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 
 interface ButtonGroupProps {
   class?: HTMLAttributes["class"];

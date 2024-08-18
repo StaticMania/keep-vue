@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { cn } from "../../helpers/cn";
+import { cn } from "../../utils/cn";
+
 import {
   type DividerColorVariant,
   type DividerSizeVariant,

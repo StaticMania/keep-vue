@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref, type HTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
 import { isSlotValidHTMLElement } from "~/src/utils/slotUtils";
+import { cn } from "../../utils/cn";
 
 interface BreadcrumbItemProps {
   class?: HTMLAttributes["class"];

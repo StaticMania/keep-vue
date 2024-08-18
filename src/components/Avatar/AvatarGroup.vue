@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 
 interface AvatarGroupProps {
   class?: HTMLAttributes["class"];
@@ -16,6 +16,6 @@ const avatarGroupRef = ref<HTMLDivElement>();
     ref="avatarGroupRef"
     v-bind="$attrs"
     :class="cn('flex items-center -space-x-3', props.class)">
-    <slot>dsfsdf</slot>
+    <slot></slot>
   </div>
 </template>

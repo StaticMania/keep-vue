@@ -2,7 +2,7 @@
 import type { HTMLAttributes } from "vue";
 import { provide } from "vue";
 
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 
 interface AlertComponentProps {
