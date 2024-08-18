@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import CardWithAvatar from "./varient/CardWithAvatar.vue";
+import DefaultCard from "./varient/DefaultCard.vue";
+import ProductCard from "./varient/ProductCard.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +19,20 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Card
+    :description="metadata.description">
+    <div class="my-4">
+      <p>Default Card</p>
+      <DefaultCard />
+    </div>
+
+    <div class="my-4">
+      <p>Card with avatar</p>
+      <CardWithAvatar />
+    </div>
+
+    <div class="my-4">
+      <p>Card with product</p>
+      <ProductCard />
+    </div>
   </DocsContentLayout>
 </template>
