@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cn } from "~/src/helpers/cn";
+import { cn } from "~/src/utils/cn";
 import { alertTheme } from "./alertTheme";
 
 const props = defineProps({

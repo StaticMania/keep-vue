@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { cn } from "../../helpers/cn";
+import { cn } from "../../utils/cn";
 import { badgeTheme, badgeVariants } from "./badgeTheme";
 
 interface BadgeProps {

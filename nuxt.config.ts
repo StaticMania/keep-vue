@@ -33,5 +33,6 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
+    "@nuxt/image",
   ],
 });

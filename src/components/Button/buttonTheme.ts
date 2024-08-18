@@ -1,4 +1,4 @@
-import { cn } from "~/src/helpers/cn";
+import { cn } from "~/src/utils/cn";
 
 export interface ButtonColorVariant {
   primary: string;
