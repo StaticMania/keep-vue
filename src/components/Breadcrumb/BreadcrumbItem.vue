@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, type HTMLAttributes } from "vue";
 import { cn } from "~/src/utils/cn";
+import { isSlotValidHTMLElement } from "~/src/utils/slotUtils";
 
 interface BreadcrumbItemProps {
   class?: HTMLAttributes["class"];
@@ -14,9 +15,17 @@ const props = withDefaults(defineProps<BreadcrumbItemProps>(), {
 const breadcrumbItemRef = ref<HTMLLIElement>();
 const setAsChildRef = (value: HTMLLIElement) =>
   (breadcrumbItemRef.value = value);
+
+const slot = useSlots();
+const validElement = isSlotValidHTMLElement(slot);
 </script>
 <template>
+  <slot
+    v-if="props.asChild && validElement"
+    v-bind="{ ...$attrs }"
+    :ref="setAsChildRef"></slot>
   <li
+    v-else
     v-bind="$attrs"
     ref="breadcrumbItemRef"
     :class="
