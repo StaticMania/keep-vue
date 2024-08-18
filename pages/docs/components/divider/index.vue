@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import DefaultDivider from "./variants/DefaultDivider.vue";
+import DividerAlign from "./variants/DividerAlign.vue";
+import DividerColor from "./variants/DividerColor.vue";
+import DividerSize from "./variants/DividerSize.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +20,12 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Divider
+    :description="metadata.description">
+    <div class="space-y-8">
+      <DefaultDivider />
+      <DividerAlign />
+      <DividerColor />
+      <DividerSize />
+    </div>
   </DocsContentLayout>
 </template>

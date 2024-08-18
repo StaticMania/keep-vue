@@ -2,11 +2,10 @@
   <footer class="bg-white shadow-small">
     <div class="mx-auto max-w-7xl px-6 py-10 2xl:px-0">
       <div
-        class="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center md:gap-0"
-      >
+        class="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center md:gap-0">
         <div>
           <NuxtLink to="/">
-            <NuxtImg src="/keep.svg" width="130" height="53" />
+            <NuxtImg src="/images/keep.svg" width="130" height="53" />
           </NuxtLink>
           <p class="mt-6 max-w-lg text-body-4 font-normal text-metal-600">
             Keep Vue is an open-source component library built on Tailwind CSS
@@ -17,14 +16,12 @@
         <div>
           <h4 class="mb-3 text-body-3 font-medium text-metal-900">Resource</h4>
           <ul
-            class="flex flex-col gap-3 text-body-3 font-normal text-metal-600"
-          >
+            class="flex flex-col gap-3 text-body-3 font-normal text-metal-600">
             <li>
               <NuxtLink
                 class="inline-block text-body-4 font-normal transition-all duration-300 hover:translate-x-1"
                 to="https://github.com/StaticMania/keep-react"
-                target="_blank"
-              >
+                target="_blank">
                 GitHub
               </NuxtLink>
             </li>
@@ -32,8 +29,7 @@
               <NuxtLink
                 class="inline-block text-body-4 font-normal transition-all duration-300 hover:translate-x-1"
                 to="https://tailwindcss.com"
-                target="_blank"
-              >
+                target="_blank">
                 Tailwind CSS
               </NuxtLink>
             </li>
@@ -41,8 +37,7 @@
               <NuxtLink
                 class="inline-block text-body-4 font-normal transition-all duration-300 hover:translate-x-1"
                 to="https://keepdesign.io"
-                target="_blank"
-              >
+                target="_blank">
                 Figma
               </NuxtLink>
             </li>
@@ -56,8 +51,7 @@
         <NuxtLink
           to="https://staticmania.com/"
           target="_blank"
-          class="font-medium"
-        >
+          class="font-medium">
           StaticMania
         </NuxtLink>
       </p>
