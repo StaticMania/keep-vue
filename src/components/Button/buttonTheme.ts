@@ -105,12 +105,12 @@ type ButtonVariants = (options?: {
 
 const buttonVariants: ButtonVariants = ({
   size = "md",
-  color = "secondary",
+  color = "primary",
   variant,
   shape,
   position,
 } = {}) => {
-  const classs = {
+  const classes = {
     base: buttonTheme.base,
     size: !shape && buttonTheme.size[size],
     iconBtn:
@@ -122,14 +122,14 @@ const buttonVariants: ButtonVariants = ({
     position: position && buttonTheme.position[position],
   };
   return cn(
-    classs.base,
-    classs.size,
-    classs.iconBtn,
-    classs.roundedFull,
-    classs.color,
-    classs.link,
-    classs.outline,
-    classs.position,
+    classes.base,
+    classes.size,
+    classes.iconBtn,
+    classes.roundedFull,
+    classes.color,
+    classes.link,
+    classes.outline,
+    classes.position,
   );
 };
 
