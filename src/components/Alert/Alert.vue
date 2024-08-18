@@ -1,28 +1,41 @@
-<template lang="">
+<script setup lang="ts">
+import type { HTMLAttributes } from "vue";
+import { provide } from "vue";
+
+import { cn } from "~/src/helpers/cn";
+import { alertTheme, type ColorVariant } from "./alertTheme";
+
+interface AlertComponentProps {
+  color?: keyof ColorVariant;
+  withBg?: boolean;
+  dismiss?: boolean;
+}
+
+const props = defineProps<
+  AlertComponentProps & { class?: HTMLAttributes["class"] }
+>();
+
+const { color = "primary" } = props;
+
+//providing the context
+provide("alertContext", color);
+</script>
+
+<template>
   <div
+    v-bind="$attrs"
+    ref="alertRef"
     role="alert"
     :class="
       cn(
         alertTheme.root.base,
-        withBg
+        props.withBg
           ? alertTheme.colorWithBg[color]
           : alertTheme.colorWithOutBg[color],
-        dismiss ? 'hidden' : 'flex',
-        props.class
+        props.dismiss ? 'hidden' : 'flex',
+        props.class,
       )
-    "
-  ></div>
+    ">
+    <slot></slot>
+  </div>
 </template>
-<script setup lang="ts">
-import { alertTheme } from "./alertTheme";
-import type { HTMLAttributes } from "vue";
-
-interface AlertProps {
-  color?: "primary" | "secondary" | "success" | "warning" | "error";
-  withBg?: boolean;
-  dismiss?: boolean;
-  class?: HTMLAttributes["class"];
-}
-
-const props = defineProps<AlertProps>();
-</script>

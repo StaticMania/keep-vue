@@ -22,3 +22,9 @@ logs
 .env
 .env.*
 !.env.example
+
+yarn.lock
+vercel.json
+package-lock.json
+
+pages\test

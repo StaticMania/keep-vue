@@ -1,0 +1,15 @@
+{
+  "wordWrap": true,
+  "trailingComma": "all",
+  "plugins": ["prettier-plugin-css-order", "prettier-plugin-tailwindcss"],
+  "pluginSearchDirs": false,
+  "organizeImportsSkipDestructiveCodeActions": true,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "endOfLine": "lf",
+  "quoteProps": "as-needed",
+  "arrowParens": "always",
+  "htmlWhitespaceSensitivity": "ignore",
+  "singleAttributePerLine": false
+}

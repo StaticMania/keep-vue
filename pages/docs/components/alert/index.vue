@@ -1,4 +1,10 @@
 <script setup lang="ts">
+import AlertColorVariant from "./varient/AlertColorVariant.vue";
+import AlertCustomLinkIcon from "./varient/AlertCustomLinkIcon.vue";
+import AlertWithBgColor from "./varient/AlertWithBgColor.vue";
+import AlertWithDismissIcon from "./varient/AlertWithDismissIcon.vue";
+import DefaultAlert from "./varient/DefaultAlert.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +21,31 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Alert
+    :description="metadata.description">
+    <div class="space-y-8">
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Default Alert</h1>
+        <DefaultAlert />
+      </div>
+
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Color Variants of Alerts</h1>
+        <AlertColorVariant />
+      </div>
+
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Alert With Background Color</h1>
+        <AlertWithBgColor />
+      </div>
+
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Dismissible Alerts</h1>
+        <AlertWithDismissIcon />
+      </div>
+      <div class="space-y-3 bg-white p-10">
+        <h1 class="text-2xl font-medium">Custom Link Icon Alerts</h1>
+        <AlertCustomLinkIcon />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>

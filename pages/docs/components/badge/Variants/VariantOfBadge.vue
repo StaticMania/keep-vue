@@ -1,5 +1,9 @@
-<template lang="">
-  <div class="space-y-4">
+<script setup lang="ts">
+import Badge from "~/src/components/Badge/Badge.vue";
+</script>
+
+<template>
+  <div class="space-y-4 p-2">
     <div class="space-x-3">
       <Badge variant="base" color="primary">Primary</Badge>
       <Badge variant="base" color="secondary">Secondary</Badge>
@@ -23,6 +27,3 @@
     </div>
   </div>
 </template>
-<script>
-export default {};
-</script>

@@ -5,3 +5,7 @@
   </main>
   <Footer />
 </template>
+
+<style>
+@import url("~/styles/main.css");
+</style>

@@ -888,7 +888,7 @@
   optionalDependencies:
     ipx "^2.1.0"
 
-"@nuxt/kit@^3.11.2", "@nuxt/kit@^3.12.1", "@nuxt/kit@^3.12.2", "@nuxt/kit@3.12.2":
+"@nuxt/kit@^3.10.3", "@nuxt/kit@^3.11.2", "@nuxt/kit@^3.12.1", "@nuxt/kit@^3.12.2", "@nuxt/kit@3.12.2":
   version "3.12.2"
   resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.12.2.tgz"
   integrity sha512-5kOqEzfc3FsAncjK2je7vuq4/QsR5ypViTnop52mlFLf0Ku1NMCrWCSWYowAh4P0yqTACMAZYa+HdRZHscU84g==
@@ -994,6 +994,15 @@
     vite-node "^1.6.0"
     vite-plugin-checker "^0.6.4"
     vue-bundle-renderer "^2.1.0"
+
+"@nuxtjs/google-fonts@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/@nuxtjs/google-fonts/-/google-fonts-3.2.0.tgz"
+  integrity sha512-cGAjDJoeQ2jm6VJCo4AtSmKO6KjsbO9RSLj8q261fD0lMVNMZCxkCxBkg8L0/2Vfgp+5QBHWVXL71p1tiybJFw==
+  dependencies:
+    "@nuxt/kit" "^3.10.3"
+    google-fonts-helper "^3.5.0"
+    pathe "^1.1.2"
 
 "@nuxtjs/mdc@^0.7.1":
   version "0.7.1"
@@ -2864,7 +2873,7 @@ crossws@^0.2.0, crossws@^0.2.4:
   resolved "https://registry.npmjs.org/crossws/-/crossws-0.2.4.tgz"
   integrity sha512-DAxroI2uSOgUKLz00NX6A8U/8EE3SZHmIND+10jkVSaypvyt57J5JEOxAQOL6lQxyzi/wZbTIwssU1uy69h5Vg==
 
-css-declaration-sorter@^7.2.0:
+css-declaration-sorter@^7.1.1, css-declaration-sorter@^7.2.0:
   version "7.2.0"
   resolved "https://registry.npmjs.org/css-declaration-sorter/-/css-declaration-sorter-7.2.0.tgz"
   integrity sha512-h70rUM+3PNFuaBDTLe8wF/cdWu+dOZmb7pJt8Z2sedYbAcQVQV/tEchueg3GWxwqS0cxtbxmaHEdkNACqcvsow==
@@ -3022,7 +3031,7 @@ deep-is@^0.1.3:
   resolved "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
 
-deepmerge@^4.2.2:
+deepmerge@^4.2.2, deepmerge@^4.3.1:
   version "4.3.1"
   resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-4.3.1.tgz"
   integrity sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==
@@ -4089,6 +4098,16 @@ globby@^14.0.1:
     path-type "^5.0.0"
     slash "^5.1.0"
     unicorn-magic "^0.1.0"
+
+google-fonts-helper@^3.5.0:
+  version "3.6.0"
+  resolved "https://registry.npmjs.org/google-fonts-helper/-/google-fonts-helper-3.6.0.tgz"
+  integrity sha512-ReantWd/l8dedKqTYjvqaQ55rAl/rbRqWL5VXHNXtGwIhMX4N8VNA7V19drr7xiv5G3pzlYID0K4FauvGqnWEg==
+  dependencies:
+    deepmerge "^4.3.1"
+    hookable "^5.5.3"
+    ofetch "^1.3.4"
+    ufo "^1.5.3"
 
 graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
   version "4.2.11"
@@ -6534,6 +6553,11 @@ postcss-js@^4.0.1:
   dependencies:
     camelcase-css "^2.0.1"
 
+postcss-less@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/postcss-less/-/postcss-less-6.0.0.tgz"
+  integrity sha512-FPX16mQLyEjLzEuuJtxA8X3ejDLNGGEG503d2YGZR5Ask1SpDN8KmZUMpzCvyalWRywAn1n1VOA5dcqfCLo5rg==
+
 postcss-load-config@^4.0.1:
   version "4.0.2"
   resolved "https://registry.npmjs.org/postcss-load-config/-/postcss-load-config-4.0.2.tgz"
@@ -6685,6 +6709,11 @@ postcss-reduce-transforms@^7.0.0:
   dependencies:
     postcss-value-parser "^4.2.0"
 
+postcss-scss@^4.0.9:
+  version "4.0.9"
+  resolved "https://registry.npmjs.org/postcss-scss/-/postcss-scss-4.0.9.tgz"
+  integrity sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==
+
 postcss-selector-parser@^6.0.11, postcss-selector-parser@^6.0.15, postcss-selector-parser@^6.0.16, postcss-selector-parser@^6.1.0:
   version "6.1.0"
   resolved "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.1.0.tgz"
@@ -6713,7 +6742,7 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.2.0:
   resolved "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@^8.0.0, postcss@^8.0.9, postcss@^8.1.0, postcss@^8.2.14, postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.31, postcss@^8.4.38, postcss@>=8.0.9:
+postcss@^8.0.0, postcss@^8.0.9, postcss@^8.1.0, postcss@^8.2.14, postcss@^8.3.5, postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.29, postcss@^8.4.31, postcss@^8.4.38, postcss@>=8.0.9:
   version "8.4.38"
   resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.38.tgz"
   integrity sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==
@@ -6744,6 +6773,25 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+prettier-plugin-css-order@*, prettier-plugin-css-order@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.npmjs.org/prettier-plugin-css-order/-/prettier-plugin-css-order-2.1.2.tgz"
+  integrity sha512-vomxPjHI6pOMYcBuouSJHxxQClJXaUpU9rsV9IAO2wrSTZILRRlrxAAR8t9UF6wtczLkLfNRFUwM+ZbGXOONUA==
+  dependencies:
+    css-declaration-sorter "^7.1.1"
+    postcss-less "^6.0.0"
+    postcss-scss "^4.0.9"
+
+prettier-plugin-tailwindcss@^0.6.6:
+  version "0.6.6"
+  resolved "https://registry.npmjs.org/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.6.6.tgz"
+  integrity sha512-OPva5S7WAsPLEsOuOWXATi13QrCKACCiIonFgIR6V4lYv4QLp++UXVhZSzRbZxXGimkQtQT86CC6fQqTOybGng==
+
+prettier@^3.0, prettier@^3.3.3, prettier@3.x:
+  version "3.3.3"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-3.3.3.tgz"
+  integrity sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==
 
 pretty-bytes@^6.1.1:
   version "6.1.1"
@@ -8069,8 +8117,6 @@ type-fest@^3.8.0:
   version "3.13.1"
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-3.13.1.tgz"
   integrity sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==
-
-typescript@*:
 
 typescript@>=4.2.0:
   version "5.5.2"
