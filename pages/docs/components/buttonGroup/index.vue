@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import ButtonGroupWithIcon from "./variant/ButtonGroupWithIcon.vue";
+import ButtonGroupWithOnlyIcon from "./variant/ButtonGroupWithOnlyIcon.vue";
+import DefaultButtonGroup from "./variant/DefaultButtonGroup.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +19,18 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Button Group
+    :description="metadata.description">
+    <div class="my-4">
+      <h3>Default Button Group</h3>
+      <DefaultButtonGroup />
+    </div>
+    <div class="my-4">
+      <h3>Button Group with Icon</h3>
+      <ButtonGroupWithIcon />
+    </div>
+    <div class="my-4">
+      <h3>Button Group with only icon</h3>
+      <ButtonGroupWithOnlyIcon />
+    </div>
   </DocsContentLayout>
 </template>
