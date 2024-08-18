@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import BreadcrumbDividerIcon from "./variant/BreadcrumbDividerIcon.vue";
+import BreadcrumbWithBorder from "./variant/BreadcrumbWithBorder.vue";
+import DefaultBreadcrumb from "./variant/DefaultBreadcrumb.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +19,20 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Breadcrumb
+    :description="metadata.description">
+    <div class="space-y-8">
+      <div class="space-y-3 bg-white p-6">
+        <h1 class="text-2xl font-medium">Default Breadcrumb</h1>
+        <DefaultBreadcrumb />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1 class="text-2xl font-medium">Border Types</h1>
+        <BreadcrumbWithBorder />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1 class="text-2xl font-medium">Divider Icon Type</h1>
+        <BreadcrumbDividerIcon />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
