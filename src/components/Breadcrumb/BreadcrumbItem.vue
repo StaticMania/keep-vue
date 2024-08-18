@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref, type HTMLAttributes } from "vue";
-import { cn } from "~/src/helpers/cn";
+import { cn } from "~/src/utils/cn";
 
 interface BreadcrumbItemProps {
   class?: HTMLAttributes["class"];

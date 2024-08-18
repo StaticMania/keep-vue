@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { HtmlHTMLAttributes } from "vue";
-import { cn } from "~/src/helpers/cn";
+import { cn } from "~/src/utils/cn";
 import {
   buttonVariants,
   type ButtonColorVariant,
@@ -18,7 +18,7 @@ export interface ButtonProps {
 
 const props = withDefaults(defineProps<ButtonProps>(), {
   size: "md",
-  color: "secondary",
+  color: "primary",
 });
 
 const buttonRef = ref<null | HTMLButtonElement>(null);

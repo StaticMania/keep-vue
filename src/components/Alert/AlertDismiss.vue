@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
-import { cn } from "~/src/helpers/cn";
+import { cn } from "~/src/utils/cn";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 
 const props = defineProps<{ class?: HTMLAttributes["class"] }>();

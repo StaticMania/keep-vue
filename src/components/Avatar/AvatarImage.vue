@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { cn } from "~/src/helpers/cn";
+import { cn } from "~/src/utils/cn";
 
 interface AvatarImageProps {
   class?: HTMLAttributes["class"];
