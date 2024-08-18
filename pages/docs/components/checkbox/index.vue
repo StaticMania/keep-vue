@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CheckboxVariant from "./variant/CheckboxVariant.vue";
+import DefaultCheckbox from "./variant/DefaultCheckbox.vue";
 
 definePageMeta({
   layout: "docs",
@@ -18,6 +19,10 @@ useHead({ ...metadata });
   <DocsContentLayout
     :title="metadata.title"
     :description="metadata.description">
+    <div class="my-4">
+      <h3>Default Checkbox</h3>
+      <DefaultCheckbox />
+    </div>
     <div class="my-4">
       <h3>Checkbox Variant</h3>
       <CheckboxVariant />
