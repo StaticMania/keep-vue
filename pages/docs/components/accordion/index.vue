@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DefaultAccordian from "./variant/DefaultAccordian.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +17,7 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Accordion
+    :description="metadata.description">
+    <DefaultAccordian />
   </DocsContentLayout>
 </template>
