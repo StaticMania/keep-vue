@@ -2,7 +2,6 @@
 import { CheckboxIndicator, CheckboxRoot } from "radix-vue";
 import { defineProps, ref } from "vue";
 import { cn } from "../../utils/cn";
-import { checkboxTheme } from "./checkboxTheme";
 
 // Define the props for the component
 interface CheckboxProps {
@@ -10,8 +9,6 @@ interface CheckboxProps {
   variant?: "rounded" | "circle" | "default";
   class?: string;
 }
-
-const { base, defaultColor, notDefault, circle, notCircle } = checkboxTheme;
 
 const props = withDefaults(defineProps<CheckboxProps>(), {
   class: "",
@@ -24,18 +21,21 @@ const checkboxRef = ref<null | HTMLElement>(null);
 
 <template>
   <CheckboxRoot
+    v-bind="$attrs"
     ref="checkboxRef"
     :class="
       cn(
-        base,
-        props.variant === 'default' && defaultColor,
-        props.variant !== 'default' && notDefault,
-        props.variant === 'circle' && circle,
-        props.variant !== 'circle' && notCircle,
-        props.class,
+        'peer relative h-5 w-5 shrink-0 border border-metal-200 ring-offset-primary-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary-500 data-[state=checked]:text-primary-500 dark:border-metal-100 dark:ring-offset-primary-500 dark:focus-visible:ring-primary-500 dark:data-[state=checked]:text-primary-500',
+        props.variant !== 'default' &&
+          'data-[state=checked]:before:absolute data-[state=checked]:before:left-1/2 data-[state=checked]:before:top-1/2 data-[state=checked]:before:h-2.5 data-[state=checked]:before:w-2.5 data-[state=checked]:before:-translate-x-1/2 data-[state=checked]:before:-translate-y-1/2 data-[state=checked]:before:bg-primary-500 data-[state=checked]:before:content-[\'\'] dark:data-[state=checked]:before:bg-primary-500',
+        props.variant === 'default' &&
+          'data-[state=checked]:bg-primary-500 dark:data-[state=checked]:bg-primary-500',
+        props.variant === 'circle' &&
+          'rounded-full data-[state=checked]:before:rounded-full',
+        props.variant !== 'circle' &&
+          'rounded data-[state=checked]:before:rounded-sm',
       )
-    "
-    v-bind="$attrs">
+    ">
     <CheckboxIndicator
       v-if="props.variant === 'default'"
       :class="
@@ -44,7 +44,7 @@ const checkboxRef = ref<null | HTMLElement>(null);
       <slot>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-3 w-3 text-current"
+          class="h-3 w-3 text-current"
           fill="currentColor"
           viewBox="0 0 256 256">
           <path
