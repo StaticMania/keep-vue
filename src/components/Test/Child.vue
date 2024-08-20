@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <!-- <script lang="ts" setup>
 export type BoxProps = {
   asChild?: true | undefined;
@@ -23,4 +25,6 @@ const setRef = (value: HTMLElement | null) => (node.value = value);
   </div>
 </template> -->
 
-<template></template>
+<template>
+  <Accordion></Accordion>
+</template>

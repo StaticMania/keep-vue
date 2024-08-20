@@ -11,19 +11,37 @@ interface AccordionProps {
 
 const props = withDefaults(defineProps<AccordionProps>(), {
   disabled: false,
+  flush: false,
 });
 
 const isOpen = ref(props.openFirstPanel ? 0 : 1);
 
-//define accordion state
+// define accordion state
 const getAccordionState = computed(() => ({
-  isOpen: (index: number) => isOpen.value === index,
+  isOpen: isOpen.value === 2,
 
   setIsOpen: (index: number) => {
     isOpen.value = isOpen.value === index ? -1 : index;
   },
   flush: props.flush,
 }));
+
+const update = (index: number) => {
+  const AccordionState = computed(() => ({
+    isOpen: isOpen.value === index,
+
+    setIsOpen: () => {
+      isOpen.value = isOpen.value === index ? -1 : index;
+    },
+    flush: props.flush,
+  }));
+
+  return AccordionState;
+};
+
+const slots = useSlots();
+
+const children = slots.default?.();
 
 const accordionRef = ref<HTMLDivElement>();
 </script>
@@ -33,6 +51,6 @@ const accordionRef = ref<HTMLDivElement>();
     v-bind="$attrs"
     :class="cn(props.disabled && 'pointer-events-none opacity-50', props.class)"
     aria-labelledby="accordion">
-    <slot :state="getAccordionState"></slot>
+    <slot test="alu">sdfsdf</slot>
   </div>
 </template>
