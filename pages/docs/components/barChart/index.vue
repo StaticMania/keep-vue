@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DefaultBarChart from "./variant/DefaultBarChart.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +17,9 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Bar Chart
+    :description="metadata.description">
+    <div class="bg-white">
+      <DefaultBarChart />
+    </div>
   </DocsContentLayout>
 </template>

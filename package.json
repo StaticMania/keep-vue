@@ -19,6 +19,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/mdc": "^0.7.1",
     "@phosphor-icons/vue": "^2.2.1",
+    "chart.js": "^4.4.3",
     "clsx": "^2.1.1",
     "deepmerge": "^4.3.1",
     "nuxt": "^3.11.1",
@@ -26,6 +27,7 @@
     "tailwind-merge": "^2.3.0",
     "unhead": "^1.9.4",
     "vue": "^3.4.21",
+    "vue-chartjs": "^5.3.1",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
