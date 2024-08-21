@@ -32,13 +32,13 @@ const chartData = reactive({
   ],
 });
 
-const state = reactive({
+const customHight = reactive({
   height: 300, // custom height
 });
 
 const myStyles = computed(() => ({
   //if custom height is provided then the position relative is needed
-  height: `${state.height}px`,
+  height: `${customHight.height}px`,
   width: `100%`,
   position: "relative",
 }));
