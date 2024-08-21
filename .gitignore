@@ -28,3 +28,4 @@ vercel.json
 package-lock.json
 
 pages\test
+src\components\Test
