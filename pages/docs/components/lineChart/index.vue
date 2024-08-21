@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import DefaultLineChart from "./variant/DefaultLineChart.vue";
+import DoubleLineLineChart from "./variant/DoubleLineLineChart.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +18,14 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Line Chart
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="bg-white p-6">
+        <DefaultLineChart />
+      </div>
+      <div class="bg-white p-6">
+        <DoubleLineLineChart />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
