@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DefaultAreaChart from "./variant/DefaultAreaChart.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +17,11 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Area Chart
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="rounded-xl bg-white p-6">
+        <DefaultAreaChart />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
