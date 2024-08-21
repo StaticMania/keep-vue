@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ChartWithDoubleData from "./variant/ChartWithDoubleData.vue";
 import DefaultBarChart from "./variant/DefaultBarChart.vue";
 
 definePageMeta({
@@ -18,8 +19,14 @@ useHead({ ...metadata });
   <DocsContentLayout
     :title="metadata.title"
     :description="metadata.description">
-    <div class="bg-white">
-      <DefaultBarChart />
+    <div class="space-y-10">
+      <div class="bg-white p-6">
+        <h3>Chart Axis Data</h3>
+        <DefaultBarChart />
+      </div>
+      <div class="bg-white p-6">
+        <ChartWithDoubleData />
+      </div>
     </div>
   </DocsContentLayout>
 </template>

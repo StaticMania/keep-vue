@@ -20,14 +20,19 @@ KeepChart.register(
 );
 
 const chartData = reactive({
-  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
   datasets: [
     {
-      data: [340, 300, 170, 190, 450, 400, 250, 320, 280],
+      data: [340, 300, 170, 190, 450, 400],
       label: "Price",
       borderRadius: 8,
-      borderColor: "red",
       backgroundColor: "#1B4DFF", //single bar color
+    },
+    {
+      data: [140, 200, 120, 130, 120, 213],
+      label: "Price",
+      borderRadius: 8,
+      backgroundColor: "#AEBFFF", //single bar color
     },
   ],
 });
@@ -47,10 +52,9 @@ const chartOptions = reactive({
   responsive: true,
 
   plugins: {
-    //title fo the chart
     title: {
       display: true,
-      text: "Keep Vue Default Chart",
+      text: "Keep Vue Multiple data Chart",
     },
     legend: {
       display: false,
