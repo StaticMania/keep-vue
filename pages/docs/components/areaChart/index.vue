@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DefaultAreaChart from "./variant/DefaultAreaChart.vue";
+import DoubleSeriesAreaChart from "./variant/DoubleSeriesAreaChart.vue";
 
 definePageMeta({
   layout: "docs",
@@ -21,6 +22,9 @@ useHead({ ...metadata });
     <div class="space-y-6">
       <div class="rounded-xl bg-white p-6">
         <DefaultAreaChart />
+      </div>
+      <div class="rounded-xl bg-white p-6">
+        <DoubleSeriesAreaChart />
       </div>
     </div>
   </DocsContentLayout>
