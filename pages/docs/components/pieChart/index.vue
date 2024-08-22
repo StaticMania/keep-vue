@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DefaultPieChart from "./variant/DefaultPieChart.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +17,7 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Pie Chart
+    :description="metadata.description">
+    <DefaultPieChart />
   </DocsContentLayout>
 </template>

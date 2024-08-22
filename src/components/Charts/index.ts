@@ -1,4 +1,5 @@
 import {
+  ArcElement,
   BarElement,
   CategoryScale,
   Tooltip as ChartTooltip,
@@ -10,9 +11,10 @@ import {
   PointElement,
   Title,
 } from "chart.js";
-import { Bar, Line } from "vue-chartjs";
+import { Bar, Line, Pie } from "vue-chartjs";
 
 export {
+  ArcElement,
   Bar,
   BarElement,
   CategoryScale,
@@ -23,6 +25,7 @@ export {
   Line,
   LinearScale,
   LineElement,
+  Pie,
   PointElement,
   Title,
 };
