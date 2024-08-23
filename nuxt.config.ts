@@ -35,5 +35,6 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxt/image",
     "radix-vue/nuxt",
+    "@vueuse/nuxt",
   ],
 });

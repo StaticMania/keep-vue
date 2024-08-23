@@ -19,6 +19,8 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/mdc": "^0.7.1",
     "@phosphor-icons/vue": "^2.2.1",
+    "@vueuse/core": "^11.0.1",
+    "@vueuse/nuxt": "^11.0.1",
     "chart.js": "^4.4.3",
     "clsx": "^2.1.1",
     "deepmerge": "^4.3.1",

@@ -35,9 +35,14 @@ const data = reactive({
 const options = ref({
   responsive: true,
   maintainAspectRatio: false,
+
   plugins: {
     legend: {
       display: false,
+    },
+    title: {
+      display: true,
+      text: "Keep Vue Default Pie Chart",
     },
     tooltip: {
       displayColors: false,
@@ -47,7 +52,6 @@ const options = ref({
       titleFont: {
         size: 16,
       },
-
       bodyFont: {
         size: 16,
       },
@@ -64,6 +68,6 @@ const options = ref({
 
 <template>
   <div style="width: 100%; height: 400px">
-    <Pie :data="data" :options="options" />
+    <Pie id="default-pie-chart" :data="data" :options="options" />
   </div>
 </template>

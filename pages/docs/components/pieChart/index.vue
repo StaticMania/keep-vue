@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DefaultPieChart from "./variant/DefaultPieChart.vue";
+import PieChartWithTwoLevel from "./variant/PieChartWithTwoLevel.vue";
 
 definePageMeta({
   layout: "docs",
@@ -18,6 +19,9 @@ useHead({ ...metadata });
   <DocsContentLayout
     :title="metadata.title"
     :description="metadata.description">
-    <DefaultPieChart />
+    <div class="space-y-6">
+      <div class="bg-white p-6"><DefaultPieChart /></div>
+      <div class="bg-white p-6"><PieChartWithTwoLevel /></div>
+    </div>
   </DocsContentLayout>
 </template>
