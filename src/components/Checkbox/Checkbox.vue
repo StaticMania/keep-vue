@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { CheckboxIndicator, CheckboxRoot } from "radix-vue";
-import { defineProps, ref } from "vue";
+
 import { cn } from "../../utils/cn";
 
 // Define the props for the component
