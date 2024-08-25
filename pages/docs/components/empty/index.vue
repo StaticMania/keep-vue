@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import DefaultEmpty from "./variant/DefaultEmpty.vue";
+import EmptyFolder from "./variant/EmptyFolder.vue";
+import NoDataFound from "./variant/NoDataFound.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +19,21 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Empty
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="bg-white p-6">
+        <h3>Default Empty</h3>
+        <DefaultEmpty />
+      </div>
+
+      <div class="bg-white p-6">
+        <h3>Empty Folder</h3>
+        <EmptyFolder />
+      </div>
+      <div class="bg-white p-6">
+        <h3>No Data Found</h3>
+        <NoDataFound />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
