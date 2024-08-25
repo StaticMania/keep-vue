@@ -29,7 +29,7 @@ import PaginationNavigator from "~/src/components/Pagination/PaginationNavigator
       <input
         type="number"
         class="h-9 w-[60px] rounded-md border border-metal-100 text-center text-metal-600 focus:outline-none dark:border-metal-800 dark:text-metal-300"
-        defaultValue="20" />
+        value="20" />
       <span>of 200</span>
     </PaginationGoTo>
   </Pagination>
