@@ -1,5 +1,5 @@
 const [useProvideProgressStore, useProgressStore] = createInjectionState(
-  (initialProgress = 0) => {
+  (initialProgress: ComputedRef<number> | Ref<number>) => {
     //state
     const progress = ref(initialProgress);
 

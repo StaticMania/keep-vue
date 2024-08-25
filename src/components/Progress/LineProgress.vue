@@ -14,11 +14,13 @@ const props = withDefaults(defineProps<ProgressProps>(), {
   class: "",
 });
 
+const updatedProgressValue = computed(() => props.progress);
+
 const { line } = progressTheme;
 const progressRef = ref<HTMLDivElement>();
 
 //pass the store
-useProvideProgressStore(props.progress)!;
+useProvideProgressStore(updatedProgressValue)!;
 </script>
 
 <template>

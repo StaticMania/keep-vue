@@ -18,7 +18,9 @@ const circleProgressRef = ref<HTMLDivElement>();
 
 const { circle } = progressTheme;
 
-useProvideProgressStore(props.progress);
+const updatedProgressValue = computed(() => props.progress);
+
+useProvideProgressStore(updatedProgressValue);
 </script>
 <template>
   <div
