@@ -24,9 +24,9 @@ const data = reactive({
   labels: ["June", "March", "April", "May"],
   datasets: [
     {
-      data: [130, 200, 100, 400],
-      backgroundColor: ["#1B4DFF"],
-      hoverBackgroundColor: ["#1B4DFF"],
+      data: [400, 130, 100, 200],
+      backgroundColor: ["#1C222B", "#B4C4FF", "#7DFEB9", "#FFA19B"],
+      hoverBackgroundColor: ["#1C222B", "#B4C4FF", "#7DFEB9", "#FFA19B"],
     },
   ],
 });
@@ -42,13 +42,12 @@ const options = ref({
     },
     title: {
       display: true,
-      text: "Keep Vue Default Pie Chart",
+      text: "Keep Vue Pie Chart with Color",
     },
     tooltip: {
       displayColors: false,
       backgroundColor: "#1B4DFF",
       borderColor: "#FFFFFF",
-      borderWidth: 1,
       padding: 10,
       titleFont: {
         size: 16,

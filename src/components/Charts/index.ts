@@ -11,7 +11,7 @@ import {
   PointElement,
   Title,
 } from "chart.js";
-import { Bar, Line, Pie } from "vue-chartjs";
+import { Bar, Doughnut, Line, Pie } from "vue-chartjs";
 
 export {
   ArcElement,
@@ -19,6 +19,7 @@ export {
   BarElement,
   CategoryScale,
   ChartTooltip,
+  Doughnut,
   Filler,
   KeepChart,
   Legend,

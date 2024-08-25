@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import DefaultPieChart from "./variant/DefaultPieChart.vue";
-import PieChartWithTwoLevel from "./variant/PieChartWithTwoLevel.vue";
+import DoughnutChart from "./variant/DoughnutChart.vue";
+import DoughnutChartTwoLevel from "./variant/DoughnutChartTwoLevel.vue";
+import PieChartWithColor from "./variant/PieChartWithColor.vue";
 
 definePageMeta({
   layout: "docs",
@@ -20,8 +22,22 @@ useHead({ ...metadata });
     :title="metadata.title"
     :description="metadata.description">
     <div class="space-y-6">
-      <div class="bg-white p-6"><DefaultPieChart /></div>
-      <div class="bg-white p-6"><PieChartWithTwoLevel /></div>
+      <div class="bg-white p-6">
+        <h1>Default Pie Chart</h1>
+        <DefaultPieChart />
+      </div>
+      <div class="bg-white p-6">
+        <h3>Pie Chart with Color</h3>
+        <PieChartWithColor />
+      </div>
+      <div class="bg-white p-6">
+        <h3>Dought Pie Chart</h3>
+        <DoughnutChart />
+      </div>
+      <div class="bg-white p-6">
+        <h3>Dought Pie Chart With Two Level</h3>
+        <DoughnutChartTwoLevel />
+      </div>
     </div>
   </DocsContentLayout>
 </template>
