@@ -22,22 +22,12 @@ const setRef = (value: HTMLElement) => (paginationItemRef.value = value);
 
 const { shape } = usePaginationStoreOrThrow();
 const { item } = paginationTheme;
-
-const asChildValue = ref<boolean>(false);
-// as child watcher
-watch(
-  () => props.asChild,
-  (newVal) => {
-    asChildValue.value = newVal;
-  },
-  { immediate: true, deep: true },
-);
 </script>
 
 <template>
   <!-- as child provided by user  -->
   <slot
-    v-if="asChildValue"
+    v-if="asChild"
     v-bind="{
       ...$attrs,
       ref: setRef,
