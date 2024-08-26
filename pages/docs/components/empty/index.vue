@@ -2,6 +2,9 @@
 import DefaultEmpty from "./variant/DefaultEmpty.vue";
 import EmptyFolder from "./variant/EmptyFolder.vue";
 import NoDataFound from "./variant/NoDataFound.vue";
+import NoResultPage from "./variant/NoResultPage.vue";
+import NotFoundPage from "./variant/NotFoundPage.vue";
+import PageNotAvailable from "./variant/PageNotAvailable.vue";
 
 definePageMeta({
   layout: "docs",
@@ -29,6 +32,18 @@ useHead({ ...metadata });
       <div class="bg-white p-6">
         <h3>Empty Folder</h3>
         <EmptyFolder />
+      </div>
+      <div class="bg-white p-6">
+        <h3>No Result Page</h3>
+        <NoResultPage />
+      </div>
+      <div class="bg-white p-6">
+        <h3>Page Not Available</h3>
+        <PageNotAvailable />
+      </div>
+      <div class="bg-white p-6">
+        <h3>Not Found Page</h3>
+        <NotFoundPage />
       </div>
       <div class="bg-white p-6">
         <h3>No Data Found</h3>
