@@ -1,7 +1,7 @@
 <!-- RootComponent.vue -->
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import { progressTheme } from "./progressTheme";
 import { useProvideProgressStore } from "./useProgressStore";
 
