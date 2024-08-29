@@ -15,8 +15,8 @@ import EmptyTitle from "~/src/components/Empty/EmptyTitle.vue";
         :width="350"
         alt="404 Not Found" />
     </EmptyImage>
-    <EmptyTitle className="mb-[14px] mt-5">404 Not Found</EmptyTitle>
-    <EmptyDescription className="mb-8">
+    <EmptyTitle class="mb-[14px] mt-5">404 Not Found</EmptyTitle>
+    <EmptyDescription class="mb-8">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry.
     </EmptyDescription>
