@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { HTMLAttributes, LabelHTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 
 export interface LabelProps extends /* @vue-ignore */ LabelHTMLAttributes {
   asChild?: boolean;
