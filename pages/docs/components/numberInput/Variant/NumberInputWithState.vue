@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { PhMinus, PhPlus } from "@phosphor-icons/vue";
+import Label from "~/src/components/Label/Label.vue";
 import NumberInput from "~/src/components/NumberInput/NumberInput.vue";
 import NumberInputBox from "~/src/components/NumberInput/NumberInputBox.vue";
 import NumberInputButton from "~/src/components/NumberInput/NumberInputButton.vue";
@@ -27,7 +28,7 @@ const decrementNum = () => {
         <PhPlus :size="16" :color="num === 100 ? '#455468' : '#000000'" />
       </NumberInputButton>
     </NumberInput>
-    <p className="text-body-4 font-normal text-metal-600 dark:text-metal-300">
+    <p class="text-body-4 font-normal text-metal-600 dark:text-metal-300">
       Number Must be between 1 to 100
     </p>
   </fieldset>

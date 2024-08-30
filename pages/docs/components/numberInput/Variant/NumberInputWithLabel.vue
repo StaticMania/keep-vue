@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { PhMinus, PhPlus } from "@phosphor-icons/vue";
+import Label from "~/src/components/Label/Label.vue";
 import NumberInput from "~/src/components/NumberInput/NumberInput.vue";
 import NumberInputBox from "~/src/components/NumberInput/NumberInputBox.vue";
 import NumberInputButton from "~/src/components/NumberInput/NumberInputButton.vue";

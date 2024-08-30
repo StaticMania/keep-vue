@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import Checkbox from "~/src/components/Checkbox/Checkbox.vue";
+import Label from "~/src/components/Label/Label.vue";
 </script>
 <template>
   <div class="space-y-3 p-3">
