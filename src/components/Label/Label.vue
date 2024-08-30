@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { HTMLAttributes, LabelHTMLAttributes } from "vue";
+import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
-export interface LabelProps extends /* @vue-ignore */ LabelHTMLAttributes {
+export interface LabelProps {
   asChild?: boolean;
   class?: HTMLAttributes["class"];
 }
@@ -21,6 +21,7 @@ const restProps = computed(() => {
 <template>
   <slot v-if="asChild"></slot>
   <label
+    v-else
     ref="labelRef"
     v-bind="restProps"
     :class="

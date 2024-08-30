@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import DefaultRadio from "./variant/DefaultRadio.vue";
+import RadioVariant from "./variant/RadioVariant.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +18,16 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Radio
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="bg-white p-6">
+        <h1>Default Radio Button</h1>
+        <DefaultRadio />
+      </div>
+      <div class="bg-white p-6">
+        <h1>Radio Button with Different Shapes</h1>
+        <RadioVariant />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
