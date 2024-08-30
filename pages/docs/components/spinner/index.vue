@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import DefaultSpinner from "./variant/DefaultSpinner.vue";
+import SpinnerButton from "./variant/SpinnerButton.vue";
+import SpinnerColors from "./variant/SpinnerColors.vue";
+import SpinnerSizes from "./variant/SpinnerSizes.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +20,24 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Spinner
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="bg-white p-6">
+        <h3>Default Spinner</h3>
+        <DefaultSpinner />
+      </div>
+      <div class="bg-white p-6">
+        <h3>Spinner Colors</h3>
+        <SpinnerColors />
+      </div>
+      <div class="bg-white p-6">
+        <h3>Spinner Sizes</h3>
+        <SpinnerSizes />
+      </div>
+      <div class="bg-white p-6">
+        <h3>Default Spinner</h3>
+        <SpinnerButton />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
