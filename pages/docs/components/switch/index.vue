@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import DefaultSwitch from "./variant/DefaultSwitch.vue";
+import DisabledSwitch from "./variant/DisabledSwitch.vue";
+import SwitchWithIcon from "./variant/SwitchWithIcon.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +19,20 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Switch
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="space-y-3 bg-white p-6">
+        <h3>Default Switch</h3>
+        <DefaultSwitch />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Switch With Icon</h3>
+        <SwitchWithIcon />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Disabled Switch</h3>
+        <DisabledSwitch />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
