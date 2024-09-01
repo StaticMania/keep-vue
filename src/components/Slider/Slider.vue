@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { SliderRange, SliderTrack, type SliderRoot } from "radix-vue";
+import { SliderRange, SliderRoot, SliderTrack } from "radix-vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
