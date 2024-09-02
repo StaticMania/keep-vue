@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { SwitchRoot, SwitchThumb } from "radix-vue";
+import { SwitchRoot, SwitchThumb, type SwitchRootProps } from "radix-vue";
 import type { HTMLAttributes } from "vue";
 import { cn } from "~/src/utils/cn";
 
@@ -10,7 +10,7 @@ interface SwitchProps {
 }
 
 const switchRef = ref<typeof SwitchRoot>();
-const props = withDefaults(defineProps<SwitchProps>(), {
+const props = withDefaults(defineProps<SwitchRootProps & SwitchProps>(), {
   class: "",
   variant: "default",
 });
