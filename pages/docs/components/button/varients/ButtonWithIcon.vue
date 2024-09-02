@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { PhChatText, PhGear, PhSignIn } from "@phosphor-icons/vue";
+import { Button } from "~/src";
 </script>
 <template>
   <div class="flex h-24 flex-wrap items-center gap-2 p-4">

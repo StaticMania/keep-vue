@@ -1,6 +1,9 @@
 //badge component
 export { default as Badge } from "./components/Badge/Badge.vue";
 
+//button component
+export { default as Button } from "./components/Button/Button.vue";
+
 // table component
 
 export { default as Table } from "./components/Table/Table.vue";

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { PhShoppingCart } from "@phosphor-icons/vue";
+import { Button } from "~/src";
 </script>
 <template>
   <div class="flex flex-wrap items-end gap-2 px-2 py-3">

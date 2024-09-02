@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Button from "~/src/components/Button/Button.vue";
+import { Button } from "~/src";
 </script>
 <template>
   <div class="flex h-32 flex-wrap items-center gap-2 p-4">
