@@ -1,3 +1,6 @@
+//badge component
+export { default as Badge } from "./components/Badge/Badge.vue";
+
 // table component
 
 export { default as Table } from "./components/Table/Table.vue";
