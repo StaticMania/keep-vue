@@ -4,6 +4,6 @@ export default withNuxt({
   files: ["**/*.ts", "**/*.tsx", "**/*.vue"],
   rules: {
     "no-console": "off",
-    "html-self-closing": "off",
+    "vue/html-self-closing": "off",
   },
 });

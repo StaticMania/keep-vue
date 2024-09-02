@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DefaultTable from "./variant/DefaultTable.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +17,11 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Table
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="space-y-3 bg-white p-2">
+        <DefaultTable />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
