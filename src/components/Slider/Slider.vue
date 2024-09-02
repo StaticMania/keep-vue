@@ -1,10 +1,6 @@
 <script lang="ts" setup>
-import {
-  SliderRange,
-  SliderRoot,
-  SliderTrack,
-  type SliderRootProps,
-} from "radix-vue";
+import type { SliderRootProps } from "radix-vue";
+import { SliderRange, SliderRoot, SliderTrack } from "radix-vue";
 
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
@@ -40,9 +36,7 @@ const restProps = computed(() => {
         )
       ">
       <SliderRange
-        :class="
-          cn('absolute h-full bg-primary-500', props.rangeClass)
-        "></SliderRange>
+        :class="cn('absolute h-full bg-primary-500', props.rangeClass)" />
     </SliderTrack>
 
     <SliderThumb
