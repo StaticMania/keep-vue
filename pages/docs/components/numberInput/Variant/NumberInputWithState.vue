@@ -23,7 +23,7 @@ const decrementNum = () => {
       <NumberInputButton :disabled="num === 0" @click="decrementNum">
         <PhMinus :size="16" :color="num === 0 ? '#455468' : '#000000'" />
       </NumberInputButton>
-      <NumberInputBox :min="0" :max="100" v-model="num" />
+      <NumberInputBox v-model="num" :min="0" :max="100" />
       <NumberInputButton :disabled="num === 100" @click="incrementNum">
         <PhPlus :size="16" :color="num === 100 ? '#455468' : '#000000'" />
       </NumberInputButton>

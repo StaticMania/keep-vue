@@ -27,6 +27,6 @@ const numberInputRef = ref<HTMLDivElement>();
         props.class,
       )
     ">
-    <slot></slot>
+    <slot />
   </div>
 </template>
