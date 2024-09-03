@@ -1,5 +1,3 @@
 <template>
-  <Child>
-    <section>section value</section>
-  </Child>
+  <Child></Child>
 </template>

@@ -1,0 +1,38 @@
+<script lang="ts" setup>
+import { useForwardPropsEmits } from "radix-vue";
+import {
+  DrawerRoot,
+  type DrawerDirection,
+  type DrawerRootEmits,
+  type DrawerRootProps,
+} from "vaul-vue";
+import { useProvideDrawerStore } from "./useDrawerStore";
+
+interface DrawerProps {
+  position?: DrawerDirection;
+}
+
+const props = withDefaults(defineProps<DrawerRootProps & DrawerProps>(), {
+  shouldScaleBackground: true,
+  position: "bottom",
+});
+
+const restProps = computed(() => {
+  const { direction, position, ...delegated } = props;
+  return delegated;
+});
+
+const emits = defineEmits<DrawerRootEmits>();
+
+const forwardProps = useForwardPropsEmits(restProps, emits);
+
+const updatedPosition = computed(() => props.position);
+
+useProvideDrawerStore(updatedPosition);
+</script>
+
+<template>
+  <DrawerRoot :direction="props.position" v-bind="forwardProps">
+    <slot></slot>
+  </DrawerRoot>
+</template>
