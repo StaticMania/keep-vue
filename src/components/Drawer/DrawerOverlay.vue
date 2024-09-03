@@ -2,7 +2,7 @@
 import type { DialogOverlayProps } from "radix-vue";
 import { DrawerOverlay } from "vaul-vue";
 import { type HtmlHTMLAttributes, computed } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 
 const props = defineProps<
   DialogOverlayProps & { class?: HtmlHTMLAttributes["class"] }

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { SwitchRoot, SwitchThumb } from "radix-vue";
 import type { HTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 
 interface SwitchProps {
   thumbClass?: string;

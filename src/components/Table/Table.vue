@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { HTMLAttributes, TableHTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 
 interface TableProps extends /* @vue-ignore */ TableHTMLAttributes {
   class?: HTMLAttributes["class"];

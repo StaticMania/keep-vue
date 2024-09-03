@@ -6,7 +6,7 @@ import {
 } from "radix-vue";
 import { DrawerContent, DrawerPortal, type DrawerDirection } from "vaul-vue";
 import type { HtmlHTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import DrawerOverlay from "./DrawerOverlay.vue";
 import { keepDrawerTheme } from "./drawerTheme";
 import { useDrawerStoreOrThrow } from "./useDrawerStore";
