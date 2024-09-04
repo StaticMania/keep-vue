@@ -2,7 +2,7 @@
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { paginationTheme } from "./paginationTheme";
-import { usePaginationStoreOrThrow } from "./usePaginationStore";
+import { usePagination } from "./usePaginationStore";
 
 interface PaginationItemProps {
   class?: HTMLAttributes["class"];
@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<PaginationItemProps>(), {
 const paginationItemRef = ref<HTMLElement>();
 const setRef = (value: HTMLElement) => (paginationItemRef.value = value);
 
-const { shape } = usePaginationStoreOrThrow();
+const { shape } = usePagination()!;
 const { item } = paginationTheme;
 </script>
 

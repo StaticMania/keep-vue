@@ -1,7 +1,7 @@
 // custom injectionKey
 const PaginationStoreKey = "pagination-store";
 
-const [useProvidePaginationStore, usePaginationStore] = createInjectionState(
+const [useProvidePagination, usePaginationStore] = createInjectionState(
   (initialValue: ComputedRef<string> | Ref<string>) => {
     //state
     const shape = ref(initialValue);
@@ -13,15 +13,15 @@ const [useProvidePaginationStore, usePaginationStore] = createInjectionState(
   },
 );
 
-export { usePaginationStore, useProvidePaginationStore };
-
-export function usePaginationStoreOrThrow() {
+function usePagination() {
   const paginationStore = usePaginationStore();
 
   if (paginationStore == null) {
     throw new Error(
-      "Please call `useProvideCounterStore` on the appropriate parent component",
+      "Please call `useProvidePagination` on the <Pagination/> component",
     );
   }
   return paginationStore;
 }
+
+export { usePagination, useProvidePagination };

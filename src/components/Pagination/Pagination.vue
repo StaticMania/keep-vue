@@ -2,7 +2,7 @@
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { paginationTheme } from "./paginationTheme";
-import { useProvidePaginationStore } from "./usePaginationStore";
+import { useProvidePagination } from "./usePaginationStore";
 
 export interface PaginationProps {
   class?: HTMLAttributes["class"];
@@ -15,13 +15,13 @@ const props = withDefaults(defineProps<PaginationProps>(), {
   shape: "rounded",
   class: "",
 });
-
 const updatedValue = computed(() => props.shape);
-useProvidePaginationStore(updatedValue);
+
+useProvidePagination(updatedValue);
 </script>
 <template>
   <div
-    ref=" paginationRef"
+    ref="paginationRef"
     v-bind="$attrs"
     aria-label="pagination"
     :class="cn(root.base, props.class)">
