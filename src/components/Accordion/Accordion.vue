@@ -1,56 +1,26 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
-import { cn } from "../../utils/cn";
+import {
+  AccordionRoot,
+  useForwardPropsEmits,
+  type AccordionRootEmits,
+  type AccordionRootProps,
+} from "radix-vue";
+import { useProvideAccordionStore } from "./useAccordionStore";
 
-interface AccordionProps {
+interface AccordionFlushProps {
   flush?: boolean;
-  disabled?: boolean;
-  openFirstPanel?: boolean;
-  class?: HTMLAttributes["class"];
 }
 
-const props = withDefaults(defineProps<AccordionProps>(), {
-  disabled: false,
-  flush: false,
-});
+const props = defineProps<AccordionRootProps & AccordionFlushProps>();
+const emits = defineEmits<AccordionRootEmits>();
 
-const isOpen = ref(props.openFirstPanel ? 0 : 1);
-
-// define accordion state
-const getAccordionState = computed(() => ({
-  isOpen: isOpen.value === 2,
-
-  setIsOpen: (index: number) => {
-    isOpen.value = isOpen.value === index ? -1 : index;
-  },
-  flush: props.flush,
-}));
-
-const update = (index: number) => {
-  const AccordionState = computed(() => ({
-    isOpen: isOpen.value === index,
-
-    setIsOpen: () => {
-      isOpen.value = isOpen.value === index ? -1 : index;
-    },
-    flush: props.flush,
-  }));
-
-  return AccordionState;
-};
-
-const slots = useSlots();
-
-const children = slots.default?.();
-
-const accordionRef = ref<HTMLDivElement>();
+const forwardProps = useForwardPropsEmits(props, emits);
+const flushProxyProps = computed(() => props.flush);
+useProvideAccordionStore(flushProxyProps);
 </script>
+
 <template>
-  <div
-    ref="accordionRef"
-    v-bind="$attrs"
-    :class="cn(props.disabled && 'pointer-events-none opacity-50', props.class)"
-    aria-labelledby="accordion">
-    <slot test="alu">sdfsdf</slot>
-  </div>
+  <AccordionRoot v-bind="forwardProps">
+    <slot />
+  </AccordionRoot>
 </template>

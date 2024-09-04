@@ -1,3 +1,10 @@
+//accordion component
+export { default as Accordion } from "./components/Accordion/Accordion.vue";
+export { default as AccordionContainer } from "./components/Accordion/AccordionContainer.vue";
+export { default as AccordionContent } from "./components/Accordion/AccordionContent.vue";
+export { default as AccordionPanel } from "./components/Accordion/AccordionPanel.vue";
+export { default as AccordionTitle } from "./components/Accordion/AccordionTitle.vue";
+
 //badge component
 export { default as Badge } from "./components/Badge/Badge.vue";
 
