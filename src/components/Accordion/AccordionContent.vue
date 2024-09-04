@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { AccordionContent, type AccordionContentProps } from "radix-vue";
 import { type HTMLAttributes, computed } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import { accordionTheme } from "./accordionTheme";
 
 const props = defineProps<
