@@ -11,6 +11,18 @@ export { default as Badge } from "./components/Badge/Badge.vue";
 //button component
 export { default as Button } from "./components/Button/Button.vue";
 
+//carousel component
+export { default as Carousel } from "./components/Carousel/Carousel.vue";
+export { default as CarouselButtons } from "./components/Carousel/CarouselButtons.vue";
+export { default as CarouselControl } from "./components/Carousel/CarouselControl.vue";
+export { default as CarouselIndicators } from "./components/Carousel/CarouselIndicators.vue";
+export { default as CarouselItem } from "./components/Carousel/CarouselItem.vue";
+export { default as CarouselNextButton } from "./components/Carousel/CarouselNextButton.vue";
+export { default as CarouselPrevButton } from "./components/Carousel/CarouselPrevButton.vue";
+export { default as CarouselSlides } from "./components/Carousel/CarouselSlides.vue";
+export { default as CarouselViewport } from "./components/Carousel/CarouselViewport.vue";
+export { default as DotButton } from "./components/Carousel/DotButton.vue";
+
 //drawer component
 export { DrawerClose, DrawerPortal, DrawerTrigger } from "vaul-vue";
 export { default as Drawer } from "./components/Drawer/Drawer.vue";

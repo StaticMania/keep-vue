@@ -1,21 +1,29 @@
 <script lang="ts" setup>
-import type { EmblaOptionsType, EmblaPluginType } from "embla-carousel";
-import type { HtmlHTMLAttributes } from "vue";
 import { cn } from "~/src/utils/cn";
 import { carouselTheme } from "./carouselTheme";
+import type { CarouselEmits, CarouselProps, ClassProps } from "./interface";
+import { useProvideCarousel } from "./useCarousel";
 
-interface CarouselProps {
-  options?: EmblaOptionsType;
-  plugins?: EmblaPluginType[];
-  carouselViewportClasses?: string;
-  class?: HtmlHTMLAttributes["class"];
-}
+const props = withDefaults(defineProps<CarouselProps & ClassProps>(), {
+  orientation: "horizontal",
+});
 
-const props = defineProps<CarouselProps>();
+const emits = defineEmits<CarouselEmits>();
+
+const { canScrollNext, canScrollPrev } = useProvideCarousel(props, emits);
+
+defineExpose({
+  canScrollNext,
+  canScrollPrev,
+});
 </script>
 
 <template>
   <div
     ref="HTMLDivElement"
-    :class="cn(carouselTheme.carouselContainer, props.class)"></div>
+    :class="cn(carouselTheme.carouselContainer, props.class)">
+    <CarouselViewport :view-port-class="props.viewPortClass">
+      <slot></slot>
+    </CarouselViewport>
+  </div>
 </template>
