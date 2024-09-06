@@ -3448,6 +3448,11 @@ embla-carousel-autoplay@^8.2.1:
   resolved "https://registry.npmjs.org/embla-carousel-autoplay/-/embla-carousel-autoplay-8.2.1.tgz"
   integrity sha512-jhE2aNz5pbmICVkz3XyB3uACgkk4YvbnOZeMcoeIMjfycierQvmcice107w73kYaPrQSzCrHLNkKNmq9eA2iOQ==
 
+embla-carousel-class-names@^8.2.1:
+  version "8.2.1"
+  resolved "https://registry.npmjs.org/embla-carousel-class-names/-/embla-carousel-class-names-8.2.1.tgz"
+  integrity sha512-wxt06wqIFuT3OnujrLNOStZaPbeExfqfy2rhx1qX2aXVJAY3/Xh6GMTY56srzLqy4Hqjsd3Q0Ykcl5rr6oTA+Q==
+
 embla-carousel-reactive-utils@8.2.1:
   version "8.2.1"
   resolved "https://registry.npmjs.org/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.2.1.tgz"

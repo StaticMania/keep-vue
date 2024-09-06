@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import CarouselWithAutoPlay from "./variant/CarouselWithAutoPlay.vue";
+import CarouselWithClassNames from "./variant/CarouselWithClassNames.vue";
+import CarouselWithLoop from "./variant/CarouselWithLoop.vue";
 import DefaultCarousel from "./variant/DefaultCarousel.vue";
+import SlidesToScroll from "./variant/SlidesToScroll.vue";
 
 definePageMeta({
   layout: "docs",
@@ -22,6 +26,22 @@ useHead({ ...metadata });
       <div class="space-y-3 bg-white p-6">
         <h1>Default Carousel</h1>
         <DefaultCarousel />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1>Carousel with loop</h1>
+        <CarouselWithLoop />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1>SlideToScroll Carousel</h1>
+        <SlidesToScroll />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1>Auto Play Plugin</h1>
+        <CarouselWithAutoPlay />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h1>ClassNames Plugin</h1>
+        <CarouselWithClassNames />
       </div>
     </div>
   </DocsContentLayout>
