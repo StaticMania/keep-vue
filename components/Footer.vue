@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template lang="">
   <footer class="bg-white shadow-small">
     <div class="mx-auto max-w-7xl px-6 py-10 2xl:px-0">

@@ -1,19 +1,10 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script lang="ts" setup>
+interface DocsContentLayout {
+  title: string;
+  description: string;
+}
 
-export default defineComponent({
-  name: "DocsContentLayout",
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-  },
-});
+defineProps<DocsContentLayout>();
 </script>
 
 <template>

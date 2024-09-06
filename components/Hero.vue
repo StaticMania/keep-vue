@@ -1,3 +1,8 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<script lang="ts" setup>
+import { PhClipboard } from "@phosphor-icons/vue";
+</script>
+
 <template>
   <section class="hero-area py-10 md:py-20 lg:pb-24 lg:pt-28">
     <div class="mx-auto max-w-7xl px-6 2xl:px-0">
@@ -58,6 +63,3 @@
     </div>
   </section>
 </template>
-<script lang="ts" setup>
-import { PhClipboard } from "@phosphor-icons/vue";
-</script>
