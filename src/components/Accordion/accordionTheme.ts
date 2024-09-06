@@ -1,3 +1,5 @@
+import { keepTw } from "~/src/utils/keepTw";
+
 export interface KeepAccordionContainerTheme {
   base: string;
   open: string;
@@ -34,7 +36,7 @@ interface KeepAccordionTheme {
   title: KeepAccordionTitleTheme;
 }
 
-export const accordionTheme: KeepAccordionTheme = {
+export const accordionTheme: KeepAccordionTheme = keepTw({
   container: {
     base: "flex cursor-pointer items-center w-full justify-between px-6 py-5",
     open: "",
@@ -58,4 +60,4 @@ export const accordionTheme: KeepAccordionTheme = {
   title: {
     base: "select-none text-left text-body-1 font-medium text-metal-900 dark:text-white",
   },
-};
+});
