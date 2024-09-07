@@ -27,7 +27,9 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-
+  build: {
+    transpile: ["vue-sonner"],
+  },
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",

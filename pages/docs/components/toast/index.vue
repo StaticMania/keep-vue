@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import DefaultToast from "./variant/DefaultToast.vue";
+import ToastVariant from "./variant/ToastVariant.vue";
+import ToastWithAction from "./variant/ToastWithAction.vue";
+import ToastWithDescription from "./variant/ToastWithDescription.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +20,24 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Toast
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="space-y-3 bg-white p-6">
+        <h3>Default Toast</h3>
+        <DefaultToast />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Toast With Description</h3>
+        <ToastWithDescription />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Toast With Action</h3>
+        <ToastWithAction />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Toast With Color Variant</h3>
+        <ToastVariant />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>

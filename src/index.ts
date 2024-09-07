@@ -43,3 +43,7 @@ export { default as TableFooter } from "./components/Table/TableFooter.vue";
 export { default as TableHead } from "./components/Table/TableHead.vue";
 export { default as TableHeader } from "./components/Table/TableHeader.vue";
 export { default as TableRow } from "./components/Table/TableRow.vue";
+
+//toast component
+export { Toast } from "./components/Toast/index.vue";
+export { default as ToastWrapper } from "./components/Toast/ToastWrapper.vue";

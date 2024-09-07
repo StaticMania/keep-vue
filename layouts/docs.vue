@@ -1,7 +1,26 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import ToastWrapper from "~/src/components/Toast/ToastWrapper.vue";
+</script>
 
 <!-- eslint-disable vue/no-multiple-template-root -->
 <template>
+  <ToastWrapper
+    :toast-options="{
+      classes: {
+        toast:
+          'dark:!bg-metal-900 border dark:!border-metal-800 !border-white !bg-white',
+        title: 'text-metal-900 dark:!text-white',
+        description: 'dark:!text-metal-300 text-metal-600',
+        actionButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
+        cancelButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
+        closeButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
+        error: '!text-error-500',
+        success: '!text-success-500',
+        warning: '!text-warning-500',
+        info: '!text-primary-500',
+      },
+    }" />
+
   <Navbar />
   <main class="relative pt-20">
     <div

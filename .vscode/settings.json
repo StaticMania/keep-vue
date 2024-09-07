@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["embla", "Nuxt", "vnode", "wght"],
+  "cSpell.words": ["embla", "Nuxt", "Sonner", "vnode", "wght"],
   "css.lint.unknownAtRules": "ignore",
   "tailwindCSS.experimental.classRegex": [
     ["keepTw\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],

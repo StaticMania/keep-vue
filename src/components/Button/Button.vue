@@ -1,5 +1,6 @@
+<!-- eslint-disable vue/require-default-prop -->
 <script lang="ts" setup>
-import type { HtmlHTMLAttributes } from "vue";
+import type { ButtonHTMLAttributes, HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import {
   buttonVariants,
@@ -7,7 +8,7 @@ import {
   type ButtonSizeVariant,
 } from "./buttonTheme";
 
-export interface ButtonProps {
+export interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
   size?: keyof ButtonSizeVariant;
   color?: keyof ButtonColorVariant;
   variant?: "link" | "outline";
