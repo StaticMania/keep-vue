@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { ButtonHTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
 import type { ClassProps } from "./interface";
 import { useCarousel } from "./useCarousel";

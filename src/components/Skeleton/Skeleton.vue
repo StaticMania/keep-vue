@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { HTMLAttributes, HtmlHTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import { skeletonTheme } from "./skeletonTheme";
 
 interface SkeletonProps extends /* @vue-ignore */ HTMLAttributes {
