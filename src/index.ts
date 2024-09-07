@@ -42,6 +42,12 @@ export { default as Steps } from "./components/Steps/Steps.vue";
 export { default as Skeleton } from "./components/Skeleton/Skeleton.vue";
 export { default as SkeletonLine } from "./components/Skeleton/SkeletonLine.vue";
 
+//tabs component
+export { default as TabContent } from "./components/Tabs/TabContent.vue";
+export { default as TabItem } from "./components/Tabs/TabItem.vue";
+export { default as TabList } from "./components/Tabs/TabList.vue";
+export { default as Tabs } from "./components/Tabs/Tabs.vue";
+
 // table component
 
 export { default as Table } from "./components/Table/Table.vue";

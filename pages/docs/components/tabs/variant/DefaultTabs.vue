@@ -1,13 +1,16 @@
 <script lang="ts" setup>
-import { Skeleton, SkeletonLine } from "~/src";
-import TabContent from "../Tabs/TabContent.vue";
-import TabItem from "../Tabs/TabItem.vue";
-import TabList from "../Tabs/TabList.vue";
-import Tabs from "../Tabs/Tabs.vue";
+import {
+  Skeleton,
+  SkeletonLine,
+  TabContent,
+  TabItem,
+  TabList,
+  Tabs,
+} from "~/src";
 </script>
 
 <template>
-  <Tabs defaultActive="item-5" class="mx-auto max-w-xl">
+  <Tabs default-active="item-5" class="mx-auto max-w-xl">
     <TabList>
       <TabItem value="item-5">Figma</TabItem>
       <TabItem value="item-6">Docs</TabItem>

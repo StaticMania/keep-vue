@@ -145,7 +145,7 @@ import ToastWrapper from "~/src/components/Toast/ToastWrapper.vue";
               <NuxtLink to="/docs/components/table">Table</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/docs/components/tab">Tab</NuxtLink>
+              <NuxtLink to="/docs/components/tabs">Tabs</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/docs/components/tag">Tag</NuxtLink>

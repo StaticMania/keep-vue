@@ -1,20 +1,41 @@
 <script lang="ts" setup>
-import { Skeleton, SkeletonLine } from "~/src";
-import TabContent from "../Tabs/TabContent.vue";
-import TabItem from "../Tabs/TabItem.vue";
-import TabList from "../Tabs/TabList.vue";
-import Tabs from "../Tabs/Tabs.vue";
+import {
+  PhBuildings,
+  PhGear,
+  PhShieldWarning,
+  PhUser,
+} from "@phosphor-icons/vue";
+import {
+  Skeleton,
+  SkeletonLine,
+  TabContent,
+  TabItem,
+  TabList,
+  Tabs,
+} from "~/src";
 </script>
 
 <template>
-  <Tabs defaultActive="item-5" class="mx-auto max-w-xl">
+  <Tabs variant="underline" default-active="5" class="mx-auto max-w-xl">
     <TabList>
-      <TabItem value="item-5">Figma</TabItem>
-      <TabItem value="item-6">Docs</TabItem>
-      <TabItem value="item-7">Blog</TabItem>
-      <TabItem value="item-8">Github</TabItem>
+      <TabItem value="5">
+        <PhUser :size="16" />
+        Profile
+      </TabItem>
+      <TabItem value="6">
+        <PhGear :size="16" />
+        Settings
+      </TabItem>
+      <TabItem value="7">
+        <PhBuildings :size="16" />
+        Company
+      </TabItem>
+      <TabItem value="8">
+        <PhShieldWarning :size="16" />
+        Privacy
+      </TabItem>
     </TabList>
-    <TabContent value="item-5">
+    <TabContent value="5">
       <Skeleton class="max-w-full space-y-2.5">
         <SkeletonLine class="h-4 w-11/12" />
         <SkeletonLine class="h-4 w-9/12" />
@@ -22,7 +43,7 @@ import Tabs from "../Tabs/Tabs.vue";
         <SkeletonLine class="h-4 w-7/12" />
       </Skeleton>
     </TabContent>
-    <TabContent value="item-6">
+    <TabContent value="6">
       <Skeleton class="max-w-full space-y-2.5">
         <SkeletonLine class="h-4 w-11/12" />
         <SkeletonLine class="h-4 w-9/12" />
@@ -30,7 +51,7 @@ import Tabs from "../Tabs/Tabs.vue";
         <SkeletonLine class="h-4 w-7/12" />
       </Skeleton>
     </TabContent>
-    <TabContent value="item-7">
+    <TabContent value="7">
       <Skeleton class="max-w-full space-y-2.5">
         <SkeletonLine class="h-4 w-11/12" />
         <SkeletonLine class="h-4 w-9/12" />
@@ -38,7 +59,7 @@ import Tabs from "../Tabs/Tabs.vue";
         <SkeletonLine class="h-4 w-7/12" />
       </Skeleton>
     </TabContent>
-    <TabContent value="item-8">
+    <TabContent value="8">
       <Skeleton class="max-w-full space-y-2.5">
         <SkeletonLine class="h-4 w-11/12" />
         <SkeletonLine class="h-4 w-9/12" />
