@@ -33,6 +33,15 @@ export { default as DrawerHeader } from "./components/Drawer/DrawerHeader.vue";
 export { default as DrawerOverlay } from "./components/Drawer/DrawerOverlay.vue";
 export { default as DrawerTitle } from "./components/Drawer/DrawerTitle.vue";
 
+//steps component
+export { default as StepLine } from "./components/Steps/StepLine.vue";
+export { default as StepPoint } from "./components/Steps/StepPoint.vue";
+export { default as Steps } from "./components/Steps/Steps.vue";
+
+//skeleton component
+export { default as Skeleton } from "./components/Skeleton/Skeleton.vue";
+export { default as SkeletonLine } from "./components/Skeleton/SkeletonLine.vue";
+
 // table component
 
 export { default as Table } from "./components/Table/Table.vue";

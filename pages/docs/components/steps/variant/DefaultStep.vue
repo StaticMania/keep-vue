@@ -1,7 +1,12 @@
 <script lang="ts" setup>
-import { Skeleton } from "~/src";
-import StepPoint from "../Steps/StepPoint.vue";
-import Steps from "../Steps/Steps.vue";
+import {
+  Button,
+  Skeleton,
+  SkeletonLine,
+  StepLine,
+  StepPoint,
+  Steps,
+} from "~/src";
 
 const active = ref(1);
 </script>
@@ -43,7 +48,7 @@ const active = ref(1);
     </Skeleton>
     <div class="flex items-center justify-between">
       <Button :disabled="active === 1" @click="active--">Previous</Button>
-      <Button :disabled="active === 3" @Click="active++">Next Step</Button>
+      <Button :disabled="active === 3" @click="active++">Next Step</Button>
     </div>
   </div>
 </template>

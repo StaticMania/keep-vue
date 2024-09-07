@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import DefaultStep from "./variant/DefaultStep.vue";
+import StepWithBorder from "./variant/StepWithBorder.vue";
+import StepWithIcon from "./variant/StepWithIcon.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +19,20 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Steps
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="space-y-3 bg-white p-6">
+        <h3>Default Step</h3>
+        <DefaultStep />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Step With Border</h3>
+        <StepWithBorder />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Step With Icon</h3>
+        <StepWithIcon />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>
