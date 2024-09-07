@@ -148,9 +148,6 @@ import ToastWrapper from "~/src/components/Toast/ToastWrapper.vue";
               <NuxtLink to="/docs/components/tabs">Tabs</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/docs/components/tag">Tag</NuxtLink>
-            </li>
-            <li>
               <NuxtLink to="/docs/components/textArea">TextArea</NuxtLink>
             </li>
             <li>
