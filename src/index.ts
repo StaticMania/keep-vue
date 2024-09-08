@@ -33,6 +33,13 @@ export { default as DrawerHeader } from "./components/Drawer/DrawerHeader.vue";
 export { default as DrawerOverlay } from "./components/Drawer/DrawerOverlay.vue";
 export { default as DrawerTitle } from "./components/Drawer/DrawerTitle.vue";
 
+//Input component
+export { default as Input } from "./components/Input/Input.vue";
+export { default as InputIcon } from "./components/Input/InputIcon.vue";
+
+//Label component
+export { default as Label } from "./components/Label/Label.vue";
+
 //steps component
 export { default as StepLine } from "./components/Steps/StepLine.vue";
 export { default as StepPoint } from "./components/Steps/StepPoint.vue";
@@ -49,7 +56,6 @@ export { default as TabList } from "./components/Tabs/TabList.vue";
 export { default as Tabs } from "./components/Tabs/Tabs.vue";
 
 // table component
-
 export { default as Table } from "./components/Table/Table.vue";
 export { default as TableBody } from "./components/Table/TableBody.vue";
 export { default as TableCaption } from "./components/Table/TableCaption.vue";
@@ -58,6 +64,9 @@ export { default as TableFooter } from "./components/Table/TableFooter.vue";
 export { default as TableHead } from "./components/Table/TableHead.vue";
 export { default as TableHeader } from "./components/Table/TableHeader.vue";
 export { default as TableRow } from "./components/Table/TableRow.vue";
+
+//TextArea component
+export { default as Textarea } from "./components/Textarea/Textarea.vue";
 
 //toast component
 export { Toast } from "./components/Toast/index.vue";
