@@ -30,6 +30,7 @@
     "nuxt": "^3.11.1",
     "radix-vue": "^1.9.4",
     "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
     "unhead": "^1.9.4",
     "vaul-vue": "^0.2.0",
     "vue": "^3.4.21",

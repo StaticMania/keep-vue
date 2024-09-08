@@ -5,6 +5,13 @@ export { default as AccordionContent } from "./components/Accordion/AccordionCon
 export { default as AccordionPanel } from "./components/Accordion/AccordionPanel.vue";
 export { default as AccordionTitle } from "./components/Accordion/AccordionTitle.vue";
 
+//Avatar component
+export { default as Avatar } from "./components/Avatar/Avatar.vue";
+export { default as AvatarBadge } from "./components/Avatar/AvatarBadge.vue";
+export { default as AvatarGroup } from "./components/Avatar/AvatarGroup.vue";
+export { default as AvatarImage } from "./components/Avatar/AvatarImage.vue";
+export { default as AvatarText } from "./components/Avatar/AvatarText.vue";
+
 //badge component
 export { default as Badge } from "./components/Badge/Badge.vue";
 
@@ -39,6 +46,14 @@ export { default as InputIcon } from "./components/Input/InputIcon.vue";
 
 //Label component
 export { default as Label } from "./components/Label/Label.vue";
+
+//Popover component
+export { default as Popover } from "./components/Popover/Popover.vue";
+export { default as PopoverAction } from "./components/Popover/PopoverAction.vue";
+export { default as PopoverContent } from "./components/Popover/PopoverContent.vue";
+export { default as PopoverDescription } from "./components/Popover/PopoverDescription.vue";
+export { default as PopoverIndicator } from "./components/Popover/PopoverIndicator.vue";
+export { default as PopoverTitle } from "./components/Popover/PopoverTitle.vue";
 
 //steps component
 export { default as StepLine } from "./components/Steps/StepLine.vue";
