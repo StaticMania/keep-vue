@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-import { Button } from "~/src";
-import Tooltip from "../Tooltip/Tooltip.vue";
-import TooltipAction from "../Tooltip/TooltipAction.vue";
-import TooltipContainer from "../Tooltip/TooltipContainer.vue";
-import TooltipIndicator from "../Tooltip/TooltipIndicator.vue";
+import {
+  Tooltip,
+  TooltipAction,
+  TooltipContainer,
+  TooltipIndicator,
+} from "~/src";
 </script>
 
 <template>

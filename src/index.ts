@@ -86,3 +86,9 @@ export { default as Textarea } from "./components/Textarea/Textarea.vue";
 //toast component
 export { Toast } from "./components/Toast/index.vue";
 export { default as ToastWrapper } from "./components/Toast/ToastWrapper.vue";
+
+//tooltip
+export { default as Tooltip } from "./components/Tooltip/Tooltip.vue";
+export { default as TooltipAction } from "./components/Tooltip/TooltipAction.vue";
+export { default as TooltipContainer } from "./components/Tooltip/TooltipContainer.vue";
+export { default as TooltipIndicator } from "./components/Tooltip/TooltipIndicator.vue";
