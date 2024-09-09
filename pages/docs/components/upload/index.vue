@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import DefaultUpload from "./variant/DefaultUpload.vue";
+import HorizontalUpload from "./variant/HorizontalUpload.vue";
+import SingleUpload from "./variant/SingleUpload.vue";
+import UploadDisabled from "./variant/UploadDisabled.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +20,24 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Upload
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="space-y-3 bg-white p-6">
+        <h3>Default Upload</h3>
+        <DefaultUpload />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Horizontal Upload</h3>
+        <HorizontalUpload />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Single Upload</h3>
+        <SingleUpload />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Upload Disabled</h3>
+        <UploadDisabled />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>

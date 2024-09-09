@@ -98,3 +98,10 @@ export { default as Tooltip } from "./components/Tooltip/Tooltip.vue";
 export { default as TooltipAction } from "./components/Tooltip/TooltipAction.vue";
 export { default as TooltipContainer } from "./components/Tooltip/TooltipContainer.vue";
 export { default as TooltipIndicator } from "./components/Tooltip/TooltipIndicator.vue";
+
+//Upload Component
+export { default as Upload } from "./components/Upload/Upload.vue";
+export { default as UploadBody } from "./components/Upload/UploadBody.vue";
+export { default as UploadFooter } from "./components/Upload/UploadFooter.vue";
+export { default as UploadIcon } from "./components/Upload/UploadIcon.vue";
+export { default as UploadText } from "./components/Upload/UploadText.vue";
