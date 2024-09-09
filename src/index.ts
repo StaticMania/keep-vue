@@ -83,6 +83,12 @@ export { default as TableRow } from "./components/Table/TableRow.vue";
 //TextArea component
 export { default as Textarea } from "./components/Textarea/Textarea.vue";
 
+//Timeline component
+export { default as Timeline } from "./components/Timeline/Timeline.vue";
+export { default as TimelineContent } from "./components/Timeline/TimelineContent.vue";
+export { default as TimelineItem } from "./components/Timeline/TimelineItem.vue";
+export { default as TimelinePoint } from "./components/Timeline/TimelinePoint.vue";
+
 //toast component
 export { Toast } from "./components/Toast/index.vue";
 export { default as ToastWrapper } from "./components/Toast/ToastWrapper.vue";
