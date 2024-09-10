@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import CustomizeModal from "./variant/CustomizeModal.vue";
+import DefaultModal from "./variant/DefaultModal.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +18,16 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Modal
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="space-y-3 bg-white p-6">
+        <h3>Default Modal</h3>
+        <DefaultModal />
+      </div>
+      <div class="space-y-3 bg-white p-6">
+        <h3>Customizable Modal</h3>
+        <CustomizeModal />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>

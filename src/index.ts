@@ -47,6 +47,16 @@ export { default as InputIcon } from "./components/Input/InputIcon.vue";
 //Label component
 export { default as Label } from "./components/Label/Label.vue";
 
+//Modal Component
+export { default as Modal } from "./components/Modal/Modal.vue";
+export { default as ModalAction } from "./components/Modal/ModalAction.vue";
+export { default as ModalClose } from "./components/Modal/ModalClose.vue";
+export { default as ModalContent } from "./components/Modal/ModalContent.vue";
+export { default as ModalDescription } from "./components/Modal/ModalDescription.vue";
+export { default as ModalFooter } from "./components/Modal/ModalFooter.vue";
+export { default as ModalHeader } from "./components/Modal/ModalHeader.vue";
+export { default as ModalTitle } from "./components/Modal/ModalTitle.vue";
+
 //Popover component
 export { default as Popover } from "./components/Popover/Popover.vue";
 export { default as PopoverAction } from "./components/Popover/PopoverAction.vue";
