@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
 interface ModalFooterProps extends /*@vue-ignore*/ HTMLAttributes {}

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { InputHTMLAttributes } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { inputTheme } from "./inputTheme";
 

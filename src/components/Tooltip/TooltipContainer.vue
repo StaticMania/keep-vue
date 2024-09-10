@@ -7,7 +7,7 @@ import {
   useForwardPropsEmits,
 } from "radix-vue";
 import { type HTMLAttributes, computed } from "vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 
 defineOptions({
   inheritAttrs: false,
@@ -38,7 +38,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits);
       v-bind="{ ...forwarded, ...$attrs }"
       :class="
         cn(
-          'data-[state=delayed-open]:data-[side=top]:animate-slideDownAndFade data-[state=delayed-open]:data-[side=right]:animate-slideLeftAndFade data-[state=delayed-open]:data-[side=left]:animate-slideRightAndFade data-[state=delayed-open]:data-[side=bottom]:animate-slideUpAndFade text-grass11 z-50 max-w-[263px] select-none rounded-xl border border-primary-500 bg-primary-500 px-2.5 py-2 text-[15px] text-sm leading-none shadow-md will-change-[transform,opacity] dark:border-primary-500 dark:bg-primary-500',
+          'text-grass11 z-50 max-w-[263px] select-none rounded-xl border border-primary-500 bg-primary-500 px-2.5 py-2 text-[15px] text-sm leading-none shadow-md will-change-[transform,opacity] data-[state=delayed-open]:data-[side=bottom]:animate-slideUpAndFade data-[state=delayed-open]:data-[side=left]:animate-slideRightAndFade data-[state=delayed-open]:data-[side=right]:animate-slideLeftAndFade data-[state=delayed-open]:data-[side=top]:animate-slideDownAndFade dark:border-primary-500 dark:bg-primary-500',
           props.class,
         )
       ">

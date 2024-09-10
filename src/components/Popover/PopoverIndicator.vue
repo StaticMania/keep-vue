@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { PopoverArrowProps } from "radix-vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
 const props = defineProps<PopoverArrowProps & ClassProps>();

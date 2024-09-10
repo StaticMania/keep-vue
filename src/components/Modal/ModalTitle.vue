@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useForwardProps, type DialogTitleProps } from "radix-vue";
-import { cn } from "~/src/utils/cn";
+import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
 const props = defineProps<DialogTitleProps & ClassProps>();
