@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useDropzone } from "vue3-dropzone";
 import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+import type { ClassProps } from "../../utils/interface";
 import type { CommonUploadProps } from "./uploadInterface";
 import { useUpload } from "./useUpload";
 

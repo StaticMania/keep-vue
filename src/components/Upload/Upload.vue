@@ -2,7 +2,7 @@
 import type { HTMLAttributes } from "vue";
 import type { FileUploadOptions } from "vue3-dropzone";
 import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+import type { ClassProps } from "../../utils/interface";
 import { useProvideUpload } from "./useUpload";
 
 interface UploadProps extends /*@vue-ignore*/ HTMLAttributes {

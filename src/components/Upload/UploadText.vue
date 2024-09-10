@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+import type { ClassProps } from "../../utils/interface";
 import type { CommonUploadProps } from "./uploadInterface";
 
 const props = defineProps<CommonUploadProps & ClassProps>();

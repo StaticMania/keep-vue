@@ -5,7 +5,7 @@ import {
   type DialogDescriptionProps,
 } from "radix-vue";
 import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+import type { ClassProps } from "../../utils/interface";
 
 const props = defineProps<DialogDescriptionProps & ClassProps>();
 

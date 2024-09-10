@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { HtmlHTMLAttributes } from "vue";
 import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+import type { ClassProps } from "../../utils/interface";
 import { inputTheme } from "./inputTheme";
 
 interface InputIconProps extends /*@vue-ignore */ HtmlHTMLAttributes {}
