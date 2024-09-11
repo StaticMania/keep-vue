@@ -30,6 +30,17 @@ export { default as CarouselSlides } from "./components/Carousel/CarouselSlides.
 export { default as CarouselViewport } from "./components/Carousel/CarouselViewport.vue";
 export { default as DotButton } from "./components/Carousel/DotButton.vue";
 
+//Divider
+export { default as Divider } from "./components/Divider/Divider.vue";
+
+//Dropdown component
+export { default as Dropdown } from "./components/Dropdown/Dropdown.vue";
+export { default as DropdownAction } from "./components/Dropdown/DropdownAction.vue";
+export { default as DropdownArrow } from "./components/Dropdown/DropdownArrow.vue";
+export { default as DropdownContent } from "./components/Dropdown/DropdownContent.vue";
+export { default as DropdownItem } from "./components/Dropdown/DropdownItem.vue";
+export { default as DropdownList } from "./components/Dropdown/DropdownList.vue";
+
 //drawer component
 export { DrawerClose, DrawerPortal, DrawerTrigger } from "vaul-vue";
 export { default as Drawer } from "./components/Drawer/Drawer.vue";

@@ -1,20 +1,22 @@
-<script setup lang="ts">
-import { Button } from "~/src";
-import Divider from "../Divider/Divider.vue";
-import Dropdown from "../Dropdown/Dropdown.vue";
-import DropdownAction from "../Dropdown/DropdownAction.vue";
-import DropdownContent from "../Dropdown/DropdownContent.vue";
-import DropdownItem from "../Dropdown/DropdownItem.vue";
-import DropdownList from "../Dropdown/DropdownList.vue";
+<script lang="ts" setup>
+import {
+  Divider,
+  Dropdown,
+  DropdownAction,
+  DropdownArrow,
+  DropdownContent,
+  DropdownItem,
+  DropdownList,
+} from "~/src";
 </script>
 
 <template>
   <div class="flex items-center justify-center px-5 py-3">
     <Dropdown>
-      <DropdownAction asChild>
+      <DropdownAction as-child>
         <Button>Open Dropdown</Button>
       </DropdownAction>
-      <DropdownContent showArrow>
+      <DropdownContent>
         <DropdownList>
           <DropdownItem>Contacts</DropdownItem>
           <DropdownItem>Phone</DropdownItem>
@@ -26,6 +28,7 @@ import DropdownList from "../Dropdown/DropdownList.vue";
           <DropdownItem>Account</DropdownItem>
           <DropdownItem>Logout</DropdownItem>
         </DropdownList>
+        <DropdownArrow />
       </DropdownContent>
     </Dropdown>
   </div>
