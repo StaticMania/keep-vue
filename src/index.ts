@@ -68,6 +68,15 @@ export { default as ModalFooter } from "./components/Modal/ModalFooter.vue";
 export { default as ModalHeader } from "./components/Modal/ModalHeader.vue";
 export { default as ModalTitle } from "./components/Modal/ModalTitle.vue";
 
+//Notification Component
+export { default as Notification } from "./components/Notification/Notification.vue";
+export { default as NotificationAction } from "./components/Notification/NotificationAction.vue";
+export { default as NotificationClose } from "./components/Notification/NotificationClose.vue";
+export { default as NotificationContent } from "./components/Notification/NotificationContent.vue";
+export { default as NotificationDescription } from "./components/Notification/NotificationDescription.vue";
+export { default as NotificationFooter } from "./components/Notification/NotificationFooter.vue";
+export { default as NotificationTitle } from "./components/Notification/NotificationTitle.vue";
+
 //Popover component
 export { default as Popover } from "./components/Popover/Popover.vue";
 export { default as PopoverAction } from "./components/Popover/PopoverAction.vue";
