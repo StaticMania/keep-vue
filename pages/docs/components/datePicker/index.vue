@@ -1,4 +1,10 @@
 <script setup lang="ts">
+import CustomDateTrigger from "./variant/CustomDateTrigger.vue";
+import DateRangePicker from "./variant/DateRangePicker.vue";
+import DefaultDatePicker from "./variant/DefaultDatePicker.vue";
+import MultipleDatePicker from "./variant/MultipleDatePicker.vue";
+import MultipleDateRangePicker from "./variant/MultipleDateRangePicker.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -15,8 +21,28 @@ useHead({ ...metadata });
 <template>
   <DocsContentLayout
     :title="metadata.title"
-    :description="metadata.description"
-  >
-    Date Picker
+    :description="metadata.description">
+    <div class="space-y-6">
+      <div class="space-y-3 rounded-lg bg-white p-6">
+        <h3>Default Date Picker</h3>
+        <DefaultDatePicker />
+      </div>
+      <div class="space-y-3 rounded-lg bg-white p-6">
+        <h3>Multiple Date Picker</h3>
+        <MultipleDatePicker />
+      </div>
+      <div class="space-y-3 rounded-lg bg-white p-6">
+        <h3>Date Range Picker</h3>
+        <DateRangePicker />
+      </div>
+      <div class="space-y-3 rounded-lg bg-white p-6">
+        <h3>Multiple Date Range Picker</h3>
+        <MultipleDateRangePicker />
+      </div>
+      <div class="space-y-3 rounded-lg bg-white p-6">
+        <h3>Date Picker with custom Style</h3>
+        <CustomDateTrigger />
+      </div>
+    </div>
   </DocsContentLayout>
 </template>

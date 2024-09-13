@@ -521,7 +521,7 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@internationalized/date@^3.5.4":
+"@internationalized/date@^3.5.4", "@internationalized/date@^3.5.5":
   version "3.5.5"
   resolved "https://registry.npmjs.org/@internationalized/date/-/date-3.5.5.tgz"
   integrity sha512-H+CfYvOZ0LTJeeLOqm19E3uj/4YjrmOFtBufDHPfvtI80hFAMqtrp7oCACpe4Cil5l8S0Qu/9dYfZc/5lY8WQQ==

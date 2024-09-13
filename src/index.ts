@@ -18,6 +18,10 @@ export { default as Badge } from "./components/Badge/Badge.vue";
 //button component
 export { default as Button } from "./components/Button/Button.vue";
 
+//calender
+export { default as DatePicker } from "./components/Calender/Calendar.vue";
+export { default as RangeDatePicker } from "./components/RangeCalender/RangeCalendar.vue";
+
 //carousel component
 export { default as Carousel } from "./components/Carousel/Carousel.vue";
 export { default as CarouselButtons } from "./components/Carousel/CarouselButtons.vue";

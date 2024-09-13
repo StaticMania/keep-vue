@@ -6,20 +6,25 @@ import {
 } from "@internationalized/date";
 import { PhCalendar } from "@phosphor-icons/vue";
 import type { DateRange } from "radix-vue";
-import { Button, Popover, PopoverAction, PopoverContent } from "~/src";
-import RangeCalendar from "../RangeCalender/RangeCalendar.vue";
+import {
+  Button,
+  Popover,
+  PopoverAction,
+  PopoverContent,
+  RangeDatePicker,
+} from "~/src";
 
 const df = new DateFormatter("en-US", { dateStyle: "medium" });
 
 const value = ref({
   start: today(getLocalTimeZone()),
-  end: today(getLocalTimeZone()).add({ days: 5 }),
+  end: today(getLocalTimeZone()).add({ weeks: 2 }),
 }) as Ref<DateRange>;
 </script>
 
 <template>
   <Popover>
-    <PopoverAction asChild>
+    <PopoverAction as-child>
       <Button
         color="secondary"
         size="lg"
@@ -35,7 +40,7 @@ const value = ref({
       </Button>
     </PopoverAction>
     <PopoverContent class="z-50 max-w-min p-0">
-      <RangeCalendar v-model="value" initial-focus />
+      <RangeDatePicker v-model="value" initial-focus />
     </PopoverContent>
   </Popover>
 </template>
