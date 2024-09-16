@@ -1,17 +1,16 @@
 <script lang="ts" setup>
 import type { DialogOverlayProps } from "radix-vue";
 import { DrawerOverlay } from "vaul-vue";
-import { type HtmlHTMLAttributes, computed } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-const props = defineProps<
-  DialogOverlayProps & { class?: HtmlHTMLAttributes["class"] }
->();
+const props = defineProps<DialogOverlayProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 </script>
 

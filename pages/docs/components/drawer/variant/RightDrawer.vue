@@ -34,7 +34,7 @@ import {
 
         <DrawerFooter>
           <DrawerClose as-child>
-            <Button class="w-5/12">Explore now</Button>
+            <Button class="w-7/12 sm:w-9/12">Explore now</Button>
           </DrawerClose>
         </DrawerFooter>
       </div>

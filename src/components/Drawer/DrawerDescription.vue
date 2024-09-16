@@ -1,15 +1,13 @@
 <script lang="ts" setup>
 import { DrawerDescription, type DrawerDescriptionProps } from "vaul-vue";
-import type { HtmlHTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-const props = defineProps<
-  DrawerDescriptionProps & { class?: HtmlHTMLAttributes["class"] }
->();
+const props = defineProps<DrawerDescriptionProps & ClassProps>();
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
 </script>
 

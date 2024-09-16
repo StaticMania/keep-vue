@@ -5,20 +5,18 @@ import {
   type DialogContentProps,
 } from "radix-vue";
 import { DrawerContent, DrawerPortal, type DrawerDirection } from "vaul-vue";
-import type { HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import DrawerOverlay from "./DrawerOverlay.vue";
 import { keepDrawerTheme } from "./drawerTheme";
-import { useDrawerStoreOrThrow } from "./useDrawerStore";
+import { useDrawer } from "./useDrawerStore";
 
-const props = defineProps<
-  DialogContentProps & { class?: HtmlHTMLAttributes["class"] }
->();
+const props = defineProps<DialogContentProps & ClassProps>();
 const emits = defineEmits<DialogContentEmits>();
 
 const forwardProps = useForwardPropsEmits(props, emits);
 
-const { position } = useDrawerStoreOrThrow()!;
+const { position } = useDrawer()!;
 </script>
 
 <template>

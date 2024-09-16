@@ -1,4 +1,4 @@
-//accordion component
+//Accordion component
 export { default as Accordion } from "./components/Accordion/Accordion.vue";
 export { default as AccordionContainer } from "./components/Accordion/AccordionContainer.vue";
 export { default as AccordionContent } from "./components/Accordion/AccordionContent.vue";
@@ -91,7 +91,7 @@ export { default as DropdownContent } from "./components/Dropdown/DropdownConten
 export { default as DropdownItem } from "./components/Dropdown/DropdownItem.vue";
 export { default as DropdownList } from "./components/Dropdown/DropdownList.vue";
 
-//drawer component
+//Drawer component
 export { DrawerClose, DrawerPortal, DrawerTrigger } from "vaul-vue";
 export { default as Drawer } from "./components/Drawer/Drawer.vue";
 export { default as DrawerContent } from "./components/Drawer/DrawerContent.vue";

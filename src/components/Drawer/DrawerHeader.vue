@@ -1,16 +1,22 @@
 <script lang="ts" setup>
-import type { HtmlHTMLAttributes } from "vue";
+import type { HTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface DrawerHeaderProps {
-  class?: HtmlHTMLAttributes["class"];
-}
+interface DrawerHeaderProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<DrawerHeaderProps>();
+const props = defineProps<DrawerHeaderProps & ClassProps>();
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
 </script>
 
 <template>
-  <div :class="cn('grid gap-1.5 p-4 text-center sm:text-left', props.class)">
+  <div
+    v-bind="restProps"
+    :class="cn('grid gap-1.5 p-4 text-center sm:text-left', props.class)">
     <slot />
   </div>
 </template>

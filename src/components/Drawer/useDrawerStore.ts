@@ -1,6 +1,6 @@
 const DrawerStoreKey = "drawer-store";
 
-const [useProvideDrawerStore, useDrawerStore] = createInjectionState(
+const [useProvideDrawer, useInjectDrawer] = createInjectionState(
   (position: ComputedRef<string> | Ref<string>) => {
     return { position };
   },
@@ -8,13 +8,11 @@ const [useProvideDrawerStore, useDrawerStore] = createInjectionState(
   { injectionKey: DrawerStoreKey },
 );
 
-export { useProvideDrawerStore };
-
-export function useDrawerStoreOrThrow() {
-  const drawerStore = useDrawerStore();
-  if (drawerStore == null)
-    throw new Error(
-      "Please call `useProvideDrawerStore` on the appropriate parent component",
-    );
-  return drawerStore;
+function useDrawer() {
+  const drawerState = useInjectDrawer();
+  if (!drawerState)
+    throw new Error("useDrawer must be used within a <Carousel /> Component");
+  return drawerState;
 }
+
+export { useDrawer, useProvideDrawer };

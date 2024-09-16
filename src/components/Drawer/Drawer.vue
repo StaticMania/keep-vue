@@ -6,7 +6,7 @@ import {
   type DrawerRootEmits,
   type DrawerRootProps,
 } from "vaul-vue";
-import { useProvideDrawerStore } from "./useDrawerStore";
+import { useProvideDrawer } from "./useDrawerStore";
 
 interface DrawerProps {
   position?: DrawerDirection;
@@ -28,7 +28,7 @@ const forwardProps = useForwardPropsEmits(restProps, emits);
 
 const updatedPosition = computed(() => props.position);
 
-useProvideDrawerStore(updatedPosition);
+useProvideDrawer(updatedPosition);
 </script>
 
 <template>

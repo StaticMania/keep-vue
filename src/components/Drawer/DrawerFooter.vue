@@ -1,16 +1,23 @@
 <script lang="ts" setup>
-import type { HtmlHTMLAttributes } from "vue";
+import type { HTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface DrawerFooterProps {
-  class?: HtmlHTMLAttributes["class"];
-}
+interface DrawerFooterProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<DrawerFooterProps>();
+const props = defineProps<DrawerFooterProps & ClassProps>();
+
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
 </script>
 
 <template>
-  <div :class="cn('mt-auto flex flex-col gap-2 p-4', props.class)">
+  <div
+    v-bind="restProps"
+    :class="cn('mt-auto flex flex-col gap-2 p-4', props.class)">
     <slot></slot>
   </div>
 </template>
