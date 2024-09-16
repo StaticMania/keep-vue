@@ -76,6 +76,10 @@ export {
   PointElement,
   Title,
 } from "./components/Charts/chart.ts";
+
+//Checkbox component
+export { default as Checkbox } from "./components/Checkbox/Checkbox.vue";
+
 //Divider
 export { default as Divider } from "./components/Divider/Divider.vue";
 

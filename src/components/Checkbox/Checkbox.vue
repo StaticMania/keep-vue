@@ -1,28 +1,30 @@
 <script lang="ts" setup>
 import { CheckboxIndicator, CheckboxRoot } from "radix-vue";
-
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
 // Define the props for the component
 interface CheckboxProps {
   iconClass?: string;
   variant?: "rounded" | "circle" | "default";
-  class?: string;
 }
 
-const props = withDefaults(defineProps<CheckboxProps>(), {
+const props = withDefaults(defineProps<CheckboxProps & ClassProps>(), {
   class: "",
   iconClass: "",
   variant: "default",
 });
 
-const checkboxRef = ref<null | HTMLElement>(null);
+const restProps = computed(() => {
+  const { class: _, iconClass, variant, ...rest } = props;
+  return rest;
+});
 </script>
 
 <template>
   <CheckboxRoot
-    v-bind="$attrs"
-    ref="checkboxRef"
+    v-bind="restProps"
     :class="
       cn(
         'peer relative h-5 w-5 shrink-0 border border-metal-200 ring-offset-primary-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary-500 data-[state=checked]:text-primary-500 dark:border-metal-100 dark:ring-offset-primary-500 dark:focus-visible:ring-primary-500 dark:data-[state=checked]:text-primary-500',
