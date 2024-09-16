@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
-import type { ClassProps } from "~/src/utils/interface";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { alertTheme } from "./alertTheme";
 
 interface AlertContainerProps extends /* @vue-ignore */ HTMLAttributes {}

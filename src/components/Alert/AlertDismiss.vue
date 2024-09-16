@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { ButtonHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
-import type { ClassProps } from "../Carousel/interface";
+
+import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 import { useAlert } from "./useAlert";
 
