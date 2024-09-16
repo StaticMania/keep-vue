@@ -42,10 +42,6 @@ export { default as CardFooter } from "./components/Card/CardFooter.vue";
 export { default as CardHeader } from "./components/Card/CardHeader.vue";
 export { default as CardTitle } from "./components/Card/CardTitle.vue";
 
-//calender
-export { default as DatePicker } from "./components/Calender/Calendar.vue";
-export { default as RangeDatePicker } from "./components/RangeCalender/RangeCalendar.vue";
-
 //carousel component
 export { default as Carousel } from "./components/Carousel/Carousel.vue";
 export { default as CarouselButtons } from "./components/Carousel/CarouselButtons.vue";
@@ -82,6 +78,10 @@ export { default as Checkbox } from "./components/Checkbox/Checkbox.vue";
 
 //Divider
 export { default as Divider } from "./components/Divider/Divider.vue";
+
+//Date Picker
+export { default as DatePicker } from "./components/Calender/Calendar.vue";
+export { default as RangeDatePicker } from "./components/RangeCalender/RangeCalendar.vue";
 
 //Dropdown component
 export { default as Dropdown } from "./components/Dropdown/Dropdown.vue";
