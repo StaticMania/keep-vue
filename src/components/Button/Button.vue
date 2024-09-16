@@ -1,7 +1,9 @@
 <!-- eslint-disable vue/require-default-prop -->
 <script lang="ts" setup>
-import type { ButtonHTMLAttributes, HtmlHTMLAttributes } from "vue";
+import type { ButtonHTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import {
   buttonVariants,
   type ButtonColorVariant,
@@ -14,21 +16,23 @@ export interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
   variant?: "link" | "outline";
   shape?: "circle" | "icon";
   position?: "center" | "start" | "end";
-  class?: HtmlHTMLAttributes["class"];
 }
 
-const props = withDefaults(defineProps<ButtonProps>(), {
+const props = withDefaults(defineProps<ButtonProps & ClassProps>(), {
   size: "md",
   color: "primary",
 });
 
-const buttonRef = ref<null | HTMLButtonElement>(null);
+const restProps = computed(() => {
+  const { class: _, color, variant, shape, position, size, ...rest } = props;
+  return rest;
+});
 </script>
 
 <template>
   <button
-    v-bind="$attrs"
-    ref="buttonRef"
+    v-bind="restProps"
+    ref="HTMLButtonElement"
     :class="
       cn(buttonVariants({ size, color, variant, shape, position }), props.class)
     ">
