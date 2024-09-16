@@ -2,6 +2,7 @@
 import CardWithAvatar from "./varient/CardWithAvatar.vue";
 import DefaultCard from "./varient/DefaultCard.vue";
 import ProductCard from "./varient/ProductCard.vue";
+import RegisterCard from "./varient/RegisterCard.vue";
 
 definePageMeta({
   layout: "docs",
@@ -33,6 +34,10 @@ useHead({ ...metadata });
     <div class="my-4">
       <p>Card with product</p>
       <ProductCard />
+    </div>
+    <div class="my-4">
+      <p>Register Card</p>
+      <RegisterCard />
     </div>
   </DocsContentLayout>
 </template>

@@ -1,19 +1,20 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { isSlotValidHTMLElement } from "~/src/utils/slotUtils";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
+import { isSlotValidHTMLElement } from "../../utils/slotUtils";
 
-interface CardTitleProps {
-  class?: HTMLAttributes["class"];
+interface CardTitleProps extends /*@vue-ignore*/ HTMLAttributes {
   asChild?: boolean;
 }
 
-const props = defineProps<CardTitleProps>();
+const props = defineProps<CardTitleProps & ClassProps>();
 
-// get the ref
-const cardTitleDefaultRef = ref<HTMLElement | null>(null);
-const setAsChildRef = (value: HTMLElement | null) =>
-  (cardTitleDefaultRef.value = value);
+const restProps = computed(() => {
+  const { class: _, asChild, ...rest } = props;
+  return rest;
+});
 
 const slot = useSlots();
 const validElement = isSlotValidHTMLElement(slot);
@@ -21,18 +22,13 @@ const validElement = isSlotValidHTMLElement(slot);
 
 <template>
   <!-- user specific -->
-  <slot
-    :ref="setAsChildRef"
-    v-if="props.asChild && validElement"
-    v-bind="{
-      ...$attrs,
-    }" />
+  <slot v-if="props.asChild && validElement" v-bind="restProps"></slot>
 
   <!-- default -->
   <p
     v-else
-    v-bind="$attrs"
-    ref="cardTitleDefaultRef"
+    v-bind="restProps"
+    ref="HTMLParagraphElement"
     :class="
       cn(
         'text-heading-6 font-semibold text-metal-800 dark:text-white',

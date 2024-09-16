@@ -1,8 +1,5 @@
 <script lang="ts" setup>
-import Card from "~/src/components/Card/Card.vue";
-import CardContent from "~/src/components/Card/CardContent.vue";
-import CardDescription from "~/src/components/Card/CardDescription.vue";
-import CardTitle from "~/src/components/Card/CardTitle.vue";
+import { Card, CardContent, CardDescription, CardTitle } from "~/src";
 </script>
 <template>
   <Card class="max-w-md">

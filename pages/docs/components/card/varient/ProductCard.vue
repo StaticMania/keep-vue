@@ -1,10 +1,12 @@
 <script lang="ts" setup>
-import Button from "~/src/components/Button/Button.vue";
-import Card from "~/src/components/Card/Card.vue";
-import CardContent from "~/src/components/Card/CardContent.vue";
-import CardDescription from "~/src/components/Card/CardDescription.vue";
-import CardHeader from "~/src/components/Card/CardHeader.vue";
-import CardTitle from "~/src/components/Card/CardTitle.vue";
+import {
+  Button,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "~/src";
 </script>
 <template>
   <Card>

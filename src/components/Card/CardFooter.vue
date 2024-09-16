@@ -1,17 +1,20 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface CardFooterProps {
-  class?: HTMLAttributes["class"];
-}
+interface CardFooterProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<CardFooterProps>();
+const props = defineProps<CardFooterProps & ClassProps>();
 
-const cardFooterRef = ref<HTMLDivElement>();
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
 </script>
 <template>
-  <div v-bind="$attrs" ref="cardFooterRef" :class="cn(props.class)">
+  <div v-bind="restProps" ref="HTMLDivElement" :class="cn(props.class)">
     <slot></slot>
   </div>
 </template>

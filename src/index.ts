@@ -34,6 +34,14 @@ export { default as Button } from "./components/Button/Button.vue";
 //ButtonGroup Component
 export { default as ButtonGroup } from "./components/ButtonGroup/ButtonGroup.vue";
 
+//Card Component
+export { default as Card } from "./components/Card/Card.vue";
+export { default as CardContent } from "./components/Card/CardContent.vue";
+export { default as CardDescription } from "./components/Card/CardDescription.vue";
+export { default as CardFooter } from "./components/Card/CardFooter.vue";
+export { default as CardHeader } from "./components/Card/CardHeader.vue";
+export { default as CardTitle } from "./components/Card/CardTitle.vue";
+
 //calender
 export { default as DatePicker } from "./components/Calender/Calendar.vue";
 export { default as RangeDatePicker } from "./components/RangeCalender/RangeCalendar.vue";

@@ -1,11 +1,13 @@
 <script lang="ts" setup>
-import Avatar from "~/src/components/Avatar/Avatar.vue";
-import AvatarGroup from "~/src/components/Avatar/AvatarGroup.vue";
-import AvatarImage from "~/src/components/Avatar/AvatarImage.vue";
-import Card from "~/src/components/Card/Card.vue";
-import CardContent from "~/src/components/Card/CardContent.vue";
-import CardDescription from "~/src/components/Card/CardDescription.vue";
-import CardTitle from "~/src/components/Card/CardTitle.vue";
+import {
+  Avatar,
+  AvatarGroup,
+  AvatarImage,
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "~/src";
 </script>
 <template>
   <Card class="max-w-md">
