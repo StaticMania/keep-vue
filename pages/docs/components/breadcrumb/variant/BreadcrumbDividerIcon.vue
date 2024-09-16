@@ -1,10 +1,9 @@
 <script lang="ts" setup>
 import { PhCaretDoubleRight, PhHouseLine } from "@phosphor-icons/vue";
-import Breadcrumb from "~/src/components/Breadcrumb/Breadcrumb.vue";
-import BreadcrumbItem from "~/src/components/Breadcrumb/BreadcrumbItem.vue";
+import { Breadcrumb, BreadcrumbItem } from "~/src";
 </script>
 <template>
-  <Breadcrumb borderType="border-y">
+  <Breadcrumb border-type="border-y">
     <BreadcrumbItem>
       <PhHouseLine :size="18" color="#455468" />
     </BreadcrumbItem>

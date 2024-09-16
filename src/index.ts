@@ -14,25 +14,6 @@ export { default as AlertIcon } from "./components/Alert/AlertIcon.vue";
 export { default as AlertLink } from "./components/Alert/AlertLink.vue";
 export { default as AlertTitle } from "./components/Alert/AlertTitle.vue";
 
-// Charts
-export {
-  ArcElement,
-  Bar,
-  BarElement,
-  CategoryScale,
-  ChartTooltip,
-  Doughnut,
-  Filler,
-  KeepChart,
-  Legend,
-  Line,
-  LineElement,
-  LinearScale,
-  Pie,
-  PointElement,
-  Title,
-} from "./components/Charts/chart.ts";
-
 //Avatar component
 export { default as Avatar } from "./components/Avatar/Avatar.vue";
 export { default as AvatarBadge } from "./components/Avatar/AvatarBadge.vue";
@@ -42,6 +23,10 @@ export { default as AvatarText } from "./components/Avatar/AvatarText.vue";
 
 //badge component
 export { default as Badge } from "./components/Badge/Badge.vue";
+
+//BreadCrumb component
+export { default as Breadcrumb } from "./components/Breadcrumb/Breadcrumb.vue";
+export { default as BreadcrumbItem } from "./components/Breadcrumb/BreadcrumbItem.vue";
 
 //button component
 export { default as Button } from "./components/Button/Button.vue";
@@ -62,6 +47,24 @@ export { default as CarouselSlides } from "./components/Carousel/CarouselSlides.
 export { default as CarouselViewport } from "./components/Carousel/CarouselViewport.vue";
 export { default as DotButton } from "./components/Carousel/DotButton.vue";
 
+// Charts
+export {
+  ArcElement,
+  Bar,
+  BarElement,
+  CategoryScale,
+  ChartTooltip,
+  Doughnut,
+  Filler,
+  KeepChart,
+  Legend,
+  Line,
+  LineElement,
+  LinearScale,
+  Pie,
+  PointElement,
+  Title,
+} from "./components/Charts/chart.ts";
 //Divider
 export { default as Divider } from "./components/Divider/Divider.vue";
 
