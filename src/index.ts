@@ -14,6 +14,25 @@ export { default as AlertIcon } from "./components/Alert/AlertIcon.vue";
 export { default as AlertLink } from "./components/Alert/AlertLink.vue";
 export { default as AlertTitle } from "./components/Alert/AlertTitle.vue";
 
+// Charts
+export {
+  ArcElement,
+  Bar,
+  BarElement,
+  CategoryScale,
+  ChartTooltip,
+  Doughnut,
+  Filler,
+  KeepChart,
+  Legend,
+  Line,
+  LineElement,
+  LinearScale,
+  Pie,
+  PointElement,
+  Title,
+} from "./components/Charts/chart.ts";
+
 //Avatar component
 export { default as Avatar } from "./components/Avatar/Avatar.vue";
 export { default as AvatarBadge } from "./components/Avatar/AvatarBadge.vue";

@@ -1,3 +1,4 @@
+<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script lang="ts" setup>
 import {
   CategoryScale,
@@ -9,7 +10,7 @@ import {
   LineElement,
   PointElement,
   Title,
-} from "~/src/components/Charts";
+} from "~/src";
 
 KeepChart.register(
   Title,

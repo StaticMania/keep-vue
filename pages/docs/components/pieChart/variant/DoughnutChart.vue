@@ -8,7 +8,7 @@ import {
   Legend,
   LinearScale,
   Title,
-} from "~/src/components/Charts";
+} from "~/src";
 
 KeepChart.register(
   Title,
