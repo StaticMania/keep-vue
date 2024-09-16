@@ -31,6 +31,9 @@ export { default as BreadcrumbItem } from "./components/Breadcrumb/BreadcrumbIte
 //button component
 export { default as Button } from "./components/Button/Button.vue";
 
+//ButtonGroup Component
+export { default as ButtonGroup } from "./components/ButtonGroup/ButtonGroup.vue";
+
 //calender
 export { default as DatePicker } from "./components/Calender/Calendar.vue";
 export { default as RangeDatePicker } from "./components/RangeCalender/RangeCalendar.vue";

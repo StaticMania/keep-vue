@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { PhChatCircleDots, PhCube, PhGear } from "@phosphor-icons/vue";
-import Button from "~/src/components/Button/Button.vue";
-import ButtonGroup from "~/src/components/ButtonGroup/ButtonGroup.vue";
+import { Button, ButtonGroup } from "~/src";
 </script>
 <template>
   <div class="h-20 p-4">
@@ -15,7 +14,7 @@ import ButtonGroup from "~/src/components/ButtonGroup/ButtonGroup.vue";
         Settings
       </Button>
       <Button position="end">
-        <PhChatCircleDots size="{24}" class="mr-1.5" />
+        <PhChatCircleDots :size="24" class="mr-1.5" />
         Messages
       </Button>
     </ButtonGroup>

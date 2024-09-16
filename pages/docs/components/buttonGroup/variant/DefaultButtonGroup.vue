@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import ButtonGroup from "~/src/components/ButtonGroup/ButtonGroup.vue";
+import { ButtonGroup } from "~/src";
 </script>
 <template>
   <div class="h-20 p-4">
