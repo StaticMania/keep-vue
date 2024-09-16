@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import {
+  Alert,
+  AlertContainer,
+  AlertDescription,
+  AlertDismiss,
+  AlertIcon,
+  AlertLink,
+  AlertTitle,
+} from "~/src";
+</script>
+
 <template>
   <div class="space-y-5">
     <Alert :with-bg="true" color="primary">

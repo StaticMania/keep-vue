@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import {
+  Alert,
+  AlertContainer,
+  AlertDescription,
+  AlertDismiss,
+  AlertIcon,
+  AlertLink,
+  AlertTitle,
+} from "~/src";
+</script>
+
 <template>
   <Alert>
     <AlertContainer>

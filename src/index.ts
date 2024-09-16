@@ -5,6 +5,15 @@ export { default as AccordionContent } from "./components/Accordion/AccordionCon
 export { default as AccordionPanel } from "./components/Accordion/AccordionPanel.vue";
 export { default as AccordionTitle } from "./components/Accordion/AccordionTitle.vue";
 
+//Alert Component
+export { default as Alert } from "./components/Alert/Alert.vue";
+export { default as AlertContainer } from "./components/Alert/AlertContainer.vue";
+export { default as AlertDescription } from "./components/Alert/AlertDescription.vue";
+export { default as AlertDismiss } from "./components/Alert/AlertDismiss.vue";
+export { default as AlertIcon } from "./components/Alert/AlertIcon.vue";
+export { default as AlertLink } from "./components/Alert/AlertLink.vue";
+export { default as AlertTitle } from "./components/Alert/AlertTitle.vue";
+
 //Avatar component
 export { default as Avatar } from "./components/Avatar/Avatar.vue";
 export { default as AvatarBadge } from "./components/Avatar/AvatarBadge.vue";

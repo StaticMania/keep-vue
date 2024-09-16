@@ -1,5 +1,13 @@
 <script setup lang="ts">
-import AlertDismiss from "~/src/components/Alert/AlertDismiss.vue";
+import {
+  Alert,
+  AlertContainer,
+  AlertDescription,
+  AlertDismiss,
+  AlertIcon,
+  AlertLink,
+  AlertTitle,
+} from "~/src";
 
 const showAlert = ref(false);
 const onDismiss = () => {

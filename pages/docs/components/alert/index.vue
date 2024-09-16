@@ -23,22 +23,22 @@ useHead({ ...metadata });
     :description="metadata.description">
     <div class="space-y-8">
       <div class="space-y-3 bg-white p-10">
-        <h1 class="text-2xl font-medium">Default Alert</h1>
+        <h3 class="text-2xl font-medium">Default Alert</h3>
         <DefaultAlert />
       </div>
 
       <div class="space-y-3 bg-white p-10">
-        <h1 class="text-2xl font-medium">Color Variants of Alerts</h1>
+        <h3 class="text-2xl font-medium">Color Variants of Alerts</h3>
         <AlertColorVariant />
       </div>
 
       <div class="space-y-3 bg-white p-10">
-        <h1 class="text-2xl font-medium">Alert With Background Color</h1>
+        <h3 class="text-2xl font-medium">Alert With Background Color</h3>
         <AlertWithBgColor />
       </div>
 
       <div class="space-y-3 bg-white p-10">
-        <h1 class="text-2xl font-medium">Dismissible Alerts</h1>
+        <h3 class="text-2xl font-medium">Dismissible Alerts</h3>
         <AlertWithDismissIcon />
       </div>
     </div>
