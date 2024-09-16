@@ -1,28 +1,34 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
+import type { ClassProps } from "~/src/utils/interface";
 import { cn } from "../../utils/cn";
 import { alertTheme, type ColorVariant } from "./alertTheme";
+import { useAlert } from "./useAlert";
 
-const props = defineProps<{
-  class?: HTMLAttributes["class"];
-}>();
+interface AlertDescriptionProps extends /* @vue-ignore */ HTMLAttributes {}
 
-const color = inject("alertContext");
+const props = defineProps<AlertDescriptionProps & ClassProps>();
 
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
+
+const { color } = useAlert();
 const { description } = alertTheme;
 </script>
 
 <template>
   <p
-    v-bind="$attrs"
+    v-bind="restProps"
+    ref="HTMLDivElement"
     :class="
       cn(
         description.color[color as keyof ColorVariant],
         description.base,
         props.class,
       )
-    "
-    ref="AlertDescriptionRef">
-    <slot></slot>
+    ">
+    <slot />
   </p>
 </template>

@@ -1,42 +1,31 @@
 <script lang="ts" setup>
+import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
+import { useAlert } from "./useAlert";
 
-interface AlertIconProps {
-  class?: string;
-  asChild?: boolean;
-}
-const props = withDefaults(defineProps<AlertIconProps>(), {
-  asChild: false,
-  class: "",
+interface AlertIconProps extends /* @vue-ignore */ HTMLAttributes {}
+
+const props = defineProps<AlertIconProps & ClassProps>();
+
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
 });
 
-// Get the color from the context
-const color = inject("alertContext");
+const { color } = useAlert();
 const { title } = alertTheme;
-
-// get the ref
-const node = ref<HTMLElement | null>(null);
-const setRef = (value: HTMLElement | null) => (node.value = value);
 </script>
 
 <template>
-  <!-- user specific icon -->
-  <slot
-    :ref="setRef"
-    v-if="props.asChild"
-    v-bind="{
-      ...$attrs,
-    }"
-    :class="cn([title.color[color as keyof ColorVariant], props.class])" />
-
   <!-- default icon  -->
-  <div v-else v-bind="$attrs" ref="node">
+  <div v-bind="restProps" ref="HTMLDivElement">
     <!-- error icon  -->
     <div
       v-if="color === 'error'"
-      :class="cn([title.color[color as keyof ColorVariant], props.class])"
-      ref="alertIconRef">
+      ref="alertIconRef"
+      :class="cn([title.color[color as keyof ColorVariant], props.class])">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -50,8 +39,8 @@ const setRef = (value: HTMLElement | null) => (node.value = value);
     <!-- success icon  -->
     <div
       v-else-if="color === 'success'"
-      :class="cn([title.color[color as keyof ColorVariant], props.class])"
-      ref="alertIconRef">
+      ref="alertIconRef"
+      :class="cn([title.color[color as keyof ColorVariant], props.class])">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -66,8 +55,8 @@ const setRef = (value: HTMLElement | null) => (node.value = value);
     <!-- default icon color  -->
     <div
       v-else
-      :class="cn([title.color[color as keyof ColorVariant], props.class])"
-      ref="alertIconRef">
+      ref="alertIconRef"
+      :class="cn([title.color[color as keyof ColorVariant], props.class])">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

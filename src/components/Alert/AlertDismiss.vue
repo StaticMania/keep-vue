@@ -1,24 +1,34 @@
 <script setup lang="ts">
-import type { HTMLAttributes } from "vue";
+import type { ButtonHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../Carousel/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
+import { useAlert } from "./useAlert";
 
-const props = defineProps<{ class?: HTMLAttributes["class"] }>();
+interface AlertDismissProps extends /* @vue-ignore */ ButtonHTMLAttributes {}
+
+const props = defineProps<AlertDismissProps & ClassProps>();
 
 const { link } = alertTheme;
 
-const color = inject("alertContext");
+const { color } = useAlert();
 
 const emit = defineEmits(["dismiss"]);
+
 const handleDismiss = () => {
   emit("dismiss");
 };
+
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
 </script>
 
 <template>
   <button
-    v-bind="$attrs"
-    ref="alertDismiss"
+    v-bind="restProps"
+    ref="HTMLButtonElement"
     :class="cn(link.color[color as keyof ColorVariant], props.class)"
     @click="handleDismiss">
     <slot>

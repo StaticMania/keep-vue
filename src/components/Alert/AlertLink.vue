@@ -1,53 +1,37 @@
 <script setup lang="ts">
-import type { HTMLAttributes } from "vue";
+import type { AnchorHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
+import { useAlert } from "./useAlert";
 
-interface AlertLinkProps {
-  class?: HTMLAttributes["class"];
-  href: string;
-  asChild?: boolean;
-}
-const props = withDefaults(defineProps<AlertLinkProps>(), {
-  asChild: false,
-  class: "",
+interface AlertLinkProps extends /* @vue-ignore */ AnchorHTMLAttributes {}
+const props = withDefaults(defineProps<AlertLinkProps & ClassProps>(), {
   href: "#",
 });
 
-const color = inject("alertContext");
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
+
+const { color } = useAlert();
 
 // get the ref
-const alertLinkRef = ref<HTMLAnchorElement | null>(null);
+const alertLinkRef = ref<HTMLAnchorElement>();
 </script>
 
 <template>
-  <!-- default alert link icon  -->
   <a
-    v-if="props.asChild"
-    :href="props.href"
-    v-bind="$attrs"
+    v-bind="restProps"
+    ref="alertLinkRef"
     :class="
       cn(
         alertTheme.link.base,
         alertTheme.link.color[color as keyof ColorVariant],
         props.class,
       )
-    "
-    ref="alertLinkRef">
-    <slot></slot>
-  </a>
-  <a
-    v-else
-    :href="props.href"
-    v-bind="$attrs"
-    :class="
-      cn(
-        alertTheme.link.base,
-        alertTheme.link.color[color as keyof ColorVariant],
-        props.class,
-      )
-    "
-    ref="alertLinkRef">
+    ">
     <slot></slot>
     <svg
       xmlns="http://www.w3.org/2000/svg"
