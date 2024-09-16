@@ -1,23 +1,30 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
-import { badgeTheme, badgeVariants } from "./badgeTheme";
+import type { ClassProps } from "../../utils/interface";
+import type { badgeTheme } from "./badgeTheme";
+import { badgeVariants } from "./badgeTheme";
 
-interface BadgeProps {
+interface BadgeProps extends /* @vue-ignore */ HTMLAttributes {
   color?: keyof typeof badgeTheme.color.base;
   variant?: keyof typeof badgeTheme.color;
 }
 
-const props = defineProps<BadgeProps & { class?: HTMLAttributes["class"] }>();
-
-const { color = "secondary", variant } = props;
+const props = withDefaults(defineProps<BadgeProps & ClassProps>(), {
+  color: "primary",
+  variant: "background",
+});
+const restProps = computed(() => {
+  const { class: _, color, variant, ...rest } = props;
+  return rest;
+});
 </script>
 
 <template>
   <div
-    :class="cn(badgeVariants({ color, variant }), props.class)"
-    v-bind="$attrs"
-    ref="badgeRef">
+    v-bind="restProps"
+    ref="HTMLDivElement"
+    :class="cn(badgeVariants({ color, variant }), props.class)">
     <slot></slot>
   </div>
 </template>
