@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface AvatarGroupProps {
-  class?: HTMLAttributes["class"];
-}
+interface AvatarGroupProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<AvatarGroupProps>();
+const props = defineProps<AvatarGroupProps & ClassProps>();
 
 const avatarGroupRef = ref<HTMLDivElement>();
 </script>

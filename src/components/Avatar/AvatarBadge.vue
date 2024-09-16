@@ -1,32 +1,36 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { isSlotValidHTMLElement } from "~/src/utils/slotUtils";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
+import { isSlotValidHTMLElement } from "../../utils/slotUtils";
 
-interface AvatarBadgeProps {
-  class?: HTMLAttributes["class"];
+interface AvatarBadgeProps extends /*@vue-ignore*/ HTMLAttributes {
   asChild?: boolean;
 }
-const props = defineProps<AvatarBadgeProps>();
+const props = defineProps<AvatarBadgeProps & ClassProps>();
 
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
 const avatarBadgeRef = ref<HTMLSpanElement>();
 
 const slots = useSlots();
 
-const slotIsValid = isSlotValidHTMLElement(slots);
+//an utils function to check the slot element is valid or not
+const slotIsValid = computed(() => {
+  return isSlotValidHTMLElement(slots);
+});
 </script>
 <template>
-  <span
+  <slot
     v-if="props.asChild && slotIsValid"
-    v-bind="$attrs"
-    ref="avatarBadgeRef"
-    :class="cn(props.class)">
-    <slot></slot>
-  </span>
+    v-bind="restProps"
+    :class="cn(props.class)"></slot>
 
   <span
     v-else
-    v-bind="$attrs"
+    v-bind="restProps"
     ref="avatarBadgeRef"
     :class="
       cn(

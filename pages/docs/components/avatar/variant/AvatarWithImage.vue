@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-import Avatar from "~/src/components/Avatar/Avatar.vue";
-import AvatarImage from "~/src/components/Avatar/AvatarImage.vue";
+import { Avatar, AvatarImage } from "~/src";
 </script>
 <template>
   <div class="flex items-center gap-3">

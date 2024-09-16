@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import Avatar from "~/src/components/Avatar/Avatar.vue";
-import AvatarText from "~/src/components/Avatar/AvatarText.vue";
+import { Avatar, AvatarText } from "~/src";
 </script>
 
 <template>
   <Avatar>
-    <AvatarText>KR</AvatarText>
+    <AvatarText>KV</AvatarText>
   </Avatar>
 </template>

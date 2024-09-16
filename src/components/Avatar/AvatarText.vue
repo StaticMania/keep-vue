@@ -1,12 +1,11 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface AvatarTextProps {
-  class?: HTMLAttributes["class"];
-}
+interface AvatarTextProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<AvatarTextProps>();
+const props = defineProps<AvatarTextProps & ClassProps>();
 
 const avatarTextRef = ref<HTMLSpanElement>();
 </script>

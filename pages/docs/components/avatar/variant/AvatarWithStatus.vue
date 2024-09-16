@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import Avatar from "~/src/components/Avatar/Avatar.vue";
-import AvatarBadge from "~/src/components/Avatar/AvatarBadge.vue";
-import AvatarImage from "~/src/components/Avatar/AvatarImage.vue";
+import { Avatar, AvatarBadge, AvatarImage } from "~/src";
 </script>
 
 <template>
