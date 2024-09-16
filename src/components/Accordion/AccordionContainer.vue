@@ -4,18 +4,16 @@ import {
   AccordionTrigger,
   type AccordionTriggerProps,
 } from "radix-vue";
-import { type HTMLAttributes, computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { accordionTheme } from "./accordionTheme";
 
-const props = defineProps<
-  AccordionTriggerProps & { class?: HTMLAttributes["class"] }
->();
+const props = defineProps<AccordionTriggerProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 </script>
 

@@ -1,24 +1,22 @@
 <script setup lang="ts">
 import { AccordionContent, type AccordionContentProps } from "radix-vue";
-import { type HTMLAttributes, computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { accordionTheme } from "./accordionTheme";
 
-const props = defineProps<
-  AccordionContentProps & { class?: HTMLAttributes["class"] }
->();
+const props = defineProps<AccordionContentProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 </script>
 
 <template>
   <AccordionContent
     v-bind="restProps"
-    class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm transition-all">
+    class="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
     <div :class="cn(accordionTheme.content.base, props.class)">
       <slot />
     </div>

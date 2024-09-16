@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import type { HtmlHTMLAttributes } from "vue";
+import type { HTMLAttributes, HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { accordionTheme } from "./accordionTheme";
 
-interface AccordionTileProps {
+interface AccordionTileProps extends /* @vue-ignore */ HTMLAttributes {
   class?: HtmlHTMLAttributes["class"];
 }
 
 const props = defineProps<AccordionTileProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 </script>
 

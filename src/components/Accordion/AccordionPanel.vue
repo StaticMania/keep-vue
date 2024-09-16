@@ -4,19 +4,17 @@ import {
   type AccordionItemProps,
   useForwardProps,
 } from "radix-vue";
-import { type HTMLAttributes, computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { accordionTheme } from "./accordionTheme";
 import { useAccordionStoreOrThrow } from "./useAccordionStore";
 
-const props = defineProps<
-  AccordionItemProps & { class?: HTMLAttributes["class"] }
->();
+const props = defineProps<AccordionItemProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 
 const forwardedProps = useForwardProps(restProps);
