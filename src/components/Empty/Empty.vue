@@ -1,24 +1,22 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface EmptyProps {
-  class?: HTMLAttributes["class"];
-}
+interface EmptyProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<EmptyProps>();
+const props = defineProps<EmptyProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
-
-const EmptyRef = ref<HTMLDivElement>();
 </script>
 <template>
   <div
-    ref="EmptyRef"
+    ref="HTMLDivElement"
     v-bind="restProps"
     :class="
       cn(

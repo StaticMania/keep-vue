@@ -1,34 +1,34 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
+import { isSlotValidHTMLElement } from "../../utils/slotUtils";
 
-interface EmptyDescriptionProps {
+interface EmptyDescriptionProps extends /*@vue-ignore*/ HTMLAttributes {
   asChild?: boolean;
-  class?: HTMLAttributes["class"];
 }
 
-const props = defineProps<EmptyDescriptionProps>();
-
-const emptyDescriptionAsChildRef = ref<HTMLElement>();
-const emptyDescriptionRef = ref<HTMLParagraphElement>();
+const props = defineProps<EmptyDescriptionProps & ClassProps>();
 
 // computed property that extracts and returns all the properties from the props object without the class property.
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
+
+const slots = useSlots();
+const validSlot = isSlotValidHTMLElement(slots);
 </script>
 <template>
-  <slot
-    :ref="emptyDescriptionAsChildRef"
-    v-if="asChild"
-    v-bind="restProps"></slot>
+  <!-- user define element -->
+  <slot v-if="asChild && validSlot" v-bind="restProps"></slot>
 
+  <!-- default element  -->
   <p
     v-else
     v-bind="restProps"
-    ref="emptyDescriptionRef"
+    ref="HTMLParagraphElement"
     :class="
       cn(
         'text-center text-body-3 font-normal text-metal-400 dark:text-metal-300',

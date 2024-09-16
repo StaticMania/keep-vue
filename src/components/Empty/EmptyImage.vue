@@ -1,21 +1,20 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface EmptyImageProps {
-  class?: HTMLAttributes["class"];
-}
+interface EmptyImageProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<EmptyImageProps>();
-const emptyImageRef = ref<HTMLDivElement>();
+const props = defineProps<EmptyImageProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
 </script>
 <template>
-  <div ref="emptyImageRef" v-bind="restProps" :class="cn(props.class)">
+  <div ref="HTMLDivElement" v-bind="restProps" :class="cn(props.class)">
     <slot></slot>
   </div>
 </template>

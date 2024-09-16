@@ -1,29 +1,29 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
+import { isSlotValidHTMLElement } from "../../utils/slotUtils";
 
-interface EmptyTitleProps {
-  class?: HTMLAttributes["class"];
+interface EmptyTitleProps extends /*@vue-ignore*/ HTMLAttributes {
   asChild?: boolean;
 }
 
-const props = defineProps<EmptyTitleProps>();
-
-const emptyTitleRef = ref<HTMLParagraphElement>();
-const emptyTitleAsChildRef = ref<HTMLElement>();
-
+const props = defineProps<EmptyTitleProps & ClassProps>();
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
+
+const slot = useSlots();
+const validSlot = isSlotValidHTMLElement(slot);
 </script>
 <template>
-  <slot v-if="asChild" v-bind="restProps" :ref="emptyTitleAsChildRef"></slot>
+  <slot v-if="asChild && validSlot" v-bind="restProps"></slot>
 
   <h1
     v-else
-    ref="emptyTitleRef"
+    ref="HTMLHeadingElement"
     v-bind="restProps"
     :class="
       cn(
