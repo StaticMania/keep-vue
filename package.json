@@ -13,6 +13,7 @@
     "format": "prettier . --write"
   },
   "dependencies": {
+    "@highlightjs/vue-plugin": "^2.1.0",
     "@internationalized/date": "^3.5.5",
     "@nuxt/content": "^2.12.1",
     "@nuxt/eslint": "^0.3.13",
@@ -28,6 +29,7 @@
     "embla-carousel-autoplay": "^8.2.1",
     "embla-carousel-class-names": "^8.2.1",
     "embla-carousel-vue": "^8.2.1",
+    "highlight.js": "^11.10.0",
     "nuxt": "^3.11.1",
     "radix-vue": "^1.9.4",
     "tailwind-merge": "^2.3.0",
