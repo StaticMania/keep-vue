@@ -42,9 +42,9 @@ const accordionItems = [
         </AccordionTitle>
 
         <!-- custom icon  -->
-        <template #icon>
+        <AccordionIcon as-child>
           <PhCaretLineDown :size="20" />
-        </template>
+        </AccordionIcon>
       </AccordionContainer>
       <AccordionContent>
         {{ item.content }}

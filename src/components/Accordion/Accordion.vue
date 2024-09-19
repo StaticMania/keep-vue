@@ -12,15 +12,21 @@ interface AccordionFlushProps {
 }
 
 const props = defineProps<AccordionRootProps & AccordionFlushProps>();
+
 const emits = defineEmits<AccordionRootEmits>();
 
-const forwardProps = useForwardPropsEmits(props, emits);
-const flushProxyProps = computed(() => props.flush);
-useProvideAccordionStore(flushProxyProps);
+const restProps = computed(() => {
+  const { flush, ...rest } = props;
+  return rest;
+});
+
+const forwardProps = useForwardPropsEmits(restProps, emits);
+
+useProvideAccordionStore(props.flush);
 </script>
 
 <template>
-  <AccordionRoot v-bind="forwardProps">
+  <AccordionRoot aria-labelledby="accordion" v-bind="forwardProps">
     <slot />
   </AccordionRoot>
 </template>

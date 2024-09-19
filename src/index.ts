@@ -2,6 +2,7 @@
 export { default as Accordion } from "./components/Accordion/Accordion.vue";
 export { default as AccordionContainer } from "./components/Accordion/AccordionContainer.vue";
 export { default as AccordionContent } from "./components/Accordion/AccordionContent.vue";
+export { default as AccordionIcon } from "./components/Accordion/AccordionIcon.vue";
 export { default as AccordionPanel } from "./components/Accordion/AccordionPanel.vue";
 export { default as AccordionTitle } from "./components/Accordion/AccordionTitle.vue";
 

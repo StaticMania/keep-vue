@@ -2,7 +2,7 @@
 const AccordionStoreKey = "accordion-store";
 
 const [useProvideAccordionStore, useAccordionStore] = createInjectionState(
-  (flush) => {
+  (flush: boolean) => {
     return { flush };
   },
   {

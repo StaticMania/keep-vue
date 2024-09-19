@@ -38,7 +38,7 @@ interface KeepAccordionTheme {
 
 export const accordionTheme: KeepAccordionTheme = keepTw({
   container: {
-    base: "flex cursor-pointer items-center w-full justify-between px-6 py-5",
+    base: "flex cursor-pointer items-center w-full justify-between px-6 py-5 data-[disabled]:cursor-not-allowed",
     open: "",
   },
   content: {

@@ -17,7 +17,7 @@ const restProps = computed(() => {
 </script>
 
 <template>
-  <span v-bind="restProps" :class="cn(accordionTheme.title.base, props.class)">
+  <p v-bind="restProps" :class="cn(accordionTheme.title.base, props.class)">
     <slot></slot>
-  </span>
+  </p>
 </template>

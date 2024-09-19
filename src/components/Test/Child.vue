@@ -1,3 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const pathname = useRoute();
+</script>
 
-<template>tets component</template>
+<template>test file</template>

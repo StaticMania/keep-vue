@@ -6,6 +6,7 @@ import {
   AccordionPanel,
   AccordionTitle,
 } from "~/src";
+import AccordionIcon from "~/src/components/Accordion/AccordionIcon.vue";
 
 const accordionItems = [
   {
@@ -30,7 +31,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <Accordion flush type="single" class="w-full" collapsible>
+  <Accordion type="single" collapsible>
     <AccordionPanel
       v-for="item in accordionItems"
       :key="item.value"
@@ -39,6 +40,7 @@ const accordionItems = [
         <AccordionTitle>
           {{ item.title }}
         </AccordionTitle>
+        <AccordionIcon />
       </AccordionContainer>
       <AccordionContent>
         {{ item.content }}

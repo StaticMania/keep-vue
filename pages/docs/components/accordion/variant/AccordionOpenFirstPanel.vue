@@ -3,6 +3,7 @@ import {
   Accordion,
   AccordionContainer,
   AccordionContent,
+  AccordionIcon,
   AccordionPanel,
   AccordionTitle,
 } from "~/src";
@@ -45,6 +46,7 @@ const accordionItems = [
         <AccordionTitle>
           {{ item.title }}
         </AccordionTitle>
+        <AccordionIcon />
       </AccordionContainer>
       <AccordionContent>
         {{ item.content }}

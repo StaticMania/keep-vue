@@ -40,6 +40,7 @@
     "vue-chartjs": "^5.3.1",
     "vue-router": "^4.3.0",
     "vue-sonner": "^1.1.5",
+    "vue-uuid": "^3.0.0",
     "vue3-dropzone": "^2.2.1"
   },
   "devDependencies": {
