@@ -23,10 +23,19 @@ const restProps = computed(() => {
 const forwardProps = useForwardPropsEmits(restProps, emits);
 
 useProvideAccordionStore(props.flush);
+
+const mounted = ref<boolean>(false);
+
+onMounted(() => {
+  mounted.value = true;
+});
 </script>
 
 <template>
-  <AccordionRoot aria-labelledby="accordion" v-bind="forwardProps">
+  <AccordionRoot
+    v-if="mounted"
+    aria-labelledby="accordion"
+    v-bind="forwardProps">
     <slot />
   </AccordionRoot>
 </template>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { gettingStaredRoutes } from "~/Routes/routes";
+import { docsRoutes, gettingStaredRoutes, layoutRoutes } from "~/Routes/routes";
 import {
   Accordion,
   AccordionContainer,
@@ -15,21 +15,6 @@ const isActive = (str: string) => {
   const strPart = str.toLowerCase().split("/").pop();
   return strPart === lastPart;
 };
-
-const routeItems = [
-  {
-    value: "item-1",
-    title: "Getting Started",
-  },
-  {
-    value: "item-2",
-    title: "Layout",
-  },
-  {
-    value: "item-3",
-    title: "Components",
-  },
-];
 </script>
 
 <template>
@@ -38,22 +23,20 @@ const routeItems = [
       id="componentListSidebar"
       class="sticky top-28 h-[75vh] space-y-5 overflow-auto 2xl:top-56 2xl:py-6 2xl:pl-8">
       <!-- getting started route section  -->
-      <Accordion flush type="single" collapsible>
-        <AccordionPanel
-          v-for="item in routeItems"
-          :key="item.value"
-          :value="item.value">
+
+      <Accordion flush type="multiple" collapsible>
+        <AccordionPanel class="border-b-0" value="gettingStarted">
           <AccordionContainer class="p-0">
             <AccordionTitle
               class="text-body-4 font-semibold text-metal-900 first-letter:!mr-0 first-letter:!text-metal-900 dark:text-white dark:first-letter:!text-white">
-              {{ item.title }}
+              Getting Started
             </AccordionTitle>
           </AccordionContainer>
-          <AccordionContent class="p-0">
+          <AccordionContent class="border-b-0 p-0">
             <ul
               class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
               <li v-for="route in gettingStaredRoutes" :key="route?.id">
-                <Link
+                <NuxtLink
                   :href="route?.href"
                   class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
                   :class="
@@ -62,7 +45,7 @@ const routeItems = [
                       : ''
                   ">
                   {{ route?.name }}
-                </Link>
+                </NuxtLink>
               </li>
             </ul>
           </AccordionContent>
@@ -70,19 +53,19 @@ const routeItems = [
       </Accordion>
 
       <!-- layout route section  -->
-      <!-- <Accordion flush open-first-panel>
-        <AccordionPanel value="item-2" class="!border-b-0">
+      <Accordion flush type="multiple" collapsible>
+        <AccordionPanel class="border-b-0" value="layout">
           <AccordionContainer class="p-0">
             <AccordionTitle
               class="text-body-4 font-semibold text-metal-900 first-letter:!mr-0 first-letter:!text-metal-900 dark:text-white dark:first-letter:!text-white">
               Layout
             </AccordionTitle>
           </AccordionContainer>
-          <AccordionContent class="p-0">
+          <AccordionContent class="border-b-0 p-0">
             <ul
               class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
               <li v-for="route in layoutRoutes" :key="route?.id">
-                <Link
+                <NuxtLink
                   :href="route?.href"
                   class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
                   :class="
@@ -91,27 +74,27 @@ const routeItems = [
                       : ''
                   ">
                   {{ route?.name }}
-                </Link>
+                </NuxtLink>
               </li>
             </ul>
           </AccordionContent>
         </AccordionPanel>
-      </Accordion> -->
+      </Accordion>
 
       <!-- docs layout route section  -->
-      <!-- <Accordion open-first-panel flush>
-        <AccordionPanel value="item-3" class="!border-b-0">
+      <Accordion flush type="multiple" collapsible>
+        <AccordionPanel class="border-b-0" value="docs">
           <AccordionContainer class="p-0">
             <AccordionTitle
               class="text-body-4 font-semibold text-metal-900 first-letter:!mr-0 first-letter:!text-metal-900 dark:text-white dark:first-letter:!text-white">
-              Components
+              Docs
             </AccordionTitle>
           </AccordionContainer>
-          <AccordionContent class="p-0">
+          <AccordionContent class="border-b-0 p-0">
             <ul
               class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
               <li v-for="route in docsRoutes" :key="route?.id">
-                <Link
+                <NuxtLink
                   :href="route?.href"
                   class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
                   :class="
@@ -120,12 +103,12 @@ const routeItems = [
                       : ''
                   ">
                   {{ route.name }}
-                </Link>
+                </NuxtLink>
               </li>
             </ul>
           </AccordionContent>
         </AccordionPanel>
-      </Accordion> -->
+      </Accordion>
     </aside>
   </div>
 </template>
