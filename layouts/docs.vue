@@ -41,10 +41,7 @@ import ToastWrapper from "~/src/components/Toast/ToastWrapper.vue";
           <slot />
         </div>
       </div>
-      <!-- right side bar -> docs layout  -->
-      <!-- <div class="hidden lg:col-span-3 lg:block xl:col-span-2">
-        Table Of Contents
-      </div> -->
+      <!-- table of content  -->
       <TableOfContent />
     </div>
   </main>
