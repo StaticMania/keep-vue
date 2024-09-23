@@ -20,6 +20,11 @@
   @apply !pl-0;
   @apply bg-transparent !important;
 }
+
+#mainContent pre > code .line {
+  @apply inline;
+}
+
 #mainContent #cssCode {
   @apply bg-transparent;
 }
