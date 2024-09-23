@@ -1,10 +1,4 @@
 <script setup lang="ts">
-import AccordionOpenFirstPanel from "./variant/AccordionOpenFirstPanel.vue";
-import AccordionWithCustomIcon from "./variant/AccordionWithCustomIcon.vue";
-import DefaultAccordion from "./variant/DefaultAccordion.vue";
-import DisabledAccordion from "./variant/DisabledAccordion.vue";
-import FlushAccordion from "./variant/FlushAccordion.vue";
-
 definePageMeta({
   layout: "docs",
 });
@@ -16,33 +10,16 @@ const metadata = reactive({
 });
 
 useHead({ ...metadata });
+const { page } = useContent();
+
+if (!page)
+  throw createError({ statusCode: 404, statusMessage: "Page not found" });
 </script>
 
 <template>
   <DocsContentLayout
     :title="metadata.title"
     :description="metadata.description">
-    <div class="space-y-6">
-      <div class="space-y-3 bg-white p-6">
-        <h3>Default Accordion</h3>
-        <DefaultAccordion />
-      </div>
-      <div class="space-y-3 bg-white p-6">
-        <h3>Accordion Open First Panel</h3>
-        <AccordionOpenFirstPanel />
-      </div>
-      <div class="space-y-3 bg-white p-6">
-        <h3>Flush Accordion</h3>
-        <FlushAccordion />
-      </div>
-      <div class="space-y-3 bg-white p-6">
-        <h3>Custom Accordion Icon</h3>
-        <AccordionWithCustomIcon />
-      </div>
-      <div class="space-y-3 bg-white p-6">
-        <h3>Disabled Accordion</h3>
-        <DisabledAccordion />
-      </div>
-    </div>
+    <ContentRenderer id="mainContent" :value="page" />
   </DocsContentLayout>
 </template>

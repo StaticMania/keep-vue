@@ -12,12 +12,9 @@
   @apply mb-3 mt-4 text-body-4 font-normal text-metal-600 dark:text-metal-300;
 }
 
-#mainContent code {
-  @apply rounded bg-metal-50 px-2 py-1 dark:bg-metal-900;
-}
-
 #mainContent pre > code {
   @apply !pl-0;
+  @apply bg-transparent !important;
 }
 #mainContent #cssCode {
   @apply bg-transparent;

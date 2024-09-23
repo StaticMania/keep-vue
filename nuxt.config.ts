@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  ssr: true,
   devtools: { enabled: true },
   css: ["~/styles/main.css"],
   //adding font through next plugIn
@@ -16,7 +17,13 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  content: {
+    documentDriven: true,
+  },
 
+  shiki: {
+    bundledThemes: ["night-owl"],
+  },
   components: [
     {
       path: "~/components",
@@ -27,6 +34,7 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+
   build: {
     transpile: ["vue-sonner"],
   },
@@ -38,5 +46,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "radix-vue/nuxt",
     "@vueuse/nuxt",
+    "nuxt-shiki",
   ],
 });
