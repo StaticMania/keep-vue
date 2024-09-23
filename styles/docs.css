@@ -5,6 +5,10 @@
   @apply mt-4 text-body-3 font-normal text-metal-600 dark:text-metal-300;
 }
 
+#mainContent p > code {
+  @apply rounded bg-metal-50 px-2 py-1 dark:bg-metal-900;
+}
+
 #mainContent > p a {
   @apply text-primary-600 underline;
 }

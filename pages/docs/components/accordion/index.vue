@@ -12,8 +12,8 @@ const metadata = reactive({
 useHead({ ...metadata });
 const { page } = useContent();
 
-if (!page)
-  throw createError({ statusCode: 404, statusMessage: "Page not found" });
+// if (!page)
+//   throw createError({ statusCode: 404, statusMessage: "Page not found" });
 </script>
 
 <template>

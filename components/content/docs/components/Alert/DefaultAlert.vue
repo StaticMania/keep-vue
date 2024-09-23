@@ -13,7 +13,6 @@ import { DefaultAlertCode } from "./AlertCode";
           A short description followed by two actions items.
         </AlertDescription>
       </AlertContainer>
-
       <AlertContainer>
         <AlertLink href="/">Learn More</AlertLink>
         <AlertDismiss />

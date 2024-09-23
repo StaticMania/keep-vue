@@ -171,7 +171,7 @@ export { default as TimelineItem } from "./components/Timeline/TimelineItem.vue"
 export { default as TimelinePoint } from "./components/Timeline/TimelinePoint.vue";
 
 //toast component
-export { Toast } from "./components/Toast/index.vue";
+export { Toast } from "./components/Toast/Toast.ts";
 export { default as ToastWrapper } from "./components/Toast/ToastWrapper.vue";
 
 //tooltip
