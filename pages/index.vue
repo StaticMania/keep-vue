@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+definePageMeta({
+  documentDriven: false,
+});
+</script>
 
 <template>
   <Hero />
