@@ -9,6 +9,10 @@ export default defineNuxtConfig({
       Inter: {
         wght: "100..900",
       },
+      "Space Mono": {
+        subsets: "latin",
+        wght: ["400"],
+      },
     },
   },
   postcss: {

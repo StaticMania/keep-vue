@@ -5,7 +5,7 @@ import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 import { useAlert } from "./useAlert";
 
-interface AlertTitleProps extends /* @vue-ignore */ HTMLAttributes {}
+export interface AlertTitleProps extends /* @vue-ignore */ HTMLAttributes {}
 const props = defineProps<AlertTitleProps & ClassProps>();
 
 const restProps = computed(() => {

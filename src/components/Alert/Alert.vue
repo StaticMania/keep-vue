@@ -5,7 +5,7 @@ import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 import { useProvideAlert } from "./useAlert";
 
-interface AlertComponentProps extends /* @vue-ignore */ HTMLAttributes {
+export interface AlertComponentProps extends /* @vue-ignore */ HTMLAttributes {
   color?: keyof ColorVariant;
   withBg?: boolean;
   dismiss?: boolean;

@@ -7,7 +7,7 @@ import {
 } from "radix-vue";
 import { useProvideAccordionStore } from "./useAccordionStore";
 
-interface AccordionFlushProps {
+export interface AccordionFlushProps {
   flush?: boolean;
 }
 

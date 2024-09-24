@@ -6,7 +6,8 @@ import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 import { useAlert } from "./useAlert";
 
-interface AlertDismissProps extends /* @vue-ignore */ ButtonHTMLAttributes {}
+export interface AlertDismissProps
+  extends /* @vue-ignore */ ButtonHTMLAttributes {}
 
 const props = defineProps<AlertDismissProps & ClassProps>();
 

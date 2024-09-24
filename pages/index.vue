@@ -2,8 +2,6 @@
 definePageMeta({
   documentDriven: false,
 });
-</script>
 
-<template>
-  <Hero />
-</template>
+await navigateTo("/docs/getting-started/introduction/");
+</script>

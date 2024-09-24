@@ -4,7 +4,7 @@ import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { accordionTheme } from "./accordionTheme";
 
-interface AccordionIconProps extends /* @vue-ignore */ HTMLAttributes {
+export interface AccordionIconProps extends /* @vue-ignore */ HTMLAttributes {
   asChild?: boolean;
   animation?: boolean;
 }

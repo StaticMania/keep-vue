@@ -3,7 +3,7 @@ import type { HTMLAttributes, HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { accordionTheme } from "./accordionTheme";
 
-interface AccordionTileProps extends /* @vue-ignore */ HTMLAttributes {
+export interface AccordionTileProps extends /* @vue-ignore */ HTMLAttributes {
   class?: HtmlHTMLAttributes["class"];
 }
 

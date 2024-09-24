@@ -4,8 +4,8 @@ import { cn } from "~/src/utils/cn";
 
 interface EditPageProps {
   pageLink: string;
-  nextPageName: string;
-  nextPageLink: string;
+  nextPageName?: string;
+  nextPageLink?: string;
 }
 
 const props = defineProps<EditPageProps>();
@@ -16,6 +16,7 @@ const githubPageLink = `https://github.com/StaticMania/keep-vue/blob/main/conten
 <template>
   <div class="my-12">
     <div class="flex items-center justify-between">
+      <!-- edit  -->
       <NuxtLink
         target="_black"
         :href="githubPageLink"
@@ -28,7 +29,9 @@ const githubPageLink = `https://github.com/StaticMania/keep-vue/blob/main/conten
         Edit this page
       </NuxtLink>
 
+      <!-- next component  -->
       <NuxtLink
+        v-if="nextPageName && nextPageLink"
         :href="nextPageLink"
         :class="cn(buttonVariants({ variant: 'outline', color: 'secondary' }))">
         <span>{{ nextPageName }}</span>

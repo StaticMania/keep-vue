@@ -1,3 +1,8 @@
+---
+  title: 'Accordion - Keep Vue'
+  description: 'The Accordion Component in the Keep Vue allows you to create collapsible sections of content, commonly known as accordions. Users can toggle the visibility of the content by clicking on the disclosure button. With customizable options for the theme, open state, type, and state, you can create accordion components that fit seamlessly into your design and provide an intuitive user experience.'
+---
+
 ## Default Accordion
 
 The default Accordion component allows users to reveal and hide content by simply clicking on the disclosure button.
@@ -38,7 +43,7 @@ You can remove the icon of the accordion by simply remove the `accordionIcon` co
 
 ::
 
-## Disabled Accordions
+## Disabled Accordion
 
 Control user interactions by making specific AccordionPanel components non-interactive with the `disabled` or `disabled="true"` property.
 
@@ -49,3 +54,11 @@ Control user interactions by making specific AccordionPanel components non-inter
 ## API Reference
 
 Explore the available props for the Accordion component
+
+::AccordionApi
+
+::
+
+## Reference
+
+To learn more about the Accordion, please see the documentation of [Redix Vue Accordion](https://www.radix-vue.com/components/accordion)

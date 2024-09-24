@@ -4,7 +4,7 @@ import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { alertTheme } from "./alertTheme";
 
-interface AlertContainerProps extends /* @vue-ignore */ HTMLAttributes {}
+export interface AlertContainerProps extends /* @vue-ignore */ HTMLAttributes {}
 
 const props = defineProps<AlertContainerProps & ClassProps>();
 
