@@ -21,6 +21,7 @@ const restProps = computed(() => {
         accordionTheme.container.base,
         '[&[data-state=open]>span>svg>rect]:!rotate-180',
         'data-[disabled]:cursor-not-allowed',
+        'data-[disabled]:opacity-50',
         '[&[data-state=open]>span]:!rotate-180',
         props.class,
       )

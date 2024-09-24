@@ -134,8 +134,8 @@ const accordionItems = [
 
 <template>
   <Accordion
-    type="multiple"
-    class="w-full"
+    type="single"
+    class="space-y-4"
     collapsible
     :default-value="defaultValue">
     <AccordionPanel

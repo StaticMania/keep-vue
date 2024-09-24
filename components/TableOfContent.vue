@@ -1,5 +1,12 @@
 <script lang="ts" setup>
+import { ref } from "vue";
+
 const { toc } = useContent();
+const activeLink = ref("");
+
+const setActiveLink = (id: string) => {
+  activeLink.value = id;
+};
 </script>
 
 <template>
@@ -12,9 +19,16 @@ const { toc } = useContent();
             On this page
           </h4>
           <nav id="visible-table-of-contents">
-            <ul class="border-l border-l-metal-100 dark:border-l-metal-800">
+            <ul
+              id="toc-ul"
+              class="border-l border-l-metal-100 dark:border-l-metal-800">
               <li v-for="item in toc?.links" :key="item.id">
-                <NuxtLink :href="`#${item.id}`">{{ item.text }}</NuxtLink>
+                <NuxtLink
+                  :href="`#${item.id}`"
+                  :class="{ 'active-link': activeLink === item.id }"
+                  @click="setActiveLink(item.id)">
+                  {{ item.text }}
+                </NuxtLink>
               </li>
             </ul>
           </nav>
