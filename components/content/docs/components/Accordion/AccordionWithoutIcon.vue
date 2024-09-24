@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import { PhCaretLineDown } from "@phosphor-icons/vue";
 import {
   Accordion,
   AccordionContainer,
   AccordionContent,
-  AccordionIcon,
   AccordionPanel,
   AccordionTitle,
 } from "~/src";
-import { AccordionWithCustomIconCode } from "./AccordionCode";
+import { AccordionWithoutIconCode } from "./AccordionCode";
 
 const accordionItems = [
   {
@@ -21,7 +19,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="AccordionWithCustomIconCode">
+  <CodeHighlightWithPreview :code="AccordionWithoutIconCode">
     <Accordion type="single" class="w-full" collapsible>
       <AccordionPanel
         v-for="item in accordionItems"
@@ -31,11 +29,6 @@ const accordionItems = [
           <AccordionTitle>
             {{ item.title }}
           </AccordionTitle>
-
-          <!-- custom icon  -->
-          <AccordionIcon as-child>
-            <PhCaretLineDown :size="20" />
-          </AccordionIcon>
         </AccordionContainer>
         <AccordionContent>
           {{ item.content }}
