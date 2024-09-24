@@ -20,7 +20,7 @@ if (!page)
     :description="metadata.description">
     <ContentRenderer id="mainContent" :value="page" />
     <EditPage
-      :page-link="page?._path"
+      :page-link="`${page?._path}.md`"
       :next-page-link="next?._path"
       :next-page-name="next?.title" />
   </DocsContentLayout>
