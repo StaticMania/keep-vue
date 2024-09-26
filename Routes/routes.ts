@@ -5,6 +5,7 @@ export interface RouterPath {
   name: string;
   href: string;
   tag?: boolean;
+  target?: string;
   deprecate?: boolean;
   redirect?: boolean;
 }

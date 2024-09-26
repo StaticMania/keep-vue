@@ -1,12 +1,15 @@
 <script lang="ts" setup>
+import { useVModel } from "@vueuse/core";
 import type { InputHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { inputTheme } from "./inputTheme";
 
-interface InputProps extends /*@vue-ignore*/ InputHTMLAttributes {
+interface InputProps extends /* @vue-ignore */ InputHTMLAttributes {
   type: string;
+  defaultValue?: string | number;
   placeholder: string;
+  modelValue: string | number;
 }
 
 const props = withDefaults(defineProps<InputProps & ClassProps>(), {
@@ -14,16 +17,19 @@ const props = withDefaults(defineProps<InputProps & ClassProps>(), {
   type: "text",
 });
 
-const restProps = computed(() => {
-  const { class: _, type, ...delegated } = props;
-  return delegated;
+const emits = defineEmits<{
+  (e: "update:modelValue", payload: string | number): void;
+}>();
+
+const modelValue = useVModel(props, "modelValue", emits, {
+  passive: true,
+  defaultValue: props.defaultValue,
 });
 </script>
 
 <template>
   <input
-    ref="HTMLInputElement"
     :type="props.type"
-    v-bind="restProps"
+    v-model="modelValue"
     :class="cn(inputTheme.input, props.class)" />
 </template>
