@@ -24,9 +24,13 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
   },
-
   shiki: {
     bundledThemes: ["night-owl"],
+  },
+  colorMode: {
+    classSuffix: "",
+    preference: "light",
+    fallback: "light",
   },
   components: [
     {
@@ -51,5 +55,6 @@ export default defineNuxtConfig({
     "radix-vue/nuxt",
     "@vueuse/nuxt",
     "nuxt-shiki",
+    "@nuxtjs/color-mode",
   ],
 });

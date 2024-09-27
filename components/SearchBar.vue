@@ -52,10 +52,10 @@ onMounted(() => {
 <template>
   <Modal :open="props.isOpen">
     <ModalContent
-      class="block w-[22rem] rounded-lg bg-white md:w-[35rem] laptop:p-8">
+      class="block w-[22rem] rounded-lg bg-white md:w-[35rem] laptop:p-8 dark:bg-metal-900">
       <ModalClose
-        @click="setIsOpen(false)"
-        class="absolute right-0 top-1 stroke-black p-1 outline-none lg:p-2" />
+        class="absolute right-0 top-1 stroke-black p-1 outline-none lg:p-2"
+        @click="setIsOpen(false)" />
 
       <VisuallyHidden>
         <ModalTitle>Update Modal Status</ModalTitle>
@@ -100,10 +100,10 @@ onMounted(() => {
             </p>
             <ul>
               <li
-                @click="setIsOpen(false)"
                 v-for="route in data"
                 :key="route.id"
-                class="rounded-md p-2 text-body-4 font-normal text-metal-900 transition-all duration-300 hover:bg-metal-25 dark:text-white dark:hover:bg-metal-800">
+                class="rounded-md p-2 text-body-4 font-normal text-metal-900 transition-all duration-300 hover:bg-metal-25 dark:text-white dark:hover:bg-metal-800"
+                @click="setIsOpen(false)">
                 <NuxtLink
                   :to="route.href"
                   :target="route.target"

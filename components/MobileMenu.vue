@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { PhCommand, PhMagnifyingGlass } from "@phosphor-icons/vue";
 import SearchBar from "./SearchBar.vue";
+import ThemeSwitcher from "./ThemeSwitcher.vue";
 const route = useRoute();
 
 const routeValue = computed(() => {
@@ -77,7 +78,7 @@ const isActive = (str: string): boolean => {
         :width="20"
         alt="github" />
     </NuxtLink>
-    <!-- <ThemeSwitcher /> -->
+    <ThemeSwitcher />
 
     <!-- drawer  -->
     <MobileMenuDrawer

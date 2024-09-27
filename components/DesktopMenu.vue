@@ -88,6 +88,7 @@ const setIsOpen = (value: boolean): void => {
         :width="22"
         alt="discord" />
     </NuxtLink>
+    <ThemeSwitcher />
     <NuxtLink
       href="/docs/getting-started/introduction"
       :class="
@@ -95,7 +96,6 @@ const setIsOpen = (value: boolean): void => {
       ">
       get started
     </NuxtLink>
-    <!-- <ThemeSwitcher /> -->
   </div>
 
   <SearchBar :is-open="isOpen" :set-is-open="setIsOpen" />

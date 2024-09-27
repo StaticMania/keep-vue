@@ -38,7 +38,7 @@ defineProps<MobileMenuDrawer>();
     </DrawerTrigger>
 
     <DrawerContent
-      class="w-full overflow-y-auto overflow-x-hidden sm:w-1/2 lg:hidden">
+      class="w-full overflow-y-auto overflow-x-hidden sm:w-1/2 lg:hidden dark:border-metal-900 dark:bg-metal-900">
       <div class="mx-2 w-full">
         <DrawerHeader>
           <VisuallyHidden>

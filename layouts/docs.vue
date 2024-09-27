@@ -27,7 +27,7 @@ import ToastWrapper from "~/src/components/Toast/ToastWrapper.vue";
   <main class="relative pt-20">
     <!-- upper area -> docs layout  -->
     <div
-      class="sticky top-20 z-30 hidden h-4 w-full bg-primary-25 lg:block 2xl:h-20"></div>
+      class="sticky top-20 z-30 hidden h-4 w-full bg-primary-25 lg:block 2xl:h-20 dark:bg-[#0d1015]"></div>
     <div class="docs-page"></div>
     <!-- docs layout container  -->
     <div

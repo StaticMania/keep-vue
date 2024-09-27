@@ -1,3 +1,7 @@
-<script setup></script>
+<script setup>
+import DefaultDropdown from "~/pages/docs/components/dropdown/variant/DefaultDropdown.vue";
+</script>
 
-<template>test</template>
+<template>
+  <DefaultDropdown />
+</template>
