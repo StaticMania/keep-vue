@@ -20,14 +20,16 @@ import {
 
 interface MobileMenuDrawer {
   isActive: (str: string) => boolean;
+  isOpen: boolean;
+  setIsOpen: (value: boolean) => void;
 }
 
 defineProps<MobileMenuDrawer>();
 </script>
 
 <template>
-  <Drawer position="right">
-    <DrawerTrigger as-child>
+  <Drawer position="right" :open="isOpen">
+    <DrawerTrigger as-child @click="setIsOpen(true)">
       <button>
         <span>
           <PhList :size="24" class="text-metal-900 dark:text-white" />
@@ -47,7 +49,7 @@ defineProps<MobileMenuDrawer>();
           </VisuallyHidden>
 
           <!-- close  -->
-          <DrawerClose as-child class="">
+          <DrawerClose as-child @click="setIsOpen(false)">
             <Button color="secondary" class="mb-4 max-w-max p-3">
               <PhArrowLeft class="size-5 text-white dark:text-metal-900" />
             </Button>
@@ -71,7 +73,10 @@ defineProps<MobileMenuDrawer>();
                 <AccordionContent class="border-b-0 p-0 text-left">
                   <ul
                     class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
-                    <li v-for="route in gettingStaredRoutes" :key="route?.id">
+                    <li
+                      v-for="route in gettingStaredRoutes"
+                      :key="route?.id"
+                      @click="setIsOpen(false)">
                       <NuxtLink
                         :href="route?.href"
                         class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
@@ -101,7 +106,10 @@ defineProps<MobileMenuDrawer>();
                 <AccordionContent class="border-b-0 p-0 text-left">
                   <ul
                     class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
-                    <li v-for="route in layoutRoutes" :key="route?.id">
+                    <li
+                      v-for="route in layoutRoutes"
+                      :key="route?.id"
+                      @click="setIsOpen(false)">
                       <NuxtLink
                         :href="route?.href"
                         class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
@@ -131,7 +139,10 @@ defineProps<MobileMenuDrawer>();
                 <AccordionContent class="border-b-0 p-0 text-left">
                   <ul
                     class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
-                    <li v-for="route in docsRoutes" :key="route?.id">
+                    <li
+                      v-for="route in docsRoutes"
+                      :key="route?.id"
+                      @click="setIsOpen(false)">
                       <NuxtLink
                         :href="route?.href"
                         class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"

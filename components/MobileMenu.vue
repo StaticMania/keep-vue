@@ -10,6 +10,11 @@ const routeValue = computed(() => {
 const active = ref(false);
 
 const showDrawer = ref(false);
+
+const setShowDrawer = (value: boolean): void => {
+  showDrawer.value = value;
+};
+
 const isOpen = ref(false);
 const seIsOpen = (value: boolean): void => {
   isOpen.value = value;
@@ -32,8 +37,8 @@ const isActive = (str: string): boolean => {
   <div class="flex items-center justify-between gap-1.5 sm:gap-3 laptop:hidden">
     <!-- search bar for laptop  -->
     <button
-      @click="isOpen = true"
-      class="hidden w-[250px] items-center justify-between rounded-lg bg-primary-25 px-3 py-2.5 text-body-4 font-normal text-metal-600 transition-all duration-300 hover:bg-primary-50 sm:flex">
+      class="hidden w-[250px] items-center justify-between rounded-lg bg-primary-25 px-3 py-2.5 text-body-4 font-normal text-metal-600 transition-all duration-300 hover:bg-primary-50 sm:flex"
+      @click="isOpen = true">
       <span
         class="flex items-center gap-2 text-body-4 font-normal text-metal-400">
         <PhMagnifyingGlass :size="20" />
@@ -47,8 +52,8 @@ const isActive = (str: string): boolean => {
 
     <!-- search bar for mobile  -->
     <button
-      @click="isOpen = true"
-      class="flex rounded-lg bg-primary-25 p-2.5 transition duration-300 hover:bg-primary-50 sm:hidden dark:text-metal-900">
+      class="flex rounded-lg bg-primary-25 p-2.5 transition duration-300 hover:bg-primary-50 sm:hidden dark:text-metal-900"
+      @click="isOpen = true">
       <PhMagnifyingGlass class="size-5" />
     </button>
 
@@ -75,7 +80,10 @@ const isActive = (str: string): boolean => {
     <!-- <ThemeSwitcher /> -->
 
     <!-- drawer  -->
-    <MobileMenuDrawer :isActive="isActive" />
+    <MobileMenuDrawer
+      :is-active="isActive"
+      :is-open="showDrawer"
+      :set-is-open="setShowDrawer" />
   </div>
   <SearchBar :is-open="isOpen" :set-is-open="seIsOpen" />
 </template>
