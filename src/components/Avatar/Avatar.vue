@@ -1,7 +1,7 @@
 <script lang="ts" setup>
+import { computed, defineProps, ref } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
-
 const avatarRef = ref<null | HTMLDivElement>(null);
 const props = defineProps<ClassProps>();
 

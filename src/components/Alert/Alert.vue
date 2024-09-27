@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
@@ -10,18 +11,21 @@ export interface AlertComponentProps extends /* @vue-ignore */ HTMLAttributes {
   withBg?: boolean;
   dismiss?: boolean;
 }
-
 const props = withDefaults(defineProps<AlertComponentProps & ClassProps>(), {
   color: "primary",
   class: "",
 });
 
 const restProps = computed(() => {
-  const { class: _, ...restProps } = props;
+  const { class: _, color, ...restProps } = props;
   return restProps;
 });
 
-useProvideAlert(props.color);
+const changedColor = computed(() => {
+  return props.color;
+});
+
+useProvideAlert(changedColor);
 </script>
 
 <template>

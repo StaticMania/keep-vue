@@ -4,13 +4,13 @@ import {
   type AccordionItemProps,
   useForwardProps,
 } from "radix-vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { accordionTheme } from "./accordionTheme";
 import { useAccordionStoreOrThrow } from "./useAccordionStore";
 
 const props = defineProps<AccordionItemProps & ClassProps>();
-
 const restProps = computed(() => {
   const { class: _, ...rest } = props;
 

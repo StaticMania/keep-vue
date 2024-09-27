@@ -1,9 +1,8 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps, ref } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
-import { isSlotValidHTMLElement } from "../../utils/slotUtils";
-
 interface AvatarBadgeProps extends /*@vue-ignore*/ HTMLAttributes {
   asChild?: boolean;
 }
@@ -14,19 +13,9 @@ const restProps = computed(() => {
   return rest;
 });
 const avatarBadgeRef = ref<HTMLSpanElement>();
-
-const slots = useSlots();
-
-//an utils function to check the slot element is valid or not
-const slotIsValid = computed(() => {
-  return isSlotValidHTMLElement(slots);
-});
 </script>
 <template>
-  <slot
-    v-if="props.asChild && slotIsValid"
-    v-bind="restProps"
-    :class="cn(props.class)"></slot>
+  <slot v-if="props.asChild" v-bind="restProps" :class="cn(props.class)"></slot>
 
   <span
     v-else

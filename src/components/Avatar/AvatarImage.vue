@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { ImgHTMLAttributes } from "vue";
+import { computed, defineProps, ref } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
@@ -9,6 +10,12 @@ interface AvatarImageProps extends /*@vue-ignore*/ ImgHTMLAttributes {
 }
 
 const props = defineProps<AvatarImageProps & ClassProps>();
+
+const restProps = computed(() => {
+  const { class: _, src, alt, ...rest } = props;
+  return rest;
+});
+
 const avatarImageRef = ref<HTMLImageElement>();
 </script>
 <template>
@@ -17,7 +24,7 @@ const avatarImageRef = ref<HTMLImageElement>();
     ref="avatarImageRef"
     :src="props.src"
     :alt="props.alt"
-    v-bind="$attrs"
+    v-bind="restProps"
     :class="
       cn('aspect-square size-12 rounded-full object-cover', props.class)
     " />

@@ -1,5 +1,5 @@
 ---
-  title: 'Tooltip - Keep Vue'
+  title: 'Tooltip'
   description: 'The Tooltips component in the Keep Vue allows you to provide additional information or context to users when they hover over or interact with specific elements. With customizable options for type, theme, and arrow placement, you can create versatile tooltips that fit your design needs.'
 ---
 

@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 import { useAlert } from "./useAlert";
-
 export interface AlertIconProps extends /* @vue-ignore */ HTMLAttributes {}
 
 const props = defineProps<AlertIconProps & ClassProps>();

@@ -5,8 +5,8 @@ import {
   type AccordionRootEmits,
   type AccordionRootProps,
 } from "radix-vue";
+import { computed, defineEmits, defineProps, onMounted, ref } from "vue";
 import { useProvideAccordionStore } from "./useAccordionStore";
-
 export interface AccordionFlushProps {
   flush?: boolean;
 }
@@ -22,7 +22,11 @@ const restProps = computed(() => {
 
 const forwardProps = useForwardPropsEmits(restProps, emits);
 
-useProvideAccordionStore(props.flush);
+const changedFlushProps = computed(() => {
+  return props.flush;
+});
+
+useProvideAccordionStore(changedFlushProps);
 
 const mounted = ref<boolean>(false);
 

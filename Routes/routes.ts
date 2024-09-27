@@ -56,13 +56,13 @@ export const docsRoutes = ref<RouterPath[]>([
   //   tag: false,
   //   deprecate: false,
   // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Avatar",
-  //   href: "/docs/components/avatar",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+  {
+    id: generatedID.v4(),
+    name: "Avatar",
+    href: "/docs/components/avatar",
+    tag: false,
+    deprecate: false,
+  },
   // {
   //   id: generatedID.v4(),
   //   name: "Badge",
