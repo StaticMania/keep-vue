@@ -6,19 +6,23 @@ import {
   type DrawerRootEmits,
   type DrawerRootProps,
 } from "vaul-vue";
+import type { ClassProps } from "~/src/utils/interface";
 import { useProvideDrawer } from "./useDrawerStore";
 
 interface DrawerProps {
   position?: DrawerDirection;
 }
 
-const props = withDefaults(defineProps<DrawerRootProps & DrawerProps>(), {
-  shouldScaleBackground: true,
-  position: "bottom",
-});
+const props = withDefaults(
+  defineProps<DrawerRootProps & DrawerProps & ClassProps>(),
+  {
+    shouldScaleBackground: true,
+    position: "bottom",
+  },
+);
 
 const restProps = computed(() => {
-  const { direction, position, ...delegated } = props;
+  const { direction, position, class: _, ...delegated } = props;
   return delegated;
 });
 

@@ -95,6 +95,7 @@ export { default as DropdownList } from "./components/Dropdown/DropdownList.vue"
 //Drawer component
 export { DrawerClose, DrawerPortal, DrawerTrigger } from "vaul-vue";
 export { default as Drawer } from "./components/Drawer/Drawer.vue";
+export { default as DrawerBar } from "./components/Drawer/DrawerBar.vue";
 export { default as DrawerContent } from "./components/Drawer/DrawerContent.vue";
 export { default as DrawerDescription } from "./components/Drawer/DrawerDescription.vue";
 export { default as DrawerFooter } from "./components/Drawer/DrawerFooter.vue";

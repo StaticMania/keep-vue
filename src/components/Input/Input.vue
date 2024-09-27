@@ -30,6 +30,7 @@ const modelValue = useVModel(props, "modelValue", emits, {
 <template>
   <input
     :type="props.type"
+    :placeholder="props.placeholder"
     v-model="modelValue"
     :class="cn(inputTheme.input, props.class)" />
 </template>

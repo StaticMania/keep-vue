@@ -12,6 +12,7 @@ const router = useRoute();
     <div class="relative mx-auto max-w-7xl px-6 2xl:px-0">
       <nav class="flex items-center justify-between py-4">
         <DesktopMenu />
+        <MobileMenu />
       </nav>
     </div>
   </header>

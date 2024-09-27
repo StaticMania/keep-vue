@@ -6,7 +6,7 @@ import { Modal } from "~/src";
 
 interface SearchBarProps {
   isOpen: boolean;
-  setIsOpen?: any;
+  setIsOpen: (value: boolean) => void;
 }
 
 const props = defineProps<SearchBarProps>();
@@ -14,7 +14,7 @@ const query = ref("");
 const data = ref<RouterPath[]>(docsRoutes.value);
 
 const isPending = ref(false);
-const inputRef = ref();
+const inputRef = ref<HTMLInputElement>();
 
 const filteredData = computed(() => {
   if (query.value.trim() === "") {
@@ -26,16 +26,23 @@ const filteredData = computed(() => {
   }
 });
 
-const { Meta_K, Ctrl_K } = useMagicKeys({
-  passive: false,
-  onEventFired(e) {
-    if (e.key === "k" && (e.metaKey || e.ctrlKey)) e.preventDefault();
-  },
-});
+if (props.isOpen !== true) {
+  const { Meta_K, Ctrl_K } = useMagicKeys({
+    passive: false,
+    onEventFired(e) {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        props.setIsOpen(true);
+        e.preventDefault();
+      }
+    },
+  });
 
-watch([Meta_K, Ctrl_K], (v) => {
-  if (v[0] || v[1]) props.setIsOpen(true);
-});
+  watch([Meta_K, Ctrl_K], (v) => {
+    if (v[0] || v[1]) {
+      props.setIsOpen(true);
+    }
+  });
+}
 
 onMounted(() => {
   inputRef.value?.focus();
@@ -44,10 +51,11 @@ onMounted(() => {
 
 <template>
   <Modal :open="props.isOpen">
-    <ModalContent class="block w-[35rem] bg-white laptop:p-8">
+    <ModalContent
+      class="block w-[22rem] rounded-lg bg-white md:w-[35rem] laptop:p-8">
       <ModalClose
         @click="setIsOpen(false)"
-        class="absolute right-0 top-1 stroke-black p-2" />
+        class="absolute right-0 top-1 stroke-black p-1 outline-none lg:p-2" />
 
       <VisuallyHidden>
         <ModalTitle>Update Modal Status</ModalTitle>
@@ -55,6 +63,7 @@ onMounted(() => {
       <ModalDescription>
         <fieldset class="relative">
           <Input
+            ref="inputRef"
             v-model="query"
             type="text"
             placeholder="Search Component"
@@ -91,6 +100,7 @@ onMounted(() => {
             </p>
             <ul>
               <li
+                @click="setIsOpen(false)"
                 v-for="route in data"
                 :key="route.id"
                 class="rounded-md p-2 text-body-4 font-normal text-metal-900 transition-all duration-300 hover:bg-metal-25 dark:text-white dark:hover:bg-metal-800">

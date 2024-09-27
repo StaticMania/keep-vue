@@ -21,11 +21,11 @@ interface KeepDrawerTheme {
 
 export const keepDrawerTheme: KeepDrawerTheme = {
   content: {
-    base: "fixed z-50 flex h-auto rounded-t-[10px] border bg-white",
+    base: "fixed z-50 flex h-auto border bg-white",
     position: {
-      top: "inset-x-0 top-0 flex-col-reverse",
-      bottom: "inset-x-0 bottom-0 mt-24 flex-col",
-      left: "bottom-0 left-0 top-0 w-1/2 ml-3 flex-row-reverse lg:w-3/12 ",
+      top: "inset-x-0 top-0 flex-col-reverse rounded-t-[10px]",
+      bottom: "inset-x-0 bottom-0 mt-24 flex-col rounded-t-[10px]",
+      left: "bottom-0 left-0 top-0 w-1/2 ml-3 flex-row-reverse lg:w-3/12",
       right: "bottom-0 right-0 top-0 w-1/2 mr-3 flex-row lg:w-3/12",
     },
   },

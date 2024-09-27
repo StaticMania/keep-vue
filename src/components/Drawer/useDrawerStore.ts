@@ -11,7 +11,7 @@ const [useProvideDrawer, useInjectDrawer] = createInjectionState(
 function useDrawer() {
   const drawerState = useInjectDrawer();
   if (!drawerState)
-    throw new Error("useDrawer must be used within a <Carousel /> Component");
+    throw new Error("useDrawer must be used within a <Drawer /> Component");
   return drawerState;
 }
 

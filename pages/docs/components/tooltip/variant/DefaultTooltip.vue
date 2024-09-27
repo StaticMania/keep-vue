@@ -9,7 +9,7 @@ import {
 
 <template>
   <div class="flex h-44 items-center justify-center">
-    <Tooltip :delay-duration="0">
+    <Tooltip>
       <TooltipAction as-child>
         <Button>Tooltip</Button>
       </TooltipAction>

@@ -32,14 +32,6 @@ const { position } = useDrawer()!;
         )
       ">
       <!-- bar  -->
-      <div
-        :class="
-          cn(
-            keepDrawerTheme.bar.base,
-            keepDrawerTheme.bar.position[position as DrawerDirection],
-            props.class,
-          )
-        " />
 
       <slot></slot>
     </DrawerContent>
