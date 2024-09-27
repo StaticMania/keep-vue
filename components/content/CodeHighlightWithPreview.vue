@@ -2,6 +2,7 @@
 import { PhCheck, PhCopy } from "@phosphor-icons/vue";
 import type { HTMLAttributes } from "vue";
 import { useCopy } from "~/hooks/UseCopy";
+import { TooltipArrow, TooltipContent } from "~/src";
 import { cn } from "~/src/utils/cn";
 import type { ClassProps } from "~/src/utils/interface";
 
@@ -82,15 +83,14 @@ const restProps = computed(() => {
               <PhCopy v-else :size="20" weight="light" color="#fff" />
             </button>
           </TooltipAction>
-          <TooltipContainer side="top">
+          <TooltipContent side="top">
             <p
               className="text-body-5 font-medium text-white dark:text-metal-900">
               {{ copy ? "Copied" : " Copy Code" }}
             </p>
-            <template #tooltipIndicator>
-              <TooltipIndicator :height="8" :width="12" />
-            </template>
-          </TooltipContainer>
+
+            <TooltipArrow :height="8" :width="12" />
+          </TooltipContent>
         </Tooltip>
       </div>
     </div>

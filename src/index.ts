@@ -178,8 +178,8 @@ export { default as ToastWrapper } from "./components/Toast/ToastWrapper.vue";
 //tooltip
 export { default as Tooltip } from "./components/Tooltip/Tooltip.vue";
 export { default as TooltipAction } from "./components/Tooltip/TooltipAction.vue";
-export { default as TooltipContainer } from "./components/Tooltip/TooltipContainer.vue";
-export { default as TooltipIndicator } from "./components/Tooltip/TooltipIndicator.vue";
+export { default as TooltipArrow } from "./components/Tooltip/TooltipArrow.vue";
+export { default as TooltipContent } from "./components/Tooltip/TooltipContent.vue";
 
 //Upload Component
 export { default as Upload } from "./components/Upload/Upload.vue";

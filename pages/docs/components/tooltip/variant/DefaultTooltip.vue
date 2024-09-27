@@ -1,10 +1,5 @@
 <script lang="ts" setup>
-import {
-  Tooltip,
-  TooltipAction,
-  TooltipContainer,
-  TooltipIndicator,
-} from "~/src";
+import { Tooltip, TooltipAction, TooltipArrow, TooltipContent } from "~/src";
 </script>
 
 <template>
@@ -13,12 +8,10 @@ import {
       <TooltipAction as-child>
         <Button>Tooltip</Button>
       </TooltipAction>
-      <TooltipContainer>
+      <TooltipContent>
         <p class="text-body-5 font-medium text-white">Tooltips - Title here</p>
-        <template #tooltipIndicator>
-          <TooltipIndicator :height="8" :width="12" />
-        </template>
-      </TooltipContainer>
+        <TooltipArrow :height="8" :width="12" />
+      </TooltipContent>
     </Tooltip>
   </div>
 </template>

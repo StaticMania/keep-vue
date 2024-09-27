@@ -1,7 +1,5 @@
-<script setup>
-import DefaultDropdown from "~/pages/docs/components/dropdown/variant/DefaultDropdown.vue";
-</script>
+<script setup></script>
 
 <template>
-  <DefaultDropdown />
+  <ToolTipColorVariant />
 </template>

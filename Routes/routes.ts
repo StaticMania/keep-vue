@@ -329,14 +329,14 @@ export const docsRoutes = ref<RouterPath[]>([
   //   tag: false,
   //   deprecate: false,
   // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Tooltip",
+  {
+    id: generatedID.v4(),
+    name: "Tooltip",
 
-  //   href: "/docs/components/tooltip",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+    href: "/docs/components/tooltip",
+    tag: false,
+    deprecate: false,
+  },
   // {
   //   id: generatedID.v4(),
   //   name: "Upload",

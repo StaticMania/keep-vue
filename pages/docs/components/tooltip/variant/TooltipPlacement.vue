@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { Button, Tooltip } from "~/src";
-import TooltipContainer from "~/src/components/Tooltip/TooltipContainer.vue";
-import TooltipIndicator from "~/src/components/Tooltip/TooltipIndicator.vue";
+import TooltipIndicator from "~/src/components/Tooltip/TooltipArrow.vue";
+import TooltipContainer from "~/src/components/Tooltip/TooltipContent.vue";
 
 type TooltipPosition = "bottom" | "top" | "left" | "right";
 

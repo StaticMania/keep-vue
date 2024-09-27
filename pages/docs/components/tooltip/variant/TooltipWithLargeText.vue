@@ -3,8 +3,8 @@ import {
   Button,
   Tooltip,
   TooltipAction,
-  TooltipContainer,
-  TooltipIndicator,
+  TooltipArrow,
+  TooltipContent,
 } from "~/src";
 </script>
 
@@ -15,7 +15,7 @@ import {
         <Button>Tooltip</Button>
       </TooltipAction>
 
-      <TooltipContainer>
+      <TooltipContent>
         <p className="text-body-4 font-medium text-white">
           Tooltips - Title here
         </p>
@@ -23,11 +23,8 @@ import {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </p>
-
-        <template #tooltipIndicator>
-          <TooltipIndicator :height="8" :width="12" />
-        </template>
-      </TooltipContainer>
+        <TooltipArrow :height="8" :width="12" />
+      </TooltipContent>
     </Tooltip>
   </div>
 </template>
