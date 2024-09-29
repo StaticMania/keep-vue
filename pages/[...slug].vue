@@ -20,7 +20,7 @@ useHead({ ...metadata });
 </script>
 
 <template>
-  <DocsContentLayout :title="title" :description="description">
+  <DocsContentLayout :title="`${title} - keep Vue`" :description="description">
     <ContentRenderer id="mainContent" :value="page" />
     <EditPage
       :page-link="`${_path}`"
