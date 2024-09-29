@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import type { badgeTheme } from "./badgeTheme";
@@ -23,7 +24,6 @@ const restProps = computed(() => {
 <template>
   <div
     v-bind="restProps"
-    ref="HTMLDivElement"
     :class="cn(badgeVariants({ color, variant }), props.class)">
     <slot></slot>
   </div>
