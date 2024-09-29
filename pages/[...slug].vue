@@ -12,11 +12,11 @@ if (!page)
 
 const { _path, title, description } = page.value;
 
-const metadata = reactive({
+const metadata = ref({
   title: `${title} - Keep Vue`,
   meta: [{ name: "description", content: description }],
 });
-useHead({ ...metadata });
+useHead({ ...metadata.value });
 </script>
 
 <template>
