@@ -1,5 +1,6 @@
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script lang="ts" setup>
+import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import {
   CategoryScale,
   ChartTooltip,
@@ -11,6 +12,7 @@ import {
   PointElement,
   Title,
 } from "~/src";
+import { defaultLineChartCode } from "./lineChartCode";
 
 KeepChart.register(
   Title,
@@ -174,10 +176,12 @@ const myStyles = computed(() => ({
 }));
 </script>
 <template>
-  <Line
-    id="defaultAreaChart"
-    :options="chartOptions"
-    :data="chartData"
-    :style="myStyles"
-    :plugins="[hoverLine as any]" />
+  <CodeHighlightWithPreview :code="defaultLineChartCode">
+    <Line
+      id="defaultAreaChart"
+      :options="chartOptions"
+      :data="chartData"
+      :style="myStyles"
+      :plugins="[hoverLine as any]" />
+  </CodeHighlightWithPreview>
 </template>

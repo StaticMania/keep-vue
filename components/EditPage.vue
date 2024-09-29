@@ -10,6 +10,7 @@ interface EditPageProps {
 
 const props = defineProps<EditPageProps>();
 
+//to convent the file-name.md to fileName
 function toCamelCase(str: string) {
   return str
     .split("-")
