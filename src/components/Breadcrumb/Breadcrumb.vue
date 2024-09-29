@@ -3,6 +3,7 @@ import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
+import { computed, defineProps } from "vue";
 interface BreadcrumbProps extends /*@vue-ignore*/ HTMLAttributes {
   borderType?: "border-xy" | "border-y";
 }
@@ -16,7 +17,6 @@ const restProps = computed(() => {
 <template>
   <ul
     v-bind="restProps"
-    ref="HTMLUListElement"
     :class="
       cn(
         'flex max-w-max items-center gap-3 border-metal-100 px-3.5 py-2.5 dark:border-metal-700',
