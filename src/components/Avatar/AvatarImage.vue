@@ -4,7 +4,7 @@ import { computed, defineProps, ref } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-interface AvatarImageProps extends /*@vue-ignore*/ ImgHTMLAttributes {
+export interface AvatarImageProps extends /*@vue-ignore*/ ImgHTMLAttributes {
   src?: string;
   alt?: string;
 }

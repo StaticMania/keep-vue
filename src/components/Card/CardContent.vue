@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { computed } from "vue";
-import type { ClassProps } from "~/src/utils/interface";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
-interface CardContentProps extends /*@vue-ignore*/ HTMLAttributes {}
+import type { ClassProps } from "../../utils/interface";
 
+export interface CardContentProps extends /*@vue-ignore*/ HTMLAttributes {}
 const props = defineProps<CardContentProps & ClassProps>();
 const restProps = computed(() => {
   const { class: _, ...rest } = props;
@@ -12,7 +12,7 @@ const restProps = computed(() => {
 });
 </script>
 <template>
-  <div v-bind="restProps" ref="HTMLDivElement" :class="cn('p-6', props.class)">
+  <div v-bind="restProps" :class="cn('p-6', props.class)">
     <slot />
   </div>
 </template>

@@ -1,25 +1,31 @@
 <script lang="ts" setup>
 import type { ButtonHTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
 import type { ClassProps } from "./interface";
 import { useCarousel } from "./useCarousel";
 
-interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
+export interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
   asChild?: boolean;
 }
 
 const props = defineProps<ButtonProps & ClassProps>();
 
+const restProps = computed(() => {
+  const { asChild, class: _, ...rest } = props;
+  return rest;
+});
+
 const { canScrollNext, scrollNext } = useCarousel();
 </script>
 
 <template>
-  <slot v-if="asChild" :can-scroll-next :scroll-next></slot>
+  <slot v-if="asChild" :can-scroll-next :scroll-next v-bind="restProps"></slot>
 
   <button
     v-else
-    ref="HTMLButtonElement"
+    v-bind="restProps"
     :class="cn(carouselTheme.controls.button.wrapper, props.class)"
     type="button"
     :disabled="!canScrollNext"

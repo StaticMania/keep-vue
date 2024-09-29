@@ -7,6 +7,7 @@ import {
 } from "radix-vue";
 import { computed, defineEmits, defineProps, onMounted, ref } from "vue";
 import { useProvideAccordionStore } from "./useAccordionStore";
+
 export interface AccordionFlushProps {
   flush?: boolean;
 }

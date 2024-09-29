@@ -4,12 +4,11 @@ import {
   type CalendarCellTriggerProps,
   useForwardProps,
 } from "radix-vue";
-import { computed } from "vue";
-import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+import { computed, defineProps } from "vue";
+import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
 const props = defineProps<CalendarCellTriggerProps & ClassProps>();
-
 const restProps = computed(() => {
   const { class: _, ...rest } = props;
   return rest;

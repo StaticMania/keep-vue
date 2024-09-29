@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 import { useVModel } from "@vueuse/core";
 import type { InputHTMLAttributes } from "vue";
+import { defineEmits, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { inputTheme } from "./inputTheme";
 
-interface InputProps extends /* @vue-ignore */ InputHTMLAttributes {
+export interface InputProps extends /* @vue-ignore */ InputHTMLAttributes {
   type: string;
   defaultValue?: string | number;
   placeholder: string;
@@ -29,8 +30,8 @@ const modelValue = useVModel(props, "modelValue", emits, {
 
 <template>
   <input
+    v-model="modelValue"
     :type="props.type"
     :placeholder="props.placeholder"
-    v-model="modelValue"
     :class="cn(inputTheme.input, props.class)" />
 </template>

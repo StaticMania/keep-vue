@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-interface CardProps extends /*@vue-ignore*/ HTMLAttributes {}
+export interface CardProps extends /*@vue-ignore*/ HTMLAttributes {}
 
 const props = defineProps<CardProps & ClassProps>();
 
@@ -15,7 +16,6 @@ const restProps = computed(() => {
 
 <template>
   <div
-    ref="HTMLDivElement"
     v-bind="restProps"
     :class="
       cn(

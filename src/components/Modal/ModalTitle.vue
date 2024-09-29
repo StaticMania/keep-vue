@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import { useForwardProps, type DialogTitleProps } from "radix-vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
 const props = defineProps<DialogTitleProps & ClassProps>();
-
 const restProps = computed(() => {
   const { class: _, ...rest } = props;
   return rest;

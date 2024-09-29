@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-import { computed, defineProps } from "vue";
-interface BreadcrumbProps extends /*@vue-ignore*/ HTMLAttributes {
+export interface BreadcrumbProps extends /*@vue-ignore*/ HTMLAttributes {
   borderType?: "border-xy" | "border-y";
 }
 const props = defineProps<BreadcrumbProps & ClassProps>();

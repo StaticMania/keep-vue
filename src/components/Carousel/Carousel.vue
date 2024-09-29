@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { defineEmits, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
 import type { CarouselEmits, CarouselProps, ClassProps } from "./interface";
@@ -19,9 +20,7 @@ defineExpose({
 </script>
 
 <template>
-  <div
-    ref="HTMLDivElement"
-    :class="cn(carouselTheme.carouselContainer, props.class)">
+  <div :class="cn(carouselTheme.carouselContainer, props.class)">
     <CarouselViewport :view-port-class="props.viewPortClass">
       <slot></slot>
     </CarouselViewport>

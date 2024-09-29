@@ -1,23 +1,22 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { paginationTheme } from "./paginationTheme";
 
-interface PaginationListProps {
-  class?: HTMLAttributes["class"];
-}
+export interface PaginationListProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<PaginationListProps>();
+const props = defineProps<PaginationListProps & ClassProps>();
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
 
 const { list } = paginationTheme;
-
-const paginationListRef = ref<HTMLUListElement>();
 </script>
 <template>
-  <ul
-    v-bind="$attrs"
-    ref="paginationListRef"
-    :class="cn(list.base, props.class)">
+  <ul v-bind="restProps" :class="cn(list.base, props.class)">
     <slot></slot>
   </ul>
 </template>

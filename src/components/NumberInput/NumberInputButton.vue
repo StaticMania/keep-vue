@@ -1,27 +1,23 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
+import type { ButtonHTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface NumberInputButtonProps {
-  class?: HTMLAttributes["class"];
-}
+export interface NumberInputButtonProps
+  extends /* @vue-ignore*/ ButtonHTMLAttributes {}
 
-const props = defineProps<NumberInputButtonProps>();
-
-const numberInputBtnRef = ref<null | HTMLButtonElement>(null);
+const props = defineProps<NumberInputButtonProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 </script>
 
 <template>
-  <button
-    v-bind="restProps"
-    ref="numberInputBtnRef"
-    :class="cn('max-w-max flex-1', props.class)">
+  <button v-bind="restProps" :class="cn('max-w-max flex-1', props.class)">
     <slot></slot>
   </button>
 </template>

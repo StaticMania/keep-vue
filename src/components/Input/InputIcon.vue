@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import type { HtmlHTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { inputTheme } from "./inputTheme";
 
-interface InputIconProps extends /*@vue-ignore */ HtmlHTMLAttributes {}
+export interface InputIconProps extends /*@vue-ignore */ HtmlHTMLAttributes {}
 
 const props = defineProps<InputIconProps & ClassProps>();
 

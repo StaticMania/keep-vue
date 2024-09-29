@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { DialogClose, type DialogCloseProps } from "radix-vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 

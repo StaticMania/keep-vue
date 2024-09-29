@@ -4,18 +4,16 @@ import {
   type DialogRootEmits,
   type DialogRootProps,
 } from "radix-vue";
+import { computed, defineEmits, defineProps, withDefaults } from "vue";
 import type { NotificationPosition } from "./notificationTheme";
 import { useProvideNotification } from "./useNotification";
 
-interface NotificationProps {
+export interface NotificationProps {
   position?: NotificationPosition;
 }
 
 const props = withDefaults(defineProps<DialogRootProps & NotificationProps>(), {
   position: "bottomRight",
-});
-const changedPositionValue = computed(() => {
-  return props.position;
 });
 
 const restProps = computed(() => {
@@ -26,6 +24,9 @@ const restProps = computed(() => {
 const emits = defineEmits<DialogRootEmits>();
 const forwardProps = useForwardPropsEmits(restProps, emits);
 
+const changedPositionValue = computed(() => {
+  return props.position;
+});
 useProvideNotification(changedPositionValue);
 </script>
 

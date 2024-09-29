@@ -1,22 +1,21 @@
 <script lang="ts" setup>
+import { defineProps, type HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
 import DotButton from "./DotButton.vue";
 import type { ClassProps } from "./interface";
 import { useCarousel } from "./useCarousel";
 
-interface CarouselIndicatorsProps {
+export interface CarouselIndicatorsProps
+  extends /* @vue-ignore */ HtmlHTMLAttributes {
   dotButtonStyle?: string;
 }
-
 const props = defineProps<CarouselIndicatorsProps & ClassProps>();
 
 const { selectedIndex, scrollSnaps, onDotButtonClick } = useCarousel()!;
 </script>
 <template>
-  <div
-    ref="HTMLDivElement"
-    :class="cn(carouselTheme.controls.indicators.container, props.class)">
+  <div :class="cn(carouselTheme.controls.indicators.container, props.class)">
     <DotButton
       v-for="(number, index) in scrollSnaps"
       :key="number"

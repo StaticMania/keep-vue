@@ -5,12 +5,12 @@ import {
   type CalendarRootProps,
   useForwardPropsEmits,
 } from "radix-vue";
-import { computed } from "vue";
-import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+import { computed, defineEmits, defineProps } from "vue";
+import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import type { classesType } from "./CalendarTypes";
 
-interface DatePickerClass {
+export interface DatePickerClass {
   classes?: classesType;
 }
 

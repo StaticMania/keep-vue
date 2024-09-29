@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { CheckboxIndicator, CheckboxRoot } from "radix-vue";
-import { computed } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
 // Define the props for the component
-interface CheckboxProps {
+export interface CheckboxProps {
   iconClass?: string;
   variant?: "rounded" | "circle" | "default";
 }

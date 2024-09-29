@@ -5,17 +5,16 @@ import {
   type DialogContentEmits,
   type DialogContentProps,
 } from "radix-vue";
+import { computed, defineEmits, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
 const props = defineProps<DialogContentProps & ClassProps>();
-
-const emits = defineEmits<DialogContentEmits>();
-
 const restProps = computed(() => {
   const { class: _, ...rest } = props;
   return rest;
 });
+const emits = defineEmits<DialogContentEmits>();
 
 const forwardPropsAndEmit = useForwardPropsEmits(restProps, emits);
 </script>

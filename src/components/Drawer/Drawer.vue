@@ -6,10 +6,11 @@ import {
   type DrawerRootEmits,
   type DrawerRootProps,
 } from "vaul-vue";
-import type { ClassProps } from "~/src/utils/interface";
+import { computed, defineEmits, defineProps, withDefaults } from "vue";
+import type { ClassProps } from "../../utils/interface";
 import { useProvideDrawer } from "./useDrawerStore";
 
-interface DrawerProps {
+export interface DrawerProps {
   position?: DrawerDirection;
 }
 

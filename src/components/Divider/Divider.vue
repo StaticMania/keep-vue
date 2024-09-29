@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps, ref } from "vue";
 import { cn } from "../../utils/cn";
-
 import {
   type DividerColorVariant,
   type DividerSizeVariant,
   dividerTheme,
 } from "./theme";
 
-interface DividerProps {
+export interface DividerProps {
   color?: keyof DividerColorVariant;
   size?: keyof DividerSizeVariant;
   variant?: "start" | "end" | "center";
@@ -22,9 +22,9 @@ const hasChildren = computed(() => !!useSlots().default);
 
 <template>
   <div
+    v-if="hasChildren"
     v-bind="$attrs"
     ref="dividerRef"
-    v-if="hasChildren"
     :class="
       cn(
         dividerTheme.withChildren.base,
@@ -38,9 +38,9 @@ const hasChildren = computed(() => !!useSlots().default);
     <slot />
   </div>
   <hr
+    v-else
     v-bind="$attrs"
     ref="dividerRef"
-    v-else
     :class="
       cn(
         dividerTheme.withOutChildren.base,

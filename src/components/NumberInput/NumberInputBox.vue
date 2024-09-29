@@ -1,14 +1,16 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
+import type { InputHTMLAttributes } from "vue";
+import { computed, defineModel, defineProps, ref } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface NumberInputBoxProps {
-  class?: HTMLAttributes["class"];
+export interface NumberInputBoxProps
+  extends /* @vue-ignore*/ InputHTMLAttributes {
   min?: number;
   max?: number;
 }
 
-const props = defineProps<NumberInputBoxProps>();
+const props = defineProps<NumberInputBoxProps & ClassProps>();
 
 const restProps = computed(() => {
   const { class: _, ...delegated } = props;
@@ -17,13 +19,6 @@ const restProps = computed(() => {
 });
 
 const numberInputRef = ref<HTMLInputElement>();
-
-//needed for animation later
-// const variants = reactive({
-//   initial: { opacity: 0, y: "10px" },
-//   animate: { opacity: 1, y: 0 },
-//   exit: { opacity: 0, y: "-10px" },
-// });
 
 const proxyValue = defineModel<number>();
 </script>

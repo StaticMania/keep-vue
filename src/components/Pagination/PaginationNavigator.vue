@@ -1,35 +1,35 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
+import type { ButtonHTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { paginationTheme } from "./paginationTheme";
-
-interface PaginationNavigatorProps {
+export interface PaginationNavigatorProps
+  extends /*@vue-ignore*/ ButtonHTMLAttributes {
   shape?: "rounded" | "circle";
   asChild?: boolean;
-  class?: HTMLAttributes["class"];
 }
-const props = withDefaults(defineProps<PaginationNavigatorProps>(), {
-  shape: "rounded",
-  class: "",
+const props = withDefaults(
+  defineProps<PaginationNavigatorProps & ClassProps>(),
+  {
+    shape: "rounded",
+    class: "",
+  },
+);
+
+const restProps = computed(() => {
+  const { class: _, shape, asChild, ...rest } = props;
+  return rest;
 });
+
 const { navigator } = paginationTheme;
-
-const paginationNavigatorRef = ref<HTMLElement>();
-
-const setRef = (value: HTMLElement) => (paginationNavigatorRef.value = value);
 </script>
 <template>
-  <slot
-    v-if="asChild"
-    v-bind="{
-      ...$attrs,
-      ref: setRef,
-    }" />
+  <slot v-if="asChild" v-bind="restProps" />
 
   <button
     v-else
-    v-bind="$attrs"
-    ref="paginationNavigatorRef"
+    v-bind="restProps"
     :class="cn(navigator.base, navigator.shape[shape], props.class)">
     <slot></slot>
   </button>

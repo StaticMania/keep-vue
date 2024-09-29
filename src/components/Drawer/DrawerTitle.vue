@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { DrawerTitleProps } from "vaul-vue";
 import { DrawerTitle } from "vaul-vue";
-import { computed } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 

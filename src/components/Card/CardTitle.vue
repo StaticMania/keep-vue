@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { computed } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { isSlotValidHTMLElement } from "../../utils/slotUtils";
 
-interface CardTitleProps extends /*@vue-ignore*/ HTMLAttributes {
+export interface CardTitleProps extends /*@vue-ignore*/ HTMLAttributes {
   asChild?: boolean;
 }
 
@@ -28,7 +28,6 @@ const validElement = isSlotValidHTMLElement(slot);
   <p
     v-else
     v-bind="restProps"
-    ref="HTMLParagraphElement"
     :class="
       cn(
         'text-heading-6 font-semibold text-metal-800 dark:text-white',

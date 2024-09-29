@@ -6,7 +6,7 @@ import type { ClassProps } from "../../utils/interface";
 import type { badgeTheme } from "./badgeTheme";
 import { badgeVariants } from "./badgeTheme";
 
-interface BadgeProps extends /* @vue-ignore */ HTMLAttributes {
+export interface BadgeProps extends /* @vue-ignore */ HTMLAttributes {
   color?: keyof typeof badgeTheme.color.base;
   variant?: keyof typeof badgeTheme.color;
 }

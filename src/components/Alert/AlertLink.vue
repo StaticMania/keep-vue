@@ -5,6 +5,7 @@ import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";
 import { useAlert } from "./useAlert";
+
 export interface AlertLinkProps
   extends /* @vue-ignore */ AnchorHTMLAttributes {}
 const props = withDefaults(defineProps<AlertLinkProps & ClassProps>(), {

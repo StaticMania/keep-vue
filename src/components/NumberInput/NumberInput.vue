@@ -1,25 +1,22 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface NumberInputProps {
-  class?: HTMLAttributes["class"];
-}
+export interface NumberInputProps extends /* @vue-ignore */ HTMLAttributes {}
 
-const props = defineProps<NumberInputProps>();
+const props = defineProps<NumberInputProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
-
-const numberInputRef = ref<HTMLDivElement>();
 </script>
 
 <template>
   <div
-    ref="numberInputRef"
     v-bind="restProps"
     :class="
       cn(

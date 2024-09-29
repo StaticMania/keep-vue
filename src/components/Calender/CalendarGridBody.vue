@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { CalendarGridBody, type CalendarGridBodyProps } from "radix-vue";
+import { defineProps } from "vue";
 
 const props = defineProps<CalendarGridBodyProps>();
 </script>

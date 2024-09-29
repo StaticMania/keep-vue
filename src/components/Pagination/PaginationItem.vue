@@ -1,24 +1,26 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
+import type { ButtonHTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { paginationTheme } from "./paginationTheme";
 import { usePagination } from "./usePaginationStore";
-
-interface PaginationItemProps {
-  class?: HTMLAttributes["class"];
+export interface PaginationItemProps
+  extends /* @vue-ignore*/ ButtonHTMLAttributes {
   asChild?: boolean;
   active?: boolean;
 }
 
-type ShapeType = "rounded" | "circle";
+export type ShapeType = "rounded" | "circle";
 
-const props = withDefaults(defineProps<PaginationItemProps>(), {
+const props = withDefaults(defineProps<PaginationItemProps & ClassProps>(), {
   class: "",
   active: false,
 });
-
-const paginationItemRef = ref<HTMLElement>();
-const setRef = (value: HTMLElement) => (paginationItemRef.value = value);
+const restProps = computed(() => {
+  const { class: _, active, asChild, ...rest } = props;
+  return rest;
+});
 
 const { shape } = usePagination()!;
 const { item } = paginationTheme;
@@ -26,17 +28,11 @@ const { item } = paginationTheme;
 
 <template>
   <!-- as child provided by user  -->
-  <slot
-    v-if="asChild"
-    v-bind="{
-      ...$attrs,
-      ref: setRef,
-    }" />
+  <slot v-if="asChild" v-bind="restProps" />
 
   <li v-else>
     <button
-      v-bind="$attrs"
-      ref="paginationItemRef"
+      v-bind="restProps"
       :class="
         cn(
           item.base,
