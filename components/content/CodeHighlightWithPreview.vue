@@ -98,7 +98,10 @@ const restProps = computed(() => {
       v-if="active !== 0"
       id="linkPage"
       class="max-h-[420px] overflow-y-auto bg-[#111b27] p-8 text-body-4">
-      <Shiki lang="ts" :code="Object.values(code)[active - 1].trim()" />
+      <Shiki
+        lang="ts"
+        :code="Object.values(code)[active - 1].trim()"
+        class="text-wrap" />
     </div>
 
     <div
@@ -110,3 +113,10 @@ const restProps = computed(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+code {
+  white-space: pre-wrap !important;
+  word-break: break-word;
+}
+</style>
