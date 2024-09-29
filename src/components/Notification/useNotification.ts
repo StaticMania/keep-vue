@@ -1,5 +1,7 @@
-const NotificationStoreKey = "notification-store";
+import { createInjectionState } from "@vueuse/core";
+import { type ComputedRef } from "vue";
 
+const NotificationStoreKey = "notification-store";
 const [useProvideNotification, useInjectNotification] = createInjectionState(
   (position: ComputedRef) => {
     return { position };

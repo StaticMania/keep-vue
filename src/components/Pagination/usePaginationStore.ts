@@ -1,8 +1,12 @@
+import { ref, type ComputedRef } from "vue";
+
+import { createInjectionState } from "@vueuse/core";
+
 // custom injectionKey
 const PaginationStoreKey = "pagination-store";
 
 const [useProvidePagination, usePaginationStore] = createInjectionState(
-  (initialValue: ComputedRef<string> | Ref<string>) => {
+  (initialValue: ComputedRef<string>) => {
     //state
     const shape = ref(initialValue);
     return { shape };

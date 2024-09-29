@@ -1,4 +1,6 @@
+import { createInjectionState } from "@vueuse/core";
 import { type ComputedRef } from "vue";
+
 const AlertStoreKey = "alert-store";
 const [useProvideAlert, useInjectAlert] = createInjectionState(
   (color: ComputedRef<string>) => {

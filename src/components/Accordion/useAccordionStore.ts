@@ -1,5 +1,6 @@
-// custom injectionKey
+import { createInjectionState } from "@vueuse/core";
 import { type ComputedRef } from "vue";
+// custom injectionKey
 const AccordionStoreKey = "accordion-store";
 const [useProvideAccordionStore, useAccordionStore] = createInjectionState(
   (flush: ComputedRef<boolean>) => {
