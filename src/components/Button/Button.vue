@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/require-default-prop -->
 <script lang="ts" setup>
 import type { ButtonHTMLAttributes } from "vue";
-import { computed } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import {
@@ -32,7 +32,6 @@ const restProps = computed(() => {
 <template>
   <button
     v-bind="restProps"
-    ref="HTMLButtonElement"
     :class="
       cn(buttonVariants({ size, color, variant, shape, position }), props.class)
     ">

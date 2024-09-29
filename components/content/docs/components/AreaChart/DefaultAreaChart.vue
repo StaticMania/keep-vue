@@ -1,5 +1,6 @@
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script lang="ts" setup>
+import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import {
   CategoryScale,
   ChartTooltip,
@@ -12,6 +13,7 @@ import {
   PointElement,
   Title,
 } from "~/src";
+import { defaultAreaChartCode } from "./areaChartCode";
 
 KeepChart.register(
   Title,
@@ -39,33 +41,25 @@ const hoverLine = reactive({
     } = KeepChart;
 
     if (tooltip._active && tooltip._active.length) {
-      const activePoints = tooltip._active;
-      activePoints.forEach((activePoint: any) => {
-        const xPosition = activePoint.element.x;
+      const activePoint = tooltip._active[0];
+      const xPosition = activePoint.element.x;
 
-        // Vertical line visible when hover
-        ctx.save();
-        ctx.beginPath();
-        ctx.lineWidth = 0.5;
-        ctx.strokeStyle = "#afbaca";
-        ctx.moveTo(xPosition, top);
-        ctx.lineTo(xPosition, bottom);
-        ctx.stroke();
-        ctx.closePath();
+      // vertical line visible when hover
+      ctx.save();
+      ctx.beginPath();
+      ctx.lineWidth = 0.5;
+      ctx.strokeStyle = "#afbaca";
+      ctx.moveTo(xPosition, top);
+      ctx.lineTo(xPosition, bottom);
+      ctx.stroke();
+      ctx.closePath();
 
-        // Point is visible when hover
-        ctx.beginPath();
-        ctx.arc(
-          activePoint.element.x,
-          activePoint.element.y,
-          4,
-          0,
-          Math.PI * 2,
-        );
-        ctx.fillStyle = "#1B4DFF";
-        ctx.fill();
-        ctx.closePath();
-      });
+      //point is visible when hover
+      ctx.beginPath();
+      ctx.arc(activePoint.element.x, activePoint.element.y, 4, 0, Math.PI * 2);
+      ctx.fillStyle = "#1B4DFF";
+      ctx.fill();
+      ctx.closePath();
     }
   },
 });
@@ -96,38 +90,7 @@ const chartData = reactive({
       },
 
       //border style
-      borderColor: "blue",
-      borderWidth: 0.8,
-      hoverBorderWidth: 5,
-      fill: true,
-
-      //remove point radius
-      pointRadius: 0,
-    },
-    {
-      label: "amount",
-      data: [200, 180, 300, 230, 100, 200, 220, 240, 70],
-
-      //gradient bg color
-      backgroundColor: (context: { chart: { chartArea: any; ctx?: any } }) => {
-        const bgColorStart = "#1b4cff4d";
-        const bgColorEnd = "#1b4cff00";
-
-        if (!context.chart.chartArea) {
-          return;
-        }
-        const {
-          ctx,
-          chartArea: { top, bottom },
-        } = context.chart;
-        const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
-        gradientBg.addColorStop(0, bgColorStart);
-        gradientBg.addColorStop(1, bgColorEnd);
-        return gradientBg;
-      },
-
-      //border style
-      borderColor: "blue",
+      borderColor: "#1B4DFF",
       borderWidth: 0.8,
       hoverBorderWidth: 5,
       fill: true,
@@ -146,7 +109,7 @@ const chartOptions = reactive({
     //title for the chart
     title: {
       display: true,
-      text: "Keep Vue Area Double Series Area Chart",
+      text: "Keep Vue Default Area Chart",
     },
     legend: {
       display: false,
@@ -204,22 +167,24 @@ const chartOptions = reactive({
   },
 });
 
-const customHight = reactive({
+const customHight = ref({
   height: 400, // custom height
 });
 
 const myStyles = computed(() => ({
-  height: `${customHight.height}px`,
+  height: `${customHight.value.height}px`,
   width: `100%`,
   //if custom height is provided then the position relative is needed
   position: "relative",
 }));
 </script>
 <template>
-  <Line
-    id="hoverLine"
-    :options="chartOptions"
-    :data="chartData"
-    :style="myStyles"
-    :plugins="[hoverLine as any]" />
+  <CodeHighlightWithPreview :code="defaultAreaChartCode">
+    <Line
+      id="defaultAreaChart"
+      :options="chartOptions"
+      :data="chartData"
+      :style="myStyles"
+      :plugins="[hoverLine as any]" />
+  </CodeHighlightWithPreview>
 </template>

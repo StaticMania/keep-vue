@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import DocsContentLayout from "~/components/DocsContentLayout.vue";
+import EditPage from "~/components/EditPage.vue";
+
 definePageMeta({
   layout: "docs",
 });
@@ -20,7 +23,7 @@ useHead({ ...metadata });
   <DocsContentLayout :title="title" :description="description">
     <ContentRenderer id="mainContent" :value="page" />
     <EditPage
-      :page-link="`${_path}.md`"
+      :page-link="`${_path}`"
       :next-page-link="next?._path"
       :next-page-name="next?.title" />
   </DocsContentLayout>

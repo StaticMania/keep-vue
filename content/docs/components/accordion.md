@@ -1,5 +1,5 @@
 ---
-  title: 'Accordion - Keep Vue'
+  title: 'Accordion'
   description: 'The Accordion Component in the Keep Vue allows you to create collapsible sections of content, commonly known as accordions. Users can toggle the visibility of the content by clicking on the disclosure button. With customizable options for the theme, open state, type, and state, you can create accordion components that fit seamlessly into your design and provide an intuitive user experience.'
 ---
 

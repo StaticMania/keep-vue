@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
@@ -12,10 +13,7 @@ const restProps = computed(() => {
 </script>
 
 <template>
-  <div
-    v-bind="restProps"
-    ref="HTMLDivElement"
-    :class="cn('flex items-center', props.class)">
+  <div v-bind="restProps" :class="cn('flex items-center', props.class)">
     <slot></slot>
   </div>
 </template>

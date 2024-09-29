@@ -9,6 +9,7 @@ import {
   LinearScale,
   Title,
 } from "~/src";
+import { defaultBarChartCode } from "./barChartCode";
 
 KeepChart.register(
   Title,
@@ -103,9 +104,11 @@ const chartOptions = reactive({
 });
 </script>
 <template>
-  <Bar
-    id="my-chart-id"
-    :options="chartOptions"
-    :data="chartData"
-    :style="myStyles" />
+  <CodeHighlightWithPreview :code="defaultBarChartCode">
+    <Bar
+      id="my-chart-id"
+      :options="chartOptions"
+      :data="chartData"
+      :style="myStyles" />
+  </CodeHighlightWithPreview>
 </template>

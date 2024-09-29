@@ -25,37 +25,37 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Area Chart",
-  //   href: "/docs/components/areaChart",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Bar Chart",
+  {
+    id: generatedID.v4(),
+    name: "Area Chart",
+    href: "/docs/components/area-chart",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Bar Chart",
 
-  //   href: "/docs/components/barChart",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Line Chart",
+    href: "/docs/components/bar-chart",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Line Chart",
 
-  //   href: "/docs/components/lineChart",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Pie Chart",
+    href: "/docs/components/line-chart",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Pie Chart",
 
-  //   href: "/docs/components/pieChart",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+    href: "/docs/components/pie-chart",
+    tag: false,
+    deprecate: false,
+  },
   {
     id: generatedID.v4(),
     name: "Avatar",
@@ -80,22 +80,20 @@ export const docsRoutes = ref<RouterPath[]>([
   //   tag: false,
   //   deprecate: false,
   // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Button",
-
-  //   href: "/docs/components/button",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Button Group",
-
-  //   href: "/docs/components/buttonGroup",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+  {
+    id: generatedID.v4(),
+    name: "Button",
+    href: "/docs/components/button",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Button Group",
+    href: "/docs/components/button-group",
+    tag: false,
+    deprecate: false,
+  },
   // {
   //   id: generatedID.v4(),
   //   name: "Card",

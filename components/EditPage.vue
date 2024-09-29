@@ -10,7 +10,30 @@ interface EditPageProps {
 
 const props = defineProps<EditPageProps>();
 
-const githubPageLink = `https://github.com/StaticMania/keep-vue/blob/main/content${props.pageLink}`;
+function toCamelCase(str: string) {
+  return str
+    .split("-")
+    .map((word, index) =>
+      index === 0
+        ? word.toLowerCase()
+        : word[0].toUpperCase() + word.slice(1).toLowerCase(),
+    )
+    .join("");
+}
+
+function processLink(link: string) {
+  const parts = link.split("/");
+
+  const lastPart = parts[parts.length - 1];
+
+  if (lastPart.includes("-")) {
+    return toCamelCase(lastPart);
+  }
+
+  return lastPart;
+}
+
+const githubPageLink = `https://github.com/StaticMania/keep-vue/tree/main/components/content/docs/components/${processLink(props.pageLink)}`;
 </script>
 
 <template>
