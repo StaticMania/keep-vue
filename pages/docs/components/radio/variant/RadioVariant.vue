@@ -9,16 +9,16 @@ import Radio from "~/src/components/Radio/Radio.vue";
       Choose your favorite country
     </legend>
     <fieldset class="flex items-center gap-2">
-      <Radio variant="rounded" id="bd1" name="country" />
-      <Label htmlFor="bd1">Bangladesh</Label>
+      <Radio id="bd1" variant="rounded" name="country" />
+      <Label html-for="bd1">Bangladesh</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
-      <Radio variant="square" id="usa1" name="country" />
-      <Label htmlFor="usa1">United State</Label>
+      <Radio id="usa1" variant="square" name="country" />
+      <Label html-for="usa1">United State</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
-      <Radio variant="circle" id="pk1" name="country" />
-      <Label htmlFor="pk1">Pakistan</Label>
+      <Radio id="pk1" variant="circle" name="country" />
+      <Label html-for="pk1">Pakistan</Label>
     </fieldset>
   </form>
 </template>

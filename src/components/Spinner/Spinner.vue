@@ -1,34 +1,34 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import {
   spinnerTheme,
   type SpinnerColorVariant,
   type SpinnerSizeVariant,
 } from "./spinnerTheme";
 
-interface SpinnerProps {
+export interface SpinnerProps extends /*@vue-ignore*/ HTMLAttributes {
   color?: keyof SpinnerColorVariant;
   size?: keyof SpinnerSizeVariant;
-  class?: HTMLAttributes["class"];
 }
 
-const props = withDefaults(defineProps<SpinnerProps>(), {
+const props = withDefaults(defineProps<SpinnerProps & ClassProps>(), {
   color: "info",
   size: "md",
   class: "",
 });
 
 const restProps = computed(() => {
-  const { color, size, class: _, ...delegated } = props;
+  const { color, size, class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
-const spinnerRef = ref<HTMLSpanElement>();
 </script>
 
 <template>
-  <span ref="spinnerRef" v-bind="restProps" :class="cn(props.class)">
+  <span v-bind="restProps" :class="cn(props.class)">
     <slot>
       <svg
         fill="none"

@@ -1,28 +1,26 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { useProvideRatingStore } from "./useRatingStore";
 
-interface RatingProps {
+export interface RatingProps extends /*@vue-ignore*/ HTMLAttributes {
   handleRating?: (value: number | undefined) => void;
-  class?: HTMLAttributes["class"];
 }
 
-const props = defineProps<RatingProps>();
+const props = defineProps<RatingProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, handleRating, ...delegated } = props;
-  return delegated;
+  const { class: _, handleRating, ...rest } = props;
+  return rest;
 });
-
-const ratingRef = ref<HTMLDivElement>();
 
 useProvideRatingStore(props.handleRating);
 </script>
 
 <template>
   <div
-    ref="ratingRef"
     v-bind="restProps"
     :class="
       cn('items center flex flex-row-reverse justify-end gap-0.5', props.class)

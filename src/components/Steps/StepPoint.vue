@@ -1,23 +1,23 @@
 <script lang="ts" setup>
-import type { HtmlHTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
+import type { ClassProps } from "~/src/utils/interface";
 import { cn } from "../../utils/cn";
 import { stepPointTheme } from "./stepPointTheme";
 
-interface StepPointProps {
+export interface StepPointProps {
   variant?: "default" | "border" | "icon";
   completed?: boolean;
-  class?: HtmlHTMLAttributes["class"];
 }
-const props = withDefaults(defineProps<StepPointProps>(), {
+const props = withDefaults(defineProps<StepPointProps & ClassProps>(), {
   variant: "default",
   class: "",
 });
 
 const restProps = computed(() => {
-  const { class: _, variant, completed, ...delegated } = props;
+  const { class: _, variant, completed, ...rest } = props;
 
   return {
-    ...delegated,
+    ...rest,
     "data-completed": completed,
   };
 });

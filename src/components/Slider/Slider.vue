@@ -1,21 +1,20 @@
 <script lang="ts" setup>
 import type { SliderRootProps } from "radix-vue";
 import { SliderRange, SliderRoot, SliderTrack } from "radix-vue";
-
-import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface SliderProps {
+export interface SliderProps {
   trackClass?: string;
   rangeClass?: string;
   thumbClass?: string;
-  class?: HTMLAttributes["class"];
 }
-const props = defineProps<SliderRootProps & SliderProps>();
+const props = defineProps<SliderRootProps & SliderProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, trackClass, rangeClass, thumbClass, ...delegated } = props;
-  return delegated;
+  const { class: _, trackClass, rangeClass, thumbClass, ...rest } = props;
+  return rest;
 });
 </script>
 

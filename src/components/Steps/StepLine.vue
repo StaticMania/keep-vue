@@ -1,25 +1,23 @@
 <script lang="ts" setup>
-import type { HtmlHTMLAttributes } from "vue";
+import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface StepLineProps extends /* @vue-ignore */ HtmlHTMLAttributes {
+export interface StepLineProps extends /* @vue-ignore */ HTMLAttributes {
   completed?: boolean;
   stepLineBg?: string;
-  class?: HtmlHTMLAttributes["class"];
 }
 
-const props = defineProps<StepLineProps>();
-
+const props = defineProps<StepLineProps & ClassProps>();
 const restProps = computed(() => {
-  const { class: _, stepLineBg, completed, ...delegated } = props;
-
-  return delegated;
+  const { class: _, stepLineBg, completed, ...rest } = props;
+  return rest;
 });
 </script>
 
 <template>
   <div
-    ref="HTMLDivElement"
     v-bind="restProps"
     :class="
       cn('relative h-0.5 w-full rounded-full bg-primary-25', props.stepLineBg)

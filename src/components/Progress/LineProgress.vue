@@ -1,30 +1,34 @@
 <!-- RootComponent.vue -->
 <script setup lang="ts">
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { progressTheme } from "./progressTheme";
 import { useProvideProgressStore } from "./useProgressStore";
 
-interface ProgressProps {
+export interface ProgressProps extends /* @vue-ignore*/ HTMLAttributes {
   progress?: number;
-  class?: HTMLAttributes["class"];
 }
-const props = withDefaults(defineProps<ProgressProps>(), {
+const props = withDefaults(defineProps<ProgressProps & ClassProps>(), {
   progress: 0,
   class: "",
+});
+const restProps = computed(() => {
+  const { class: _, progress, ...rest } = props;
+  return rest;
 });
 
 const updatedProgressValue = computed(() => props.progress);
 
 const { line } = progressTheme;
-const progressRef = ref<HTMLDivElement>();
 
 //pass the store
 useProvideProgressStore(updatedProgressValue)!;
 </script>
 
 <template>
-  <div ref="progressRef" v-bind="$attrs" :class="cn(line.root, props.class)">
+  <div v-bind="restProps" :class="cn(line.root, props.class)">
     <slot></slot>
   </div>
 </template>

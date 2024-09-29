@@ -1,25 +1,28 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { progressTheme } from "./progressTheme";
 import { useProgressStore } from "./useProgressStore";
 
-interface LineProgressBarProps {
-  class?: HTMLAttributes["class"];
+export interface LineProgressBarProps extends /* @vue-ignore*/ HTMLAttributes {
   lineBackground?: string;
 }
 
-const props = defineProps<LineProgressBarProps>();
+const props = defineProps<LineProgressBarProps & ClassProps>();
+const restProps = computed(() => {
+  const { class: _, lineBackground, ...rest } = props;
+  return rest;
+});
 
 const { line } = progressTheme;
 const { progressBar } = useProgressStore()!;
-const lineProgressBarRef = ref<HTMLDivElement>();
 </script>
 
 <template>
   <div
-    ref=" lineProgressBarRef"
-    v-bind="$attrs"
+    v-bind="restProps"
     :class="cn(line.progress.base, 'h-2.5', props.lineBackground)">
     <div
       :class="cn(line.progress.bar, props.class)"

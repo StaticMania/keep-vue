@@ -1,8 +1,11 @@
-const [useProvideProgressStore, useProgressStore] = createInjectionState(
-  (initialProgress: ComputedRef<number> | Ref<number>) => {
+import { createInjectionState } from "@vueuse/core";
+import type { ComputedRef } from "vue";
+import { ref, watch } from "vue";
+
+const [useProvideProgressStore, useInjectProgress] = createInjectionState(
+  (initialProgress: ComputedRef<number>) => {
     //state
     const progress = ref(initialProgress);
-
     const progressBar = ref(0);
 
     watch(
@@ -21,5 +24,15 @@ const [useProvideProgressStore, useProgressStore] = createInjectionState(
     return { progressBar };
   },
 );
+
+function useProgressStore() {
+  const progressStore = useInjectProgress();
+  if (progressStore == null) {
+    throw new Error(
+      "Please call `useProvideProgressStore` on the <progress/> component",
+    );
+  }
+  return progressStore;
+}
 
 export { useProgressStore, useProvideProgressStore };

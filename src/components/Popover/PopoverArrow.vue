@@ -1,5 +1,9 @@
 <script lang="ts" setup>
-import type { PopoverArrowProps } from "radix-vue";
+import {
+  PopoverArrow as PopoverIndicator,
+  type PopoverArrowProps,
+} from "radix-vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
@@ -12,7 +16,7 @@ const restProps = computed(() => {
 </script>
 
 <template>
-  <PopoverArrow v-bind="restProps" :class="cn('fill-white', props.class)">
+  <PopoverIndicator v-bind="restProps" :class="cn('fill-white', props.class)">
     <slot></slot>
-  </PopoverArrow>
+  </PopoverIndicator>
 </template>

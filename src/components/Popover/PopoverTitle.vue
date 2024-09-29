@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-interface PopoverTitleProps extends /*@vue-ignore*/ HTMLAttributes {}
+export interface PopoverTitleProps extends /*@vue-ignore*/ HTMLAttributes {}
 
 const props = defineProps<PopoverTitleProps & ClassProps>();
-
 const restProps = computed(() => {
   const { class: _, ...rest } = props;
   return rest;
@@ -15,7 +15,6 @@ const restProps = computed(() => {
 
 <template>
   <h2
-    ref="HTMLHeadingElement"
     v-bind="restProps"
     :class="
       cn('text-body-3 font-medium text-metal-900 dark:text-white', props.class)

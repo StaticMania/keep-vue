@@ -1,28 +1,33 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
+import type { SVGAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { progressTheme } from "./progressTheme";
 import { useProgressStore } from "./useProgressStore";
 
-interface CircleLineProps {
+export interface CircleLineProps extends /* @vue-ignore*/ SVGAttributes {
   strokeWidth?: number;
   strokeColor?: string;
-  class?: HTMLAttributes["class"];
 }
 
-const props = withDefaults(defineProps<CircleLineProps>(), {
+const props = withDefaults(defineProps<CircleLineProps & ClassProps>(), {
   strokeWidth: 3.5,
+  strokeColor: "",
+  class: "",
 });
 
-const circleLineRef = ref<SVGAElement>();
+const restProps = computed(() => {
+  const { class: _, strokeColor, strokeWidth, ...rest } = props;
+  return rest;
+});
 
 const { circle } = progressTheme;
 const { progressBar } = useProgressStore()!;
 </script>
 <template>
   <svg
-    v-bind="$attrs"
-    ref="circleLineRef"
+    v-bind="restProps"
     :class="circle.svg.base"
     viewBox="0 0 36 36"
     xmlns="http://www.w3.org/2000/svg">

@@ -1,27 +1,27 @@
 <script lang="ts" setup>
-import type { HTMLAttributes, HtmlHTMLAttributes } from "vue";
+import type { HTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { skeletonTheme } from "./skeletonTheme";
 
-interface SkeletonProps extends /* @vue-ignore */ HTMLAttributes {
+export interface SkeletonProps extends /* @vue-ignore */ HTMLAttributes {
   animation?: boolean;
-  class?: HtmlHTMLAttributes["class"];
 }
 
-const props = withDefaults(defineProps<SkeletonProps>(), {
+const props = withDefaults(defineProps<SkeletonProps & ClassProps>(), {
   animation: true,
   class: "",
 });
 
 const restProps = computed(() => {
-  const { class: _, animation, ...delegated } = props;
-  return delegated;
+  const { class: _, animation, ...rest } = props;
+  return rest;
 });
 </script>
 
 <template>
   <div
-    ref="HTMLDivElement"
     v-bind="restProps"
     :class="
       cn(

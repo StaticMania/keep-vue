@@ -4,9 +4,9 @@ import {
   Button,
   Popover,
   PopoverAction,
+  PopoverArrow,
   PopoverContent,
   PopoverDescription,
-  PopoverIndicator,
   PopoverTitle,
 } from "~/src";
 </script>
@@ -45,9 +45,7 @@ import {
           </div>
         </div>
 
-        <template #popoverIndicator>
-          <PopoverIndicator :width="10" :height="10" />
-        </template>
+        <PopoverArrow :width="10" :height="10" />
       </PopoverContent>
     </Popover>
 
@@ -83,9 +81,7 @@ import {
           </div>
         </div>
 
-        <template #popoverIndicator>
-          <PopoverIndicator :width="10" :height="10" />
-        </template>
+        <PopoverArrow :width="10" :height="10" />
       </PopoverContent>
     </Popover>
 
@@ -121,9 +117,7 @@ import {
           </div>
         </div>
 
-        <template #popoverIndicator>
-          <PopoverIndicator :width="10" :height="10" />
-        </template>
+        <PopoverArrow :width="10" :height="10" />
       </PopoverContent>
     </Popover>
 
@@ -157,10 +151,7 @@ import {
             <Button class="w-full">Next</Button>
           </div>
         </div>
-
-        <template #popoverIndicator>
-          <PopoverIndicator :width="10" :height="10" />
-        </template>
+        <PopoverArrow :width="10" :height="10" />
       </PopoverContent>
     </Popover>
   </div>

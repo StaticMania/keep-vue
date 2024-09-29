@@ -5,13 +5,13 @@ import {
   type RangeCalendarRootProps,
   useForwardPropsEmits,
 } from "radix-vue";
-import { computed } from "vue";
+import { computed, defineEmits, defineProps } from "vue";
 import { cn } from "~/src/utils/cn";
 import type { ClassProps } from "~/src/utils/interface";
 import type { classesType } from "../Calender/CalendarTypes";
 import RangeCalendarGrid from "./RangeCalendarGrid.vue";
 
-interface DatePickerClass {
+export interface DatePickerClass {
   classes?: classesType;
 }
 

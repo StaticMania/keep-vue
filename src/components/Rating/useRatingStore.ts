@@ -1,3 +1,5 @@
+import { createInjectionState } from "@vueuse/core";
+
 type RatingContextProps = (value: number | undefined) => void;
 
 // custom injectionKey
@@ -10,9 +12,7 @@ const [useProvideRatingStore, useRatingStore] = createInjectionState(
   { injectionKey: RatingStoreKey },
 );
 
-export { useProvideRatingStore };
-
-export function useRatingStoreOrThrow() {
+function useRatingStoreOrThrow() {
   const ratingStore = useRatingStore();
   if (ratingStore == null)
     throw new Error(
@@ -20,3 +20,5 @@ export function useRatingStoreOrThrow() {
     );
   return ratingStore;
 }
+
+export { useProvideRatingStore, useRatingStoreOrThrow };

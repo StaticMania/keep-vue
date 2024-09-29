@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-import Label from "~/src/components/Label/Label.vue";
-import Radio from "~/src/components/Radio/Radio.vue";
+import { Label, Radio } from "~/src";
 </script>
 
 <template>
@@ -10,15 +9,15 @@ import Radio from "~/src/components/Radio/Radio.vue";
     </legend>
     <fieldset class="flex items-center gap-2">
       <Radio id="bd" name="country" />
-      <Label htmlFor="bd">Bangladesh</Label>
+      <Label html-for="bd">Bangladesh</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
       <Radio id="usa" name="country" />
-      <Label htmlFor="usa">United State</Label>
+      <Label html-for="usa">United State</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
       <Radio id="pk" name="country" />
-      <Label htmlFor="pk">Pakistan</Label>
+      <Label html-for="pk">Pakistan</Label>
     </fieldset>
   </form>
 </template>

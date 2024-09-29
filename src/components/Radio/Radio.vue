@@ -1,26 +1,35 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
+import type { InputHTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { radioTheme } from "./radioTheme";
 
-interface RadioProps {
+export interface RadioProps extends /* @vue-ignore */ InputHTMLAttributes {
   variant?: "circle" | "rounded" | "square";
-  class?: HTMLAttributes["class"];
+  id?: string;
+  name?: string;
 }
 
-const props = withDefaults(defineProps<RadioProps>(), {
+const props = withDefaults(defineProps<RadioProps & ClassProps>(), {
   class: "",
   variant: "rounded",
+  id: "",
+  name: "",
 });
 
-const radioInputRef = ref<HTMLInputElement>();
+const restProps = computed(() => {
+  const { class: _, variant, id, name, type, ...rest } = props;
+  return rest;
+});
 </script>
 
 <template>
   <input
+    :id="id"
     type="radio"
-    ref="radioInputRef"
-    v-bind="$attrs"
+    :name="name"
+    v-bind="restProps"
     :class="cn(radioTheme.input)" />
   <button
     :class="

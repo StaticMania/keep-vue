@@ -1,19 +1,21 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { useProgressStore } from "./useProgressStore";
 
-interface LineProgressText {
-  class?: HTMLAttributes["class"];
-}
-const props = defineProps<LineProgressText>();
-const lineProgressTextRef = ref<HTMLDivElement>();
+interface LineProgressText extends /* @vue-ignore*/ HTMLAttributes {}
+const props = defineProps<LineProgressText & ClassProps>();
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
+});
+
 const { progressBar } = useProgressStore()!;
 </script>
 <template>
   <div
-    v-bind="$attrs"
-    ref="lineProgressTextRef"
+    v-bind="restProps"
     :class="
       cn('w-10 text-end text-body-4 font-medium text-primary-500', props.class)
     ">

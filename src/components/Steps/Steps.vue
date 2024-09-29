@@ -1,22 +1,18 @@
 <script lang="ts" setup>
-import type { HtmlHTMLAttributes } from "vue";
+import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 
-interface StepsProps {
-  class?: HtmlHTMLAttributes["class"];
-}
+export interface StepsProps extends /*@vue-ignore*/ HTMLAttributes {}
 
-const stepsRef = ref<HTMLDivElement | null>(null);
 const props = defineProps<StepsProps>();
-
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
 </script>
 <template>
   <div
-    ref="stepsRef"
     v-bind="restProps"
     :class="
       cn(
