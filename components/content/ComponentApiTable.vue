@@ -21,22 +21,22 @@ defineProps<ComponentProps>();
       <thead>
         <tr>
           <th
-            class="rounded-bl rounded-tl bg-metal-50 px-4 py-3 text-body-4 font-medium text-metal-900 dark:bg-white dark:text-metal-900">
+            class="rounded-bl rounded-tl bg-metal-50 px-4 py-3 text-body-4 font-bold text-metal-900 dark:bg-white dark:text-metal-900">
             Property
           </th>
 
           <th
-            class="bg-metal-50 px-4 py-3 text-body-4 font-medium text-metal-900 dark:bg-white dark:text-metal-900">
+            class="bg-metal-50 px-4 py-3 text-body-4 font-bold text-metal-900 dark:bg-white dark:text-metal-900">
             Description
           </th>
 
           <th
-            class="bg-metal-50 px-4 py-3 text-body-4 font-medium text-metal-900 dark:bg-white dark:text-metal-900">
+            class="bg-metal-50 px-4 py-3 text-body-4 font-bold text-metal-900 dark:bg-white dark:text-metal-900">
             Type
           </th>
 
           <th
-            class="rounded-br bg-metal-50 px-4 py-3 text-body-4 font-medium text-metal-900 dark:bg-white dark:text-metal-900">
+            class="rounded-br bg-metal-50 px-4 py-3 text-body-4 font-bold text-metal-900 dark:bg-white dark:text-metal-900">
             Default
           </th>
         </tr>
