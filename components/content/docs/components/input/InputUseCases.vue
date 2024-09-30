@@ -1,0 +1,49 @@
+<script lang="ts" setup>
+import { PhEnvelope, PhLock } from "@phosphor-icons/vue";
+import { ref } from "vue";
+import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
+import { Button, Input, InputIcon, Label } from "~/src";
+import { inputUseCasesCode } from "./inputCode";
+
+const email = ref("");
+const password = ref("");
+
+const handleSubmit = () => {};
+</script>
+
+<template>
+  <CodeHighlightWithPreview :code="inputUseCasesCode">
+    <form
+      class="mx-auto max-w-md space-y-2 rounded-lg border p-8 shadow-md"
+      @submit.prevent="handleSubmit">
+      <fieldset class="space-y-1">
+        <Label html-for="name">Email*</Label>
+        <div class="relative">
+          <Input
+            v-model="email"
+            type="email"
+            placeholder="Enter email"
+            class="ps-11" />
+          <InputIcon>
+            <PhEnvelope :size="19" color="#AFBACA" />
+          </InputIcon>
+        </div>
+      </fieldset>
+      <fieldset class="space-y-1">
+        <Label html-for="password">Password*</Label>
+        <div class="relative">
+          <Input
+            id="password"
+            v-model="password"
+            placeholder="Enter password"
+            type="password"
+            class="ps-11" />
+          <InputIcon>
+            <PhLock :size="19" color="#AFBACA" />
+          </InputIcon>
+        </div>
+      </fieldset>
+      <Button size="sm" color="secondary" type="submit">Sign In</Button>
+    </form>
+  </CodeHighlightWithPreview>
+</template>

@@ -63,23 +63,23 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Badge",
+  {
+    id: generatedID.v4(),
+    name: "Badge",
 
-  //   href: "/docs/components/badge",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+    href: "/docs/components/badge",
+    tag: false,
+    deprecate: false,
+  },
 
-  // {
-  //   id: generatedID.v4(),
-  //   name: "BreadCrumb",
+  {
+    id: generatedID.v4(),
+    name: "BreadCrumb",
 
-  //   href: "/docs/components/breadcrumb",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+    href: "/docs/components/breadcrumb",
+    tag: false,
+    deprecate: false,
+  },
   {
     id: generatedID.v4(),
     name: "Button",
@@ -214,14 +214,13 @@ export const docsRoutes = ref<RouterPath[]>([
   //   tag: false,
   //   deprecate: false,
   // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Radio",
-
-  //   href: "/docs/components/radio",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+  {
+    id: generatedID.v4(),
+    name: "Radio",
+    href: "/docs/components/radio",
+    tag: false,
+    deprecate: false,
+  },
   // {
   //   id: generatedID.v4(),
   //   name: "Rating",
@@ -311,14 +310,13 @@ export const docsRoutes = ref<RouterPath[]>([
   //   deprecate: false,
   // },
 
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Input",
-
-  //   href: "/docs/components/input",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+  {
+    id: generatedID.v4(),
+    name: "Input",
+    href: "/docs/components/input",
+    tag: false,
+    deprecate: false,
+  },
   // {
   //   id: generatedID.v4(),
   //   name: "Timeline",
