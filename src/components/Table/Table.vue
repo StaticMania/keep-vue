@@ -1,26 +1,22 @@
 <script lang="ts" setup>
-import type { HTMLAttributes, TableHTMLAttributes } from "vue";
+import type { TableHTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface TableProps extends /* @vue-ignore */ TableHTMLAttributes {
-  class?: HTMLAttributes["class"];
-}
+export interface TableProps extends /* @vue-ignore */ TableHTMLAttributes {}
 
-const props = defineProps<TableProps>();
+const props = defineProps<TableProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
-
-const tableRef = ref<HTMLTableElement>();
 </script>
 
 <template>
   <div id="tableScrollBar" class="relative w-full overflow-auto">
     <table
-      ref="tableRef"
       v-bind="restProps"
       :class="
         cn(

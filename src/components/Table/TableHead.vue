@@ -1,22 +1,19 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
+import type { TableHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface TableHeadProps {
-  class?: HTMLAttributes["class"];
-}
+export interface TableHeadProps extends /*@vue-ignore*/ TableHTMLAttributes {}
 
-const props = defineProps<TableHeadProps>();
-
+const props = defineProps<TableHeadProps & ClassProps>();
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
 </script>
 
 <template>
   <th
-    ref="HTMLTableCellElement"
     v-bind="restProps"
     :class="
       cn(

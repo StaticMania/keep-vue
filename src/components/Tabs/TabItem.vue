@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import type { ButtonHTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { useTabs } from "./useTabs";
 
-interface TabItemProps extends /*@vue-ignore */ ButtonHTMLAttributes {
+export interface TabItemProps extends /*@vue-ignore */ ButtonHTMLAttributes {
   value: string;
   contentClassName?: string;
   bgClassName?: string;
@@ -30,7 +31,6 @@ const { activeItem, handleActive, variant } = useTabs();
 <template>
   <button
     key="tab-item"
-    ref="HTMLButtonElement"
     :data-active="activeItem === value"
     v-bind="restProps"
     :class="

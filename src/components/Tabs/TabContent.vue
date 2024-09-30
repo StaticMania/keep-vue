@@ -1,18 +1,19 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { useTabs } from "./useTabs";
 
-interface TabContentProps extends /* @vue-ignore*/ HTMLAttributes {
+export interface TabContentProps extends /* @vue-ignore*/ HTMLAttributes {
   value: string;
 }
 
 const props = defineProps<TabContentProps & ClassProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
 
 const { activeItem } = useTabs();
@@ -20,7 +21,6 @@ const { activeItem } = useTabs();
 
 <template>
   <div
-    ref="HTMLDivElement"
     v-bind="restProps"
     :data-active="activeItem === props.value"
     :class="

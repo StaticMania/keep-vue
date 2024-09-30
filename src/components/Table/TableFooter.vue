@@ -1,22 +1,19 @@
 <script lang="ts" setup>
-import type { HTMLAttributes } from "vue";
+import type { TableHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface TableFooterProps {
-  class?: HTMLAttributes["class"];
-}
+export interface TableFooterProps extends /*@vue-ignore*/ TableHTMLAttributes {}
 
-const props = defineProps<TableFooterProps>();
-
+const props = defineProps<TableFooterProps & ClassProps>();
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
 </script>
 
 <template>
   <tfoot
-    ref="HTMLTableSectionElement"
     v-bind="restProps"
     :class="
       cn(

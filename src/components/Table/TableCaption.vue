@@ -1,13 +1,12 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 
-interface TableCaptionProps {
-  class?: HTMLAttributes["class"];
-}
+export interface TableCaptionProps extends /* @vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<TableCaptionProps>();
-
+const props = defineProps<TableCaptionProps & ClassProps>();
 const restProps = computed(() => {
   const { class: _, ...delegated } = props;
   return delegated;

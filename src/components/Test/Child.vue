@@ -1,27 +1,44 @@
 <script lang="ts" setup>
-import { Label, Radio } from "~/src";
+import { PhEnvelope } from "@phosphor-icons/vue";
+import { Button, Input, InputIcon, Label, Textarea } from "~/src";
+const inputValue = ref("");
+const textAreaValue = ref("");
 
-const picked = ref("pakistan");
+const handleSubmit = (event) => {
+  event.preventDefault();
+  console.log("Email:", inputValue.value);
+  console.log("Message:", textAreaValue.value);
+};
 </script>
 
 <template>
-  <div>The picked value is: {{ picked }}</div>
-  <form class="flex flex-col gap-2">
-    <legend class="mb-1 text-body-3 text-metal-600 dark:text-metal-300">
-      Choose your favorite country
-    </legend>
-
-    <fieldset class="flex items-center gap-2">
-      <Radio id="pk" name="country" value="pakistan" v-model="picked" />
-      <Label html-for="pk">Pakistan</Label>
+  <form
+    class="mx-auto max-w-md space-y-3 rounded-md border border-metal-100 p-6 dark:border-metal-800"
+    @submit="handleSubmit">
+    <fieldset class="space-y-1">
+      <Label html-for="email">Email*</Label>
+      <div class="relative">
+        <Input
+          id="email"
+          type="email"
+          v-model="inputValue"
+          placeholder="Enter email"
+          class="ps-11" />
+        <InputIcon>
+          <PhEnvelope :size="19" color="#AFBACA" />
+        </InputIcon>
+      </div>
     </fieldset>
-    <fieldset class="flex items-center gap-2">
-      <Radio id="bd" name="country" value="bangladesh" v-model="picked" />
-      <Label html-for="bd">Bangladesh</Label>
+    <fieldset class="space-y-1">
+      <Label html-for="m1">Message*</Label>
+      <Textarea
+        id="m1"
+        v-model="textAreaValue"
+        placeholder="Write your message here"
+        :rows="8" />
     </fieldset>
-    <fieldset class="flex items-center gap-2">
-      <Radio id="india" name="country" value="india" v-model="picked" />
-      <Label html-for="in">India</Label>
-    </fieldset>
+    <Button size="sm" color="secondary" type="submit" class="w-full">
+      Send Message
+    </Button>
   </form>
 </template>

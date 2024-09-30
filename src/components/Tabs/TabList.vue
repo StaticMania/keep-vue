@@ -1,17 +1,17 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { useTabs } from "./useTabs";
 
-interface TabListProps extends /*@vue-ignore*/ HTMLAttributes {}
+export interface TabListProps extends /*@vue-ignore*/ HTMLAttributes {}
 
 const props = defineProps<TabListProps & ClassProps>();
-
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 
 const { variant } = useTabs();
@@ -19,7 +19,6 @@ const { variant } = useTabs();
 
 <template>
   <div
-    ref="HTMLDivElement"
     v-bind="restProps"
     :class="
       cn(

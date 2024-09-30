@@ -8,14 +8,16 @@ import { inputTheme } from "./inputTheme";
 
 export interface InputProps extends /* @vue-ignore */ InputHTMLAttributes {
   type: string;
+  // eslint-disable-next-line vue/require-default-prop
   defaultValue?: string | number;
   placeholder: string;
-  modelValue: string | number;
+  modelValue?: string | number;
 }
 
 const props = withDefaults(defineProps<InputProps & ClassProps>(), {
   class: "",
   type: "text",
+  modelValue: "",
 });
 
 const emits = defineEmits<{

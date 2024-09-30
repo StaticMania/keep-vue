@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
+import { computed, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { useProvideTabsStore } from "./useTabs";
 
-interface TabsProps extends /* @vue-ignore */ HTMLAttributes {
+export interface TabsProps extends /* @vue-ignore */ HTMLAttributes {
   defaultActive?: string;
   variant?: "default" | "fill" | "underline";
 }
@@ -33,7 +34,7 @@ useProvideTabsStore(changedVariant.value, changedDefaultActive.value);
 </script>
 
 <template>
-  <div ref="HTMLDivElement" v-bind="restProps" :class="cn(props.class)">
+  <div v-bind="restProps" :class="cn(props.class)">
     <slot></slot>
   </div>
 </template>
