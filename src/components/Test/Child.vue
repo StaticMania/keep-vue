@@ -1,5 +1,27 @@
-<script setup></script>
+<script lang="ts" setup>
+import { Label, Radio } from "~/src";
+
+const picked = ref("pakistan");
+</script>
 
 <template>
-  <ToolTipColorVariant />
+  <div>The picked value is: {{ picked }}</div>
+  <form class="flex flex-col gap-2">
+    <legend class="mb-1 text-body-3 text-metal-600 dark:text-metal-300">
+      Choose your favorite country
+    </legend>
+
+    <fieldset class="flex items-center gap-2">
+      <Radio id="pk" name="country" value="pakistan" v-model="picked" />
+      <Label html-for="pk">Pakistan</Label>
+    </fieldset>
+    <fieldset class="flex items-center gap-2">
+      <Radio id="bd" name="country" value="bangladesh" v-model="picked" />
+      <Label html-for="bd">Bangladesh</Label>
+    </fieldset>
+    <fieldset class="flex items-center gap-2">
+      <Radio id="india" name="country" value="india" v-model="picked" />
+      <Label html-for="in">India</Label>
+    </fieldset>
+  </form>
 </template>

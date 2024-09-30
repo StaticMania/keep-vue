@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { Label, Radio } from "~/src";
+const picked = ref("pakistan");
 </script>
 
 <template>
@@ -8,16 +9,16 @@ import { Label, Radio } from "~/src";
       Choose your favorite country
     </legend>
     <fieldset class="flex items-center gap-2">
-      <Radio id="bd" name="country" />
+      <Radio id="pk" v-model="picked" name="country" value="pakistan" />
+      <Label html-for="pk">Pakistan</Label>
+    </fieldset>
+    <fieldset class="flex items-center gap-2">
+      <Radio id="bd" v-model="picked" name="country" value="bangladesh" />
       <Label html-for="bd">Bangladesh</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
-      <Radio id="usa" name="country" />
-      <Label html-for="usa">United State</Label>
-    </fieldset>
-    <fieldset class="flex items-center gap-2">
-      <Radio id="pk" name="country" />
-      <Label html-for="pk">Pakistan</Label>
+      <Radio id="india" v-model="picked" name="country" value="india" />
+      <Label html-for="in">India</Label>
     </fieldset>
   </form>
 </template>

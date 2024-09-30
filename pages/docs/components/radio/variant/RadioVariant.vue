@@ -1,6 +1,8 @@
 <script lang="ts" setup>
-import Label from "~/src/components/Label/Label.vue";
-import Radio from "~/src/components/Radio/Radio.vue";
+import { ref } from "vue";
+import { Label, Radio } from "~/src";
+
+const picked = ref("pakistan");
 </script>
 
 <template>
@@ -9,16 +11,31 @@ import Radio from "~/src/components/Radio/Radio.vue";
       Choose your favorite country
     </legend>
     <fieldset class="flex items-center gap-2">
-      <Radio id="bd1" variant="rounded" name="country" />
-      <Label html-for="bd1">Bangladesh</Label>
+      <Radio
+        id="pk"
+        v-model="picked"
+        variant="circle"
+        name="country"
+        value="pakistan" />
+      <Label html-for="pk">Pakistan</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
-      <Radio id="usa1" variant="square" name="country" />
-      <Label html-for="usa1">United State</Label>
+      <Radio
+        id="bd"
+        v-model="picked"
+        variant="rounded"
+        name="country"
+        value="bangladesh" />
+      <Label html-for="bd">Bangladesh</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
-      <Radio id="pk1" variant="circle" name="country" />
-      <Label html-for="pk1">Pakistan</Label>
+      <Radio
+        id="india"
+        v-model="picked"
+        variant="square"
+        name="country"
+        value="india" />
+      <Label html-for="in">India</Label>
     </fieldset>
   </form>
 </template>
