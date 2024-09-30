@@ -94,38 +94,34 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Card",
-
-  //   href: "/docs/components/card",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Carousel",
-
-  //   href: "/docs/components/carousel",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Checkbox",
-
-  //   href: "/docs/components/checkbox",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Divider",
-
-  //   href: "/docs/components/divider",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+  {
+    id: generatedID.v4(),
+    name: "Card",
+    href: "/docs/components/card",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Carousel",
+    href: "/docs/components/carousel",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Checkbox",
+    href: "/docs/components/checkbox",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Divider",
+    href: "/docs/components/divider",
+    tag: false,
+    deprecate: false,
+  },
   // {
   //   id: generatedID.v4(),
   //   name: "Date Picker",
