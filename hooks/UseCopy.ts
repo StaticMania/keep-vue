@@ -8,7 +8,6 @@ export function useCopy() {
       ?.writeText(text)
       .then(() => {
         copy.value = true;
-        console.log(copy.value);
         setTimeout(() => {
           copy.value = false;
         }, 3000);
