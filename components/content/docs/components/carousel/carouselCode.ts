@@ -1,5 +1,5 @@
 const CarouselWithAutoPlayCode = {
-  "CarouselComponent.vue": `<script lang="ts" setup>
+  "CarouselComponent.vue": `<script setup>
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -10,7 +10,7 @@ import {
   CarouselNextButton,
   CarouselPrevButton,
   CarouselSlides,
-} from "~/src";
+} from "keep-vue";
 </script>
 
 <template>
@@ -42,9 +42,9 @@ import {
 </template>`,
 };
 const CarouselWithClassNamesCode = {
-  "CarouselComponent.vue": `<script lang="ts" setup>
+  "CarouselComponent.vue": `<script setup>
 import ClassNames from "embla-carousel-class-names";
-import { Carousel } from "~/src";
+import { Carousel } from "keep-vue";
 </script>
 
 <template>
@@ -71,7 +71,7 @@ import { Carousel } from "~/src";
 </template>`,
 };
 const CarouselWithLoopCode = {
-  "CarouselComponent.vue": `<script lang="ts" setup>
+  "CarouselComponent.vue": `<script setup>
 import {
   Carousel,
   CarouselButtons,
@@ -81,7 +81,7 @@ import {
   CarouselNextButton,
   CarouselPrevButton,
   CarouselSlides,
-} from "~/src";
+} from "keep-vue";
 </script>
 
 <template>
@@ -107,7 +107,7 @@ import {
 </template>`,
 };
 const DefaultCarouselCode = {
-  "CarouselComponent.vue": `<script lang="ts" setup>
+  "CarouselComponent.vue": `<script setup>
 import {
   Carousel,
   CarouselButtons,
@@ -117,7 +117,7 @@ import {
   CarouselNextButton,
   CarouselPrevButton,
   CarouselSlides,
-} from "~/src";
+} from "keep-vue";
 </script>
 
 <template>
@@ -143,7 +143,7 @@ import {
 </template>`,
 };
 const SlidesToScrollCode = {
-  "CarouselComponent.vue": `<script lang="ts" setup>
+  "CarouselComponent.vue": `<script setup>
 import {
   Carousel,
   CarouselButtons,
@@ -153,7 +153,7 @@ import {
   CarouselNextButton,
   CarouselPrevButton,
   CarouselSlides,
-} from "~/src";
+} from "keep-vue";
 </script>
 
 <template>
