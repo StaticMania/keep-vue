@@ -1,3 +1,5 @@
+import { createInjectionState } from "@vueuse/core";
+import type { ComputedRef } from "vue";
 import type { toolTipTheme } from "./tooltipTheme";
 
 const TooltipStoreKey = "tooltip-store";

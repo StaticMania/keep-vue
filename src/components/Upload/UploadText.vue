@@ -1,10 +1,12 @@
 <script lang="ts" setup>
+import { computed, defineProps, type HTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import type { CommonUploadProps } from "./uploadInterface";
 
-const props = defineProps<CommonUploadProps & ClassProps>();
+export interface UploadTextProps extends /*@vue-ignore*/ HTMLAttributes {}
 
+const props = defineProps<CommonUploadProps & ClassProps & UploadTextProps>();
 const restProps = computed(() => {
   const { class: _, ...rest } = props;
   return rest;
@@ -12,10 +14,7 @@ const restProps = computed(() => {
 </script>
 
 <template>
-  <div
-    ref="HTMLDivElement"
-    v-bind="restProps"
-    :class="cn('my-5 space-y-2', props.class)">
+  <div v-bind="restProps" :class="cn('my-5 space-y-2', props.class)">
     <slot></slot>
   </div>
 </template>

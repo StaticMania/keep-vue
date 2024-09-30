@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import type { LiHTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
-interface TimelineItemProps extends /*@vue-ignore*/ LiHTMLAttributes {}
+export interface TimelineItemProps extends /*@vue-ignore*/ LiHTMLAttributes {}
 
 const props = defineProps<TimelineItemProps & ClassProps>();
 

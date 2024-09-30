@@ -7,13 +7,14 @@ import {
   useForwardPropsEmits,
 } from "radix-vue";
 import {
-  type HTMLAttributes,
   computed,
   defineEmits,
+  defineOptions,
   defineProps,
   withDefaults,
 } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { toolTipTheme } from "./tooltipTheme";
 import { useTooltip } from "./useTooltipStore";
 
@@ -21,13 +22,10 @@ defineOptions({
   inheritAttrs: false,
 });
 
-const props = withDefaults(
-  defineProps<TooltipContentProps & { class?: HTMLAttributes["class"] }>(),
-  {
-    sideOffset: 4,
-    class: "",
-  },
-);
+const props = withDefaults(defineProps<TooltipContentProps & ClassProps>(), {
+  sideOffset: 4,
+  class: "",
+});
 
 const emits = defineEmits<TooltipContentEmits>();
 

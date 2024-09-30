@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed, defineEmits, defineProps, watch } from "vue";
 import { useDropzone } from "vue3-dropzone";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
@@ -27,7 +28,6 @@ defineExpose({ isDragActive });
 <template>
   <div
     v-bind="{ ...restProps, ...getRootProps() }"
-    ref="HTMLDivElement"
     :class="
       cn(
         horizontal

@@ -8,6 +8,7 @@ import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { toolTipTheme } from "./tooltipTheme";
 import { useTooltip } from "./useTooltipStore";
+
 const props = defineProps<TooltipArrowProps & ClassProps>();
 
 const restProps = computed(() => {

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import type { CommonUploadProps } from "./uploadInterface";
@@ -13,7 +14,6 @@ const restProps = computed(() => {
 
 <template>
   <div
-    ref="HTMLDivElement"
     v-bind="restProps"
     :class="
       cn(

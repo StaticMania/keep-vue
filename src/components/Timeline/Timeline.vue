@@ -1,8 +1,10 @@
 <script lang="ts" setup>
 import type { OlHTMLAttributes } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
-interface TimelineProps extends /*@vue-ignore*/ OlHTMLAttributes {}
+
+export interface TimelineProps extends /*@vue-ignore*/ OlHTMLAttributes {}
 
 const props = defineProps<TimelineProps & ClassProps>();
 
@@ -15,7 +17,6 @@ const restProps = computed(() => {
 
 <template>
   <ol
-    ref="HTMLOListElement"
     v-bind="restProps"
     :class="
       cn(
