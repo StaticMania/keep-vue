@@ -1,6 +1,6 @@
 ---
-  title: 'Button Group'
-  description: 'The Buttons component in the Keep Vue offers a variety of button types, sizes, and states to meet your design needs. With options for icons and destructiveness, you can create visually appealing and functional buttons for your product.'
+title: "Button Group"
+description: "The Buttons component in the Keep Vue offers a variety of button types, sizes, and states to meet your design needs. With options for icons and destructiveness, you can create visually appealing and functional buttons for your product."
 ---
 
 ## Default Button Group

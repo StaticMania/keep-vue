@@ -1,6 +1,6 @@
 ---
-  title: 'Line Chart'
-  description: 'The Line Chart component is a powerful tool for visualizing numerical data trends over time or across categories. With its clear and intuitive presentation, it enables users to easily identify patterns, correlations, and outliers within their datasets. Whether tracking stock prices, monitoring sales performance, or analyzing temperature fluctuations, the Line Chart offers a comprehensive view of data dynamics.'
+title: "Line Chart"
+description: "The Line Chart component is a powerful tool for visualizing numerical data trends over time or across categories. With its clear and intuitive presentation, it enables users to easily identify patterns, correlations, and outliers within their datasets. Whether tracking stock prices, monitoring sales performance, or analyzing temperature fluctuations, the Line Chart offers a comprehensive view of data dynamics."
 ---
 
 ## Default Line Chart
