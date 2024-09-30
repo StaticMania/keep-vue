@@ -293,14 +293,13 @@ export const docsRoutes = ref<RouterPath[]>([
   //   tag: false,
   //   deprecate: false,
   // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Text Area",
-
-  //   href: "/docs/components/textArea",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+  {
+    id: generatedID.v4(),
+    name: "Text Area",
+    href: "/docs/components/textarea",
+    tag: false,
+    deprecate: false,
+  },
   // {
   //   id: generatedID.v4(),
   //   name: "Toast",

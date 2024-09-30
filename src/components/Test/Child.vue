@@ -4,7 +4,7 @@ import { Button, Input, InputIcon, Label, Textarea } from "~/src";
 const inputValue = ref("");
 const textAreaValue = ref("");
 
-const handleSubmit = (event) => {
+const handleSubmit = (event: any) => {
   event.preventDefault();
   console.log("Email:", inputValue.value);
   console.log("Message:", textAreaValue.value);
