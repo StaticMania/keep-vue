@@ -122,70 +122,62 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Date Picker",
+  {
+    id: generatedID.v4(),
+    name: "Date Picker",
 
-  //   href: "/docs/components/datePicker",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Dropdown",
+    href: "/docs/components/dat-picker",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Dropdown",
 
-  //   href: "/docs/components/dropdown",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Drawer",
+    href: "/docs/components/dropdown",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Drawer",
 
-  //   href: "/docs/components/drawer",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Empty",
+    href: "/docs/components/drawer",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Empty",
 
-  //   href: "/docs/components/empty",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Modal",
+    href: "/docs/components/empty",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Modal",
 
-  //   href: "/docs/components/modal",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Navbar",
+    href: "/docs/components/modal",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Notification",
 
-  //   href: "/docs/components/navbar",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Notification",
+    href: "/docs/components/notification",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Number Input",
 
-  //   href: "/docs/components/notification",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Number Input",
-
-  //   href: "/docs/components/numberInput",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+    href: "/docs/components/number-input",
+    tag: false,
+    deprecate: false,
+  },
   // {
   //   id: generatedID.v4(),
   //   name: "Progress",
