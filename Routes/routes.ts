@@ -178,30 +178,27 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Progress",
-
-  //   href: "/docs/components/progress",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Pagination",
-
-  //   href: "/docs/components/pagination",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Popover",
-
-  //   href: "/docs/components/popover",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+  {
+    id: generatedID.v4(),
+    name: "Progress",
+    href: "/docs/components/progress",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Pagination",
+    href: "/docs/components/pagination",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Popover",
+    href: "/docs/components/popover",
+    tag: false,
+    deprecate: false,
+  },
   {
     id: generatedID.v4(),
     name: "Radio",
