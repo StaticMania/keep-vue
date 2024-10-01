@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhDotsThree } from "@phosphor-icons/vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { Pagination, PaginationItem, PaginationList } from "~/src";
 import { DefaultPaginationCode } from "./paginationCode";

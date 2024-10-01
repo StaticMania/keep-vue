@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { PhFile, PhMagnifyingGlass, PhRadioButton } from "@phosphor-icons/vue";
 import { onMounted, ref } from "vue";
 import { docsRoutes, quickAccessRoute, type RouterPath } from "~/Routes/routes";
 import { Modal } from "~/src";

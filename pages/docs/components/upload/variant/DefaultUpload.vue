@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhInfo, PhTrash } from "@phosphor-icons/vue";
 import {
   Upload,
   UploadBody,

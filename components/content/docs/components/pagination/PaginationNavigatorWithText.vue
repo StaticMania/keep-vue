@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhCaretLeft, PhCaretRight, PhDotsThree } from "@phosphor-icons/vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import {
   Pagination,

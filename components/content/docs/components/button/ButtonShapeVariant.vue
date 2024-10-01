@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhShoppingCart } from "@phosphor-icons/vue";
 import { Button } from "~/src";
 import { buttonShapeVariantCode } from "./buttonCode";
 </script>

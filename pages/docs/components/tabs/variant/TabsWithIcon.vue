@@ -1,11 +1,5 @@
 <script lang="ts" setup>
 import {
-  PhBuildings,
-  PhGear,
-  PhShieldWarning,
-  PhUser,
-} from "@phosphor-icons/vue";
-import {
   Skeleton,
   SkeletonLine,
   TabContent,

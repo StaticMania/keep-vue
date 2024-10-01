@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { PhMoon, PhSunDim } from "@phosphor-icons/vue";
-
 const colorMode = useColorMode();
 
 const toggleTheme = () => {

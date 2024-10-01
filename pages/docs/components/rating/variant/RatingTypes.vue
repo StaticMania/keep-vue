@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhStar } from "@phosphor-icons/vue";
 import Rating from "~/src/components/Rating/Rating.vue";
 import RatingStar from "~/src/components/Rating/RatingStar.vue";
 </script>

@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhChatText, PhGear, PhSignIn } from "@phosphor-icons/vue";
 import { Button } from "~/src";
 import { buttonWithIconCode } from "./buttonCode";
 </script>

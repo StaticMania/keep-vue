@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhEnvelope, PhLock } from "@phosphor-icons/vue";
 import { ref } from "vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { Button, Input, InputIcon, Label } from "~/src";

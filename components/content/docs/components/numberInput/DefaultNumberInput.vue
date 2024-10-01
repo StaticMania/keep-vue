@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhMinus, PhPlus } from "@phosphor-icons/vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { NumberInput, NumberInputBox, NumberInputButton } from "~/src";
 import { DefaultNumberInputCode } from "./numberInputCode";

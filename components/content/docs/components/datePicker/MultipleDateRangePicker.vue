@@ -4,7 +4,6 @@ import {
   getLocalTimeZone,
   today,
 } from "@internationalized/date";
-import { PhCalendar } from "@phosphor-icons/vue";
 import type { DateRange } from "radix-vue";
 import { ref } from "vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";

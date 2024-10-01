@@ -1,10 +1,4 @@
 <script lang="ts" setup>
-import {
-  PhEnvelope,
-  PhFacebookLogo,
-  PhGoogleLogo,
-  PhLock,
-} from "@phosphor-icons/vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import {
   Button,

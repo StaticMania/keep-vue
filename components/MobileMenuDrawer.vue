@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhArrowLeft, PhList } from "@phosphor-icons/vue";
 import { docsRoutes, gettingStaredRoutes, layoutRoutes } from "~/Routes/routes";
 import {
   Accordion,

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { PhCaretLineDown } from "@phosphor-icons/vue";
 import {
   Accordion,
   AccordionContainer,

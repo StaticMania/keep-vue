@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhChatCircleDots, PhCube, PhGear } from "@phosphor-icons/vue";
 import { Button, ButtonGroup } from "~/src";
 import { buttonGroupWithOnlyIconCode } from "./buttonGroupCode";
 </script>

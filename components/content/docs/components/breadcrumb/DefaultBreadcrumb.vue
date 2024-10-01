@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhCaretRight } from "@phosphor-icons/vue";
 import { Breadcrumb, BreadcrumbItem } from "~/src";
 import { defaultBreadcrumbCode } from "./breadcrumbCode";
 </script>

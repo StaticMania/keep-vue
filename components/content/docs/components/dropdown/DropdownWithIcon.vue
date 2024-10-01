@@ -1,13 +1,4 @@
 <script lang="ts" setup>
-import {
-  PhChartPieSlice,
-  PhCopy,
-  PhPen,
-  PhPhone,
-  PhSignOut,
-  PhUserCircle,
-  PhUsers,
-} from "@phosphor-icons/vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import {
   Dropdown,

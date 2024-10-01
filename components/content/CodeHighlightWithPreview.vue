@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhCheck, PhCopy } from "@phosphor-icons/vue";
 import { computed, ref, type HTMLAttributes } from "vue";
 import { useCopy } from "~/hooks/UseCopy";
 import { TooltipArrow, TooltipContent } from "~/src";

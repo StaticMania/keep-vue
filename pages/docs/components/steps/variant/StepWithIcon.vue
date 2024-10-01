@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhGear, PhHourglass, PhPackage, PhRecycle } from "@phosphor-icons/vue";
 import { StepPoint, Steps } from "~/src";
 
 const active = ref(1);
