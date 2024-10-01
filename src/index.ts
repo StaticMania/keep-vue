@@ -138,7 +138,7 @@ export { default as NotificationTitle } from "./components/Notification/Notifica
 
 //NumberInput component
 export { default as NumberInput } from "./components/NumberInput/NumberInput.vue";
-export { default as NumberNumberInputBoxInput } from "./components/NumberInput/NumberInputBox.vue";
+export { default as NumberInputBox } from "./components/NumberInput/NumberInputBox.vue";
 export { default as NumberInputButton } from "./components/NumberInput/NumberInputButton.vue";
 
 //pagination component
