@@ -1,0 +1,43 @@
+<script lang="ts" setup>
+import { PhCaretLeft, PhCaretRight, PhDotsThree } from "@phosphor-icons/vue";
+import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
+import {
+  Input,
+  Pagination,
+  PaginationGoTo,
+  PaginationItem,
+  PaginationList,
+  PaginationNavigator,
+} from "~/src";
+import { PaginationWithInputCode } from "./paginationCode";
+</script>
+<template>
+  <CodeHighlightWithPreview :code="PaginationWithInputCode">
+    <Pagination shape="circle">
+      <PaginationNavigator shape="circle">
+        <PhCaretLeft size="18" />
+      </PaginationNavigator>
+      <PaginationList>
+        <PaginationItem>1</PaginationItem>
+        <PaginationItem active>2</PaginationItem>
+        <PaginationItem>3</PaginationItem>
+        <PaginationItem>4</PaginationItem>
+        <PaginationItem>
+          <PhDotsThree size="20" />
+        </PaginationItem>
+        <PaginationItem>10</PaginationItem>
+      </PaginationList>
+      <PaginationNavigator shape="circle">
+        <PhCaretRight size="18" />
+      </PaginationNavigator>
+      <PaginationGoTo>
+        <span>/ Go to</span>
+        <Input
+          placeholder="Enter Number"
+          type="number"
+          class="h-9 w-[60px] rounded-md border border-metal-100 text-center text-metal-600 focus:outline-none dark:border-metal-800 dark:text-metal-300" />
+        <span>of 200</span>
+      </PaginationGoTo>
+    </Pagination>
+  </CodeHighlightWithPreview>
+</template>
