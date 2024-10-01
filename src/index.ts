@@ -31,8 +31,9 @@ export { default as BreadcrumbItem } from "./components/Breadcrumb/BreadcrumbIte
 
 //button component
 export { default as Button } from "./components/Button/Button.vue";
-
+export { buttonVariants } from "./components/Button/buttonTheme.ts";
 //ButtonGroup Component
+
 export { default as ButtonGroup } from "./components/ButtonGroup/ButtonGroup.vue";
 
 //Card Component
