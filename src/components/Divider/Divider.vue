@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { computed, defineProps, ref } from "vue";
+import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+
 import {
   type DividerColorVariant,
   type DividerSizeVariant,
@@ -16,15 +17,28 @@ export interface DividerProps {
 const props = defineProps<DividerProps & { class?: HTMLAttributes["class"] }>();
 
 const { color = "secondary", size = "md", variant = "start" } = props;
-const dividerRef = ref<HTMLElement | null>(null);
-const hasChildren = computed(() => !!useSlots().default);
+
+const restProps = computed(() => {
+  const { class: _, color, size, variant, ...rest } = props;
+  return rest;
+});
 </script>
 
 <template>
+  <hr
+    v-if="!$slots.default"
+    v-bind="restProps"
+    :class="
+      cn(
+        dividerTheme.withOutChildren.base,
+        dividerTheme.withOutChildren.size[size],
+        dividerTheme.withOutChildren.color[color],
+        props.class,
+      )
+    " />
   <div
-    v-if="hasChildren"
-    v-bind="$attrs"
-    ref="dividerRef"
+    v-else
+    v-bind="restProps"
     :class="
       cn(
         dividerTheme.withChildren.base,
@@ -35,18 +49,6 @@ const hasChildren = computed(() => !!useSlots().default);
         props.class,
       )
     ">
-    <slot />
+    <slot></slot>
   </div>
-  <hr
-    v-else
-    v-bind="$attrs"
-    ref="dividerRef"
-    :class="
-      cn(
-        dividerTheme.withOutChildren.base,
-        dividerTheme.withOutChildren.size[size],
-        dividerTheme.withOutChildren.color[color],
-        props.class,
-      )
-    " />
 </template>
