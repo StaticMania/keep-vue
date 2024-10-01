@@ -16,5 +16,5 @@ const restProps = computed(() => {
     v-bind="restProps"
     :width="20"
     :height="14"
-    :class="cn('fill-white', props.class)" />
+    :class="cn('fill-white dark:fill-metal-900', props.class)" />
 </template>

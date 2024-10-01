@@ -30,12 +30,19 @@ The Multiple Range Date Picker lets users select date ranges spanning across mul
 ::MultipleDateRangePicker
 ::
 
+## Custom Date Picker
+
+You can change the style of the date picker using the `classes` attribute. For more details see the api reference section.
+
+::CustomDateTrigger
+::
+
 ## Api Reference
 
-Here is a list of the props that you can pass to the DatePicker and RangeDatePicker component
+Here is a list of the props that you can pass to the DatePicker and RangeDatePicker component.
 ::DatePickerAPi
 ::
 
 ## Reference
 
-To learn more about the DatePicker, please see the documentation of [Redix Vue Calender](https://www.radix-vue.com/components/calendar) and [Redix Vue Range Calendar](https://www.radix-vue.com/components/range-calendar)
+To learn more about the DatePicker, please see the documentation of [Redix Vue Calender](https://www.radix-vue.com/components/calendar) and [Redix Vue Range Calendar](https://www.radix-vue.com/components/range-calendar).
