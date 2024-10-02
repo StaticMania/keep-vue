@@ -47,7 +47,9 @@ const dropdownData = [
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="CustomDropdownCode">
+  <CodeHighlightWithPreview
+    class="bg-metal-50 dark:bg-[#0D1015]"
+    :code="CustomDropdownCode">
     <div class="flex items-center justify-center px-5 py-3">
       <Dropdown>
         <DropdownAction as-child>

@@ -134,7 +134,7 @@ import {
       <Divider>Or</Divider>
       <form class="space-y-2">
         <fieldset class="space-y-1">
-          <Label html-for="email">Email*</Label>
+          <Label for="email">Email*</Label>
           <div class="relative">
             <Input
               id="email"
@@ -147,7 +147,7 @@ import {
           </div>
         </fieldset>
         <fieldset class="space-y-1">
-          <Label html-for="password">Password*</Label>
+          <Label for="password">Password*</Label>
           <div class="relative">
             <Input
               id="password"

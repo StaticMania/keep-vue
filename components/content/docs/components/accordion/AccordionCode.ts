@@ -193,7 +193,7 @@ const accordionItems = [
 
         <!-- custom icon  -->
         <AccordionIcon as-child>
-          <PhCaretLineDown :size="20" />
+          <PhCaretLineDown :size="20" class="dark:fill-metal-300" />
         </AccordionIcon>
       </AccordionContainer>
       <AccordionContent>

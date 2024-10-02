@@ -34,30 +34,6 @@ export const docsRoutes = ref<RouterPath[]>([
   },
   {
     id: generatedID.v4(),
-    name: "Bar Chart",
-
-    href: "/docs/components/bar-chart",
-    tag: false,
-    deprecate: false,
-  },
-  {
-    id: generatedID.v4(),
-    name: "Line Chart",
-
-    href: "/docs/components/line-chart",
-    tag: false,
-    deprecate: false,
-  },
-  {
-    id: generatedID.v4(),
-    name: "Pie Chart",
-
-    href: "/docs/components/pie-chart",
-    tag: false,
-    deprecate: false,
-  },
-  {
-    id: generatedID.v4(),
     name: "Avatar",
     href: "/docs/components/avatar",
     tag: false,
@@ -71,7 +47,14 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
+  {
+    id: generatedID.v4(),
+    name: "Bar Chart",
 
+    href: "/docs/components/bar-chart",
+    tag: false,
+    deprecate: false,
+  },
   {
     id: generatedID.v4(),
     name: "BreadCrumb",
@@ -80,17 +63,19 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  {
-    id: generatedID.v4(),
-    name: "Button",
-    href: "/docs/components/button",
-    tag: false,
-    deprecate: false,
-  },
+
   {
     id: generatedID.v4(),
     name: "Button Group",
     href: "/docs/components/button-group",
+    tag: false,
+    deprecate: false,
+  },
+
+  {
+    id: generatedID.v4(),
+    name: "Button",
+    href: "/docs/components/button",
     tag: false,
     deprecate: false,
   },
@@ -117,16 +102,24 @@ export const docsRoutes = ref<RouterPath[]>([
   },
   {
     id: generatedID.v4(),
-    name: "Divider",
-    href: "/docs/components/divider",
+    name: "Date Picker",
+    href: "/docs/components/date-picker",
     tag: false,
     deprecate: false,
   },
   {
     id: generatedID.v4(),
-    name: "Date Picker",
+    name: "Divider",
+    href: "/docs/components/divider",
+    tag: false,
+    deprecate: false,
+  },
 
-    href: "/docs/components/dat-picker",
+  {
+    id: generatedID.v4(),
+    name: "Drawer",
+
+    href: "/docs/components/drawer",
     tag: false,
     deprecate: false,
   },
@@ -138,19 +131,27 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  {
-    id: generatedID.v4(),
-    name: "Drawer",
 
-    href: "/docs/components/drawer",
-    tag: false,
-    deprecate: false,
-  },
   {
     id: generatedID.v4(),
     name: "Empty",
 
     href: "/docs/components/empty",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Input",
+    href: "/docs/components/input",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Line Chart",
+
+    href: "/docs/components/line-chart",
     tag: false,
     deprecate: false,
   },
@@ -180,15 +181,16 @@ export const docsRoutes = ref<RouterPath[]>([
   },
   {
     id: generatedID.v4(),
-    name: "Progress",
-    href: "/docs/components/progress",
+    name: "Pagination",
+    href: "/docs/components/pagination",
     tag: false,
     deprecate: false,
   },
   {
     id: generatedID.v4(),
-    name: "Pagination",
-    href: "/docs/components/pagination",
+    name: "Pie Chart",
+
+    href: "/docs/components/pie-chart",
     tag: false,
     deprecate: false,
   },
@@ -201,43 +203,44 @@ export const docsRoutes = ref<RouterPath[]>([
   },
   {
     id: generatedID.v4(),
+    name: "Progress",
+    href: "/docs/components/progress",
+    tag: false,
+    deprecate: false,
+  },
+
+  {
+    id: generatedID.v4(),
     name: "Radio",
     href: "/docs/components/radio",
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Rating",
+  {
+    id: generatedID.v4(),
+    name: "Rating",
+    href: "/docs/components/rating",
+    tag: false,
+    deprecate: false,
+  },
 
-  //   href: "/docs/components/rating",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Sidebar",
+  {
+    id: generatedID.v4(),
+    name: "Skeleton",
+    href: "/docs/components/skeleton",
+    tag: false,
+    deprecate: false,
+  },
 
-  //   href: "/docs/components/sidebar",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Skeleton",
+  {
+    id: generatedID.v4(),
+    name: "Slider",
 
-  //   href: "/docs/components/skeleton",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Slider",
+    href: "/docs/components/slider",
+    tag: false,
+    deprecate: false,
+  },
 
-  //   href: "/docs/components/slider",
-  //   tag: false,
-  //   deprecate: false,
-  // },
   // {
   //   id: generatedID.v4(),
   //   name: "Spinner",
@@ -285,30 +288,23 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Toast",
-
-  //   href: "/docs/components/toast",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-
   {
     id: generatedID.v4(),
-    name: "Input",
-    href: "/docs/components/input",
+    name: "Timeline",
+
+    href: "/docs/components/timeline",
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Timeline",
+  {
+    id: generatedID.v4(),
+    name: "Toast",
 
-  //   href: "/docs/components/timeline",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+    href: "/docs/components/toast",
+    tag: false,
+    deprecate: false,
+  },
+
   {
     id: generatedID.v4(),
     name: "Tooltip",
@@ -317,14 +313,14 @@ export const docsRoutes = ref<RouterPath[]>([
     tag: false,
     deprecate: false,
   },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Upload",
+  {
+    id: generatedID.v4(),
+    name: "Upload",
 
-  //   href: "/docs/components/upload",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+    href: "/docs/components/upload",
+    tag: false,
+    deprecate: false,
+  },
 ]);
 
 export const gettingStaredRoutes = ref<RouterPath[]>([

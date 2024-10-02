@@ -13,7 +13,9 @@ import { IconPopoverCode } from "./popoverCode";
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="IconPopoverCode">
+  <CodeHighlightWithPreview
+    class="bg-metal-50 dark:bg-[#0D1015]"
+    :code="IconPopoverCode">
     <div class="flex h-52 items-center justify-center gap-5">
       <Popover>
         <PopoverAction as-child>
