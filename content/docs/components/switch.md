@@ -24,7 +24,7 @@ Disable the switch component by utilizing the `disabled` prop with `disabled="tr
 ## API Reference
 
 Refer to the API documentation for detailed information about the Toggle Switch component.
-::SwtchApi
+::SwitchApi
 ::
 
 ## Reference
