@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import {
+  DialogContent,
+  DialogOverlay,
   DialogPortal,
   useForwardPropsEmits,
   type DialogContentEmits,

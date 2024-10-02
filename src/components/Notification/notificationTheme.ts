@@ -17,7 +17,7 @@ interface KeepNotificationTheme {
 }
 
 export const notificationTheme: KeepNotificationTheme = {
-  base: "fixed z-50 grid w-[22rem] gap-y-5 border bg-white p-5 shadow-xLarge data-[state=closed]:duration-300 data-[state=open]:duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 sm:rounded-xl",
+  base: "fixed z-50 grid w-[22rem] gap-y-3 border bg-white p-5 shadow-xLarge data-[state=closed]:duration-300 data-[state=open]:duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 sm:rounded-xl",
   position: {
     topLeft:
       "left-8 top-5 data-[state=closed]:slide-out-to-left-full data-[state=open]:slide-in-from-top-full",

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import {
+  DropdownMenuRoot,
   useForwardPropsEmits,
   type DropdownMenuRootEmits,
   type DropdownMenuRootProps,
