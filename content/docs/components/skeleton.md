@@ -1,6 +1,6 @@
 ---
 title: "Skeleton"
-description: "The Preloader component in the Keep React provides a visual indication of an ongoing process or loading state. With various options for type and device, you can choose the appropriate preloader style to enhance the user experience on both web and mobile platforms."
+description: "The Preloader component in the Keep Vue provides a visual indication of an ongoing process or loading state. With various options for type and device, you can choose the appropriate preloader style to enhance the user experience on both web and mobile platforms."
 ---
 
 ## Default Skeleton
