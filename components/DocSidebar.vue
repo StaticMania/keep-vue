@@ -53,7 +53,7 @@ const isActive = (str: string) => {
       </Accordion>
 
       <!-- layout route section  -->
-      <Accordion flush type="multiple" collapsible default-value="layout">
+      <Accordion flush type="single" collapsible default-value="layout">
         <AccordionPanel class="border-b-0" value="layout">
           <AccordionContainer class="p-0">
             <AccordionTitle
@@ -82,7 +82,7 @@ const isActive = (str: string) => {
       </Accordion>
 
       <!-- docs layout route section  -->
-      <Accordion flush type="multiple" collapsible default-value="docs">
+      <Accordion flush type="single" collapsible default-value="docs">
         <AccordionPanel class="border-b-0" value="docs">
           <AccordionContainer class="p-0">
             <AccordionTitle
