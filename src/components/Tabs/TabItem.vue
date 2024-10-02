@@ -37,9 +37,12 @@ const { activeItem, handleActive, variant } = useTabs();
       cn(
         'relative h-10 px-5 text-body-4 font-medium',
         variant === 'underline' &&
-          'data-[active=true]:text-primary-500 dark:data-[active=true]:text-primary-500',
+          'data-[active=true]:text-primary-500 dark:data-[active=false]:text-white dark:data-[active=true]:text-primary-500',
         variant === 'fill' &&
           'data-[active=false]:text-metal-900 data-[active=true]:text-metal-900 dark:data-[active=false]:text-white dark:data-[active=true]:text-metal-900',
+        variant === 'default' &&
+          'data-[active=false]:text-metal-900 data-[active=true]:text-metal-900 dark:data-[active=false]:text-white dark:data-[active=true]:text-white',
+
         props.class,
       )
     "
