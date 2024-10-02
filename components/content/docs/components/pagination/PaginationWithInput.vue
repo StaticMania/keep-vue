@@ -14,7 +14,7 @@ import { PaginationWithInputCode } from "./paginationCode";
   <CodeHighlightWithPreview :code="PaginationWithInputCode">
     <Pagination shape="circle">
       <PaginationNavigator shape="circle">
-        <PhCaretLeft size="18" />
+        <PhosphorIconCaretLeft size="18" />
       </PaginationNavigator>
       <PaginationList>
         <PaginationItem>1</PaginationItem>
@@ -22,12 +22,12 @@ import { PaginationWithInputCode } from "./paginationCode";
         <PaginationItem>3</PaginationItem>
         <PaginationItem>4</PaginationItem>
         <PaginationItem>
-          <PhDotsThree size="20" />
+          <PhosphorIconDotsThree size="20" />
         </PaginationItem>
         <PaginationItem>10</PaginationItem>
       </PaginationList>
       <PaginationNavigator shape="circle">
-        <PhCaretRight size="18" />
+        <PhosphorIconCaretRight size="18" />
       </PaginationNavigator>
       <PaginationGoTo>
         <span>/ Go to</span>

@@ -27,11 +27,11 @@ import { RegisterCardCode } from "./cardCode";
         </CardHeader>
         <div class="flex items-center justify-between gap-3">
           <Button variant="outline" color="secondary" class="w-full">
-            <PhGoogleLogo :size="20" class="mr-1.5" />
+            <PhosphorIconGoogleLogo :size="20" class="mr-1.5" />
             Google
           </Button>
           <Button variant="outline" color="secondary" class="w-full">
-            <PhFacebookLogo :size="20" class="mr-1.5" />
+            <PhosphorIconFacebookLogo :size="20" class="mr-1.5" />
             Facebook
           </Button>
         </div>
@@ -46,7 +46,7 @@ import { RegisterCardCode } from "./cardCode";
                 placeholder="Enter email"
                 class="ps-11" />
               <InputIcon>
-                <PhEnvelope :size="19" color="#AFBACA" />
+                <PhosphorIconEnvelope :size="19" color="#AFBACA" />
               </InputIcon>
             </div>
           </fieldset>
@@ -59,7 +59,7 @@ import { RegisterCardCode } from "./cardCode";
                 type="password"
                 class="ps-11" />
               <InputIcon>
-                <PhLock :size="19" color="#AFBACA" />
+                <PhosphorIconLock :size="19" color="#AFBACA" />
               </InputIcon>
             </div>
           </fieldset>

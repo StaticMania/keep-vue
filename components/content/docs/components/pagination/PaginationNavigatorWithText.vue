@@ -12,7 +12,7 @@ import { PaginationNavigatorWithTextCode } from "./paginationCode";
   <CodeHighlightWithPreview :code="PaginationNavigatorWithTextCode">
     <Pagination shape="rounded">
       <PaginationNavigator>
-        <PhCaretLeft size="18" />
+        <PhosphorIconCaretLeft size="18" />
         Previous
       </PaginationNavigator>
       <PaginationList>
@@ -21,13 +21,13 @@ import { PaginationNavigatorWithTextCode } from "./paginationCode";
         <PaginationItem>3</PaginationItem>
         <PaginationItem>4</PaginationItem>
         <PaginationItem>
-          <PhDotsThree size="20" />
+          <PhosphorIconDotsThree size="20" />
         </PaginationItem>
         <PaginationItem>10</PaginationItem>
       </PaginationList>
       <PaginationNavigator>
         Next
-        <PhCaretRight size="18" />
+        <PhosphorIconCaretRight size="18" />
       </PaginationNavigator>
     </Pagination>
   </CodeHighlightWithPreview>

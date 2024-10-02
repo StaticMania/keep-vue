@@ -31,7 +31,7 @@ defineProps<MobileMenuDrawer>();
     <DrawerTrigger as-child @click="setIsOpen(true)">
       <button>
         <span>
-          <PhList :size="24" class="text-metal-900 dark:text-white" />
+          <PhosphorIconList :size="24" class="text-metal-900 dark:text-white" />
         </span>
       </button>
     </DrawerTrigger>
@@ -50,7 +50,8 @@ defineProps<MobileMenuDrawer>();
           <!-- close  -->
           <DrawerClose as-child @click="setIsOpen(false)">
             <Button color="secondary" class="mb-4 max-w-max p-3">
-              <PhArrowLeft class="size-5 text-white dark:text-metal-900" />
+              <PhosphorIconArrowLeft
+                class="size-5 text-white dark:text-metal-900" />
             </Button>
           </DrawerClose>
 

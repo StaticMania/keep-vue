@@ -27,7 +27,7 @@ import { CustomizeModalCode } from "./modalCode";
             class="mb-6 flex flex-col items-center justify-center space-y-3">
             <div
               class="flex h-20 w-20 items-center justify-center rounded-full border border-metal-100 bg-metal-50 text-metal-600 dark:border-metal-800 dark:bg-metal-800 dark:text-white">
-              <PhCheck :size="60" />
+              <PhosphorIconCheck :size="60" />
             </div>
             <div class="space-y-1 text-center">
               <ModalTitle>Payment Successful</ModalTitle>

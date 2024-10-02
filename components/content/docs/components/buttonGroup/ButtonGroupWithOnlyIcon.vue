@@ -6,13 +6,13 @@ import { buttonGroupWithOnlyIconCode } from "./buttonGroupCode";
   <CodeHighlightWithPreview :code="buttonGroupWithOnlyIconCode">
     <ButtonGroup>
       <Button position="start" shape="icon">
-        <PhCube :size="20" />
+        <PhosphorIconCube :size="20" />
       </Button>
       <Button position="center" shape="icon">
-        <PhGear :size="20" />
+        <PhosphorIconGear :size="20" />
       </Button>
       <Button position="end" shape="icon">
-        <PhChatCircleDots :size="20" />
+        <PhosphorIconChatCircleDots :size="20" />
       </Button>
     </ButtonGroup>
   </CodeHighlightWithPreview>

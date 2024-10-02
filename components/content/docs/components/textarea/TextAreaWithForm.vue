@@ -25,7 +25,7 @@ const handleSubmit = () => {};
             placeholder="Enter email"
             class="ps-11" />
           <InputIcon>
-            <PhEnvelope :size="19" color="#AFBACA" />
+            <PhosphorIconEnvelope :size="19" color="#AFBACA" />
           </InputIcon>
         </div>
       </fieldset>

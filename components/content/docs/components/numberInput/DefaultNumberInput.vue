@@ -10,11 +10,11 @@ const inputValue = ref(0);
   <CodeHighlightWithPreview :code="DefaultNumberInputCode">
     <NumberInput>
       <NumberInputButton>
-        <PhMinus :size="16" color="#455468" />
+        <PhosphorIconMinus :size="16" color="#455468" />
       </NumberInputButton>
       <NumberInputBox v-model="inputValue" />
       <NumberInputButton>
-        <PhPlus :size="16" color="#455468" />
+        <PhosphorIconPlus :size="16" color="#455468" />
       </NumberInputButton>
     </NumberInput>
   </CodeHighlightWithPreview>

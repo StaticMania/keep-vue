@@ -21,33 +21,33 @@ import { DropdownWithIconCode } from "./dropdownCode";
         <DropdownContent>
           <DropdownList>
             <DropdownItem>
-              <PhUsers :size="20" />
+              <PhosphorIconUsers :size="20" />
               Contacts
             </DropdownItem>
             <DropdownItem>
-              <PhPhone :size="20" />
+              <PhosphorIconPhone :size="20" />
               Phone
             </DropdownItem>
             <DropdownItem>
-              <PhChartPieSlice :size="20" />
+              <PhosphorIconChartPieSlice :size="20" />
               Statistics
             </DropdownItem>
             <Divider />
             <DropdownItem>
-              <PhPen :size="20" />
+              <PhosphorIconPen :size="20" />
               Rename
             </DropdownItem>
             <DropdownItem>
-              <PhCopy :size="20" />
+              <PhosphorIconCopy :size="20" />
               Duplicate
             </DropdownItem>
             <Divider />
             <DropdownItem>
-              <PhUserCircle :size="20" />
+              <PhosphorIconUserCircle :size="20" />
               Account
             </DropdownItem>
             <DropdownItem>
-              <PhSignOut :size="20" />
+              <PhosphorIconSignOut :size="20" />
               Logout
             </DropdownItem>
           </DropdownList>

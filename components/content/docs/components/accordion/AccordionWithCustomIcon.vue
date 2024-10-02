@@ -33,7 +33,7 @@ const accordionItems = [
 
           <!-- custom icon  -->
           <AccordionIcon as-child>
-            <PhCaretLineDown :size="20" />
+            <PhosphorIconCaretLineDown :size="20" />
           </AccordionIcon>
         </AccordionContainer>
         <AccordionContent>
