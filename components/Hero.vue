@@ -1,7 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script lang="ts" setup>
-import { PhClipboard } from "@phosphor-icons/vue";
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <section class="hero-area py-10 md:py-20 lg:pb-24 lg:pt-28">
@@ -39,7 +37,7 @@ import { PhClipboard } from "@phosphor-icons/vue";
                   npm install keep-react
                 </span>
                 <button class="pl-2">
-                  <PhClipboard :size="18" color="#8897AE" />
+                  <PhosphorIconClipboard :size="18" color="#8897AE" />
                 </button>
               </div>
               <Link

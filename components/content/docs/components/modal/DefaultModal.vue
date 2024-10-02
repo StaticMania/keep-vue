@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhCloudArrowUp } from "@phosphor-icons/vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import {
   Modal,
@@ -27,7 +26,7 @@ import { DefaultModalCode } from "./modalCode";
           <ModalHeader>
             <div
               className="flex h-12 w-12 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white mb-4">
-              <PhCloudArrowUp :size="28" />
+              <PhosphorIconCloudArrowUp :size="28" />
             </div>
             <ModalTitle>Update Modal Status</ModalTitle>
             <ModalDescription>

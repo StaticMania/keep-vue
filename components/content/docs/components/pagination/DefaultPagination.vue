@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhDotsThree } from "@phosphor-icons/vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { Pagination, PaginationItem, PaginationList } from "~/src";
 import { DefaultPaginationCode } from "./paginationCode";
@@ -13,7 +12,7 @@ import { DefaultPaginationCode } from "./paginationCode";
         <PaginationItem>3</PaginationItem>
         <PaginationItem>4</PaginationItem>
         <PaginationItem>
-          <PhDotsThree size="20" />
+          <PhosphorIconDotsThree size="20" />
         </PaginationItem>
         <PaginationItem>10</PaginationItem>
       </PaginationList>

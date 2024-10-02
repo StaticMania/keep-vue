@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhConfetti } from "@phosphor-icons/vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import {
   Button,
@@ -26,7 +25,7 @@ import { IconPopoverCode } from "./popoverCode";
           <div>
             <div
               class="flex size-14 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white">
-              <PhConfetti :size="24" weight="fill" />
+              <PhosphorIconConfetti :size="24" weight="fill" />
             </div>
             <div class="space-y-2 pt-4">
               <PopoverTitle class="text-body-2 font-semibold">
@@ -62,7 +61,7 @@ import { IconPopoverCode } from "./popoverCode";
           <div>
             <div
               class="flex size-14 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white">
-              <PhConfetti :size="24" weight="fill" />
+              <PhosphorIconConfetti :size="24" weight="fill" />
             </div>
             <div class="space-y-2 pt-4">
               <PopoverTitle class="text-body-2 font-semibold">
@@ -98,7 +97,7 @@ import { IconPopoverCode } from "./popoverCode";
           <div>
             <div
               class="flex size-14 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white">
-              <PhConfetti :size="24" weight="fill" />
+              <PhosphorIconConfetti :size="24" weight="fill" />
             </div>
             <div class="space-y-2 pt-4">
               <PopoverTitle class="text-body-2 font-semibold">
@@ -133,7 +132,7 @@ import { IconPopoverCode } from "./popoverCode";
           <div>
             <div
               class="flex size-14 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white">
-              <PhConfetti :size="24" weight="fill" />
+              <PhosphorIconConfetti :size="24" weight="fill" />
             </div>
             <div class="space-y-2 pt-4">
               <PopoverTitle class="text-body-2 font-semibold">

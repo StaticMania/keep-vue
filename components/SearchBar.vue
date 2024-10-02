@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { PhFile, PhMagnifyingGlass, PhRadioButton } from "@phosphor-icons/vue";
 import { onMounted, ref } from "vue";
 import { docsRoutes, quickAccessRoute, type RouterPath } from "~/Routes/routes";
 import { Modal } from "~/src";
@@ -69,7 +68,7 @@ onMounted(() => {
             placeholder="Search Component"
             class="ps-11 focus-visible:ring-metal-25" />
           <InputIcon>
-            <PhMagnifyingGlass :size="19" color="#AFBACA" />
+            <PhosphorIconMagnifyingGlass :size="19" color="#AFBACA" />
           </InputIcon>
         </fieldset>
 
@@ -89,7 +88,7 @@ onMounted(() => {
                   :to="route.href"
                   :target="route.target"
                   class="flex items-center gap-1">
-                  <PhFile :size="14" />
+                  <PhosphorIconFile :size="14" />
                   {{ route.name }}
                 </NuxtLink>
               </li>
@@ -108,7 +107,7 @@ onMounted(() => {
                   :to="route.href"
                   :target="route.target"
                   class="flex items-center gap-1">
-                  <PhRadioButton :size="14" />
+                  <PhosphorIconRadioButton :size="14" />
                   {{ route.name }}
                 </NuxtLink>
               </li>
@@ -131,7 +130,7 @@ onMounted(() => {
                 :key="route.id"
                 class="rounded-md p-2 text-body-4 font-normal text-metal-900 transition-all duration-300 hover:bg-metal-25 dark:text-white dark:hover:bg-metal-800">
                 <NuxtLink :to="route.href" class="flex items-center gap-1">
-                  <PhRadioButton :size="14" />
+                  <PhosphorIconRadioButton :size="14" />
                   {{ route.name }}
                 </NuxtLink>
               </li>

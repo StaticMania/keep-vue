@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { PhCaretLineDown } from "@phosphor-icons/vue";
 import {
   Accordion,
   AccordionContainer,
@@ -34,7 +33,7 @@ const accordionItems = [
 
           <!-- custom icon  -->
           <AccordionIcon as-child>
-            <PhCaretLineDown :size="20" />
+            <PhosphorIconCaretLineDown :size="20" />
           </AccordionIcon>
         </AccordionContainer>
         <AccordionContent>

@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhEnvelope, PhLock } from "@phosphor-icons/vue";
 import { ref } from "vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { Button, Input, InputIcon, Label } from "~/src";
@@ -25,7 +24,7 @@ const handleSubmit = () => {};
             placeholder="Enter email"
             class="ps-11" />
           <InputIcon>
-            <PhEnvelope :size="19" color="#AFBACA" />
+            <PhosphorIconEnvelope :size="19" color="#AFBACA" />
           </InputIcon>
         </div>
       </fieldset>
@@ -39,7 +38,7 @@ const handleSubmit = () => {};
             type="password"
             class="ps-11" />
           <InputIcon>
-            <PhLock :size="19" color="#AFBACA" />
+            <PhosphorIconLock :size="19" color="#AFBACA" />
           </InputIcon>
         </div>
       </fieldset>

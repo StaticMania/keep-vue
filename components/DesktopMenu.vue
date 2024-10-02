@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhCommand, PhMagnifyingGlass } from "@phosphor-icons/vue";
 import { navbarRoutes } from "~/Routes/routes";
 import { buttonVariants } from "~/src/components/Button/buttonTheme";
 import { cn } from "~/src/utils/cn";
@@ -49,11 +48,11 @@ const setIsOpen = (value: boolean): void => {
       @click="isOpen = true">
       <span
         class="flex items-center gap-2 text-body-4 font-normal text-metal-300 dark:text-white">
-        <PhMagnifyingGlass :size="20" />
+        <PhosphorIconMagnifyingGlass :size="20" />
         <span>Search component</span>
       </span>
       <span class="flex items-center text-body-4 font-normal text-metal-200">
-        <PhCommand :size="20" />
+        <PhosphorIconCommand :size="20" />
         K
       </span>
     </button>

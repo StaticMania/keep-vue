@@ -4,7 +4,6 @@ import {
   getLocalTimeZone,
   type DateValue,
 } from "@internationalized/date";
-import { PhCalendar } from "@phosphor-icons/vue";
 import { ref } from "vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 
@@ -32,7 +31,9 @@ const df = new DateFormatter("en-US", {
           size="lg"
           class="w-[286px] justify-start gap-2.5 border border-metal-100 text-body-4"
           variant="outline">
-          <PhCalendar :size="20" class="text-metal-400 dark:text-white" />
+          <PhosphorIconCalendar
+            :size="20"
+            class="text-metal-400 dark:text-white" />
 
           {{
             value ? df.format(value.toDate(getLocalTimeZone())) : "Pick a date"

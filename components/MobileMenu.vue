@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhCommand, PhMagnifyingGlass } from "@phosphor-icons/vue";
 import SearchBar from "./SearchBar.vue";
 import ThemeSwitcher from "./ThemeSwitcher.vue";
 const route = useRoute();
@@ -42,11 +41,11 @@ const isActive = (str: string): boolean => {
       @click="isOpen = true">
       <span
         class="flex items-center gap-2 text-body-4 font-normal text-metal-400">
-        <PhMagnifyingGlass :size="20" />
+        <PhosphorIconMagnifyingGlass :size="20" />
         <span>Search component...</span>
       </span>
       <span class="flex items-center text-body-4 font-normal text-metal-400">
-        <PhCommand :size="20" />
+        <PhosphorIconCommand :size="20" />
         K
       </span>
     </button>
@@ -55,7 +54,7 @@ const isActive = (str: string): boolean => {
     <button
       class="flex rounded-lg bg-primary-25 p-2.5 transition duration-300 hover:bg-primary-50 sm:hidden dark:text-metal-900"
       @click="isOpen = true">
-      <PhMagnifyingGlass class="size-5" />
+      <PhosphorIconMagnifyingGlass class="size-5" />
     </button>
 
     <NuxtLink

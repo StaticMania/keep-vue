@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhEnvelope } from "@phosphor-icons/vue";
 import { ref } from "vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { Input, InputIcon } from "~/src";
@@ -18,7 +17,7 @@ const inputValue = ref("");
           placeholder="Enter email"
           class="ps-11" />
         <InputIcon>
-          <PhEnvelope :size="19" color="#AFBACA" />
+          <PhosphorIconEnvelope :size="19" color="#AFBACA" />
         </InputIcon>
       </fieldset>
     </div>

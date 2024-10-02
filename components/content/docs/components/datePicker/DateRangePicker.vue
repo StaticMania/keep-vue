@@ -4,7 +4,6 @@ import {
   getLocalTimeZone,
   today,
 } from "@internationalized/date";
-import { PhCalendar } from "@phosphor-icons/vue";
 import type { DateRange } from "radix-vue";
 import { ref } from "vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
@@ -34,7 +33,9 @@ const value = ref({
           size="lg"
           class="w-[286px] justify-start gap-2.5 border border-metal-100 text-body-4"
           variant="outline">
-          <PhCalendar :size="20" class="text-metal-400 dark:text-white" />
+          <PhosphorIconCalendar
+            :size="20"
+            class="text-metal-400 dark:text-white" />
 
           <span v-if="value?.start && value.end">
             {{ df.format(value.start.toDate(getLocalTimeZone())) }} -

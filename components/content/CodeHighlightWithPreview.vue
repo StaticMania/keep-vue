@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { PhCheck, PhCopy } from "@phosphor-icons/vue";
 import { computed, ref, type HTMLAttributes } from "vue";
 import { useCopy } from "~/hooks/UseCopy";
 import { TooltipArrow, TooltipContent } from "~/src";
@@ -79,8 +78,12 @@ const restProps = computed(() => {
                     Object.values(code)[active === 0 ? 0 : active - 1],
                   )
               ">
-              <PhCheck v-if="copy" :size="20" weight="light" color="#fff" />
-              <PhCopy v-else :size="20" weight="light" color="#fff" />
+              <PhosphorIconCheck
+                v-if="copy"
+                :size="20"
+                weight="light"
+                color="#fff" />
+              <PhosphorIconCopy v-else :size="20" weight="light" color="#fff" />
             </button>
           </TooltipAction>
           <TooltipContent side="top">

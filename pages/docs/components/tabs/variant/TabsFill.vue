@@ -1,11 +1,5 @@
 <script lang="ts" setup>
 import {
-  PhBuildings,
-  PhGear,
-  PhShieldWarning,
-  PhUser,
-} from "@phosphor-icons/vue";
-import {
   Skeleton,
   SkeletonLine,
   TabContent,
@@ -19,19 +13,19 @@ import {
   <Tabs variant="fill" default-active="1" class="mx-auto max-w-xl">
     <TabList>
       <TabItem value="1">
-        <PhUser :size="16" />
+        <PhosphorIconUser :size="16" />
         Profile
       </TabItem>
       <TabItem value="2">
-        <PhGear :size="16" />
+        <PhosphorIconGear :size="16" />
         Settings
       </TabItem>
       <TabItem value="3">
-        <PhBuildings :size="16" />
+        <PhosphorIconBuildings :size="16" />
         Company
       </TabItem>
       <TabItem value="4">
-        <PhShieldWarning :size="16" />
+        <PhosphorIconShieldWarning :size="16" />
         Privacy
       </TabItem>
     </TabList>
