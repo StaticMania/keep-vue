@@ -33,7 +33,7 @@ const accordionItems = [
 
 <template>
   <CodeHighlightWithPreview :code="flushAccordionCode">
-    <Accordion type="multiple" flush collapsible>
+    <Accordion type="single" flush collapsible>
       <AccordionPanel
         v-for="item in accordionItems"
         :key="item.value"
