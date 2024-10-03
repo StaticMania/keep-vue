@@ -33,7 +33,7 @@ const restProps = computed(() => {
       )
     ">
     <div class="flex justify-between">
-      <div className="flex text-white">
+      <div class="flex text-white">
         <button
           v-for="(key, index) in Object.keys(code)"
           :key="key"
