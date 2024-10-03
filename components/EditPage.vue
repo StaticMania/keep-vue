@@ -24,17 +24,19 @@ function toCamelCase(str: string) {
 
 function processLink(link: string) {
   const parts = link.split("/");
-
   const lastPart = parts[parts.length - 1];
+  const secondPart = parts[parts.length - 2];
 
-  if (lastPart.includes("-")) {
-    return toCamelCase(lastPart);
+  if (secondPart === "components") {
+    if (lastPart.includes("-")) {
+      return `/docs/components/${toCamelCase(lastPart)}`;
+    } else return link;
+  } else {
+    return link;
   }
-
-  return lastPart;
 }
 
-const githubPageLink = `https://github.com/StaticMania/keep-vue/tree/main/components/content/docs/components/${processLink(props.pageLink)}`;
+const githubPageLink = `https://github.com/StaticMania/keep-vue/tree/main/components/content${processLink(props.pageLink)}`;
 </script>
 
 <template>
