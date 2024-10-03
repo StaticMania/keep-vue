@@ -3,6 +3,7 @@ import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPrev
 import {
   Button,
   Drawer,
+  DrawerBar,
   DrawerClose,
   DrawerContent,
   DrawerDescription,
@@ -21,7 +22,8 @@ import { DefaultDrawerCode } from "./drawerCode";
         <Button>Open Drawer</Button>
       </DrawerTrigger>
       <DrawerContent>
-        <div class="mx-auto my-auto w-full max-w-sm">
+        <DrawerBar />
+        <div class="mx-auto my-10 w-full max-w-sm">
           <DrawerHeader>
             <DrawerTitle
               class="text-heading-3 font-bold text-metal-900 lg:text-heading-2 dark:text-white">

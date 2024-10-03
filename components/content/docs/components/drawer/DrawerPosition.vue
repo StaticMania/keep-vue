@@ -3,6 +3,7 @@ import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPrev
 import {
   Button,
   Drawer,
+  DrawerBar,
   DrawerClose,
   DrawerContent,
   DrawerDescription,
@@ -27,6 +28,7 @@ const positionValue = ["left", "right", "top", "bottom"];
           <Button>{{ position }}</Button>
         </DrawerTrigger>
         <DrawerContent>
+          <DrawerBar />
           <div class="mx-auto my-auto w-full max-w-sm">
             <DrawerHeader>
               <DrawerTitle
