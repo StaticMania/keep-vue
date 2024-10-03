@@ -382,13 +382,13 @@ export const quickAccessRoute = ref<RouterPath[]>([
 export const layoutRoutes = ref<RouterPath[]>([
   {
     id: generatedID.v4(),
-    name: "Container",
-    href: "/docs/layout/container",
+    name: "Column",
+    href: "/docs/layout/column",
   },
   {
     id: generatedID.v4(),
-    name: "Column",
-    href: "/docs/layout/column",
+    name: "Container",
+    href: "/docs/layout/container",
   },
   {
     id: generatedID.v4(),

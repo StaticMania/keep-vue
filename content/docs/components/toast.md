@@ -18,7 +18,7 @@ The default toast shows a short message to the user.
 ## Toast With Description
 
 Toast with title and description for providing additional details to the user.
-::ToastWithDescriptions
+::ToastWithDescription
 ::
 
 ## Toast With Action

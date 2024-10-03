@@ -10,17 +10,19 @@ const { page, next } = useContent();
 if (!page)
   throw createError({ statusCode: 404, statusMessage: "Page not found" });
 
-const { _path, title, description } = page.value;
+const { _path, title, raw, description } = page.value;
 
 const metadata = ref({
-  title: `${title} - Keep Vue`,
+  title: raw ? title : `${title} - Keep Vue`,
   meta: [{ name: "description", content: description }],
 });
 useHead({ ...metadata.value });
 </script>
 
 <template>
-  <DocsContentLayout :title="`${title} - keep Vue`" :description="description">
+  <DocsContentLayout
+    :title="raw ? title : `${title} - Keep Vue`"
+    :description="description">
     <ContentRenderer id="mainContent" :value="page" />
     <EditPage
       :page-link="`${_path}`"
