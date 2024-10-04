@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
+import {
+  Alert,
+  AlertContainer,
+  AlertDescription,
+  AlertDismiss,
+  AlertIcon,
+  AlertLink,
+  AlertTitle,
+} from "~/src";
 import { AlertColorVariantCode } from "./AlertCode";
 </script>
 
