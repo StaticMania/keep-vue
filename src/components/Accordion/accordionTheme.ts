@@ -1,5 +1,3 @@
-import { keepTw } from "~/src/utils/keepTw";
-
 export interface KeepAccordionContainerTheme {
   base: string;
   open: string;
@@ -36,9 +34,9 @@ interface KeepAccordionTheme {
   title: KeepAccordionTitleTheme;
 }
 
-export const accordionTheme: KeepAccordionTheme = keepTw({
+export const accordionTheme: KeepAccordionTheme = {
   container: {
-    base: "flex cursor-pointer items-center w-full justify-between px-6 py-5 data-[disabled]:cursor-not-allowed",
+    base: "flex cursor-pointer items-center w-full justify-between px-6 py-5 data-[disabled]:cursor-not-allowed ",
     open: "",
   },
   content: {
@@ -47,7 +45,7 @@ export const accordionTheme: KeepAccordionTheme = keepTw({
   panel: {
     flush: {
       on: "rounded-none border-b border-metal-100 dark:border-metal-900",
-      off: "rounded-xl border border-metal-100 dark:border-metal-800 bg-transparent dark:bg-transparent",
+      off: "rounded-xl border border-metal-100 dark:border-metal-800 bg-transparent dark:bg-transparent data-[state=open]:bg-metal-25 dark:data-[state=open]:bg-metal-900 data-[state=open]:shadow-large hover:bg-metal-25 dark:hover:bg-metal-900 transition-colors duration-300",
     },
   },
   icon: {
@@ -60,4 +58,4 @@ export const accordionTheme: KeepAccordionTheme = keepTw({
   title: {
     base: "select-none text-left text-body-1 font-medium text-metal-900 dark:text-white",
   },
-});
+};

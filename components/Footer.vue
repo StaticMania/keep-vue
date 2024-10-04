@@ -25,7 +25,7 @@
             <li>
               <NuxtLink
                 class="inline-block text-body-4 font-normal transition-all duration-300 hover:translate-x-1"
-                to="https://github.com/StaticMania/keep-react"
+                to="https://github.com/StaticMania/keep-vue"
                 target="_blank">
                 GitHub
               </NuxtLink>

@@ -9,7 +9,7 @@
         <div class="w-full lg:col-span-1">
           <div class="mt-5">
             <NuxtLink
-              to="https://www.producthunt.com/posts/keep-react?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-keep&#0045;react"
+              to="https://www.producthunt.com/posts/keep-vue?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-keep&#0045;react"
               target="_blank"
               class="inline-block">
               <img
@@ -34,7 +34,7 @@
               <div
                 class="inline-flex w-[270px] items-center justify-between divide-x-2 divide-metal-100 rounded-lg border border-metal-200 bg-white px-3.5 py-3">
                 <span class="text-body-4 font-normal text-metal-500">
-                  npm install keep-react
+                  npm install keep-vue
                 </span>
                 <button class="pl-2">
                   <PhosphorIconClipboard :size="18" color="#8897AE" />

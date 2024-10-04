@@ -68,7 +68,7 @@ export const colors = {
 
 export const customizeColors = {
   "tailwind.config.js": `
-import { keepTheme } from "keep-react/keepTheme";
+import { keepTheme } from "keep-vue/keepTheme";
 
 const colorsPalette = {
   metal: {
@@ -110,7 +110,7 @@ export default keepTheme(config, colorsPalette);
   `,
   "tailwind.config.ts": `
 import type { Config } from 'tailwindcss'
-import { keepTheme } from "keep-react/keepTheme";
+import { keepTheme } from "keep-vue/keepTheme";
 
 const colorsPalette = {
   metal: {
@@ -172,7 +172,7 @@ const colorsPalette = {
 
 ✔ DO THIS
 
-import { colors } from 'keep-react/keepTheme'
+import { colors } from 'keep-vue/keepTheme'
 const colorsPalette = {
   ...colors,
   background: {
@@ -185,7 +185,7 @@ const colorsPalette = {
 
 export const customizeSingleColor = {
   "tailwind.config.js": `
-import { keepTheme, colors } from "keep-react/keepTheme";
+import { keepTheme, colors } from "keep-vue/keepTheme";
 
 const colorsPalette = {
   ...colors,
@@ -208,7 +208,7 @@ export default keepTheme(config, colorsPalette);
   `,
   "tailwind.config.ts": `
 import type { Config } from 'tailwindcss'
-import { keepTheme, colors } from "keep-react/keepTheme";
+import { keepTheme, colors } from "keep-vue/keepTheme";
 
 const colorsPalette = {
   ...colors,

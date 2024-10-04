@@ -11,19 +11,19 @@ The default Accordion component allows users to reveal and hide content by simpl
 
 ::
 
-## Flush Accordion
-
-Control the initial state of accordion panels with the `flush` property. As we use Redix vue for the accordion you have to give `type` prop value when using accordion.
-
-::FlushAccordion
-
-::
-
 ## Accordion First Open Panel
 
 Use the `default-value` property to set the first accordion panel to be open by default.
 
 ::AccordionOpenFirstPanel
+
+::
+
+## Flush Accordion
+
+Control the initial state of accordion panels with the `flush` property. As we use Redix vue for the accordion you have to give `type` prop value when using accordion.
+
+::FlushAccordion
 
 ::
 

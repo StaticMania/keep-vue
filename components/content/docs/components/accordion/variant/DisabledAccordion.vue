@@ -7,7 +7,7 @@ import {
   AccordionPanel,
   AccordionTitle,
 } from "~/src";
-import { AccordionDisabledCode } from "./AccordionCode";
+import { AccordionDisabledCode } from "../AccordionCode";
 
 const accordionItems = [
   {
