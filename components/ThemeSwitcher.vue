@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { Button } from "~/src";
+
 const colorMode = useColorMode();
 
 const toggleTheme = () => {
