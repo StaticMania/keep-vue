@@ -6,7 +6,7 @@ definePageMeta({
   layout: "docs",
 });
 
-const { page, next } = useContent();
+const { page, next, prev } = useContent();
 if (!page)
   throw createError({ statusCode: 404, statusMessage: "Page not found" });
 
@@ -26,6 +26,8 @@ useHead({ ...metadata.value });
     <ContentRenderer id="mainContent" :value="page" />
     <EditPage
       :page-link="`${_path}`"
+      :prev-page-link="prev?._path"
+      :prev-page-name="prev?.title"
       :next-page-link="next?._path"
       :next-page-name="next?.title" />
   </DocsContentLayout>

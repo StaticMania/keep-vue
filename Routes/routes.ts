@@ -241,46 +241,46 @@ export const docsRoutes = ref<RouterPath[]>([
     deprecate: false,
   },
 
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Spinner",
+  {
+    id: generatedID.v4(),
+    name: "Spinner",
 
-  //   href: "/docs/components/spinner",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Steps",
+    href: "/docs/components/spinner",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Steps",
 
-  //   href: "/docs/components/steps",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Switch",
+    href: "/docs/components/steps",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Switch",
 
-  //   href: "/docs/components/switch",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Table",
+    href: "/docs/components/switch",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Table",
 
-  //   href: "/docs/components/table",
-  //   tag: false,
-  //   deprecate: false,
-  // },
-  // {
-  //   id: generatedID.v4(),
-  //   name: "Tabs",
+    href: "/docs/components/table",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Tabs",
 
-  //   href: "/docs/components/tabs",
-  //   tag: false,
-  //   deprecate: false,
-  // },
+    href: "/docs/components/tabs",
+    tag: false,
+    deprecate: false,
+  },
   {
     id: generatedID.v4(),
     name: "Text Area",
@@ -382,13 +382,13 @@ export const quickAccessRoute = ref<RouterPath[]>([
 export const layoutRoutes = ref<RouterPath[]>([
   {
     id: generatedID.v4(),
-    name: "Column",
-    href: "/docs/layout/column",
+    name: "Container",
+    href: "/docs/layout/container",
   },
   {
     id: generatedID.v4(),
-    name: "Container",
-    href: "/docs/layout/container",
+    name: "Column",
+    href: "/docs/layout/column",
   },
   {
     id: generatedID.v4(),
