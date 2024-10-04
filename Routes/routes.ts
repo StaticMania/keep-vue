@@ -415,10 +415,10 @@ export const navbarRoutes = ref<RouterPath[]>([
     name: "Documentation",
     redirect: false,
   },
-  {
-    id: generatedID.v4(),
-    href: "/blog",
-    name: "Blog",
-    redirect: false,
-  },
+  // {
+  //   id: generatedID.v4(),
+  //   href: "/blog",
+  //   name: "Blog",
+  //   redirect: false,
+  // },
 ]);
