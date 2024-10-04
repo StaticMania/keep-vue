@@ -24,7 +24,7 @@ const isActive = (str: string) => {
       class="sticky top-28 h-[75vh] space-y-5 overflow-auto 2xl:top-56 2xl:py-6 2xl:pl-8">
       <!-- getting started route section  -->
 
-      <Accordion flush type="multiple" collapsible>
+      <Accordion flush type="single" collapsible default-value="gettingStarted">
         <AccordionPanel class="border-b-0" value="gettingStarted">
           <AccordionContainer class="p-0">
             <AccordionTitle
@@ -53,7 +53,7 @@ const isActive = (str: string) => {
       </Accordion>
 
       <!-- layout route section  -->
-      <Accordion flush type="multiple" collapsible>
+      <Accordion flush type="single" collapsible default-value="layout">
         <AccordionPanel class="border-b-0" value="layout">
           <AccordionContainer class="p-0">
             <AccordionTitle
@@ -82,7 +82,7 @@ const isActive = (str: string) => {
       </Accordion>
 
       <!-- docs layout route section  -->
-      <Accordion flush type="multiple" collapsible>
+      <Accordion flush type="single" collapsible default-value="docs">
         <AccordionPanel class="border-b-0" value="docs">
           <AccordionContainer class="p-0">
             <AccordionTitle

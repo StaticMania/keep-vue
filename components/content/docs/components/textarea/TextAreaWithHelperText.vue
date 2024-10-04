@@ -9,7 +9,7 @@ const picked = ref("");
 <template>
   <CodeHighlightWithPreview :code="TextAreaWithHelperTextCode">
     <fieldset className="space-y-1.5 p-2">
-      <Label html-for="message">Your message*</Label>
+      <Label for="message">Your message*</Label>
       <Textarea
         id="message"
         v-model="picked"

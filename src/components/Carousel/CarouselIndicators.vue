@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { defineProps, type HtmlHTMLAttributes } from "vue";
+import { DotButton } from "~/src";
 import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
-import DotButton from "./DotButton.vue";
 import type { ClassProps } from "./interface";
 import { useCarousel } from "./useCarousel";
 

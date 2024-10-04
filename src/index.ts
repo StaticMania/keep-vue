@@ -187,6 +187,9 @@ export { default as StepLine } from "./components/Steps/StepLine.vue";
 export { default as StepPoint } from "./components/Steps/StepPoint.vue";
 export { default as Steps } from "./components/Steps/Steps.vue";
 
+//Switch component
+export { default as Switch } from "./components/Switch/Switch.vue";
+
 //tabs component
 export { default as TabContent } from "./components/Tabs/TabContent.vue";
 export { default as TabItem } from "./components/Tabs/TabItem.vue";

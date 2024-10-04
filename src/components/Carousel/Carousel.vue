@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { defineEmits, defineProps, withDefaults } from "vue";
+import { CarouselViewport } from "~/src";
 import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
 import type { CarouselEmits, CarouselProps, ClassProps } from "./interface";

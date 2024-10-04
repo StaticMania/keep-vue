@@ -12,7 +12,7 @@ import { CustomizeProgressCode } from "./progressCode";
 <template>
   <CodeHighlightWithPreview :code="CustomizeProgressCode">
     <div class="mx-auto max-w-lg space-y-4">
-      <CircleProgress :progress="45">
+      <CircleProgress :progress="45" class="text-error-500">
         <CircleProgressLine
           class="stroke-error-50"
           stroke-color="stroke-error-500" />

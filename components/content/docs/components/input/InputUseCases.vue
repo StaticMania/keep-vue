@@ -16,7 +16,7 @@ const handleSubmit = () => {};
       class="mx-auto max-w-md space-y-2 rounded-lg border p-8 shadow-md"
       @submit.prevent="handleSubmit">
       <fieldset class="space-y-1">
-        <Label html-for="name">Email*</Label>
+        <Label for="name">Email*</Label>
         <div class="relative">
           <Input
             v-model="email"
@@ -29,7 +29,7 @@ const handleSubmit = () => {};
         </div>
       </fieldset>
       <fieldset class="space-y-1">
-        <Label html-for="password">Password*</Label>
+        <Label for="password">Password*</Label>
         <div class="relative">
           <Input
             id="password"

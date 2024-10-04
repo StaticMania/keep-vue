@@ -87,11 +87,9 @@ const restProps = computed(() => {
             </button>
           </TooltipAction>
           <TooltipContent side="top">
-            <p
-              className="text-body-5 font-medium text-white dark:text-metal-900">
+            <p class="text-body-5 font-medium text-white">
               {{ copy ? "Copied" : " Copy Code" }}
             </p>
-
             <TooltipArrow :height="8" :width="12" />
           </TooltipContent>
         </Tooltip>

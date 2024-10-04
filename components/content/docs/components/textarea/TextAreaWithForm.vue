@@ -16,7 +16,7 @@ const handleSubmit = () => {};
       class="mx-auto max-w-md space-y-3 rounded-md border border-metal-100 p-6 dark:border-metal-800"
       @submit.prevent="handleSubmit">
       <fieldset class="space-y-1">
-        <Label html-for="email">Email*</Label>
+        <Label for="email">Email*</Label>
         <div class="relative">
           <Input
             id="email"
@@ -30,7 +30,7 @@ const handleSubmit = () => {};
         </div>
       </fieldset>
       <fieldset class="space-y-1">
-        <Label html-for="m1">Message*</Label>
+        <Label for="m1">Message*</Label>
         <Textarea
           id="m1"
           v-model="textAreaValue"

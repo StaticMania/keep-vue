@@ -2,12 +2,13 @@
 import type { HTMLAttributes } from "vue";
 import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { useProgressStore } from "./useProgressStore";
 
 export interface CircleProgressTextProps
   extends /* @vue-ignore*/ HTMLAttributes {}
 
-const props = defineProps<CircleProgressTextProps>();
+const props = defineProps<CircleProgressTextProps & ClassProps>();
 const restProps = computed(() => {
   const { class: _, ...rest } = props;
   return rest;

@@ -11,7 +11,7 @@ const statusThree = ref(false);
       <p class="text-body-3 font-normal">Checkbox Variant</p>
       <fieldset class="flex items-center gap-2">
         <Checkbox id="default" v-model:checked="statusOne" />
-        <Label html-for="default">Default</Label>
+        <Label for="default">Default</Label>
       </fieldset>
       <fieldset class="flex items-center gap-2">
         <Checkbox
@@ -19,11 +19,11 @@ const statusThree = ref(false);
           v-model:checked="statusTwo"
           variant="rounded"
           default-checked />
-        <Label html-for="rounded">Rounded</Label>
+        <Label for="rounded">Rounded</Label>
       </fieldset>
       <fieldset class="flex items-center gap-2">
         <Checkbox id="circle" v-model:checked="statusThree" variant="circle" />
-        <Label html-for="circle">Circle</Label>
+        <Label for="circle">Circle</Label>
       </fieldset>
     </div>
   </CodeHighlightWithPreview>

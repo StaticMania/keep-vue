@@ -1,6 +1,15 @@
 #mainContent > h2 {
   @apply border-b border-b-metal-200 pb-2 text-body-2 font-semibold text-metal-900 dark:border-b-metal-600 dark:text-white;
 }
+
+#mainContent h2:first-child {
+  @apply relative -z-10 before:invisible before:block before:content-[''] xl:before:-mt-24 xl:before:h-32 2xl:before:-mt-48 2xl:before:h-[244px];
+}
+
+#mainContent h2:not(:first-child) {
+  @apply relative -z-10 before:invisible before:block before:content-[''] xl:before:-mt-24 xl:before:h-32 2xl:before:-mt-48 2xl:before:h-[244px];
+}
+
 #mainContent > p {
   @apply mt-4 text-body-3 font-normal text-metal-600 dark:text-metal-300;
 }

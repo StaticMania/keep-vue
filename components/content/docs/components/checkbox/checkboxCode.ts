@@ -13,11 +13,11 @@ console.log(statusOne.value, statusTwo.value);
     <p class="text-body-3 font-normal">Keep Design System License</p>
     <fieldset class="flex items-center gap-2">
       <Checkbox id="single" v-model:checked="statusOne" default-checked />
-      <Label html-for="single">Single License</Label>
+      <Label for="single">Single License</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
       <Checkbox id="team" v-model:checked="statusTwo" />
-      <Label html-for="team">Team License</Label>
+      <Label for="team">Team License</Label>
     </fieldset>
   </div>
 </template>`,
@@ -39,7 +39,7 @@ console.log(statusOne.value, statusTwo.value, statusThree.value);
     <p class="text-body-3 font-normal">Checkbox Variant</p>
     <fieldset class="flex items-center gap-2">
       <Checkbox id="default" v-model:checked="statusOne" />
-      <Label html-for="default">Default</Label>
+      <Label for="default">Default</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
       <Checkbox
@@ -47,11 +47,11 @@ console.log(statusOne.value, statusTwo.value, statusThree.value);
         v-model:checked="statusTwo"
         variant="rounded"
         default-checked />
-      <Label html-for="rounded">Rounded</Label>
+      <Label for="rounded">Rounded</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
       <Checkbox id="circle" v-model:checked="statusThree" variant="circle" />
-      <Label html-for="circle">Circle</Label>
+      <Label for="circle">Circle</Label>
     </fieldset>
   </div>
 </template>

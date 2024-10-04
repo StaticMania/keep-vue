@@ -20,8 +20,9 @@ import { DefaultModalCode } from "./modalCode";
         <ModalAction as-child>
           <Button>Open Modal</Button>
         </ModalAction>
-        <ModalContent class="sm:max-w-[425px]">
-          <ModalClose />
+        <ModalContent
+          class="sm:max-w-[425px] dark:border-metal-900 dark:bg-metal-900">
+          <ModalClose class="absolute right-4 top-4" />
 
           <ModalHeader>
             <div

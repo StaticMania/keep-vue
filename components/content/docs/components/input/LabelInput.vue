@@ -10,7 +10,7 @@ const inputValue = ref("");
 <template>
   <CodeHighlightWithPreview :code="labelInput">
     <fieldset class="max-w-md space-y-1 p-2">
-      <Label html-for="name">Enter Name</Label>
+      <Label for="name">Enter Name</Label>
       <Input
         id="name"
         v-model="inputValue"

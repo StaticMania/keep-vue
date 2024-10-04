@@ -21,7 +21,8 @@ import { CustomizeModalCode } from "./modalCode";
         <ModalAction as-child>
           <Button>Open Modal</Button>
         </ModalAction>
-        <ModalContent class="w-[20rem] lg:w-[26rem]">
+        <ModalContent
+          class="w-[20rem] lg:w-[26rem] dark:border-metal-900 dark:bg-metal-900">
           <ModalClose class="absolute right-4 top-4" />
           <ModalHeader
             class="mb-6 flex flex-col items-center justify-center space-y-3">
