@@ -1,31 +1,32 @@
 ---
 title: "Button Group"
-description: "The Buttons component in the Keep Vue offers a variety of button types, sizes, and states to meet your design needs. With options for icons and destructiveness, you can create visually appealing and functional buttons for your product."
+description: "The Button Group component in Keep Vue allows you to organize multiple buttons together, offering various button types, sizes, and states to meet your design needs. With options for icons and destructive actions, you can create visually cohesive and functional button groups for your application."
 ---
 
 ## Default Button Group
 
-The Button Group component lets you group multiple buttons together, creating a visually cohesive and organized user interface. By using this component, you can ensure that related actions are grouped, enhancing the user experience and providing a clear user flow.
+The Button Group component allows you to group multiple buttons together, creating a clean and organized user interface. This component is useful for grouping related actions, improving the user experience by providing a clear flow for interacting with buttons.
 
 ::DefaultButtonGroup
 ::
 
-## Button Group with Icon
+## Button Group with Icons
 
-The Button Group component with icons allows you to create a group of buttons, each accompanied by an icon. This arrangement visually represents different actions and enhances the user experience by providing clear and recognizable icons alongside the corresponding buttons.
+The Button Group component supports buttons with accompanying icons, making it easier for users to identify different actions. This enhances both the visual appeal and usability by providing recognizable icons alongside each button.
 
 ::ButtonGroupWithIcon
 ::
 
-## Button Group with only icon
+## Button Group with Only Icons
 
-The Button Group component with only icons allows you to create a compact and visually appealing group of buttons, each featuring an icon. This layout is particularly useful when you want to provide users with quick and easily recognizable actions without the need for text labels.
+The Button Group component can also feature only icons, providing a compact and visually minimalistic design. This layout is ideal for situations where quick, easily recognizable actions are required without the need for text labels.
 
 ::ButtonGroupWithOnlyIcon
 ::
 
-## Api Reference
+## API Reference
 
-Explore the available props for the button group component
-::ButtonApi
+Explore the available props for the Button Group component.
+
+::ButtonGroupApi
 ::
