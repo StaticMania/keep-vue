@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Button } from "~/src";
-import { buttonColorVariantCode } from "./buttonCode";
+import { buttonColorVariantCode } from "../buttonCode";
 </script>
 
 <template>

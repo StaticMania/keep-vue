@@ -35,6 +35,13 @@ const buttonApiData = ref([
     propsDescription: "Size variant of the button.",
     default: "md",
   },
+  {
+    id: 5,
+    propsName: "radius",
+    propsType: ["default", "full"],
+    propsDescription: "Change the radius of the button.",
+    default: "default",
+  },
 ]);
 </script>
 

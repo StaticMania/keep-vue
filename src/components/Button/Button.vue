@@ -16,11 +16,13 @@ export interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
   variant?: "link" | "outline";
   shape?: "circle" | "icon";
   position?: "center" | "start" | "end";
+  radius?: "default" | "full";
 }
 
 const props = withDefaults(defineProps<ButtonProps & ClassProps>(), {
   size: "md",
   color: "primary",
+  radius: "default",
 });
 
 const restProps = computed(() => {
@@ -33,7 +35,10 @@ const restProps = computed(() => {
   <button
     v-bind="restProps"
     :class="
-      cn(buttonVariants({ size, color, variant, shape, position }), props.class)
+      cn(
+        buttonVariants({ size, color, variant, shape, radius, position }),
+        props.class,
+      )
     ">
     <slot></slot>
   </button>
