@@ -4,7 +4,8 @@ const breadcrumbApiData = [
     id: 1,
     propsName: "borderType",
     propsType: ["border-xy", "border-y"],
-    propsDescription: "Breadcrumb border type",
+    propsDescription:
+      "Breadcrumb border type  used in the BreadcrumbList component.",
     default: "",
   },
 ];
