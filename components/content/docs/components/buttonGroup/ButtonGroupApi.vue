@@ -15,13 +15,6 @@ const buttonApiData = ref([
     default: "outline",
   },
   {
-    id: 3,
-    propsName: "shape",
-    propsType: ["circle", "icon"],
-    propsDescription: "Apply circular styling to the button.",
-    default: "circle",
-  },
-  {
     id: 4,
     propsName: "position",
     propsType: ["start", "end", "center"],

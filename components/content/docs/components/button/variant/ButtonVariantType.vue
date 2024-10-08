@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { Button } from "~/src";
-import { buttonVariantTypeCode } from "./buttonCode";
+import { buttonVariantTypeCode } from "../buttonCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="buttonVariantTypeCode">
-    <div class="flex h-32 flex-wrap items-center gap-2 p-4">
+    <div class="flex h-32 flex-col flex-wrap items-center gap-2 gap-y-4 p-4">
       <div class="flex flex-wrap items-center gap-2">
         <Button color="primary" variant="outline">Button</Button>
         <Button color="secondary" variant="outline">Button</Button>

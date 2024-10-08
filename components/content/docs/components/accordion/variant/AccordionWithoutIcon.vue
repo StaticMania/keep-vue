@@ -6,14 +6,14 @@ import {
   AccordionPanel,
   AccordionTitle,
 } from "~/src";
-import { AccordionWithoutIconCode } from "./AccordionCode";
+import { AccordionWithoutIconCode } from "../AccordionCode";
 
 const accordionItems = [
   {
     value: "item-1",
-    title: "Q. What is the purpose of the Keep Vue?",
+    title: "Q. How Do I Prepare for a Job Interview?",
     content:
-      "The Keep Vue is a collection of UI components, styles, and guidelines that ensure consistency and a unified user experience across our products. It simplifies the design and development process by providing ready-to-use components that can be easily customized and integrated into various applications",
+      "To prepare for a job interview, research the company and review the job description thoroughly. Practice answering common interview questions and have examples ready to demonstrate your skills and experience. Dress appropriately, arrive early, and bring copies of your resume along with a positive attitude.",
   },
 ];
 </script>
@@ -26,7 +26,7 @@ const accordionItems = [
         :key="item.value"
         :value="item.value">
         <AccordionContainer>
-          <AccordionTitle>
+          <AccordionTitle class="first-letter:text-primary-500">
             {{ item.title }}
           </AccordionTitle>
         </AccordionContainer>

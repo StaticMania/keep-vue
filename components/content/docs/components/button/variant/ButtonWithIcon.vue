@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Button } from "~/src";
-import { buttonWithIconCode } from "./buttonCode";
+import { buttonWithIconCode } from "../buttonCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="buttonWithIconCode">

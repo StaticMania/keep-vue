@@ -27,7 +27,12 @@ export { default as Badge } from "./components/Badge/Badge.vue";
 
 //BreadCrumb component
 export { default as Breadcrumb } from "./components/Breadcrumb/Breadcrumb.vue";
+export { default as BreadcrumbDivider } from "./components/Breadcrumb/BreadcrumbDivider.vue";
+export { default as BreadcrumbEllipsis } from "./components/Breadcrumb/BreadcrumbEllipsis.vue";
 export { default as BreadcrumbItem } from "./components/Breadcrumb/BreadcrumbItem.vue";
+export { default as BreadcrumbLink } from "./components/Breadcrumb/BreadcrumbLink.vue";
+export { default as BreadcrumbList } from "./components/Breadcrumb/BreadcrumbList.vue";
+export { default as BreadcrumbPage } from "./components/Breadcrumb/BreadcrumbPage.vue";
 
 //button component
 export { default as Button } from "./components/Button/Button.vue";

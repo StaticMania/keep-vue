@@ -95,8 +95,24 @@ import { Button } from "keep-vue";
       `,
 };
 
+const buttonRadiusVariantCode = {
+  "ButtonComponent.Vue": `<script setup>
+import { Button } from "keep-vue";
+</script>
+<template>
+ 
+   <Button radius="full">
+        <PhosphorIconShoppingCart size="16" />
+        Add to cart
+      </Button>
+
+</template>
+      `,
+};
+
 export {
   buttonColorVariantCode,
+  buttonRadiusVariantCode,
   buttonShapeVariantCode,
   buttonSizeVariantCode,
   buttonVariantTypeCode,

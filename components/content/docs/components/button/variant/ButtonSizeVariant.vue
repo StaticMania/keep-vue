@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Button } from "~/src";
-import { buttonSizeVariantCode } from "./buttonCode";
+import { buttonSizeVariantCode } from "../buttonCode";
 </script>
 
 <template>

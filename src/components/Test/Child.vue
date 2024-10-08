@@ -1,14 +1,47 @@
 <script lang="ts" setup>
-import { Card, CardContent, CardDescription, CardTitle } from "~/src";
+import {
+  Breadcrumb,
+  BreadcrumbDivider,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+} from "~/src";
 </script>
+
 <template>
-  <Card class="max-w-md">
-    <CardContent>
-      <CardTitle>Keep design system</CardTitle>
-      <CardDescription>
-        Component design systems can help developers to be more productive by
-        providing them with a ready-made set of components to use.
-      </CardDescription>
-    </CardContent>
-  </Card>
+  <Breadcrumb>
+    <BreadcrumbList>
+      <BreadcrumbItem>
+        <BreadcrumbLink href="/">
+          <PhosphorIconHouse :size="16" />
+          <span>Home</span>
+        </BreadcrumbLink>
+      </BreadcrumbItem>
+      <BreadcrumbDivider />
+
+      <BreadcrumbItem>
+        <BreadcrumbLink href="/">
+          <PhosphorIconAirplay :size="16" />
+          <span>Products</span>
+        </BreadcrumbLink>
+      </BreadcrumbItem>
+      <BreadcrumbDivider />
+
+      <BreadcrumbItem>
+        <BreadcrumbLink href="/">
+          <PhosphorIconCircuitry :size="16" />
+          <span>Electronics</span>
+        </BreadcrumbLink>
+      </BreadcrumbItem>
+      <BreadcrumbDivider />
+
+      <BreadcrumbItem>
+        <BreadcrumbPage>
+          <PhosphorIconLaptop :size="16" />
+          <span>Laptop</span>
+        </BreadcrumbPage>
+      </BreadcrumbItem>
+    </BreadcrumbList>
+  </Breadcrumb>
 </template>
