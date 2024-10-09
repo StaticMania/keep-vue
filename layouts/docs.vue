@@ -1,27 +1,14 @@
 <script lang="ts" setup>
 import DocSidebar from "~/components/DocSidebar.vue";
 import TableOfContent from "~/components/TableOfContent.vue";
-import ToastWrapper from "~/src/components/Toast/ToastWrapper.vue";
+import { ToastWrapper } from "~/src";
+
+const colorMode = useColorMode();
 </script>
 
 <!-- eslint-disable vue/no-multiple-template-root -->
 <template>
-  <ToastWrapper
-    :toast-options="{
-      classes: {
-        toast:
-          'dark:!bg-metal-900 border dark:!border-metal-800 !border-white !bg-white',
-        title: 'text-metal-900 dark:!text-white',
-        description: 'dark:!text-metal-300 text-metal-600',
-        actionButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
-        cancelButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
-        closeButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
-        error: '!text-error-500',
-        success: '!text-success-500',
-        warning: '!text-warning-500',
-        info: '!text-primary-500',
-      },
-    }" />
+  <ToastWrapper :theme="colorMode.value === 'dark' ? 'dark' : 'light'" />
 
   <Navbar />
   <main class="relative pt-20">
