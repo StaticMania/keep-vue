@@ -7,6 +7,25 @@
 :root {
   --font-inter: "Inter";
 }
+
+@layer base {
+  :root {
+    /* ... */
+    --vis-tooltip-background-color: none !important;
+    --vis-tooltip-border-color: none !important;
+    --vis-tooltip-text-color: none !important;
+    --vis-tooltip-shadow-color: none !important;
+    --vis-tooltip-backdrop-filter: none !important;
+    --vis-tooltip-padding: none !important;
+
+    --vis-text-color: 214, 20%, 34%;
+  }
+
+  .dark {
+    --vis-text-color: 216, 20%, 74%;
+  }
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   @apply scroll-smooth;
