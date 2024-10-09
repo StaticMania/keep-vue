@@ -36,6 +36,7 @@ const { position } = useNotification();
         cn(
           notificationTheme.base,
           notificationTheme.position[position as NotificationPosition],
+          'space-y-1.5',
           props.class,
         )
       ">
