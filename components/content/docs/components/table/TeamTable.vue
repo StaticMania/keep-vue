@@ -29,20 +29,19 @@ import { TeamTableCode } from "./tableCode";
       <TableCaption>
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-5">
-            <h2
+            <h3
               class="text-heading-6 font-semibold text-metal-900 dark:text-white">
               Team Members
-            </h2>
+            </h3>
             <Badge color="secondary">200 Member</Badge>
           </div>
           <div class="flex items-center gap-5">
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconPlus class="size-4 fill-metal-900 dark:fill-white" />
+              <PhosphorIconPlus class="size-4 fill-primary-400" />
               New Member
             </Button>
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconMagnifyingGlass
-                class="size-4 fill-metal-900 dark:fill-white" />
+              <PhosphorIconMagnifyingGlass class="size-4 fill-primary-400" />
               Search
             </Button>
           </div>

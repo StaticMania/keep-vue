@@ -101,20 +101,19 @@ const promise = () =>
 };
 
 const ToastWrapperCode = {
-  "App.vue": `  <ToastWrapper
+  "App.vue": `
+  <script setup>
+  //rest code...
+  const colorMode = useColorMode();
+</script>
+
+  <ToastWrapper
+    :theme="colorMode.value === 'dark' ? 'dark' : 'light'"
     :toast-options="{
       classes: {
-        toast:
-          'dark:!bg-metal-900 border dark:!border-metal-800 !border-white !bg-white',
-        title: 'text-metal-900 dark:!text-white',
-        description: 'dark:!text-metal-300 text-metal-600',
-        actionButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
-        cancelButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
-        closeButton: 'dark:!bg-metal-800 !bg-metal-900 !text-white',
-        error: '!text-error-500',
-        success: '!text-success-500',
-        warning: '!text-warning-500',
-        info: '!text-primary-500',
+        title: 'text-body-3 font-medium',
+        toast: 'rounded-xl shadow-large',
+        description: 'text-body-4 font-normal',
       },
     }" />`,
 };

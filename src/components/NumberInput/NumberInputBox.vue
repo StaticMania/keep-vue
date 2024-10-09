@@ -33,7 +33,7 @@ const proxyValue = defineModel<number>();
     type="number"
     :class="
       cn(
-        'flex-auto bg-transparent px-3 py-2.5 text-center text-body-3 font-medium text-metal-900 outline-none',
+        'flex-auto bg-transparent px-3 py-2.5 text-center text-body-3 font-medium text-metal-900 outline-none dark:text-white dark:placeholder:text-metal-300 dark:focus-visible:ring-metal-900',
         props.class,
       )
     " />

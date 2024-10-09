@@ -21,6 +21,8 @@ const restProps = computed(() => {
     :class="
       cn(
         'flex h-12 max-w-sm items-center justify-between rounded-lg border border-metal-100 bg-white px-5',
+        //dark
+        'dark:border-metal-800 dark:bg-metal-900',
         props.class,
       )
     ">

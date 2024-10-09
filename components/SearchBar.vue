@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { docsRoutes, quickAccessRoute, type RouterPath } from "~/Routes/routes";
 import { Modal } from "~/src";
 
@@ -44,7 +44,13 @@ if (props.isOpen !== true) {
 }
 
 onMounted(() => {
-  inputRef.value?.focus();
+  watchEffect(() => {
+    if (props.isOpen) {
+      nextTick(() => {
+        inputRef.value?.focus();
+      });
+    }
+  });
 });
 </script>
 
@@ -59,7 +65,7 @@ onMounted(() => {
       <VisuallyHidden>
         <ModalTitle>Update Modal Status</ModalTitle>
       </VisuallyHidden>
-      <ModalDescription>
+      <ModalDescription class="md:m-1.5">
         <fieldset class="relative">
           <Input
             ref="inputRef"

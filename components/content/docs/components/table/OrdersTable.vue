@@ -27,20 +27,19 @@ import { OrdersTableCode } from "./tableCode";
       <TableCaption>
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-5">
-            <h2
+            <h3
               class="text-heading-6 font-semibold text-metal-900 dark:text-white">
               Total Orders
-            </h2>
+            </h3>
             <Badge color="secondary">200 Orders</Badge>
           </div>
           <div class="flex items-center gap-5">
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconPlus class="size-4 fill-metal-900 dark:fill-white" />
+              <PhosphorIconPlus class="size-4 fill-primary-400" />
               Add Order
             </Button>
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconFunnel
-                class="size-4 fill-metal-900 dark:fill-white" />
+              <PhosphorIconFunnel class="size-4 fill-primary-400" />
               Filter Order
             </Button>
           </div>

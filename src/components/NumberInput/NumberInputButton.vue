@@ -17,7 +17,14 @@ const restProps = computed(() => {
 </script>
 
 <template>
-  <button v-bind="restProps" :class="cn('max-w-max flex-1', props.class)">
+  <button
+    v-bind="restProps"
+    :class="
+      cn(
+        'max-w-max flex-1 text-metal-900 disabled:text-metal-300 dark:text-metal-200 dark:disabled:text-metal-400',
+        props.class,
+      )
+    ">
     <slot></slot>
   </button>
 </template>

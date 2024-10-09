@@ -1,5 +1,11 @@
 <script lang="ts" setup>
-import { Tooltip, TooltipAction, TooltipArrow, TooltipContent } from "~/src";
+import {
+  Button,
+  Tooltip,
+  TooltipAction,
+  TooltipArrow,
+  TooltipContent,
+} from "~/src";
 import { tooltipWithColorVariantCode } from "./tooltipCode";
 
 const tooltipColors = ["primary", "secondary", "success", "warning", "error"];
@@ -13,7 +19,7 @@ const tooltipColors = ["primary", "secondary", "success", "warning", "error"];
         :key="color"
         :color="color as any">
         <TooltipAction as-child>
-          <Button>Tooltip</Button>
+          <Button :color="color as any">Tooltip</Button>
         </TooltipAction>
         <TooltipContent>
           <p class="text-body-5 font-medium text-white first-letter:uppercase">
