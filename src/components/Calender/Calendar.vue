@@ -94,5 +94,3 @@ const forwarded = useForwardPropsEmits(restProps, emits);
     </div>
   </CalendarRoot>
 </template>
-
-<!-- 'data-[selected]:bg-green-600 data-[selected]:text-white data-[selected]:opacity-100 data-[selected]:focus:bg-green-600', -->
