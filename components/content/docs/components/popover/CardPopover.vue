@@ -21,14 +21,14 @@ import { CardPopoverCode } from "./popoverCode";
         </PopoverAction>
         <PopoverContent
           side="left"
-          class="z-20 max-w-[300px] rounded-xl bg-white dark:bg-metal-900">
+          class="z-20 max-w-[300px] rounded-xl bg-white p-0 dark:bg-metal-900">
           <div>
             <NuxtImg
               src="/images/keep-card.jpg"
               class="rounded-t-xl"
               alt="image"
               :width="600"
-              :height="300" />
+              :height="400" />
             <div class="space-y-2 p-6">
               <PopoverTitle>Keep Design System</PopoverTitle>
               <PopoverDescription>

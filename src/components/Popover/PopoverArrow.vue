@@ -16,7 +16,9 @@ const restProps = computed(() => {
 </script>
 
 <template>
-  <PopoverIndicator v-bind="restProps" :class="cn('fill-white', props.class)">
+  <PopoverIndicator
+    v-bind="restProps"
+    :class="cn('fill-white dark:fill-metal-900', props.class)">
     <slot></slot>
   </PopoverIndicator>
 </template>
