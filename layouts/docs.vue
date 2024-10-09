@@ -8,7 +8,15 @@ const colorMode = useColorMode();
 
 <!-- eslint-disable vue/no-multiple-template-root -->
 <template>
-  <ToastWrapper :theme="colorMode.value === 'dark' ? 'dark' : 'light'" />
+  <ToastWrapper
+    :theme="colorMode.value === 'dark' ? 'dark' : 'light'"
+    :toast-options="{
+      classes: {
+        title: 'text-body-3 font-medium',
+        toast: 'rounded-xl shadow-large',
+        description: 'text-body-4 font-normal',
+      },
+    }" />
 
   <Navbar />
   <main class="relative pt-20">

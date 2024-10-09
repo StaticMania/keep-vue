@@ -5,7 +5,7 @@ description: "Toasts typically appear as small, non-intrusive pop-up notificatio
 
 ## Setup Toast
 
-Setup the Toast component to display the toast message. First import the `ToastWrapper` component in our root directory and then use the `<ToastWrapper>` component. Now copy paste the default toast variant from the documentation.
+Setup the Toast component to display the toast message. First import the `ToastWrapper` component in our root directory and then use the `<ToastWrapper>` component. Now copy paste the default toast variant from the documentation. For handling dark mode we use `nuxt colorMode`.
 ::ToastSetupCode
 ::
 

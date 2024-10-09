@@ -27,10 +27,10 @@ import { OrdersTableCode } from "./tableCode";
       <TableCaption>
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-5">
-            <h2
+            <h3
               class="text-heading-6 font-semibold text-metal-900 dark:text-white">
               Total Orders
-            </h2>
+            </h3>
             <Badge color="secondary">200 Orders</Badge>
           </div>
           <div class="flex items-center gap-5">
