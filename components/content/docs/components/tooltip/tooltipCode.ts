@@ -84,7 +84,7 @@ import {
 const tooltipWithColorVariantCode = {
   "TooltipComponent.vue": `
    <script setup>
-import { Tooltip, TooltipAction, TooltipArrow, TooltipContent } from "keep-vue";
+import { Button,Tooltip, TooltipAction, TooltipArrow, TooltipContent } from "keep-vue";
 
 const tooltipColors = ["primary", "secondary", "success", "warning", "error"];
 </script>
@@ -93,7 +93,7 @@ const tooltipColors = ["primary", "secondary", "success", "warning", "error"];
     <Tooltip v-for="color in tooltipColors" :key="color" :color="color as any">
 
       <TooltipAction as-child>
-        <Button>Tooltip</Button>
+        <Button :color="color">Tooltip</Button>
       </TooltipAction>
 
       <TooltipContent>
