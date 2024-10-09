@@ -25,20 +25,19 @@ import { ProductTableCode } from "./tableCode";
       <TableCaption>
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-5">
-            <h2
+            <h3
               class="text-heading-6 font-semibold text-metal-900 dark:text-white">
               Total Product
-            </h2>
+            </h3>
             <Badge>500 Product</Badge>
           </div>
           <div class="flex items-center gap-5">
             <Button variant="outline" class="flex gap-1.5">
-              <PhosphorIconPlus class="size-4 fill-metal-900 dark:fill-white" />
+              <PhosphorIconPlus class="size-4 fill-primary-400" />
               Add Product
             </Button>
             <Button variant="outline" class="flex gap-1.5">
-              <PhosphorIconFunnel
-                class="size-4 fill-metal-900 dark:fill-white" />
+              <PhosphorIconFunnel class="size-4 fill-primary-400" />
               Filter Product
             </Button>
           </div>

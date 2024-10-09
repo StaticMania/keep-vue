@@ -37,12 +37,11 @@ import { TeamTableCode } from "./tableCode";
           </div>
           <div class="flex items-center gap-5">
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconPlus class="size-4 fill-metal-900 dark:fill-white" />
+              <PhosphorIconPlus class="size-4 fill-primary-400" />
               New Member
             </Button>
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconMagnifyingGlass
-                class="size-4 fill-metal-900 dark:fill-white" />
+              <PhosphorIconMagnifyingGlass class="size-4 fill-primary-400" />
               Search
             </Button>
           </div>
