@@ -1,7 +1,19 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "allowImportingTsExtensions": true
-  }
+    "noEmit": false,
+    "baseUrl": ".",
+    "outDir": "./lib/cjs",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.css",
+    "src/**/*.vue"
+  ],
+  "exclude": ["node_modules", "**/node_modules", "docs", "dist"]
 }

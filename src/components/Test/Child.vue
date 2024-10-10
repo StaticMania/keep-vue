@@ -1,47 +1,31 @@
-<script lang="ts" setup>
-import {
-  Breadcrumb,
-  BreadcrumbDivider,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-} from "~/src";
+<script setup lang="ts">
+import Command from "../Command/Command.vue";
+import CommandEmpty from "../Command/CommandEmpty.vue";
+import CommandGroup from "../Command/CommandGroup.vue";
+import CommandInput from "../Command/CommandInput.vue";
+import CommandItem from "../Command/CommandItem.vue";
+import CommandShortcut from "../Command/CommandShortcut.vue";
 </script>
 
 <template>
-  <Breadcrumb>
-    <BreadcrumbList>
-      <BreadcrumbItem>
-        <BreadcrumbLink href="/">
-          <PhosphorIconHouse :size="16" />
-          <span>Home</span>
-        </BreadcrumbLink>
-      </BreadcrumbItem>
-      <BreadcrumbDivider />
-
-      <BreadcrumbItem>
-        <BreadcrumbLink href="/">
-          <PhosphorIconAirplay :size="16" />
-          <span>Products</span>
-        </BreadcrumbLink>
-      </BreadcrumbItem>
-      <BreadcrumbDivider />
-
-      <BreadcrumbItem>
-        <BreadcrumbLink href="/">
-          <PhosphorIconCircuitry :size="16" />
-          <span>Electronics</span>
-        </BreadcrumbLink>
-      </BreadcrumbItem>
-      <BreadcrumbDivider />
-
-      <BreadcrumbItem>
-        <BreadcrumbPage>
-          <PhosphorIconLaptop :size="16" />
-          <span>Laptop</span>
-        </BreadcrumbPage>
-      </BreadcrumbItem>
-    </BreadcrumbList>
-  </Breadcrumb>
+  <Command class="max-w-[450px] rounded-lg border shadow-md">
+    <CommandInput placeholder="Type a command or search..." />
+    <CommandList>
+      <CommandEmpty>No results found.</CommandEmpty>
+      <CommandGroup heading="Suggestions">
+        <CommandItem value="Calendar">
+          <PhosphorIconCalendar :size="22" class="mr-2 h-4 w-4" />
+          <span>Calendar</span>
+        </CommandItem>
+      </CommandGroup>
+      <CommandSeparator />
+      <CommandGroup heading="Settings">
+        <CommandItem value="Profile">
+          <PhosphorIconProfile :size="22" class="mr-2 h-4 w-4" />
+          <span>Profile</span>
+          <CommandShortcut>⌘P</CommandShortcut>
+        </CommandItem>
+      </CommandGroup>
+    </CommandList>
+  </Command>
 </template>
