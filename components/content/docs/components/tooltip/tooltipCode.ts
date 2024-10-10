@@ -21,29 +21,24 @@ import { Tooltip, TooltipAction, TooltipArrow, TooltipContent } from "keep-vue";
 const tooltipPlacementCode = {
   "TooltipComponent.vue": `
    <script setup>
-import { Button, Tooltip, TooltipArrow, TooltipContent } from "keep-vue";
-
-
-const positions = ["top", "bottom", "left", "right"];
+import { Button, Tooltip, TooltipArrow, TooltipAction,TooltipContent } from "keep-vue";
 </script>
 
 <template>
-  <Tooltip v-for="position in positions" :key="position" :delay-duration="0">
+  <Tooltip :delay-duration="0">
 
       <TooltipAction as-child>
-        <Button class="first-letter:uppercase">{{ position }}</Button>
+        <Button>Left</Button>
       </TooltipAction>
 
-      <TooltipContent :side="position">
+      <TooltipContent side="left">
         <p class="text-body-5 font-medium text-white">Tooltips - Title here</p>
 
         <TooltipArrow :height="8" :width="12" />
         
       </TooltipContent>
     </Tooltip>
-</template>
-
-    `,
+</template>`,
 };
 
 const tooltipWithLargeTextCode = {
