@@ -5,7 +5,8 @@ description: "Notification component in the Keep React allows you to display inf
 
 ## Default Notification
 
-Display informative messages or alerts to users with the Default Notification component in Keep React.
+Display informative messages or alerts to users with the Default Notification component in Keep Vue.
+
 ::DefaultNotification
 ::
 
@@ -17,7 +18,7 @@ Enhance the Notification component with a card layout for a more visually appeal
 
 ## Notification Position
 
-Position notifications according to your preference with available options: `"bottomRight" , "topLeft", "topCenter", "topRight", "bottomLeft"`. Default position is `"bottomRight"`. you can use the value in the `position` property.
+Position notifications according to your preference with available options: `"bottomRight" , "topLeft", "topCenter", "topRight", "bottomLeft"`. Default position is `"bottomRight"`. you can use the value in the `position` property of the Notification component.
 
 ::NotificationPosition
 ::
