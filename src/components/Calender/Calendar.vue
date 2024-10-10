@@ -8,6 +8,17 @@ import {
 import { computed, defineEmits, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
+import CalendarCell from "./CalendarCell.vue";
+import CalendarCellTrigger from "./CalendarCellTrigger.vue";
+import CalendarGrid from "./CalendarGrid.vue";
+import CalendarGridBody from "./CalendarGridBody.vue";
+import CalendarGridHead from "./CalendarGridHead.vue";
+import CalendarGridRow from "./CalendarGridRow.vue";
+import CalendarHeadCell from "./CalendarHeadCell.vue";
+import CalendarHeader from "./CalendarHeader.vue";
+import CalendarHeading from "./CalendarHeading.vue";
+import CalendarNextButton from "./CalendarNextButton.vue";
+import CalendarPrevButton from "./CalendarPrevButton.vue";
 import type { classesType } from "./CalendarTypes";
 
 export interface DatePickerClass {

@@ -9,7 +9,17 @@ import { computed, defineEmits, defineProps } from "vue";
 import { cn } from "~/src/utils/cn";
 import type { ClassProps } from "~/src/utils/interface";
 import type { classesType } from "../Calender/CalendarTypes";
+import RangeCalendarCell from "./RangeCalendarCell.vue";
+import RangeCalendarCellTrigger from "./RangeCalendarCellTrigger.vue";
 import RangeCalendarGrid from "./RangeCalendarGrid.vue";
+import RangeCalendarGridBody from "./RangeCalendarGridBody.vue";
+import RangeCalendarGridHead from "./RangeCalendarGridHead.vue";
+import RangeCalendarGridRow from "./RangeCalendarGridRow.vue";
+import RangeCalendarHeadCell from "./RangeCalendarHeadCell.vue";
+import RangeCalendarHeader from "./RangeCalendarHeader.vue";
+import RangeCalendarHeading from "./RangeCalendarHeading.vue";
+import RangeCalendarNextButton from "./RangeCalendarNextButton.vue";
+import RangeCalendarPrevButton from "./RangeCalendarPrevButton.vue";
 
 export interface DatePickerClass {
   classes?: classesType;
