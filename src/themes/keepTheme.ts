@@ -1,5 +1,6 @@
 import merge from "deepmerge";
 import type { Config } from "tailwindcss";
+import tailwindAnimate from "tailwindcss-animate";
 
 type ColorThemeType = {
   [key: string]: {
@@ -220,7 +221,7 @@ const keepTheme = (config: Config, color = colors): Config => {
     darkMode: "selector",
     content: ["node_modules/keep-vue/**/*.{js,jsx,ts,tsx}"],
     presets: [presetFn(color)],
-    plugins: [require("tailwindcss-animate")],
+    plugins: [tailwindAnimate],
   };
 
   return merge(twConfigForKeepReact, { ...config });
