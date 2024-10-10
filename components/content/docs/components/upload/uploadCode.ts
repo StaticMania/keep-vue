@@ -1,5 +1,7 @@
 const DefaultUploadCode = {
   "UploadComponent.vue": `<script setup>
+import { PhInfo, PhTrash } from "phosphor-vue";  
+import {ref} from "vue";  
 import {
   Upload,
   UploadBody,
@@ -55,7 +57,7 @@ watch(dragState, (newValue) => {
     <UploadFooter :is-file-exists="files.length > 0">
       <p
         class="my-2 flex items-center gap-1 text-body-4 font-normal text-metal-600 dark:text-metal-300">
-        <PhosphorIconInfo :size="16" />
+        <PhInfo :size="16" />
         Uploaded Files
       </p>
       <ul class="space-y-1">
@@ -64,7 +66,7 @@ watch(dragState, (newValue) => {
           :key="file?.name"
           class="flex items-center justify-between border-l-4 border-l-metal-100 bg-metal-25 px-4 py-2.5 text-left text-body-4 font-normal capitalize text-metal-600 dark:border-l-metal-600 dark:bg-metal-800 dark:text-metal-300">
           {{ file?.name }}
-          <PhosphorIconTrash :size="16" color="red" />
+          <PhTrash :size="16" color="red" />
         </li>
       </ul>
     </UploadFooter>
@@ -74,6 +76,8 @@ watch(dragState, (newValue) => {
 
 const HorizontalUploadCode = {
   "UploadComponent.vue": `<script setup>
+import { PhInfo, PhTrash } from "phosphor-vue";
+import {ref} from "vue";    
 import {
   Upload,
   UploadBody,
@@ -130,7 +134,7 @@ watch(dragState, (newValue) => {
     <UploadFooter :is-file-exists="files.length > 0">
       <p
         class="my-2 flex items-center gap-1 text-body-4 font-normal text-metal-600 dark:text-metal-300">
-        <PhosphorIconInfo :size="16" />
+        <PhInfo :size="16" />
         Uploaded Files
       </p>
       <ul class="space-y-1">
@@ -139,7 +143,7 @@ watch(dragState, (newValue) => {
           :key="file?.name"
           class="flex items-center justify-between border-l-4 border-l-metal-100 bg-metal-25 px-4 py-2.5 text-left text-body-4 font-normal capitalize text-metal-600 dark:border-l-metal-600 dark:bg-metal-800 dark:text-metal-300">
           {{ file?.name }}
-          <PhosphorIconTrash :size="16" color="red" />
+          <PhTrash :size="16" color="red" />
         </li>
       </ul>
     </UploadFooter>
@@ -149,6 +153,8 @@ watch(dragState, (newValue) => {
 
 const SingleUploadCode = {
   "UploadComponent.vue": `<script setup>
+import { PhInfo, PhTrash} from "phosphor-vue";
+import {ref} from "vue";    
 import {
   Upload,
   UploadBody,
@@ -205,7 +211,7 @@ watch(dragState, (newValue) => {
     <UploadFooter :is-file-exists="files.length > 0">
       <p
         class="my-2 flex items-center gap-1 text-body-4 font-normal text-metal-600 dark:text-metal-300">
-        <PhosphorIconInfo :size="16" />
+        <PhInfo :size="16" />
         Uploaded Files
       </p>
       <ul class="space-y-1">
@@ -214,7 +220,7 @@ watch(dragState, (newValue) => {
           :key="file?.name"
           class="flex items-center justify-between border-l-4 border-l-metal-100 bg-metal-25 px-4 py-2.5 text-left text-body-4 font-normal capitalize text-metal-600 dark:border-l-metal-600 dark:bg-metal-800 dark:text-metal-300">
           {{ file?.name }}
-          <PhosphorIconTrash :size="16" color="red" />
+          <PhTrash :size="16" color="red" />
         </li>
       </ul>
     </UploadFooter>
@@ -224,6 +230,8 @@ watch(dragState, (newValue) => {
 
 const UploadDisabledCode = {
   "UploadComponent.vue": `<script setup>
+import { PhInfo, PhTrash } from "phosphor-vue";
+import {ref} from "vue";  
 import {
   Upload,
   UploadBody,
@@ -278,7 +286,7 @@ watch(dragState, (newValue) => {
     <UploadFooter :is-file-exists="files.length > 0">
       <p
         class="my-2 flex items-center gap-1 text-body-4 font-normal text-metal-600 dark:text-metal-300">
-        <PhosphorIconInfo :size="16" />
+        <PhInfo :size="16" />
         Uploaded Files
       </p>
       <ul class="space-y-1">
@@ -287,7 +295,7 @@ watch(dragState, (newValue) => {
           :key="file?.name"
           class="flex items-center justify-between border-l-4 border-l-metal-100 bg-metal-25 px-4 py-2.5 text-left text-body-4 font-normal capitalize text-metal-600 dark:border-l-metal-600 dark:bg-metal-800 dark:text-metal-300">
           {{ file?.name }}
-          <PhosphorIconTrash :size="16" color="red" />
+          <PhTrash :size="16" color="red" />
         </li>
       </ul>
     </UploadFooter>
