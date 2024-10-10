@@ -17,7 +17,7 @@ const DoubleSliderCode = {
 import { ref } from "vue";
 import { Slider } from "keep-vue";
 
-const sliderValue = ref([25, 75);
+const sliderValue = ref([25, 75]);
 </script>
 
 <template>

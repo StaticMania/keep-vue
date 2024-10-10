@@ -1,16 +1,10 @@
-<script setup lang="ts">
+<script setup>
 import { ref } from "vue";
-import { Slider } from "~/src";
 
-const sliderValue = ref([30, 50]);
+const sliderValue = ref([25, 75]);
 </script>
 
 <template>
   {{ sliderValue }}
-  <Slider
-    class="my-10 ml-5"
-    v-model="sliderValue"
-    :min="0"
-    :max="100"
-    :step="1" />
+  <Slider :min="0" :max="100" :default-value="[33, 75]" v-model="sliderValue" />
 </template>
