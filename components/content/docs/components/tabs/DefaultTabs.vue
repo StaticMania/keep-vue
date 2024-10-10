@@ -31,25 +31,25 @@ import { DefaultTabsCode } from "./tabsCode";
       <TabContent value="item-6">
         <Skeleton class="max-w-full space-y-2.5">
           <SkeletonLine class="h-4 w-11/12" />
-          <SkeletonLine class="h-4 w-9/12" />
-          <SkeletonLine class="h-4 w-10/12" />
           <SkeletonLine class="h-4 w-7/12" />
+          <SkeletonLine class="h-4 w-10/12" />
+          <SkeletonLine class="h-4 w-9/12" />
         </Skeleton>
       </TabContent>
       <TabContent value="item-7">
         <Skeleton class="max-w-full space-y-2.5">
-          <SkeletonLine class="h-4 w-11/12" />
           <SkeletonLine class="h-4 w-9/12" />
-          <SkeletonLine class="h-4 w-10/12" />
           <SkeletonLine class="h-4 w-7/12" />
+          <SkeletonLine class="h-4 w-10/12" />
+          <SkeletonLine class="h-4 w-11/12" />
         </Skeleton>
       </TabContent>
       <TabContent value="item-8">
         <Skeleton class="max-w-full space-y-2.5">
-          <SkeletonLine class="h-4 w-11/12" />
+          <SkeletonLine class="h-4 w-7/12" />
           <SkeletonLine class="h-4 w-9/12" />
           <SkeletonLine class="h-4 w-10/12" />
-          <SkeletonLine class="h-4 w-7/12" />
+          <SkeletonLine class="h-4 w-11/12" />
         </Skeleton>
       </TabContent>
     </Tabs>
