@@ -10,7 +10,10 @@ export interface NumberInputBoxProps
   max?: number;
 }
 
-const props = defineProps<NumberInputBoxProps & ClassProps>();
+const props = withDefaults(defineProps<NumberInputBoxProps & ClassProps>(), {
+  min: 0,
+  max: 100,
+});
 
 const restProps = computed(() => {
   const { class: _, ...delegated } = props;
