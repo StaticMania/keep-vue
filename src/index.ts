@@ -36,7 +36,7 @@ export { default as BreadcrumbPage } from "./components/Breadcrumb/BreadcrumbPag
 
 //button component
 export { default as Button } from "./components/Button/Button.vue";
-export { buttonVariants } from "./components/Button/buttonTheme.ts";
+export { buttonVariants } from "./components/Button/buttonTheme";
 //ButtonGroup Component
 
 export { default as ButtonGroup } from "./components/ButtonGroup/ButtonGroup.vue";
@@ -78,7 +78,7 @@ export {
   Pie,
   PointElement,
   Title,
-} from "./components/Charts/chart.ts";
+} from "./components/Charts/chart";
 
 //Checkbox component
 export { default as Checkbox } from "./components/Checkbox/Checkbox.vue";
@@ -221,7 +221,7 @@ export { default as TimelineItem } from "./components/Timeline/TimelineItem.vue"
 export { default as TimelinePoint } from "./components/Timeline/TimelinePoint.vue";
 
 //toast component
-export { Toast } from "./components/Toast/Toast.ts";
+export { Toast } from "./components/Toast/Toast";
 export { default as ToastWrapper } from "./components/Toast/ToastWrapper.vue";
 
 //tooltip

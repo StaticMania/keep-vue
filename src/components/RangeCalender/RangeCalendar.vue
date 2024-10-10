@@ -6,8 +6,8 @@ import {
   useForwardPropsEmits,
 } from "radix-vue";
 import { computed, defineEmits, defineProps } from "vue";
-import { cn } from "~/src/utils/cn";
-import type { ClassProps } from "~/src/utils/interface";
+import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import type { classesType } from "../Calender/CalendarTypes";
 import RangeCalendarGrid from "./RangeCalendarGrid.vue";
 
