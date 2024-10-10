@@ -4,7 +4,7 @@ import ComponentApiTable from "~/components/content/ComponentApiTable.vue";
 const popoverAPI = [
   {
     id: 1,
-    propsName: "placement",
+    propsName: "side",
     propsType: ["top", "bottom", "left", "right"],
     propsDescription:
       "Defines the position of the popover relative to the trigger element. Applicable in the PopoverContent Component Prop",

@@ -5,7 +5,8 @@ description: "Popover component is a user interface element that displays additi
 
 ## Default Popover
 
-The Default Popover demonstrates a basic popover component.
+The Default Popover demonstrates a basic popover component. You can change the direction of popover by using the `side` property in the `PopoverContent` component. Default side value is bottom. Check the api reference for more.
+
 ::DefaultPopover
 ::
 

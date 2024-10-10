@@ -1,47 +1,87 @@
-<script lang="ts" setup>
-import {
-  Breadcrumb,
-  BreadcrumbDivider,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-} from "~/src";
-</script>
+<script setup></script>
 
 <template>
-  <Breadcrumb>
-    <BreadcrumbList>
-      <BreadcrumbItem>
-        <BreadcrumbLink href="/">
-          <PhosphorIconHouse :size="16" />
-          <span>Home</span>
-        </BreadcrumbLink>
-      </BreadcrumbItem>
-      <BreadcrumbDivider />
+  <Popover>
+    <PopoverAction as-child>
+      <Button>Left</Button>
+    </PopoverAction>
+    <PopoverContent side="left">
+      <div class="flex items-center gap-3">
+        <div>
+          <Avatar>
+            <AvatarImage src="/images/avatar/avatar-3.png" />
+          </Avatar>
+        </div>
+        <div>
+          <PopoverTitle>Keep Designer</PopoverTitle>
+          <PopoverDescription>keepdesign@email.com</PopoverDescription>
+        </div>
+        <Button variant="outline">Follow</Button>
+      </div>
+      <PopoverArrow :width="10" :height="10" />
+    </PopoverContent>
+  </Popover>
 
-      <BreadcrumbItem>
-        <BreadcrumbLink href="/">
-          <PhosphorIconAirplay :size="16" />
-          <span>Products</span>
-        </BreadcrumbLink>
-      </BreadcrumbItem>
-      <BreadcrumbDivider />
+  <Popover>
+    <PopoverAction as-child>
+      <Button>Right</Button>
+    </PopoverAction>
+    <PopoverContent side="right">
+      <div class="flex items-center gap-3">
+        <div>
+          <Avatar>
+            <AvatarImage src="/images/avatar/avatar-3.png" />
+          </Avatar>
+        </div>
+        <div>
+          <PopoverTitle>Keep Designer</PopoverTitle>
+          <PopoverDescription>keepdesign@email.com</PopoverDescription>
+        </div>
+        <Button variant="outline">Follow</Button>
+      </div>
+      <PopoverArrow :width="10" :height="10" />
+    </PopoverContent>
+  </Popover>
 
-      <BreadcrumbItem>
-        <BreadcrumbLink href="/">
-          <PhosphorIconCircuitry :size="16" />
-          <span>Electronics</span>
-        </BreadcrumbLink>
-      </BreadcrumbItem>
-      <BreadcrumbDivider />
+  <Popover>
+    <PopoverAction as-child>
+      <Button>Top</Button>
+    </PopoverAction>
+    <PopoverContent side="top">
+      <div class="flex items-center gap-3">
+        <div>
+          <Avatar>
+            <AvatarImage src="/images/avatar/avatar-3.png" />
+          </Avatar>
+        </div>
+        <div>
+          <PopoverTitle>Keep Designer</PopoverTitle>
+          <PopoverDescription>keepdesign@email.com</PopoverDescription>
+        </div>
+        <Button variant="outline">Follow</Button>
+      </div>
+      <PopoverArrow :width="10" :height="10" />
+    </PopoverContent>
+  </Popover>
 
-      <BreadcrumbItem>
-        <BreadcrumbPage>
-          <PhosphorIconLaptop :size="16" />
-          <span>Laptop</span>
-        </BreadcrumbPage>
-      </BreadcrumbItem>
-    </BreadcrumbList>
-  </Breadcrumb>
+  <Popover>
+    <PopoverAction as-child>
+      <Button>Bottom</Button>
+    </PopoverAction>
+    <PopoverContent>
+      <div class="flex items-center gap-3">
+        <div>
+          <Avatar>
+            <AvatarImage src="/images/avatar/avatar-3.png" />
+          </Avatar>
+        </div>
+        <div>
+          <PopoverTitle>Keep Designer</PopoverTitle>
+          <PopoverDescription>keepdesign@email.com</PopoverDescription>
+        </div>
+        <Button variant="outline">Follow</Button>
+      </div>
+      <PopoverArrow :width="10" :height="10" />
+    </PopoverContent>
+  </Popover>
 </template>
