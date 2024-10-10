@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, defineProps, withDefaults } from "vue";
-import type { ClassProps } from "~/src/utils/interface";
 import { cn } from "../../utils/cn";
+import type { ClassProps } from "../../utils/interface";
 import { stepPointTheme } from "./stepPointTheme";
 
 export interface StepPointProps {

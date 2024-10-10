@@ -1,5 +1,5 @@
 import { createInjectionState } from "@vueuse/core";
-import { ref } from "vue";
+import { ref, type Ref } from "vue";
 
 interface TabsContextParameterType {
   defaultActive: string;
