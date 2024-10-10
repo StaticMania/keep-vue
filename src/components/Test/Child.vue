@@ -1,87 +1,30 @@
 <script setup></script>
 
 <template>
-  <Popover>
-    <PopoverAction as-child>
-      <Button>Left</Button>
-    </PopoverAction>
-    <PopoverContent side="left">
-      <div class="flex items-center gap-3">
-        <div>
-          <Avatar>
-            <AvatarImage src="/images/avatar/avatar-3.png" />
-          </Avatar>
+  <Modal>
+    <ModalAction as-child>
+      <Button>Open Modal</Button>
+    </ModalAction>
+    <ModalContent
+      class="w-[20rem] lg:w-[26rem] dark:border-metal-900 dark:bg-metal-900">
+      <ModalClose class="absolute right-4 top-4" />
+      <ModalHeader
+        class="mb-6 flex flex-col items-center justify-center space-y-3">
+        <div
+          class="flex h-20 w-20 items-center justify-center rounded-full border border-metal-100 bg-metal-50 text-metal-600 dark:border-metal-800 dark:bg-metal-800 dark:text-white">
+          <PhosphorIconCheck :size="60" />
         </div>
-        <div>
-          <PopoverTitle>Keep Designer</PopoverTitle>
-          <PopoverDescription>keepdesign@email.com</PopoverDescription>
+        <div class="space-y-1 text-center">
+          <ModalTitle>Payment Successful</ModalTitle>
+          <ModalDescription>
+            Your document has unsaved changes. Discard or save them as a new
+            page to continue.
+          </ModalDescription>
         </div>
-        <Button variant="outline">Follow</Button>
-      </div>
-      <PopoverArrow :width="10" :height="10" />
-    </PopoverContent>
-  </Popover>
-
-  <Popover>
-    <PopoverAction as-child>
-      <Button>Right</Button>
-    </PopoverAction>
-    <PopoverContent side="right">
-      <div class="flex items-center gap-3">
-        <div>
-          <Avatar>
-            <AvatarImage src="/images/avatar/avatar-3.png" />
-          </Avatar>
-        </div>
-        <div>
-          <PopoverTitle>Keep Designer</PopoverTitle>
-          <PopoverDescription>keepdesign@email.com</PopoverDescription>
-        </div>
-        <Button variant="outline">Follow</Button>
-      </div>
-      <PopoverArrow :width="10" :height="10" />
-    </PopoverContent>
-  </Popover>
-
-  <Popover>
-    <PopoverAction as-child>
-      <Button>Top</Button>
-    </PopoverAction>
-    <PopoverContent side="top">
-      <div class="flex items-center gap-3">
-        <div>
-          <Avatar>
-            <AvatarImage src="/images/avatar/avatar-3.png" />
-          </Avatar>
-        </div>
-        <div>
-          <PopoverTitle>Keep Designer</PopoverTitle>
-          <PopoverDescription>keepdesign@email.com</PopoverDescription>
-        </div>
-        <Button variant="outline">Follow</Button>
-      </div>
-      <PopoverArrow :width="10" :height="10" />
-    </PopoverContent>
-  </Popover>
-
-  <Popover>
-    <PopoverAction as-child>
-      <Button>Bottom</Button>
-    </PopoverAction>
-    <PopoverContent>
-      <div class="flex items-center gap-3">
-        <div>
-          <Avatar>
-            <AvatarImage src="/images/avatar/avatar-3.png" />
-          </Avatar>
-        </div>
-        <div>
-          <PopoverTitle>Keep Designer</PopoverTitle>
-          <PopoverDescription>keepdesign@email.com</PopoverDescription>
-        </div>
-        <Button variant="outline">Follow</Button>
-      </div>
-      <PopoverArrow :width="10" :height="10" />
-    </PopoverContent>
-  </Popover>
+      </ModalHeader>
+      <ModalFooter class="justify-center">
+        <Button>Confirm</Button>
+      </ModalFooter>
+    </ModalContent>
+  </Modal>
 </template>
