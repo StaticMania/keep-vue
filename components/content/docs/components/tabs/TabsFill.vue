@@ -34,26 +34,26 @@ import { TabsFillCode } from "./tabsCode";
       </TabList>
       <TabContent value="1">
         <Skeleton class="max-w-full space-y-2.5">
-          <SkeletonLine class="h-4 w-11/12" />
-          <SkeletonLine class="h-4 w-9/12" />
           <SkeletonLine class="h-4 w-10/12" />
+          <SkeletonLine class="h-4 w-9/12" />
+          <SkeletonLine class="h-4 w-11/12" />
           <SkeletonLine class="h-4 w-7/12" />
         </Skeleton>
       </TabContent>
       <TabContent value="2">
         <Skeleton class="max-w-full space-y-2.5">
-          <SkeletonLine class="h-4 w-11/12" />
           <SkeletonLine class="h-4 w-9/12" />
           <SkeletonLine class="h-4 w-10/12" />
           <SkeletonLine class="h-4 w-7/12" />
+          <SkeletonLine class="h-4 w-11/12" />
         </Skeleton>
       </TabContent>
       <TabContent value="3">
         <Skeleton class="max-w-full space-y-2.5">
-          <SkeletonLine class="h-4 w-11/12" />
-          <SkeletonLine class="h-4 w-9/12" />
           <SkeletonLine class="h-4 w-10/12" />
+          <SkeletonLine class="h-4 w-11/12" />
           <SkeletonLine class="h-4 w-7/12" />
+          <SkeletonLine class="h-4 w-9/12" />
         </Skeleton>
       </TabContent>
       <TabContent value="4">

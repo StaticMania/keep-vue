@@ -37,10 +37,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <AccordionRoot
-    v-if="mounted"
-    aria-labelledby="accordion"
-    v-bind="forwardProps">
+  <AccordionRoot v-if="mounted" v-bind="forwardProps">
     <slot />
   </AccordionRoot>
 </template>

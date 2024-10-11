@@ -5,7 +5,7 @@ description: "The Date Picker component offers an intuitive way for users to sel
 
 ## Default Date Picker
 
-The Default Date Picker component provides a simple interface for selecting a single date. Users can choose a date, and the selected date is managed using state.
+The Default Date Picker component provides a simple interface for selecting a single date. Users can choose a date, and the selected date is managed using a variable. For our example we have used value as a ref value.
 
 ::DefaultDatePicker
 ::
@@ -13,6 +13,7 @@ The Default Date Picker component provides a simple interface for selecting a si
 ## Multiple Month Date Picker
 
 The Multiple Month Date Picker allows users to view and select dates from multiple months. You can customize the number of months displayed using the `:number-of-months` prop.
+
 ::MultipleDatePicker
 ::
 

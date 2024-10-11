@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { AnchorHTMLAttributes } from "vue";
+import { computed, type AnchorHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 

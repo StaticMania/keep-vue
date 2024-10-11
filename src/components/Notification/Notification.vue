@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import {
+  DialogRoot,
   useForwardPropsEmits,
   type DialogRootEmits,
   type DialogRootProps,

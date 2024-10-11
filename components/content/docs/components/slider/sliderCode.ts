@@ -1,20 +1,28 @@
 const DefaultSliderCode = {
   "SliderComponent.vue": `<script setup>
-import { Slider } from "keep-vue";
+  import { ref } from "vue";
+  import { Slider } from "keep-vue";
+
+const sliderValue = ref([25]);
 </script>
 
 <template>
-    <Slider :min="0" :max="100" :default-value="[55]" />
+{{sliderValue}}
+    <Slider :min="0" :max="100" v-model="sliderValue" />
 </template>`,
 };
 
 const DoubleSliderCode = {
   "SliderComponent.vue": `<script setup>
+import { ref } from "vue";
 import { Slider } from "keep-vue";
+
+const sliderValue = ref([25, 75]);
 </script>
 
 <template>
-    <Slider :min="0" :max="100" :default-value="[33, 75]" />
+{{sliderValue}}
+    <Slider :min="0" :max="100" :default-value="[33, 75]" v-model="sliderValue" />
 </template>`,
 };
 

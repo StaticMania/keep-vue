@@ -5,7 +5,8 @@ description: "Number Input Component is a user interface element designed for co
 
 ## Default Number Input
 
-Default Number Input is a simple numeric input field with two buttons for incrementing and decrementing the value.
+Default Number Input is a simple numeric input field with two buttons for incrementing and decrementing the value.You can use all the properties that an input element needs to. By default we set the `min value = 0` and `max value = 100`
+
 ::DefaultNumberInput
 ::
 
