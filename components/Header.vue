@@ -95,8 +95,8 @@ const isActive = (str: string): boolean => {
               class="block dark:hidden" />
             <NuxtImg
               src="/images/icon/github-dark.svg"
-              height="{22}"
-              width="{22}"
+              :height="22"
+              :width="22"
               alt="github"
               class="hidden dark:block" />
           </NuxtLink>
