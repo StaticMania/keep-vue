@@ -243,7 +243,7 @@ import { data2 } from "./TableData";
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
-              <DropdownContent
+              <DropdownContent align="end"
                 class="max-w-[200px] border border-metal-100 p-3">
                 <DropdownList>
                   <DropdownItem>Edit</DropdownItem>
@@ -405,7 +405,7 @@ import { data3 } from "./TableData";
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
-              <DropdownContent
+              <DropdownContent align="end"
                 class="max-w-[200px] border border-metal-100 p-3">
                 <DropdownList>
                   <DropdownItem>Edit</DropdownItem>
@@ -598,7 +598,7 @@ import { data4 } from "./TableData";
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
-              <DropdownContent
+              <DropdownContent align="end"
                 class="max-w-[200px] border border-metal-100 p-3">
                 <DropdownList>
                   <DropdownItem>Edit</DropdownItem>
