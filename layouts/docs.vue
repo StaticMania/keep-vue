@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import DocSidebar from "~/components/DocSidebar.vue";
+import Header from "~/components/Header.vue";
 import TableOfContent from "~/components/TableOfContent.vue";
 import { ToastWrapper } from "~/src";
 
@@ -18,7 +19,7 @@ const colorMode = useColorMode();
       },
     }" />
 
-  <Navbar />
+  <Header />
   <main class="relative pt-20">
     <!-- upper area -> docs layout  -->
     <div

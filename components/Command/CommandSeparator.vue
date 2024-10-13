@@ -2,8 +2,8 @@
 import type { ComboboxSeparatorProps } from "radix-vue";
 import { ComboboxSeparator } from "radix-vue";
 import { computed } from "vue";
-import { cn } from "../../utils/cn";
-import type { ClassProps } from "../../utils/interface";
+import { cn } from "~/src/utils/cn";
+import type { ClassProps } from "~/src/utils/interface";
 
 const props = defineProps<ComboboxSeparatorProps & ClassProps>();
 const restProps = computed(() => {
@@ -13,9 +13,10 @@ const restProps = computed(() => {
 </script>
 
 <template>
+  <!-- command seperator  -->
   <ComboboxSeparator
     v-bind="restProps"
-    :class="cn('bg-border -mx-1 h-px', props.class)">
+    :class="cn('-mx-1 h-px bg-metal-25 dark:bg-metal-800', props.class)">
     <slot />
   </ComboboxSeparator>
 </template>

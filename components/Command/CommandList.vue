@@ -2,8 +2,8 @@
 import type { ComboboxContentEmits, ComboboxContentProps } from "radix-vue";
 import { ComboboxContent, useForwardPropsEmits } from "radix-vue";
 import { computed } from "vue";
-import { cn } from "../../utils/cn";
-import type { ClassProps } from "../../utils/interface";
+import { cn } from "~/src/utils/cn";
+import type { ClassProps } from "~/src/utils/interface";
 
 const props = withDefaults(defineProps<ComboboxContentProps & ClassProps>(), {
   dismissable: false,
@@ -20,6 +20,7 @@ const forwarded = useForwardPropsEmits(restProps, emits);
 </script>
 
 <template>
+  <!-- command list  -->
   <ComboboxContent
     v-bind="forwarded"
     :class="cn('max-h-[300px] overflow-y-auto overflow-x-hidden', props.class)">

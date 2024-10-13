@@ -2,8 +2,8 @@
 import type { ComboboxItemEmits, ComboboxItemProps } from "radix-vue";
 import { ComboboxItem, useForwardPropsEmits } from "radix-vue";
 import { computed } from "vue";
-import { cn } from "../../utils/cn";
-import type { ClassProps } from "../../utils/interface";
+import { cn } from "~/src/utils/cn";
+import type { ClassProps } from "~/src/utils/interface";
 
 const props = defineProps<ComboboxItemProps & ClassProps>();
 const emits = defineEmits<ComboboxItemEmits>();
@@ -17,11 +17,13 @@ const forwarded = useForwardPropsEmits(restProps, emits);
 </script>
 
 <template>
+  <!-- command item  -->
+
   <ComboboxItem
     v-bind="forwarded"
     :class="
       cn(
-        'data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+        'relative flex cursor-pointer select-none items-center gap-2 rounded-md px-2 text-body-4 outline-none transition-all duration-200 data-[disabled=true]:pointer-events-none data-[highlighted]:bg-metal-50 data-[highlighted]:text-metal-900 data-[disabled]:opacity-50 dark:data-[highlighted]:bg-metal-800 dark:data-[highlighted]:text-white',
         props.class,
       )
     ">
