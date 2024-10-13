@@ -34,7 +34,7 @@ watch([Meta_K, Ctrl_K], (v) => {
   <div>
     <button
       @click="isOpen = true"
-      class="rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 laptop:hidden dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
+      class="rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 focus:outline-none laptop:hidden dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
       <PhosphorIconMagnifyingGlass
         :size="22"
         class="fill-metal-300 dark:fill-metal-200" />
