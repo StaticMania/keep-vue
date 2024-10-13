@@ -33,7 +33,8 @@ export const progressTheme: ProgressThemeInterface = {
     root: "relative w-32 h-32",
     svg: {
       base: "h-full w-full",
-      circle: "stroke-primary-25 text-metal-50 fill-white dark:fill-black",
+      circle:
+        "stroke-primary-25 text-metal-50 fill-white dark:fill-transparent",
       g: "origin-center -rotate-90 transform",
       gCircle:
         "stroke-primary-500 text-primary-500 transition-all duration-300",

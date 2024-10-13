@@ -83,13 +83,14 @@ watch([Meta_K, Ctrl_K], (v) => {
         <CommandSeparator />
         <CommandGroup heading="Components">
           <CommandItem
-            v-for="item in docsRoutes"
-            :key="item.name"
-            :heading="item.name"
-            :value="item.name"
-            class="py-3">
+            v-for="route in docsRoutes"
+            :key="route.name"
+            :heading="route.name"
+            :value="route.name"
+            class="py-3"
+            @select="handleSelectLink(route)">
             <PhosphorIconRadioButton class="mr-2 h-4 w-4" />
-            <span>{{ item.name }}</span>
+            <span>{{ route.name }}</span>
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
