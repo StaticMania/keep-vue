@@ -35,7 +35,7 @@ import { RegisterCardCode } from "./cardCode";
             Facebook
           </Button>
         </div>
-        <Divider>Or</Divider>
+        <Divider variant="center">Or</Divider>
         <form class="space-y-2">
           <fieldset class="space-y-1">
             <Label for="email">Email*</Label>
