@@ -27,8 +27,6 @@ const routePath = computed(() => {
   return route.path;
 });
 
-console.log(routePath.value);
-
 watchTriggerable(routePath, () => (active.value = false));
 
 //check the route path and str comes here are equal or not
