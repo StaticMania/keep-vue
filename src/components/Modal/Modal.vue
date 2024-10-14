@@ -5,7 +5,6 @@ import {
   type DialogRootEmits,
   type DialogRootProps,
 } from "radix-vue";
-import { defineEmits, defineProps } from "vue";
 
 const props = defineProps<DialogRootProps>();
 const emits = defineEmits<DialogRootEmits>();

@@ -6,7 +6,7 @@ import {
   type TooltipRootEmits,
   type TooltipRootProps,
 } from "radix-vue";
-import { computed, defineEmits, defineProps, withDefaults } from "vue";
+import { computed } from "vue";
 import type { toolTipTheme } from "./tooltipTheme";
 import { useProvideTooltip } from "./useTooltipStore";
 

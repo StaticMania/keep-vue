@@ -6,13 +6,7 @@ import {
   TooltipPortal,
   useForwardPropsEmits,
 } from "radix-vue";
-import {
-  computed,
-  defineEmits,
-  defineOptions,
-  defineProps,
-  withDefaults,
-} from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { toolTipTheme } from "./tooltipTheme";

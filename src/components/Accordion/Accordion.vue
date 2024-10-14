@@ -5,7 +5,7 @@ import {
   type AccordionRootEmits,
   type AccordionRootProps,
 } from "radix-vue";
-import { computed, defineEmits, defineProps, onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useProvideAccordionStore } from "./useAccordionStore";
 
 export interface AccordionFlushProps {

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useVModel } from "@vueuse/core";
 import type { TextareaHTMLAttributes } from "vue";
-import { computed, defineEmits, defineProps } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 

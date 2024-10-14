@@ -6,13 +6,7 @@ import {
   type PopoverContentEmits,
   type PopoverContentProps,
 } from "radix-vue";
-import {
-  computed,
-  defineEmits,
-  defineOptions,
-  defineProps,
-  withDefaults,
-} from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../Carousel/interface";
 

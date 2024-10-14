@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { InputHTMLAttributes } from "vue";
-import { computed, defineModel, defineProps, withDefaults } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { radioTheme } from "./radioTheme";

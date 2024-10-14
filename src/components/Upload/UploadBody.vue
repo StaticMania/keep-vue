@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, defineEmits, defineProps, watch } from "vue";
+import { computed, watch } from "vue";
 import * as Dropzone from "vue3-dropzone";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";

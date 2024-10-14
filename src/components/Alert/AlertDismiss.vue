@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ButtonHTMLAttributes } from "vue";
-import { computed, defineEmits, defineProps } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { alertTheme, type ColorVariant } from "./alertTheme";

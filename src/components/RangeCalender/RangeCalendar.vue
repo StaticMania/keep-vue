@@ -5,7 +5,7 @@ import {
   type RangeCalendarRootProps,
   useForwardPropsEmits,
 } from "radix-vue";
-import { computed, defineEmits, defineProps } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import type { DatePickerClass } from "../Calender/Calendar.vue";

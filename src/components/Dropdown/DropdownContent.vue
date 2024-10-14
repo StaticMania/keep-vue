@@ -6,7 +6,7 @@ import {
   DropdownMenuPortal,
   useForwardPropsEmits,
 } from "radix-vue";
-import { computed, defineEmits, defineProps, withDefaults } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { dropdownTheme } from "./dropdownTheme";

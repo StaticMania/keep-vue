@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { TableHTMLAttributes } from "vue";
-import { computed, defineProps } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 
 export interface TableCellProps extends /* @vue-ignore*/ TableHTMLAttributes {}

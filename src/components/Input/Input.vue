@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { useVModel } from "@vueuse/core";
 import type { InputHTMLAttributes } from "vue";
-import { defineEmits, defineProps, withDefaults } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { inputTheme } from "./inputTheme";
