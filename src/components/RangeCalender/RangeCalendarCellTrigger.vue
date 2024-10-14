@@ -7,6 +7,7 @@ import {
 import { computed, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
+import { useRangeCalender } from "./RangeCalenderStore";
 
 const props = defineProps<RangeCalendarCellTriggerProps & ClassProps>();
 
@@ -16,13 +17,17 @@ const restProps = computed(() => {
 });
 
 const forwardedProps = useForwardProps(restProps);
+
+const { dayShape } = useRangeCalender();
 </script>
 
 <template>
   <RangeCalendarCellTrigger
     :class="
       cn(
-        'inline-flex h-10 w-10 items-center justify-center whitespace-nowrap rounded-lg p-0 text-body-4 font-medium text-metal-900 ring-offset-metal-50 transition-colors hover:bg-metal-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-metal-50 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 aria-selected:opacity-100 dark:text-white dark:hover:bg-metal-800 dark:aria-selected:text-metal-900',
+        'inline-flex h-10 w-10 items-center justify-center whitespace-nowrap p-0 text-body-4 font-medium text-metal-900 ring-offset-metal-50 transition-colors hover:bg-metal-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-metal-50 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 aria-selected:opacity-100 dark:text-white dark:hover:bg-metal-800 dark:aria-selected:text-metal-900',
+
+        dayShape === 'circle' ? 'rounded-full' : 'rounded-lg',
 
         // Selection Start
         'data- data-[selection-start]:bg-primary-500 data-[selection-start]:text-white data-[selection-start]:focus:bg-primary-500 data-[selection-start]:focus:text-white',

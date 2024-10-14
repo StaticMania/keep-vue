@@ -20,22 +20,35 @@ import CalendarHeading from "./CalendarHeading.vue";
 import CalendarNextButton from "./CalendarNextButton.vue";
 import CalendarPrevButton from "./CalendarPrevButton.vue";
 import type { classesType } from "./CalendarTypes";
+import { useProvideCalender } from "./useCalenderStore";
 
 export interface DatePickerClass {
   classes?: classesType;
+  dayShape?: "circle" | "rounded";
 }
 
-const props = defineProps<CalendarRootProps & ClassProps & DatePickerClass>();
+const props = withDefaults(
+  defineProps<CalendarRootProps & ClassProps & DatePickerClass>(),
+  {
+    dayShape: "rounded",
+  },
+);
 
 const emits = defineEmits<CalendarRootEmits>();
 
 const restProps = computed(() => {
-  const { class: _, classes, ...rest } = props;
+  const { class: _, classes, dayShape, ...rest } = props;
 
   return rest;
 });
 
 const forwarded = useForwardPropsEmits(restProps, emits);
+
+const changedDayShaped = computed(() => {
+  return props.dayShape;
+});
+
+useProvideCalender(changedDayShaped);
 </script>
 
 <template>
@@ -48,12 +61,17 @@ const forwarded = useForwardPropsEmits(restProps, emits);
       )
     "
     v-bind="forwarded">
+    <!-- header -->
     <CalendarHeader :class="cn(props.classes?.datePickerHeader)">
+      <!-- prev btn  -->
       <CalendarPrevButton :class="cn(props.classes?.prevBtn)" />
+      <!-- heading -->
       <CalendarHeading :class="cn(props.classes?.datePickerHeading)" />
+      <!-- next btn  -->
       <CalendarNextButton :class="cn(props.classes?.prevBtn)" />
     </CalendarHeader>
 
+    <!-- dayPickerBody -->
     <div
       :class="
         cn(
@@ -61,11 +79,14 @@ const forwarded = useForwardPropsEmits(restProps, emits);
           props.classes?.datePickerBody,
         )
       ">
+      <!-- MonthContainer -->
       <CalendarGrid
         v-for="month in grid"
         :key="month.value.toString()"
         :class="cn(props.classes?.MonthContainer)">
         <!-- week name start  -->
+
+        <!-- weekContainer  -->
         <CalendarGridHead
           :class="
             cn(
@@ -73,7 +94,9 @@ const forwarded = useForwardPropsEmits(restProps, emits);
               props.classes?.weekContainer,
             )
           ">
+          <!-- weekHeader -->
           <CalendarGridRow :class="cn(props.classes?.weekHeader)">
+            <!-- weekLabel -->
             <CalendarHeadCell
               v-for="day in weekDays"
               :key="day"
@@ -84,16 +107,21 @@ const forwarded = useForwardPropsEmits(restProps, emits);
         </CalendarGridHead>
 
         <!-- date start  -->
+
+        <!-- dateContainer -->
         <CalendarGridBody :class="cn(props.classes?.dateContainer)">
+          <!-- dateRow -->
           <CalendarGridRow
             v-for="(weekDates, index) in month.rows"
             :key="`weekDate-${index}`"
             :class="cn('mt-2 w-full', props.classes?.dateRow)">
+            <!-- dateCell -->
             <CalendarCell
               v-for="weekDate in weekDates"
               :key="weekDate.toString()"
               :class="cn(props.classes?.dateCell)"
               :date="weekDate">
+              <!-- dateTrigger -->
               <CalendarCellTrigger
                 :class="cn(props.classes?.dateTrigger)"
                 :day="weekDate"

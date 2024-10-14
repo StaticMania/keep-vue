@@ -8,7 +8,7 @@ import {
 import { computed, defineEmits, defineProps } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
-import type { classesType } from "../Calender/CalendarTypes";
+import type { DatePickerClass } from "../Calender/Calendar.vue";
 import RangeCalendarCell from "./RangeCalendarCell.vue";
 import RangeCalendarCellTrigger from "./RangeCalendarCellTrigger.vue";
 import RangeCalendarGrid from "./RangeCalendarGrid.vue";
@@ -20,24 +20,30 @@ import RangeCalendarHeader from "./RangeCalendarHeader.vue";
 import RangeCalendarHeading from "./RangeCalendarHeading.vue";
 import RangeCalendarNextButton from "./RangeCalendarNextButton.vue";
 import RangeCalendarPrevButton from "./RangeCalendarPrevButton.vue";
+import { useProvideRangeCalender } from "./RangeCalenderStore";
 
-export interface DatePickerClass {
-  classes?: classesType;
-}
-
-const props = defineProps<
-  RangeCalendarRootProps & ClassProps & DatePickerClass
->();
+const props = withDefaults(
+  defineProps<RangeCalendarRootProps & ClassProps & DatePickerClass>(),
+  {
+    dayShape: "rounded",
+  },
+);
 
 const emits = defineEmits<RangeCalendarRootEmits>();
 
 const delegatedProps = computed(() => {
-  const { class: _, classes, ...delegated } = props;
+  const { class: _, classes, dayShape, ...delegated } = props;
 
   return delegated;
 });
 
 const forwarded = useForwardPropsEmits(delegatedProps, emits);
+
+const changedDayShaped = computed(() => {
+  return props.dayShape;
+});
+
+useProvideRangeCalender(changedDayShaped);
 </script>
 
 <template>

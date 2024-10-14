@@ -31,6 +31,13 @@ The Multiple Range Date Picker lets users select date ranges spanning across mul
 ::MultipleDateRangePicker
 ::
 
+## Circle Date Picker
+
+You can change the shape of the Date Picker component by using the `dayShape="circle"` or `day-shape="circle"` prop.
+
+::CircleDatePicker
+::
+
 ## Custom Date Picker
 
 You can change the style of the date picker using the `classes` attribute. For more details see the api reference section.
@@ -40,7 +47,8 @@ You can change the style of the date picker using the `classes` attribute. For m
 
 ## Api Reference
 
-Here is a list of the props that you can pass to the DatePicker and RangeDatePicker component.
+Here is a list of the props that you can pass to the DatePicker and RangeDatePicker components. For better understanding when adding custom colors or styles to each section of the DatePicker component, inspect the elements first. All the separate component names are commented for better clarity.
+
 ::DatePickerAPi
 ::
 

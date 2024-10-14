@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { computed, defineEmits, defineProps, watch } from "vue";
-import { useDropzone } from "vue3-dropzone";
+import * as Dropzone from "vue3-dropzone";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import type { CommonUploadProps } from "./uploadInterface";
@@ -16,7 +16,8 @@ const restProps = computed(() => {
 
 const { options, horizontal } = useUpload();
 
-const { getRootProps, getInputProps, isDragActive } = useDropzone(options);
+const { getRootProps, getInputProps, isDragActive } =
+  Dropzone.useDropzone(options);
 
 watch(isDragActive, (newValue) => {
   emit("update:isDragActive", newValue);
