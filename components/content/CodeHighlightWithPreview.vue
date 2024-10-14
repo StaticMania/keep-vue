@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, ref, type HTMLAttributes } from "vue";
 import { useCopy } from "~/hooks/UseCopy";
-import { TooltipArrow, TooltipContent } from "~/src";
+import { Toast } from "~/src";
 import { cn } from "~/src/utils/cn";
 import type { ClassProps } from "~/src/utils/interface";
 
@@ -22,11 +22,17 @@ const restProps = computed(() => {
   const { class: _, activeTab, code, ...rest } = props;
   return rest;
 });
+
+const handleCopy = (code: object) => {
+  copyToClipboard(
+    Object.values(code)[active.value === 0 ? 0 : active.value - 1],
+  );
+  Toast.success("Copied to clipboard");
+};
 </script>
 
 <template>
   <div
-    ref="HTMLDivElement"
     v-bind="restProps"
     :class="
       cn(
@@ -68,31 +74,14 @@ const restProps = computed(() => {
         </button>
       </div>
       <div>
-        <Tooltip :delay-duration="0">
-          <TooltipAction as-child>
-            <button
-              class="mx-6 my-2.5"
-              @click="
-                () =>
-                  copyToClipboard(
-                    Object.values(code)[active === 0 ? 0 : active - 1],
-                  )
-              ">
-              <PhosphorIconCheck
-                v-if="copy"
-                :size="20"
-                weight="light"
-                color="#fff" />
-              <PhosphorIconCopy v-else :size="20" weight="light" color="#fff" />
-            </button>
-          </TooltipAction>
-          <TooltipContent side="top">
-            <p class="text-body-5 font-medium text-white">
-              {{ copy ? "Copied" : " Copy Code" }}
-            </p>
-            <TooltipArrow :height="8" :width="12" />
-          </TooltipContent>
-        </Tooltip>
+        <button class="mx-6 my-2.5" @click="() => handleCopy(code)">
+          <PhosphorIconCheck
+            v-if="copy"
+            :size="20"
+            weight="light"
+            color="#fff" />
+          <PhosphorIconCopy v-else :size="20" weight="light" color="#fff" />
+        </button>
       </div>
     </div>
     <div

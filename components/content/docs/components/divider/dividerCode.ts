@@ -4,7 +4,7 @@ import { Divider } from "keep-vue";
 </script>
 
 <template>
- <section class="space-y-3">
+ <section class="space-y-3 text-metal-500 dark:text-metal-300">
       <p>I am alone, and feel the charm of existence in this spot.</p>
       <Divider />
       <p>

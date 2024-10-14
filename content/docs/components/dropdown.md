@@ -21,7 +21,7 @@ Customize the dropdown according to your preferences.
 ::CustomDropdown
 ::
 
-## Dropdown Without Icon
+## Dropdown Without Arrow
 
 If you don't want the arrow while showing the dropdown remove the `<DropdownArrow />` while using the dropdown.
 ::DropdownWithoutArrowIcon

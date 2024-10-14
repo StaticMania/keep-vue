@@ -8,6 +8,7 @@ export interface RouterPath {
   target?: string;
   deprecate?: boolean;
   redirect?: boolean;
+  external?: boolean;
 }
 
 export const docsRoutes = ref<RouterPath[]>([
@@ -356,6 +357,7 @@ export const quickAccessRoute = ref<RouterPath[]>([
     id: generatedID.v4(),
     name: "Figma",
     href: "https://keepdesign.io/",
+    external: true,
   },
   {
     id: generatedID.v4(),

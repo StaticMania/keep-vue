@@ -77,6 +77,7 @@ const dropdownData = [
 const DefaultDropdownCode = {
   "DropdownComponent.vue": `<script setup>
 import {
+  Button,
   Divider,
   Dropdown,
   DropdownAction,
@@ -84,6 +85,7 @@ import {
   DropdownContent,
   DropdownItem,
   DropdownList,
+  
 } from "keep-vue";
 </script>
 
@@ -123,6 +125,7 @@ import {
   PhUsers,
 } from "@phosphor-icons/vue";
 import {
+  Button,
   Dropdown,
   DropdownAction,
   DropdownArrow,
@@ -180,6 +183,7 @@ import {
 const DropdownWithoutArrowIconCode = {
   "DropdownComponent.vue": `<script setup>
 import {
+  Button,
   Divider,
   Dropdown,
   DropdownAction,

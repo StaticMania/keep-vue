@@ -145,6 +145,7 @@ import { OrdersTableCode } from "./tableCode";
                 </button>
               </DropdownAction>
               <DropdownContent
+                align="end"
                 class="max-w-[200px] border border-metal-100 p-3">
                 <DropdownList>
                   <DropdownItem>Edit</DropdownItem>

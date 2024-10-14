@@ -21,7 +21,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <Accordion class="w-full" collapsible>
+  <Accordion class="w-full" type="single" collapsible>
     <AccordionPanel
       v-for="item in accordionItems"
       :key="item.value"
@@ -77,8 +77,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="AccordionOpenFirstPanelCode">
-    <Accordion
+<Accordion
       type="single"
       class="space-y-4"
       collapsible
@@ -98,9 +97,7 @@ const accordionItems = [
         </AccordionContent>
       </AccordionPanel>
     </Accordion>
-  </CodeHighlightWithPreview>
-</template>
-`,
+</template>`,
 };
 
 const flushAccordionCode = {
@@ -138,8 +135,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="flushAccordionCode">
-    <Accordion type="single" flush collapsible>
+  <Accordion type="single" flush collapsible>
       <AccordionPanel
         v-for="item in accordionItems"
         :key="item.value"
@@ -154,8 +150,7 @@ const accordionItems = [
           {{ item.content }}
         </AccordionContent>
       </AccordionPanel>
-    </Accordion>
-  </CodeHighlightWithPreview>
+  </Accordion>
 </template>`,
 };
 
@@ -175,8 +170,7 @@ import {
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="AccordionWithCustomIconCode">
-    <Accordion type="single" class="w-full space-y-4" collapsible>
+     <Accordion type="single" class="w-full space-y-4" collapsible>
       <AccordionPanel value="item-1">
         <AccordionContainer>
           <AccordionTitle class="first-letter:text-primary-500">
@@ -247,8 +241,7 @@ import {
         </AccordionContent>
       </AccordionPanel>
     </Accordion>
-  </CodeHighlightWithPreview>
-</template>`,
+ </template>`,
 };
 
 const AccordionWithoutIconCode = {
@@ -272,8 +265,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="AccordionWithoutIconCode">
-    <Accordion type="single" class="w-full" collapsible>
+     <Accordion type="single" class="w-full" collapsible>
       <AccordionPanel
         v-for="item in accordionItems"
         :key="item.value"
@@ -288,7 +280,6 @@ const accordionItems = [
         </AccordionContent>
       </AccordionPanel>
     </Accordion>
-  </CodeHighlightWithPreview>
 </template>`,
 };
 

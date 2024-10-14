@@ -154,11 +154,21 @@ pre::-webkit-scrollbar-thumb {
   letter-spacing: -0.3px;
 }
 
-[vaul-drawer][vaul-drawer-direction="right"]:after {
+/* [vaul-drawer][vaul-drawer-direction="right"]:after {
   top: -1px;
   bottom: -1px;
 }
 [vaul-drawer][vaul-drawer-direction="left"]:after {
   top: -1px;
   bottom: -1px;
+} */
+
+[role="listbox"]::-webkit-scrollbar {
+  @apply w-2.5;
+}
+[role="listbox"]::-webkit-scrollbar-track {
+  @apply rounded-full bg-metal-25 dark:bg-metal-800;
+}
+[role="listbox"]::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-metal-100 dark:bg-metal-600;
 }

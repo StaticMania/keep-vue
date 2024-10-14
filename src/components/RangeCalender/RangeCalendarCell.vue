@@ -23,9 +23,9 @@ const forwardProps = useForwardProps(restProps);
     v-bind="forwardProps"
     :class="
       cn(
-        'relative p-0 text-center text-sm focus-within:relative focus-within:z-20 [&:has([data-selected])]:bg-metal-50 first:[&:has([data-selected])]:rounded-l-md last:[&:has([data-selected])]:rounded-r-md [&:has([data-selected][data-selection-end])]:rounded-r-md [&:has([data-selected][data-selection-start])]:rounded-l-md',
+        'relative p-0 text-center text-sm focus-within:relative focus-within:z-20 [&:has([data-selected])]:bg-metal-50 first:[&:has([data-selected])]:rounded-l-none last:[&:has([data-selected])]:rounded-r-none [&:has([data-selected][data-selection-end])]:rounded-r-lg [&:has([data-selected][data-selection-start])]:rounded-l-md',
         // dark
-        'dark:[&:has([data-selected])]:bg-metal-700',
+        'dark:[&:has([data-selected])]:bg-metal-800',
         props.class,
       )
     ">

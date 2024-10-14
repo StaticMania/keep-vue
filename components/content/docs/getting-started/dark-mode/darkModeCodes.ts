@@ -1,11 +1,12 @@
 //vue
 const vueUseInstallForVue = {
-  npm: "npm i npm i @vueuse/core",
+  npm: "npm i @vueuse/core",
+  yarn: "yarn add @vueuse/core",
+  pnpm: "pnpm create vue@latest",
 };
 
 const vueThemeSwitcherComponentCode = {
-  "ThemeSwitcher.vue": `
-  <script setup>
+  "ThemeSwitcher.vue": `<script setup>
   import { useDark, useToggle } from '@vueuse/core'
   import { Button } from "keep-vue";
 const isDark = useDark()
@@ -28,15 +29,14 @@ const nuxtColorModeInstall = {
 };
 
 const NuxtModuleAddCode = {
-  "nuxt.config.ts": `
-    modules: [
+  "nuxt.config.ts": `modules: [
   //rest modules
     "@nuxtjs/color-mode",
   ],`,
 };
 
 const nuxtConfigColorCode = {
-  "nuxt.config.ts": ` export default defineNuxtConfig({
+  "nuxt.config.ts": `export default defineNuxtConfig({
   //rest config
    colorMode: {
     classSuffix: "",
@@ -54,7 +54,6 @@ const colorMode = useColorMode();
 const toggleTheme = () => {
   colorMode.preference = colorMode.preference === "dark" ? "light" : "dark";
 };
-
 </script>
 
 <template>
@@ -64,8 +63,7 @@ const toggleTheme = () => {
       <PhosphorIconMoon v-if="colorMode.preference === 'dark'" :size="21" />
       <PhosphorIconSunDim v-else color="black" :size="21" />
     </Button>
-</template>
-`,
+</template>`,
 };
 
 export {

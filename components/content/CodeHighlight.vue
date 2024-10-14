@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, type HTMLAttributes } from "vue";
 import { useCopy } from "~/hooks/UseCopy";
-import { TooltipArrow, TooltipContent } from "~/src";
+import { Toast } from "~/src";
 import { cn } from "~/src/utils/cn";
 import type { ClassProps } from "~/src/utils/interface";
 
@@ -21,6 +21,11 @@ const restProps = computed(() => {
   const { class: _, code, ...rest } = props;
   return rest;
 });
+
+const handleCopy = (code: object, codeType: number): void => {
+  copyToClipboard(Object.values(code)[codeType]);
+  Toast.success("Copied to clipboard");
+};
 </script>
 
 <template>
@@ -48,26 +53,14 @@ const restProps = computed(() => {
         </button>
       </div>
       <div>
-        <Tooltip :delay-duration="0">
-          <TooltipAction as-child>
-            <button
-              class="mx-6 my-2.5"
-              @click="() => copyToClipboard(Object.values(code)[codeType])">
-              <PhosphorIconCheck
-                v-if="copy"
-                :size="20"
-                weight="light"
-                color="#fff" />
-              <PhosphorIconCopy v-else :size="20" weight="light" color="#fff" />
-            </button>
-          </TooltipAction>
-          <TooltipContent side="top">
-            <p class="text-body-5 font-medium text-white">
-              {{ copy ? "Copied" : " Copy Code" }}
-            </p>
-            <TooltipArrow :height="8" :width="12" />
-          </TooltipContent>
-        </Tooltip>
+        <button class="mx-6 my-2.5" @click="() => handleCopy(code, codeType)">
+          <PhosphorIconCheck
+            v-if="copy"
+            :size="20"
+            weight="light"
+            color="#fff" />
+          <PhosphorIconCopy v-else :size="20" weight="light" color="#fff" />
+        </button>
       </div>
     </div>
 

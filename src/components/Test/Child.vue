@@ -1,3 +1,5 @@
-<script setup></script>
+<script lang="ts" setup></script>
 
-<template>fsdf</template>
+<template>
+  <div></div>
+</template>
