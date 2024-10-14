@@ -47,7 +47,7 @@ You can change the style of the date picker using the `classes` attribute. For m
 
 ## Api Reference
 
-Here is a list of the props that you can pass to the DatePicker and RangeDatePicker components. For better understanding when adding custom colors or styles to each section of the DatePicker component, inspect the elements first. All the separate component names are commented for better clarity.
+Here is a list of the props that you can pass to the DatePicker and RangeDatePicker components. For better understanding when adding custom colors or styles to each section of the DatePicker component, inspect the elements in your browser dev tool first. All the separate component names are commented for better clarity.
 
 ::DatePickerAPi
 ::
