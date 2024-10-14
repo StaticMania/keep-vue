@@ -5,7 +5,7 @@ import {
   type DialogRootEmits,
   type DialogRootProps,
 } from "radix-vue";
-import { computed, defineEmits, defineProps, withDefaults } from "vue";
+import { computed } from "vue";
 import type { NotificationPosition } from "./notificationTheme";
 import { useProvideNotification } from "./useNotification";
 

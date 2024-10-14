@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { DrawerDirection } from "vaul-vue";
 import type { HTMLAttributes } from "vue";
-import { computed, defineProps } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { keepDrawerTheme } from "./drawerTheme";

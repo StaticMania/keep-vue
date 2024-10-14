@@ -5,7 +5,6 @@ import {
   type PopoverRootEmits,
   type PopoverRootProps,
 } from "radix-vue";
-import { defineEmits, defineProps } from "vue";
 
 const props = defineProps<PopoverRootProps>();
 const emits = defineEmits<PopoverRootEmits>();

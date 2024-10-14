@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { InputHTMLAttributes } from "vue";
-import { computed, defineModel, defineProps, ref } from "vue";
+import { computed, ref } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 

@@ -6,7 +6,7 @@ import {
   type DrawerRootEmits,
   type DrawerRootProps,
 } from "vaul-vue";
-import { computed, defineEmits, defineProps, withDefaults } from "vue";
+import { computed } from "vue";
 import type { ClassProps } from "../../utils/interface";
 import { useProvideDrawer } from "./useDrawerStore";
 

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, defineProps, type LabelHTMLAttributes } from "vue";
+import { computed, type LabelHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 
 export interface LabelProps extends /* @vue-ignore */ LabelHTMLAttributes {

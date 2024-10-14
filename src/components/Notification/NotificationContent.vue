@@ -6,7 +6,7 @@ import {
   type DialogContentEmits,
   type DialogContentProps,
 } from "radix-vue";
-import { computed, defineEmits, defineProps } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import {

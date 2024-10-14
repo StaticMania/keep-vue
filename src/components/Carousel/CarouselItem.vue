@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, defineProps, type HtmlHTMLAttributes } from "vue";
+import { computed, type HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 import { carouselTheme } from "./carouselTheme";

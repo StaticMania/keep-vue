@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { DropdownMenuArrow, type DropdownMenuArrowProps } from "radix-vue";
-import { computed, defineProps } from "vue";
+import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
