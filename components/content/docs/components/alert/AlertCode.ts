@@ -206,9 +206,7 @@ import {
 };
 
 export const AlertWithDismissIconCode = {
-  "AlertComponent.Vue": `  
- <script setup lang="ts">
-import {ref} from "vue";
+  "AlertComponent.Vue": `<script setup lang="ts">
 import {
   Alert,
   AlertContainer,
@@ -216,13 +214,15 @@ import {
   AlertDismiss,
   AlertIcon,
   AlertLink,
-  AlertTitle,
-} from "keep-vue";
+  AlertTitle
+} from 'keep-vue'
+import { ref } from 'vue'
 
-const showAlert = ref(false);
+const showAlert = ref(false)
 const onDismiss = () => {
-  showAlert.value = true;
-};
+  showAlert.value = true
+  console.log('keep vue alert')
+}
 </script>
 
 <template>
@@ -230,9 +230,7 @@ const onDismiss = () => {
     <AlertContainer>
       <AlertIcon />
       <AlertTitle>Alert here</AlertTitle>
-      <AlertDescription>
-        A short description followed by two actions items.
-      </AlertDescription>
+      <AlertDescription> A short description followed by two actions items. </AlertDescription>
     </AlertContainer>
     <AlertContainer>
       <AlertLink href="/">Learn More</AlertLink>
@@ -240,7 +238,5 @@ const onDismiss = () => {
     </AlertContainer>
   </Alert>
 </template>
-
-
   `,
 };

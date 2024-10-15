@@ -34,7 +34,7 @@ import { Button, Toast } from "keep-vue";
 
 const ToastWithActionCode = {
   "ToastComponent.vue": `<script setup>
-import { Toast } from "keep-vue";
+import { Button, Toast } from 'keep-vue'
 </script>
 
 <template>
@@ -56,7 +56,7 @@ import { Toast } from "keep-vue";
 
 const ToastWithDescriptionCode = {
   "ToastComponent.vue": `<script setup>
-import { Toast } from "keep-vue";
+import { Button, Toast } from 'keep-vue';
 </script>
 
 <template>
@@ -75,39 +75,61 @@ import { Toast } from "keep-vue";
 
 const ToastWithPromiseCode = {
   "ToastComponent.vue": `<script setup>
-import { Button, Toast } from "keep-vue";
+import { Button, Toast } from 'keep-vue'
 
 const promise = () =>
-  new Promise((resolve) =>
-    setTimeout(() => resolve({ name: "Keep Vue" }), 2000),
-  );
+  new Promise((resolve) => setTimeout(() => resolve({ name: 'Keep Vue' }), 2000))
 </script>
 
 <template>
-    <Button
-      @click="
-        () =>
-          Toast.promise(promise, {
+  <Button
+    @click="
+      () =>
+        Toast.promise(promise, {
           loading: 'Loading...',
-          success: (data: any) => {
-            return {data.name} toast has been added
+          success: (data) => {
+            return data.name
           }
-          })
-      ">
-      Toast
-    </Button>
-</template>
-`,
+        })
+    "
+  >
+    Show Toast
+  </Button>
+</template>`,
 };
 
 const ToastWrapperCode = {
-  "App.vue": `
-  <script setup>
-  //rest code...
-  const colorMode = useColorMode();
+  "App.vue(Vue)": ` <script setup>
+//rest code...
+import { useDark } from '@vueuse/core';
+import { ToastWrapper } from 'keep-vue';
 </script>
 
-  <ToastWrapper
+<template>
+//placed at the top
+<ToastWrapper
+    :theme="useDark 'dark' ? 'dark' : 'light'"
+    :toast-options="{
+      classes: {
+        title: 'text-body-3 font-medium',
+        toast: 'rounded-xl shadow-large',
+        description: 'text-body-4 font-normal',
+      },
+    }" />
+
+    //rest code...
+</template>`,
+
+  "App.vue(Nuxt)": `
+<script setup>
+//rest code...
+import { ToastWrapper } from 'keep-vue'
+const colorMode = useColorMode();
+</script>
+  
+<template>
+//placed at the top
+<ToastWrapper
     :theme="colorMode.value === 'dark' ? 'dark' : 'light'"
     :toast-options="{
       classes: {
@@ -115,7 +137,11 @@ const ToastWrapperCode = {
         toast: 'rounded-xl shadow-large',
         description: 'text-body-4 font-normal',
       },
-    }" />`,
+    }" />
+
+    //rest code...
+</template>
+  `,
 };
 
 export {

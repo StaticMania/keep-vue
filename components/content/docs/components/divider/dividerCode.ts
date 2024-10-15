@@ -45,7 +45,7 @@ import { Divider } from "keep-vue";
 </template>`,
 };
 const DividerSizeCode = {
-  "DividerComponent.vue": `<script setup">
+  "DividerComponent.vue": `<script setup>
 import { Divider } from "keep-vue";
 </script>
 

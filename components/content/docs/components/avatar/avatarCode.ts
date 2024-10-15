@@ -52,9 +52,32 @@ import { Avatar, AvatarBadge, AvatarImage } from "keep-vue";
 };
 
 const avatarGroupCode = {
-  "AvatarComponent.Vue": `  
-    <script setup>
-import { Avatar, AvatarGroup, AvatarImage } from "~/src";
+  "AvatarComponent.Vue": `<script setup>
+import { Avatar, AvatarGroup, AvatarImage } from 'keep-vue'
+</script>
+
+<template>
+  <AvatarGroup>
+    <Avatar class="size-14">
+      <AvatarImage src="/images/avatar/avatar-1.png" />
+    </Avatar>
+    <Avatar class="size-14">
+      <AvatarImage src="/images/avatar/avatar-2.png" />
+    </Avatar>
+    <Avatar class="size-14">
+      <AvatarImage src="/images/avatar/avatar-3.png" />
+    </Avatar>
+    <Avatar class="size-14">
+      <AvatarImage src="/images/avatar/avatar-4.png" />
+    </Avatar>
+    <Avatar class="size-14">
+      <AvatarImage src="/images/avatar/avatar-5.png" />
+    </Avatar>
+  </AvatarGroup>
+</template>
+
+
+
 </script>
 <template>
   <AvatarGroup>

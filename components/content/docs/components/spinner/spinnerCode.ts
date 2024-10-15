@@ -4,11 +4,7 @@ import { Spinner } from "keep-vue";
 </script>
 
 <template>
-    <Spinner color="info" size="xs" />
-    <Spinner color="info" size="sm" />
-    <Spinner color="info" size="md" />
     <Spinner color="info" size="lg" />
-    <Spinner color="info" size="xl" />
 </template>`,
 };
 

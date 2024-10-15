@@ -1,15 +1,14 @@
 const defaultButtonGroupCode = {
   "ButtonGroupComponent.vue": `<script setup>
-import { ButtonGroup } from "keep-vue";
+import { Button, ButtonGroup } from 'keep-vue'
 </script>
 <template>
-    <ButtonGroup>
-      <Button position="start">Profile</Button>
-      <Button position="center">Settings</Button>
-      <Button position="end">Messages</Button>
-    </ButtonGroup>
-</template>
-`,
+  <ButtonGroup>
+    <Button position="start">Profile</Button>
+    <Button position="center">Settings</Button>
+    <Button position="end">Messages</Button>
+  </ButtonGroup>
+</template>`,
 };
 
 const buttonGroupWithIconCode = {
@@ -38,8 +37,8 @@ import { Button, ButtonGroup } from "keep-vue";
 
 const buttonGroupWithOnlyIconCode = {
   "ButtonGroupComponent.vue": `<script lang="ts" setup>
-import { PhChatCircleDots, PhCube, PhGear } from "@phosphor-icons/vue";
-import { Button, ButtonGroup } from "~/src";
+import { PhChatCircleDots, PhCube, PhGear } from '@phosphor-icons/vue'
+import { Button, ButtonGroup } from 'keep-vue'
 </script>
 <template>
   <ButtonGroup>
@@ -53,8 +52,7 @@ import { Button, ButtonGroup } from "~/src";
       <PhChatCircleDots :size="20" />
     </Button>
   </ButtonGroup>
-</template>
-`,
+</template>`,
 };
 
 export {

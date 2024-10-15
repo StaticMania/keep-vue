@@ -60,7 +60,7 @@ const NumberInputWithLabelCode = {
   "NumberInputComponent.vue": `<script setup>
 import { PhMinus, PhPlus } from "@phosphor-icons/vue";
 import { ref } from "vue";
-import { Label, NumberInput, NumberInputBox, NumberInputButton } from "keep-vue;
+import { Label, NumberInput, NumberInputBox, NumberInputButton } from "keep-vue";
 
 const inputValue = ref(20);
 </script>

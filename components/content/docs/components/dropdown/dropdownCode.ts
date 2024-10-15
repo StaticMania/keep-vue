@@ -8,6 +8,7 @@ import {
   DropdownAction,
   DropdownArrow,
   DropdownContent,
+  DropdownItem,
   DropdownList,
 } from "keep-vue";
 
@@ -74,6 +75,7 @@ const dropdownData = [
     </Dropdown>
 </template>`,
 };
+
 const DefaultDropdownCode = {
   "DropdownComponent.vue": `<script setup>
 import {
@@ -113,6 +115,7 @@ import {
   </div>
 </template>`,
 };
+
 const DropdownWithIconCode = {
   "DropdownComponent.vue": `<script setup>
 import {
@@ -126,6 +129,7 @@ import {
 } from "@phosphor-icons/vue";
 import {
   Button,
+  Divider,
   Dropdown,
   DropdownAction,
   DropdownArrow,
@@ -180,6 +184,7 @@ import {
   </div>
 </template>`,
 };
+
 const DropdownWithoutArrowIconCode = {
   "DropdownComponent.vue": `<script setup>
 import {

@@ -81,7 +81,7 @@ const active = ref(1);
 const StepWithBorderCode = {
   "StepsComponent.vue": `<script setup>
 import { ref } from "vue";
-import { StepLine, StepPoint, Steps } from "keep-vue";
+import {Button, Skeleton, SkeletonLine, StepLine, StepPoint, Steps } from "keep-vue";
 
 const active = ref(1);
 </script>
@@ -153,7 +153,7 @@ const active = ref(1);
 const StepWithIconCode = {
   "StepsComponent.vue": `<script setup>
 import { ref } from "vue";
-import { StepPoint, Steps } from "keep-vue";
+import { Button, Skeleton, SkeletonLine, StepLine, StepPoint, Steps } from "keep-vue";
 
 const active = ref(1);
 </script>

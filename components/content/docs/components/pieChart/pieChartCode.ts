@@ -167,6 +167,7 @@ import {
   LinearScale,
   Title,
 } from "keep-vue";
+import { ref } from 'vue'
 
 KeepChart.register(
   Title,
