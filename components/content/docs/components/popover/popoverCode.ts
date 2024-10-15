@@ -6,36 +6,40 @@ import {
   PopoverAction,
   PopoverArrow,
   PopoverContent,
-} from "keep-vue";
+  PopoverDescription,
+  PopoverTitle
+} from 'keep-vue'
 </script>
 
 <template>
-     <Popover>
-        <PopoverAction as-child>
-          <Button>Left</Button>
-        </PopoverAction>
-        <PopoverContent
-          side="left"
-          class="z-20 max-w-[300px] rounded-xl bg-white p-0 dark:bg-metal-900">
-          <div>
-            <NuxtImg
-              src="/images/keep-card.jpg"
-              class="rounded-t-xl"
-              alt="image"
-              :width="600"
-              :height="400" />
-            <div class="space-y-2 p-6">
-              <PopoverTitle>Keep Design System</PopoverTitle>
-              <PopoverDescription>
-                You can customize the styles and behavior of this component
-                according to your requirements.
-              </PopoverDescription>
-              <Button>Learn More</Button>
-            </div>
-          </div>
-          <PopoverArrow :width="10" :height="10" />
-        </PopoverContent>
-      </Popover>
+  <Popover>
+    <PopoverAction as-child>
+      <Button>Left</Button>
+    </PopoverAction>
+    <PopoverContent
+      side="left"
+      class="z-20 max-w-[300px] rounded-xl bg-white p-0 dark:bg-metal-900"
+    >
+      <div>
+        <NuxtImg
+          src="/images/keep-card.jpg"
+          class="rounded-t-xl"
+          alt="image"
+          :width="600"
+          :height="400"
+        />
+        <div class="space-y-2 p-6">
+          <PopoverTitle>Keep Design System</PopoverTitle>
+          <PopoverDescription>
+            You can customize the styles and behavior of this component according to your
+            requirements.
+          </PopoverDescription>
+          <Button>Learn More</Button>
+        </div>
+      </div>
+      <PopoverArrow :width="10" :height="10" />
+    </PopoverContent>
+  </Popover>
 </template>`,
 };
 

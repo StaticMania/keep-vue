@@ -6,6 +6,8 @@ import {
   PopoverAction,
   PopoverArrow,
   PopoverContent,
+  PopoverDescription,
+  PopoverTitle,
 } from "~/src";
 import { CardPopoverCode } from "./popoverCode";
 </script>

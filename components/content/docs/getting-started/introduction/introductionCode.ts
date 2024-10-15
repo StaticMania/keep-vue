@@ -9,9 +9,9 @@ const twForVue = {
 };
 
 const installKeepVue = {
-  npm: "npm i keep-vue phosphor-vue",
-  yarn: "yarn add keep-vue phosphor-vue",
-  pnpm: "pnpm add keep-vue phosphor-vue",
+  npm: "npm i keep-vue @phosphor-icons/vue",
+  yarn: "yarn add keep-vue @phosphor-icons/vue",
+  pnpm: "pnpm add keep-vue @phosphor-icons/vue",
 };
 
 const addTwCssForVue = {

@@ -15,22 +15,22 @@ import {
 </script>
 
 <template>
-  <Drawer position="bottom">
+   <Drawer position="bottom">
     <DrawerTrigger as-child>
       <Button>Open Drawer</Button>
     </DrawerTrigger>
     <DrawerContent>
-      <div class="mx-auto my-auto w-full max-w-sm">
+      <DrawerBar />
+      <div class="mx-auto my-10 w-full max-w-sm">
         <DrawerHeader>
           <DrawerTitle
-            class="text-heading-3 font-bold text-metal-900 lg:text-heading-2 dark:text-white">
+            class="text-heading-3 font-bold text-metal-900 lg:text-heading-2 dark:text-white"
+          >
             Keep Vue
           </DrawerTitle>
-          <DrawerDescription
-            class="text-body-3 font-normal text-metal-600 dark:text-metal-300">
-            Elevate your web projects with Keep Vue&apos;s 40+ customizable
-            components. Access open-source resources for efficient development
-            and bring your ideas to life with ease.
+          <DrawerDescription class="text-body-3 font-normal text-metal-600 dark:text-metal-300">
+            Elevate your web projects with Keep Vue&apos;s 40+ customizable components. Access
+            open-source resources for efficient development and bring your ideas to life with ease.
           </DrawerDescription>
         </DrawerHeader>
 
