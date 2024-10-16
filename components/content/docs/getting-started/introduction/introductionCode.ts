@@ -55,7 +55,7 @@ const ImportKeepVue = {
 </script>
 
 <template>
-  <Button>Keep React</Button>
+  <Button>Keep Vue</Button>
 </template>`,
 };
 
@@ -136,7 +136,7 @@ const ImportKeepNuxt = {
 </script>
 
 <template>
-  <Button>Keep React</Button>
+  <Button>Keep Vue</Button>
 </template>`,
 };
 export {

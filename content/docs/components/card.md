@@ -5,7 +5,7 @@ description: "The card component in Keep Vue offers a variety of button types, s
 
 ## Default Card
 
-The Default Card in Keep React is a foundational component that provides a clean and straightforward appearance. It serves as a starting point for creating more complex card designs.
+The Default Card in Keep Vue is a foundational component that provides a clean and straightforward appearance. It serves as a starting point for creating more complex card designs.
 
 ::DefaultCard
 ::

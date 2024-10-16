@@ -16,6 +16,7 @@ const metadata = ref({
   title: raw ? title : `${title} - Keep Vue`,
   meta: [{ name: "description", content: description }],
 });
+
 useHead({ ...metadata.value });
 </script>
 
@@ -25,6 +26,13 @@ useHead({ ...metadata.value });
     :description="description">
     <ContentRenderer id="mainContent" :value="page" />
     <EditPage
+      v-if="page?.title === 'Introduction'"
+      :page-link="`${_path}`"
+      :next-page-link="next?._path"
+      :next-page-name="next?.title" />
+
+    <EditPage
+      v-else
       :page-link="`${_path}`"
       :prev-page-link="prev?._path"
       :prev-page-name="prev?.title"

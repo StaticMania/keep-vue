@@ -17,7 +17,7 @@ import { CardWithAvatarCode } from "./cardCode";
       <CardContent>
         <CardTitle>Our Contributors</CardTitle>
         <CardDescription>
-          They help us to grow up the keep react component library
+          They help us to grow up the Keep Vue component library
         </CardDescription>
         <AvatarGroup class="mt-3">
           <Avatar class="size-14">

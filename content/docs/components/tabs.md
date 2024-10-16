@@ -1,6 +1,6 @@
 ---
 title: "Tab"
-description: "The Tab Group Component in the Keep React allows you to organize and display content in a tabbed interface. It provides a convenient way to switch between different sections or views within a single container."
+description: "The Tab Group Component in the Keep Vue allows you to organize and display content in a tabbed interface. It provides a convenient way to switch between different sections or views within a single container."
 ---
 
 ## Default Tabs
