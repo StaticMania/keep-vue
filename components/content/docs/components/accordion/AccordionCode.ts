@@ -298,15 +298,15 @@ import {
 const accordionItems = [
   {
     value: "item-1",
-    title: "Q. What is the purpose of the Keep React?",
+    title: "Q. What is the purpose of the Keep Vue?",
     content:
-      "The Keep React is a collection of UI components, styles, and guidelines that ensure consistency and a unified user experience across our products. It simplifies the design and development process by providing ready-to-use components that can be easily customized and integrated into various applications",
+      "The Keep Vue is a collection of UI components, styles, and guidelines that ensure consistency and a unified user experience across our products. It simplifies the design and development process by providing ready-to-use components that can be easily customized and integrated into various applications",
   },
   {
     value: "item-2",
     title: "Q. How do I customize the color scheme of components?",
     content:
-      "The Keep React offers a range of color variants for components. To customize the color scheme, you can use the available color options such as gray,info,error,warning and success. Simply set the desired color variant as a prop when using the component, and it will reflect the chosen color.",
+      "The Keep Vue offers a range of color variants for components. To customize the color scheme, you can use the available color options such as gray,info,error,warning and success. Simply set the desired color variant as a prop when using the component, and it will reflect the chosen color.",
   },
 ];
 </script>
