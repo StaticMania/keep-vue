@@ -86,7 +86,7 @@ const isActive = (str: string): boolean => {
           <NuxtLink
             href="https://github.com/StaticMania/keep-vue"
             target="_blank"
-            class="rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
+            class="hidden rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 sm:block dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
             <NuxtImg
               src="/images/icon/github.svg"
               :height="22"
@@ -105,7 +105,7 @@ const isActive = (str: string): boolean => {
           <NuxtLink
             href="https://discord.gg/fSxDJyvJmr"
             target="_blank"
-            class="rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
+            class="hidden rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 sm:block dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
             <NuxtImg
               src="/images/icon/discord.svg"
               :height="22"
