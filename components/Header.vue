@@ -117,11 +117,11 @@ const isActive = (str: string): boolean => {
           <ThemeSwitcher />
 
           <!-- mobile drawer  -->
-          <Drawer position="right" v-model:open="active">
+          <Drawer v-model:open="active" position="right">
             <DrawerTrigger as-child>
               <button
-                @click="() => (active = true)"
-                class="rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 laptop:hidden dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
+                class="rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 laptop:hidden dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900"
+                @click="() => (active = true)">
                 <span v-if="active">
                   <PhosphorIconX
                     :size="20"
@@ -147,8 +147,8 @@ const isActive = (str: string): boolean => {
                   <DrawerClose as-child>
                     <Button
                       color="secondary"
-                      @click="active = false"
-                      class="mb-4 max-w-max p-3">
+                      class="mb-4 max-w-max p-3"
+                      @click="active = false">
                       <PhosphorIconArrowLeft
                         class="size-5 text-white dark:text-metal-900" />
                     </Button>

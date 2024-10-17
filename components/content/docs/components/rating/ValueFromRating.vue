@@ -12,8 +12,8 @@ const handleRating = (value: number | undefined) => {};
     <Rating :handle-rating="handleRating">
       <RatingStar
         v-for="rating in ratings"
-        :value="rating"
-        :key="rating"></RatingStar>
+        :key="rating"
+        :value="rating"></RatingStar>
     </Rating>
   </CodeHighlightWithPreview>
 </template>

@@ -33,15 +33,15 @@ watch([Meta_K, Ctrl_K], (v) => {
 <template>
   <div>
     <button
-      @click="isOpen = true"
-      class="rounded-lg border border-metal-100 bg-white p-2.5 outline-none transition-all duration-300 hover:bg-metal-25 focus:outline-none laptop:hidden dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
+      class="rounded-lg border border-metal-100 bg-white p-2.5 outline-none transition-all duration-300 hover:bg-metal-25 focus:outline-none laptop:hidden dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900"
+      @click="isOpen = true">
       <PhosphorIconMagnifyingGlass
         :size="22"
         class="fill-metal-500 dark:fill-metal-300" />
     </button>
     <button
-      @click="isOpen = true"
-      class="hidden w-[300px] items-center justify-between rounded-lg border border-metal-100 px-3 py-2.5 text-body-4 font-normal text-metal-600 outline-none transition-all duration-300 hover:bg-white focus:outline-none laptop:flex dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900">
+      class="hidden w-[300px] items-center justify-between rounded-lg border border-metal-100 px-3 py-2.5 text-body-4 font-normal text-metal-600 outline-none transition-all duration-300 hover:bg-white focus:outline-none laptop:flex dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900"
+      @click="isOpen = true">
       <span
         class="flex items-center gap-2 text-body-4 font-normal text-metal-300 dark:text-white">
         <PhosphorIconMagnifyingGlass :size="22" />

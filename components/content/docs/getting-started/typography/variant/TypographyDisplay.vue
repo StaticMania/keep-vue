@@ -4,7 +4,7 @@ import { TypographyDisplayCode } from "../typographyCode";
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="TypographyDisplayCode"  :active-tab="1">
+  <CodeHighlightWithPreview :code="TypographyDisplayCode" :active-tab="1">
     <div class="py-3">
       <h1 class="text-display">Display</h1>
     </div>

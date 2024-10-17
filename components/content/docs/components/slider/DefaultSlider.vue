@@ -10,7 +10,7 @@ const sliderValue = ref([25]);
 <template>
   <CodeHighlightWithPreview :code="DefaultSliderCode">
     <div class="p-6">
-      <Slider :min="0" :max="100" v-model="sliderValue" />
+      <Slider v-model="sliderValue" :min="0" :max="100" />
     </div>
   </CodeHighlightWithPreview>
 </template>
