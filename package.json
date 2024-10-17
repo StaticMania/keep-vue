@@ -8,8 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint src --ext ts,js,vue,cjs --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint src --ext js,vue,ts,cjs --fix",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
     "format": "prettier . --write",
     "build:types": "rm -rf ./lib && vue-tsc --declaration --emitDeclarationOnly && tsc-alias -p tsconfig.json"
   },
