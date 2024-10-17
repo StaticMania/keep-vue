@@ -12,9 +12,9 @@ console.log(inputValue.value);
   <CodeHighlightWithPreview :code="defaultInput">
     <div class="max-w-md p-2">
       <Input
-        @update:modelValue="inputValue as any"
         placeholder="Enter name"
-        type="text" />
+        type="text"
+        @update:model-value="inputValue as any" />
     </div>
   </CodeHighlightWithPreview>
 </template>
