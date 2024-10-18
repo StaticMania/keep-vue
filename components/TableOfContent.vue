@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const { toc } = useContent();
 const activeLink = ref("");
@@ -7,6 +7,47 @@ const activeLink = ref("");
 const setActiveLink = (id: string) => {
   activeLink.value = id;
 };
+
+//handle current active link
+const updateActiveLinkOnScroll = () => {
+  // in doc the heading element is h2
+  const headingElements = Array.from(
+    document?.querySelectorAll<HTMLHeadingElement>("h2[id]"),
+  );
+
+  const scrollTop =
+    document?.documentElement.scrollTop || document?.body.scrollTop;
+
+  headingElements?.forEach((anchor) => {
+    // get anchor tag under the h2 element
+    const link = document?.querySelector<HTMLAnchorElement>(
+      `h2[id="${anchor.id}"] a`,
+    );
+
+    if (link) {
+      link?.classList.remove("active-link");
+    }
+  });
+
+  // Activate the first matching anchor as  scroll
+  for (let i = headingElements?.length; i >= 0; i--) {
+    const singleHeading = headingElements[i];
+    if (scrollTop > singleHeading?.offsetTop - 75) {
+      const link = document?.querySelector<HTMLAnchorElement>(
+        `h2[id="${singleHeading.id}"] a`,
+      );
+      if (link) {
+        setActiveLink(singleHeading.id);
+        link.classList.add("active-link");
+        break;
+      }
+    }
+  }
+};
+
+onMounted(() => {
+  document.addEventListener("scroll", updateActiveLinkOnScroll);
+});
 </script>
 
 <template>
