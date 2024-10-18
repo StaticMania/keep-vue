@@ -38,6 +38,10 @@
     "src/**/*.{ts,js,vue,css,}": [
       "npm run lint",
       "npm run format"
+    ],
+    "components/**/*.{ts,js,vue,css,}": [
+      "npm run lint",
+      "npm run format"
     ]
   },
   "devDependencies": {
