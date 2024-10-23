@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/require-default-prop -->
 <script lang="ts" setup>
 import {
   CalendarRoot,

@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^11.0.1",
+    "@vueuse/motion": "^2.2.6",
     "chart.js": "^4.4.3",
     "clsx": "^2.1.1",
     "deepmerge": "^4.3.1",
@@ -36,6 +37,10 @@
   },
   "lint-staged": {
     "src/**/*.{ts,js,vue,css,}": [
+      "npm run lint",
+      "npm run format"
+    ],
+    "components/**/*.{ts,js,vue,css,}": [
       "npm run lint",
       "npm run format"
     ]

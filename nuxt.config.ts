@@ -9,10 +9,6 @@ export default defineNuxtConfig({
       Inter: {
         wght: "100..900",
       },
-      // SpaceMono: {
-      //   subsets: "latin",
-      //   wght: ["400"],
-      // },
     },
   },
   postcss: {
@@ -57,5 +53,6 @@ export default defineNuxtConfig({
     "nuxt-shiki",
     "@nuxtjs/color-mode",
     "nuxt-phosphor-icons",
+    "@vueuse/motion/nuxt",
   ],
 });

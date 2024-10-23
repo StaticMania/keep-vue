@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { computed, ref, type HTMLAttributes } from "vue";
-import { useCopy } from "~/hooks/UseCopy";
 import { Toast } from "~/src";
 import { cn } from "~/src/utils/cn";
 import type { ClassProps } from "~/src/utils/interface";
@@ -16,17 +15,16 @@ interface CodeHighlightWithPreviewProps
 const props = defineProps<CodeHighlightWithPreviewProps & ClassProps>();
 const active = ref(props.activeTab ?? 0);
 
-const { copy, copyToClipboard } = useCopy();
-
+const { copied, copy } = useClipboard({
+  copiedDuring: 3000,
+});
 const restProps = computed(() => {
   const { class: _, activeTab, code, ...rest } = props;
   return rest;
 });
 
 const handleCopy = (code: object) => {
-  copyToClipboard(
-    Object.values(code)[active.value === 0 ? 0 : active.value - 1],
-  );
+  copy(Object.values(code)[active.value === 0 ? 0 : active.value - 1]);
   Toast.success("Copied to clipboard");
 };
 </script>
@@ -76,7 +74,7 @@ const handleCopy = (code: object) => {
       <div>
         <button class="mx-6 my-2.5" @click="() => handleCopy(code)">
           <PhosphorIconCheck
-            v-if="copy"
+            v-if="copied"
             :size="20"
             weight="light"
             color="#fff" />
