@@ -1,8 +1,9 @@
 <script lang="ts" setup>
-import { useCopy } from "~/hooks/UseCopy";
 import { cn } from "~/src/utils/cn";
 
-const { copy, copyToClipboard } = useCopy();
+const { copied, copy } = useClipboard({
+  copiedDuring: 3000,
+});
 
 interface CodeBoxProps {
   color: string;
@@ -21,7 +22,7 @@ defineProps<CodeBoxProps>();
           color,
         )
       "
-      @click="() => copyToClipboard(code)">
+      @click="() => copy(code)">
       <span
         :class="
           cn(
@@ -29,7 +30,7 @@ defineProps<CodeBoxProps>();
             id > 300 ? 'text-metal-100' : 'text-metal-900',
           )
         ">
-        <PhosphorIconCheck v-if="copy" :size="18" />
+        <PhosphorIconCheck v-if="copied" :size="18" />
         <PhosphorIconCopy v-else :size="18" />
       </span>
     </button>

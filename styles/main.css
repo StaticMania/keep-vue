@@ -9,7 +9,6 @@
 }
 html {
   -webkit-font-smoothing: antialiased;
-  @apply scroll-smooth;
 }
 
 body {
@@ -153,15 +152,6 @@ pre::-webkit-scrollbar-thumb {
   line-height: 24px;
   letter-spacing: -0.3px;
 }
-
-/* [vaul-drawer][vaul-drawer-direction="right"]:after {
-  top: -1px;
-  bottom: -1px;
-}
-[vaul-drawer][vaul-drawer-direction="left"]:after {
-  top: -1px;
-  bottom: -1px;
-} */
 
 [role="listbox"]::-webkit-scrollbar {
   @apply w-2.5;
