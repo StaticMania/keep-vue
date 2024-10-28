@@ -84,7 +84,7 @@ const handleCopy = (code: object) => {
     </div>
     <div
       v-if="active !== 0"
-      id="linkPage"
+      id="codeHighlight"
       class="max-h-[420px] overflow-y-auto bg-[#111b27] p-8 text-body-4">
       <Shiki
         lang="ts"
