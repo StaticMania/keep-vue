@@ -27,7 +27,7 @@ const accordionItems = [
 
 <template>
   <CodeHighlightWithPreview :code="AccordionDisabledCode">
-    <Accordion disabled type="single" class="w-full space-y-4" collapsible>
+    <Accordion disabled class="w-full space-y-4" collapsible>
       <AccordionPanel
         v-for="item in accordionItems"
         :key="item.value"

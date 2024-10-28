@@ -20,7 +20,7 @@ const accordionItems = [
 
 <template>
   <CodeHighlightWithPreview :code="AccordionWithoutIconCode">
-    <Accordion type="single" class="w-full" collapsible>
+    <Accordion class="w-full" collapsible>
       <AccordionPanel
         v-for="item in accordionItems"
         :key="item.value"

@@ -11,7 +11,7 @@ import { AccordionWithCustomIconCode } from "../AccordionCode";
 
 <template>
   <CodeHighlightWithPreview :code="AccordionWithCustomIconCode">
-    <Accordion type="single" class="w-full space-y-4" collapsible>
+    <Accordion class="w-full space-y-4" collapsible>
       <AccordionPanel value="item-1">
         <AccordionContainer>
           <AccordionTitle class="first-letter:text-primary-500">

@@ -21,7 +21,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <Accordion class="w-full" type="single" collapsible>
+  <Accordion class="w-full"  collapsible>
     <AccordionPanel
       v-for="item in accordionItems"
       :key="item.value"
@@ -78,7 +78,7 @@ const accordionItems = [
 
 <template>
 <Accordion
-      type="single"
+      
       class="space-y-4"
       collapsible
       :default-value="defaultValue">
@@ -135,7 +135,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <Accordion type="single" flush collapsible>
+  <Accordion  flush collapsible>
       <AccordionPanel
         v-for="item in accordionItems"
         :key="item.value"
@@ -170,7 +170,7 @@ import {
 </script>
 
 <template>
-     <Accordion type="single" class="w-full space-y-4" collapsible>
+     <Accordion  class="w-full space-y-4" collapsible>
       <AccordionPanel value="item-1">
         <AccordionContainer>
           <AccordionTitle class="first-letter:text-primary-500">
@@ -265,7 +265,7 @@ const accordionItems = [
 </script>
 
 <template>
-     <Accordion type="single" class="w-full" collapsible>
+     <Accordion  class="w-full" collapsible>
       <AccordionPanel
         v-for="item in accordionItems"
         :key="item.value"
@@ -312,7 +312,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <Accordion disabled type="single" class="w-full" collapsible>
+  <Accordion disabled  class="w-full" collapsible>
     <AccordionPanel
       v-for="item in accordionItems"
       :key="item.value"

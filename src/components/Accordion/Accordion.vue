@@ -12,7 +12,12 @@ export interface AccordionFlushProps {
   flush?: boolean;
 }
 
-const props = defineProps<AccordionRootProps & AccordionFlushProps>();
+const props = withDefaults(
+  defineProps<AccordionRootProps & AccordionFlushProps>(),
+  {
+    type: "single",
+  },
+);
 
 const emits = defineEmits<AccordionRootEmits>();
 

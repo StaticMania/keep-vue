@@ -35,11 +35,7 @@ const accordionItems = [
 
 <template>
   <CodeHighlightWithPreview :code="AccordionOpenFirstPanelCode">
-    <Accordion
-      type="single"
-      class="space-y-4"
-      collapsible
-      :default-value="defaultValue">
+    <Accordion class="space-y-4" collapsible :default-value="defaultValue">
       <AccordionPanel
         v-for="item in accordionItems"
         :key="item.value"
