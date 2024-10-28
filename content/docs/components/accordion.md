@@ -21,7 +21,7 @@ Use the `default-value` property to set the first accordion panel to be open by 
 
 ## Flush Accordion
 
-Control the initial state of accordion panels with the `flush` property. As we use Redix vue for the accordion you have to give `type` prop value when using accordion.
+Control the initial state of accordion panels with the `flush` property.
 
 ::FlushAccordion
 
