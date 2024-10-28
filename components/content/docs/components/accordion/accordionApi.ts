@@ -6,14 +6,22 @@ export const accordionApiData = [
     propsDescription: "Keep selected panel always open.",
   },
   {
-    id: 3,
+    id: 2,
     propsName: "flush",
     propsType: "boolean",
     propsDescription: "Accordion without outer border and and background color",
     default: "false",
   },
   {
-    id: 7,
+    id: 3,
+    propsName: "type",
+    propsType: ["single", "multiple"],
+    propsDescription:
+      "Determines whether a single or multiple items can be pressed at a time.",
+    default: "single",
+  },
+  {
+    id: 4,
     propsName: "disabled",
     propsType: "boolean",
     propsDescription: "Disable interaction with the accordion.",

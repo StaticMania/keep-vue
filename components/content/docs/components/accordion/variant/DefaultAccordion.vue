@@ -12,7 +12,7 @@ import { DefaultAccordionCode } from "../AccordionCode";
 
 <template>
   <CodeHighlightWithPreview :code="DefaultAccordionCode">
-    <Accordion type="single" class="w-full" collapsible>
+    <Accordion class="w-full" collapsible>
       <AccordionPanel value="item-1">
         <AccordionContainer>
           <AccordionTitle class="first-letter:text-primary-500">
