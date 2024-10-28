@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { docsRoutes, gettingStaredRoutes, layoutRoutes } from "~/Routes/routes";
+import { docsRoutes, gettingStaredRoutes } from "~/Routes/routes";
 import {
   Accordion,
   AccordionContainer,
@@ -36,35 +36,6 @@ const isActive = (str: string) => {
             <ul
               class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
               <li v-for="route in gettingStaredRoutes" :key="route?.id">
-                <NuxtLink
-                  :href="route?.href"
-                  class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
-                  :class="
-                    isActive(route?.href)
-                      ? 'border-l !border-primary-500 text-primary-500 transition-colors duration-150 hover:text-primary-500 dark:!border-white dark:text-white dark:hover:text-white'
-                      : ''
-                  ">
-                  {{ route?.name }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </AccordionContent>
-        </AccordionPanel>
-      </Accordion>
-
-      <!-- layout route section  -->
-      <Accordion flush type="single" collapsible default-value="layout">
-        <AccordionPanel class="border-b-0" value="layout">
-          <AccordionContainer class="p-0">
-            <AccordionTitle
-              class="text-body-4 font-semibold text-metal-900 first-letter:!mr-0 first-letter:!text-metal-900 dark:text-white dark:first-letter:!text-white">
-              Layout
-            </AccordionTitle>
-          </AccordionContainer>
-          <AccordionContent class="border-b-0 p-0">
-            <ul
-              class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
-              <li v-for="route in layoutRoutes" :key="route?.id">
                 <NuxtLink
                   :href="route?.href"
                   class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"

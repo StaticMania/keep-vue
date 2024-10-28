@@ -1,11 +1,6 @@
 <script lang="ts" setup>
 import { VisuallyHidden } from "radix-vue";
-import {
-  docsRoutes,
-  gettingStaredRoutes,
-  layoutRoutes,
-  navbarRoutes,
-} from "~/Routes/routes";
+import { docsRoutes, gettingStaredRoutes, navbarRoutes } from "~/Routes/routes";
 import {
   buttonVariants,
   Drawer,
@@ -173,55 +168,18 @@ const isActive = (str: string): boolean => {
                           <ul
                             class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
                             <li
-                              v-for="route in gettingStaredRoutes"
-                              :key="route?.id"
+                              v-for="gettingStartedRoute in gettingStaredRoutes"
+                              :key="gettingStartedRoute?.id"
                               @click="active = false">
                               <NuxtLink
-                                :href="route?.href"
+                                :href="gettingStartedRoute?.href"
                                 class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
                                 :class="
-                                  isActive(route?.href)
+                                  isActive(gettingStartedRoute?.href)
                                     ? 'border-l !border-primary-500 text-primary-500 transition-colors duration-150 hover:text-primary-500 dark:!border-white dark:text-white dark:hover:text-white'
                                     : ''
                                 ">
-                                {{ route?.name }}
-                              </NuxtLink>
-                            </li>
-                          </ul>
-                        </AccordionContent>
-                      </AccordionPanel>
-                    </Accordion>
-
-                    <!-- layout route section  -->
-                    <Accordion
-                      flush
-                      type="single"
-                      collapsible
-                      default-value="layout">
-                      <AccordionPanel class="border-b-0" value="layout">
-                        <AccordionContainer class="p-0">
-                          <AccordionTitle
-                            class="text-body-4 font-semibold text-metal-900 dark:text-white">
-                            Layout
-                          </AccordionTitle>
-                          <AccordionIcon />
-                        </AccordionContainer>
-                        <AccordionContent class="border-b-0 p-0 text-left">
-                          <ul
-                            class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
-                            <li
-                              v-for="route in layoutRoutes"
-                              :key="route?.id"
-                              @click="active = false">
-                              <NuxtLink
-                                :href="route?.href"
-                                class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
-                                :class="
-                                  isActive(route?.href)
-                                    ? 'border-l !border-primary-500 text-primary-500 transition-colors duration-150 hover:text-primary-500 dark:!border-white dark:text-white dark:hover:text-white'
-                                    : ''
-                                ">
-                                {{ route?.name }}
+                                {{ gettingStartedRoute?.name }}
                               </NuxtLink>
                             </li>
                           </ul>
@@ -243,18 +201,18 @@ const isActive = (str: string): boolean => {
                           <ul
                             class="mt-3 space-y-1.5 border-l border-l-metal-100 dark:border-l-metal-800">
                             <li
-                              v-for="route in docsRoutes"
-                              :key="route?.id"
+                              v-for="docRoute in docsRoutes"
+                              :key="docRoute?.id"
                               @click="active = false">
                               <NuxtLink
-                                :href="route?.href"
+                                :href="docRoute?.href"
                                 class="-ml-px border-l border-l-transparent pl-3 text-body-4 font-medium text-metal-500 hover:-ml-px hover:border-l hover:border-metal-500 hover:text-metal-900 dark:text-metal-400 dark:hover:border-white dark:hover:text-white"
                                 :class="
-                                  isActive(route?.href)
+                                  isActive(docRoute?.href)
                                     ? 'border-l !border-primary-500 text-primary-500 transition-colors duration-150 hover:text-primary-500 dark:!border-white dark:text-white dark:hover:text-white'
                                     : ''
                                 ">
-                                {{ route.name }}
+                                {{ docRoute.name }}
                               </NuxtLink>
                             </li>
                           </ul>
