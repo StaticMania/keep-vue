@@ -381,29 +381,6 @@ export const quickAccessRoute = ref<RouterPath[]>([
   },
 ]);
 
-export const layoutRoutes = ref<RouterPath[]>([
-  {
-    id: generatedID.v4(),
-    name: "Container",
-    href: "/docs/layout/container",
-  },
-  {
-    id: generatedID.v4(),
-    name: "Column",
-    href: "/docs/layout/column",
-  },
-  {
-    id: generatedID.v4(),
-    name: "Flex",
-    href: "/docs/layout/flex",
-  },
-  {
-    id: generatedID.v4(),
-    name: "Grid",
-    href: "/docs/layout/grid",
-  },
-]);
-
 export const navbarRoutes = ref<RouterPath[]>([
   {
     id: generatedID.v4(),

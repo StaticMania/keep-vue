@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Header from "~/components/Header.vue";
+import HeaderComponent from "~/components/HeaderComponent.vue";
 </script>
 
 <!-- eslint-disable vue/no-multiple-template-root -->
 <template>
-  <Header />
+  <HeaderComponent />
   <main class="relative pt-20">
     <slot />
   </main>

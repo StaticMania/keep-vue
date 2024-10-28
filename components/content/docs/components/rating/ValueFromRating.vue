@@ -4,7 +4,9 @@ import { Rating, RatingStar } from "~/src";
 import { ValueFromRatingCode } from "./ratingCode";
 
 const ratings = [1, 2, 3, 4, 5];
-const handleRating = (value: number | undefined) => {};
+const handleRating = (value: number | undefined) => {
+  console.log(value);
+};
 </script>
 
 <template>
