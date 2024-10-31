@@ -153,7 +153,7 @@ const isActive = (str: string): boolean => {
                     <!-- getting stated route section  -->
                     <Accordion
                       flush
-                      type="single"
+                      type="multiple"
                       collapsible
                       default-value="gettingStarted">
                       <AccordionPanel class="border-b-0" value="gettingStarted">
@@ -188,7 +188,11 @@ const isActive = (str: string): boolean => {
                     </Accordion>
 
                     <!-- docs layout route section  -->
-                    <Accordion flush type="single" collapsible>
+                    <Accordion
+                      flush
+                      type="multiple"
+                      collapsible
+                      default-value="docs">
                       <AccordionPanel class="border-b-0" value="docs">
                         <AccordionContainer class="p-0">
                           <AccordionTitle
