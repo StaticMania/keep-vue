@@ -20,6 +20,6 @@ const forwardProps = useForwardProps(restProps);
 
 <template>
   <DropdownMenuTrigger :class="cn(props.class)" v-bind="forwardProps">
-    <slot></slot>
+    <slot />
   </DropdownMenuTrigger>
 </template>

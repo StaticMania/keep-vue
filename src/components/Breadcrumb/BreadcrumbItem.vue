@@ -1,10 +1,5 @@
 <script lang="ts" setup>
-import {
-  computed,
-  defineProps,
-  withDefaults,
-  type LiHTMLAttributes,
-} from "vue";
+import { computed, type LiHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 

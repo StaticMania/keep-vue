@@ -38,6 +38,6 @@ defineExpose({ isDragActive });
       )
     ">
     <input v-bind="{ ...getInputProps() }" />
-    <slot></slot>
+    <slot />
   </div>
 </template>

@@ -22,7 +22,7 @@ defineExpose({
 <template>
   <div :class="cn(carouselTheme.carouselContainer, props.class)">
     <CarouselViewport :view-port-class="props.viewPortClass">
-      <slot></slot>
+      <slot />
     </CarouselViewport>
   </div>
 </template>

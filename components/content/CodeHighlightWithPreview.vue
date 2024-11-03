@@ -96,7 +96,7 @@ const handleCopy = (code: object) => {
       v-if="active === 0"
       :class="cn('bg-white px-2 py-3 md:p-6 dark:bg-[#0D1015]', props.class)">
       <div className="h-full w-full overflow-auto">
-        <slot></slot>
+        <slot />
       </div>
     </div>
   </div>

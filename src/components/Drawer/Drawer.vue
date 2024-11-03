@@ -39,6 +39,6 @@ useProvideDrawer(updatedPosition);
 
 <template>
   <DrawerRoot :direction="props.position" v-bind="forwardProps">
-    <slot></slot>
+    <slot />
   </DrawerRoot>
 </template>

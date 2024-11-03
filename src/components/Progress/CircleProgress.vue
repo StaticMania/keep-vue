@@ -25,6 +25,6 @@ useProvideProgressStore(updatedProgressValue);
 
 <template>
   <div v-bind="restProps" :class="cn(circle.root, props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

@@ -35,6 +35,6 @@ useProvideTabsStore(changedVariant.value, changedDefaultActive.value);
 
 <template>
   <div v-bind="restProps" :class="cn(props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

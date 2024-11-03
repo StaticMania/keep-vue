@@ -69,7 +69,7 @@ const { activeItem, handleActive, variant } = useTabs();
           props.contentClassName,
         )
       ">
-      <slot></slot>
+      <slot />
     </span>
   </button>
 </template>

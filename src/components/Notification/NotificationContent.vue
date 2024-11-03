@@ -41,7 +41,7 @@ const { position } = useNotification();
           props.class,
         )
       ">
-      <slot></slot>
+      <slot />
     </DialogContent>
   </DialogPortal>
 </template>

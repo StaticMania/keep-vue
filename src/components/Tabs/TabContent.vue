@@ -29,6 +29,6 @@ const { activeItem } = useTabs();
         props.class,
       )
     ">
-    <slot></slot>
+    <slot />
   </div>
 </template>

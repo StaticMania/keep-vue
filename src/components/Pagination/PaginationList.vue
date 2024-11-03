@@ -17,6 +17,6 @@ const { list } = paginationTheme;
 </script>
 <template>
   <ul v-bind="restProps" :class="cn(list.base, props.class)">
-    <slot></slot>
+    <slot />
   </ul>
 </template>

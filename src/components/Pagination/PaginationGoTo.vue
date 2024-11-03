@@ -17,6 +17,6 @@ const { goto } = paginationTheme;
 
 <template>
   <div v-bind="restProps" :class="cn(goto.base, props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

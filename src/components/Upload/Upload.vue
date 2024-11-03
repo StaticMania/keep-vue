@@ -31,6 +31,6 @@ useProvideUpload({ options: props.options, horizontal: props.horizontal });
         props.class,
       )
     ">
-    <slot></slot>
+    <slot />
   </div>
 </template>

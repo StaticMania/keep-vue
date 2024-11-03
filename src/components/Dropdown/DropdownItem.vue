@@ -24,6 +24,6 @@ const forwardedProps = useForwardProps(restProps);
   <DropdownMenuItem
     v-bind="forwardedProps"
     :class="cn(dropdownTheme.item, props.class)">
-    <slot></slot>
+    <slot />
   </DropdownMenuItem>
 </template>

@@ -25,6 +25,6 @@ useProvideRatingStore(props.handleRating);
     :class="
       cn('items center flex flex-row-reverse justify-end gap-0.5', props.class)
     ">
-    <slot></slot>
+    <slot />
   </div>
 </template>

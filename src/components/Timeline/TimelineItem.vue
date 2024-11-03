@@ -19,6 +19,6 @@ const restProps = computed(() => {
     ref="HTMLLIElement"
     v-bind="restProps"
     :class="cn('max-w-max px-4', props.class)">
-    <slot></slot>
+    <slot />
   </li>
 </template>

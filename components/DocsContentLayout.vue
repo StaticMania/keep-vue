@@ -19,7 +19,7 @@ defineProps<DocsContentLayout>();
       </p>
     </div>
     <div id="mainContent">
-      <slot></slot>
+      <slot />
     </div>
   </div>
 </template>

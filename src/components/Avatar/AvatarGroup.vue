@@ -21,6 +21,6 @@ const restProps = computed(() => {
     ref="avatarGroupRef"
     v-bind="restProps"
     :class="cn('flex items-center -space-x-3', props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

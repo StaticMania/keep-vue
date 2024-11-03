@@ -33,7 +33,7 @@ useProvideTooltip(changedColor);
 <template>
   <TooltipProvider :delay-duration="0">
     <TooltipRoot v-bind="forwardPropsAndEmit">
-      <slot></slot>
+      <slot />
     </TooltipRoot>
   </TooltipProvider>
 </template>

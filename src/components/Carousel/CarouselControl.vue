@@ -16,6 +16,6 @@ const restProps = computed(() => {
   <div
     v-bind="restProps"
     :class="cn(carouselTheme.controls.wrapper, props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

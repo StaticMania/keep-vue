@@ -22,6 +22,6 @@ const restProps = computed(() => {
         props.class,
       )
     ">
-    <slot></slot>
+    <slot />
   </tr>
 </template>

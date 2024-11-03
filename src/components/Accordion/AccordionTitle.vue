@@ -19,6 +19,6 @@ const restProps = computed(() => {
 
 <template>
   <p v-bind="restProps" :class="cn(accordionTheme.title.base, props.class)">
-    <slot></slot>
+    <slot />
   </p>
 </template>

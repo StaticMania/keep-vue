@@ -27,6 +27,6 @@ const restProps = computed(() => {
     role="group"
     aria-roledescription="slide"
     :class="cn(carouselTheme.item.slide, props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

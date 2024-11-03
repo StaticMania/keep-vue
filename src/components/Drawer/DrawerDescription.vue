@@ -15,6 +15,6 @@ const restProps = computed(() => {
   <DrawerDescription
     v-bind="restProps"
     :class="cn('text-sm text-metal-500', props.class)">
-    <slot></slot>
+    <slot />
   </DrawerDescription>
 </template>

@@ -33,7 +33,7 @@ const { position } = useDrawer()!;
       ">
       <!-- bar  -->
 
-      <slot></slot>
+      <slot />
     </DrawerContent>
   </DrawerPortal>
 </template>
