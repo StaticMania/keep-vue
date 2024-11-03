@@ -17,6 +17,14 @@ You can position the drawer in a specific direction, such as `left`, `right`, `t
 
 ## API Reference
 
-Here is a list of the props that you can pass to the drawer component
+Explore the available props for the ``drawer component` component.
 ::DrawerApi
 ::
+
+Explore the available props for the `Drawer Content` component.
+::DrawerContentApi
+::
+
+## Reference
+
+To learn more about the Drawer and its attributes, please see the documentation of [Vaul Vue](https://github.com/unovue/vaul-vue).
