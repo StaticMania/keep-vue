@@ -17,7 +17,7 @@ const restProps = computed(() => {
 </script>
 <template>
   <!-- as child props  -->
-  <slot v-if="props.asChild" v-bind="$attrs"></slot>
+  <slot v-if="props.asChild" v-bind="$attrs" />
 
   <!-- default li component  -->
   <li

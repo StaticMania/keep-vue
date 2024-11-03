@@ -219,7 +219,7 @@ const presetFn = (color: ColorThemeType) => {
 const keepTheme = (config: Config, color = colors): Config => {
   const twConfigForKeepReact = {
     darkMode: "selector",
-    content: ["node_modules/keep-vue/**/*.{js,jsx,ts,tsx}"],
+    content: ["node_modules/keep-vue/**/*.{vue,ts,js}"],
     presets: [presetFn(color)],
     plugins: [tailwindAnimate],
   };
