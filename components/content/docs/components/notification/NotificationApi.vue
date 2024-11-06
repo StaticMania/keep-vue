@@ -19,5 +19,5 @@ const notificationApi = [
 </script>
 
 <template>
-  <ComponentApiTable :data="notificationApi"></ComponentApiTable>
+  <ComponentApiTable :data="notificationApi" />
 </template>
