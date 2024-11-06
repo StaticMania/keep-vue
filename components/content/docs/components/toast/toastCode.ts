@@ -144,8 +144,14 @@ const colorMode = useColorMode();
   `,
 };
 
+const ToastSetupCode = {
+  Vue: `npm i @vueuse/core\nyarn add @vueuse/core `,
+  Nuxt: "npx nuxi module add color-mode",
+};
+
 export {
   DefaultToastCode,
+  ToastSetupCode,
   ToastVariantCode,
   ToastWithActionCode,
   ToastWithDescriptionCode,

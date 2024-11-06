@@ -5,9 +5,14 @@ description: "Toasts typically appear as small, non-intrusive pop-up notificatio
 
 ## Setup Toast
 
-Setup the Toast component to display the toast message. First import the `ToastWrapper` component in our root directory and then use the `<ToastWrapper>` component. Now copy paste the default toast variant from the documentation. For handling dark mode we use `vueUse useDark` for vue file and for the nuxt we use `nuxt colorMode`.
+Setup for the Toast component to display the toast message. To make the Toast component globally available in your app, you need to config the `ToastWrapper` Component first. For this we use `VueUse `for vue and `Nuxt Color Mode` for nuxt.
 
 ::ToastSetupCode
+::
+
+After that import the `ToastWrapper` component in our root director and copy the below code. Now copy paste the default toast variant from the documentation.
+
+::ToastWrapperCode
 ::
 
 ## Default Toast
