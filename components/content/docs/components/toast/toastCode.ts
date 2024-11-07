@@ -108,7 +108,6 @@ import { ToastWrapper } from 'keep-vue';
 <template>
 //placed at the top
 <ToastWrapper
-    :theme="useDark 'dark' ? 'dark' : 'light'"
     :toast-options="{
       classes: {
         title: 'text-body-3 font-medium',
