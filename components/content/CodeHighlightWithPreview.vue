@@ -25,7 +25,12 @@ const restProps = computed(() => {
 
 const handleCopy = (code: object) => {
   copy(Object.values(code)[active.value === 0 ? 0 : active.value - 1]);
-  Toast.success("Copied to clipboard");
+  Toast.success("Copied to clipboard", {
+    classes: {
+      toast:
+        "dark:!bg-metal-900/30 dark:!text-white dark:!border-metal-800 !bg-white !text-metal-900 !border-metal-50",
+    },
+  });
 };
 </script>
 
