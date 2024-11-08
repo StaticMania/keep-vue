@@ -14,6 +14,6 @@ const propsEmit = useForwardPropsEmits(props, emits);
 
 <template>
   <PopoverRoot v-bind="propsEmit">
-    <slot></slot>
+    <slot />
   </PopoverRoot>
 </template>

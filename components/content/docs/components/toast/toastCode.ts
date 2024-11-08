@@ -108,7 +108,6 @@ import { ToastWrapper } from 'keep-vue';
 <template>
 //placed at the top
 <ToastWrapper
-    :theme="useDark 'dark' ? 'dark' : 'light'"
     :toast-options="{
       classes: {
         title: 'text-body-3 font-medium',
@@ -144,8 +143,14 @@ const colorMode = useColorMode();
   `,
 };
 
+const ToastSetupCode = {
+  Vue: `npm i @vueuse/core\nyarn add @vueuse/core `,
+  Nuxt: "npx nuxi module add color-mode",
+};
+
 export {
   DefaultToastCode,
+  ToastSetupCode,
   ToastVariantCode,
   ToastWithActionCode,
   ToastWithDescriptionCode,

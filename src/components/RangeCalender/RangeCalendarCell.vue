@@ -37,6 +37,6 @@ const { dayShape } = useRangeCalender();
         props.class,
       )
     ">
-    <slot></slot>
+    <slot />
   </RangeCalendarCell>
 </template>

@@ -48,7 +48,7 @@ const forwardPropsAndEmits = useForwardPropsEmits(restProps, emits);
           props.class,
         )
       ">
-      <slot></slot>
+      <slot />
     </PopoverContent>
   </PopoverPortal>
 </template>

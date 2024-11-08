@@ -6,7 +6,7 @@ import { TypographyDisplayCode } from "../typographyCode";
 <template>
   <CodeHighlightWithPreview :code="TypographyDisplayCode" :active-tab="1">
     <div class="py-3">
-      <h1 class="text-display">Display</h1>
+      <h1 class="text-display dark:text-white">Display</h1>
     </div>
   </CodeHighlightWithPreview>
 </template>

@@ -17,6 +17,6 @@ const restProps = computed(() => {
 
 <template>
   <div v-bind="restProps" :class="cn(inputTheme.icon, props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

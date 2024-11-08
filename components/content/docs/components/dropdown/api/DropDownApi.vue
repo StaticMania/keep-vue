@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import ComponentApiTable from "~/components/content/ComponentApiTable.vue";
 
-const popoverAPI = [
+const dropdownApiData = [
   {
     id: 1,
     propsName: "defaultOpen",
@@ -28,5 +28,5 @@ const popoverAPI = [
 </script>
 
 <template>
-  <ComponentApiTable :data="popoverAPI" />
+  <ComponentApiTable :data="dropdownApiData" />
 </template>

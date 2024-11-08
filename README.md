@@ -63,7 +63,6 @@ import { keepTheme } from "keep-vue/keepTheme";
 
 const config = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  darkMode: "selector",
   theme: {
     extend: {},
   },
@@ -78,7 +77,6 @@ import type { Config } from 'tailwindcss'
   import { keepTheme } from "keep-vue/keepTheme";
 const config : Config = {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-    darkMode: 'selector',
     theme: {
       extend: {}
     },

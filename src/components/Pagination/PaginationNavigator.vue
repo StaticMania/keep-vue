@@ -31,6 +31,6 @@ const { navigator } = paginationTheme;
     v-else
     v-bind="restProps"
     :class="cn(navigator.base, navigator.shape[shape], props.class)">
-    <slot></slot>
+    <slot />
   </button>
 </template>

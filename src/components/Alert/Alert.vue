@@ -43,6 +43,6 @@ useProvideAlert(changedColor);
         props.class,
       )
     ">
-    <slot></slot>
+    <slot />
   </div>
 </template>

@@ -19,6 +19,6 @@ const restProps = computed(() => {
     :class="
       cn('text-body-3 font-medium text-metal-900 dark:text-white', props.class)
     ">
-    <slot></slot>
+    <slot />
   </h2>
 </template>

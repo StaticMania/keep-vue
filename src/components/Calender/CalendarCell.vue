@@ -27,6 +27,6 @@ const forwardProps = useForwardProps(restProps);
         props.class,
       )
     ">
-    <slot></slot>
+    <slot />
   </CalendarCell>
 </template>

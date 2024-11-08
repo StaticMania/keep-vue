@@ -14,6 +14,6 @@ const restProps = computed(() => {
 
 <template>
   <DropdownMenuGroup :class="cn('', props.class)" v-bind="restProps">
-    <slot></slot>
+    <slot />
   </DropdownMenuGroup>
 </template>

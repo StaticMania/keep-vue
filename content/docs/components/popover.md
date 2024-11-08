@@ -25,10 +25,16 @@ The Icon Popover displays a popover with an icon, offering a compact and visuall
 
 ## API Reference
 
-Explore the available props for the Popover component.
-::popoverAPI
+Explore the available props for the `Popover` component. For more props please go to the [Redix Vue Popover Root](https://www.radix-vue.com/components/popover#root).
+
+::PopoverApi
+::
+
+Explore the available props for the `Popover Content` component. For more props please go to the [Redix Vue Popover Content](https://www.radix-vue.com/components/popover#content).
+
+::PopoverContentApi
 ::
 
 ## Reference
 
-To learn more about the Floating-UI library and its capabilities, please refer to the comprehensive documentation provided on the [Redix Vue Popover](https://www.radix-vue.com/components/popover.html#popover).
+To learn more about the Popover please refer to the comprehensive documentation provided on the [Redix Vue Popover](https://www.radix-vue.com/components/popover.html#popover).

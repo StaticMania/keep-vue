@@ -3,11 +3,9 @@ title: "Toast"
 description: "Toasts typically appear as small, non-intrusive pop-up notifications that appear near the edge of the screen and disappear automatically after a short period of time or when dismissed by the user."
 ---
 
-## Setup Toast
+Import the `ToastWrapper` component in in root directory and copy the below code. Now copy paste the default toast variant from the documentation.
 
-Setup the Toast component to display the toast message. First import the `ToastWrapper` component in our root directory and then use the `<ToastWrapper>` component. Now copy paste the default toast variant from the documentation. For handling dark mode we use `vueUse useDark` for vue file and for the nuxt we use `nuxt colorMode`.
-
-::ToastSetupCode
+::ToastWrapperCode
 ::
 
 ## Default Toast

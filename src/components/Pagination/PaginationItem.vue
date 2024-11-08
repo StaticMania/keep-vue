@@ -41,7 +41,7 @@ const { item } = paginationTheme;
           props.class,
         )
       ">
-      <slot></slot>
+      <slot />
     </button>
   </li>
 </template>

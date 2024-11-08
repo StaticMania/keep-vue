@@ -37,7 +37,7 @@ const forwarded = useForwardPropsEmits(restProps, emits);
     <DropdownMenuContent
       v-bind="forwarded"
       :class="cn(dropdownTheme.content, props.class)">
-      <slot></slot>
+      <slot />
     </DropdownMenuContent>
   </DropdownMenuPortal>
 </template>

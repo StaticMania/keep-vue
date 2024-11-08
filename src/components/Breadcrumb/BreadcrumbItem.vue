@@ -1,10 +1,5 @@
 <script lang="ts" setup>
-import {
-  computed,
-  defineProps,
-  withDefaults,
-  type LiHTMLAttributes,
-} from "vue";
+import { computed, type LiHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
 
@@ -22,7 +17,7 @@ const restProps = computed(() => {
 </script>
 <template>
   <!-- as child props  -->
-  <slot v-if="props.asChild" v-bind="$attrs"></slot>
+  <slot v-if="props.asChild" v-bind="$attrs" />
 
   <!-- default li component  -->
   <li

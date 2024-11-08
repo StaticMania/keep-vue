@@ -28,6 +28,6 @@ useProvidePagination(updatedValue);
     v-bind="restProps"
     aria-label="pagination"
     :class="cn(root.base, props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

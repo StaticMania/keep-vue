@@ -26,6 +26,6 @@ const forwardPropsAndEmits = useForwardProps(restProps);
         props.class,
       )
     ">
-    <slot></slot>
+    <slot />
   </DialogDescription>
 </template>

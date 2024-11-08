@@ -37,7 +37,7 @@ const forwardPropsAndEmit = useForwardPropsEmits(restProps, emits);
             props.class,
           )
         ">
-        <slot></slot>
+        <slot />
       </DialogContent>
     </DialogOverlay>
   </DialogPortal>

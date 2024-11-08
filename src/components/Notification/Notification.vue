@@ -33,6 +33,6 @@ useProvideNotification(changedPositionValue);
 
 <template>
   <DialogRoot v-bind="forwardProps">
-    <slot></slot>
+    <slot />
   </DialogRoot>
 </template>

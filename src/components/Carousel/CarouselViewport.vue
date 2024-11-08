@@ -22,6 +22,6 @@ const { carouselRef } = useCarousel();
     v-bind="restProps"
     ref="carouselRef"
     :class="cn(carouselTheme.viewport, props.viewPortClass)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

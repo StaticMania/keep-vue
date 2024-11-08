@@ -14,6 +14,6 @@ const restProps = computed(() => {
 
 <template>
   <thead v-bind="restProps" :class="cn('[&_tr]:border-b', props.class)">
-    <slot></slot>
+    <slot />
   </thead>
 </template>

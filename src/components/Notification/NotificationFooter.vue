@@ -15,6 +15,6 @@ const restProps = computed(() => {
 
 <template>
   <div v-bind="restProps" :class="cn('flex items-center gap-3', props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

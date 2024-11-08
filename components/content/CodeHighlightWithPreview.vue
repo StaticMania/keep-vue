@@ -25,7 +25,12 @@ const restProps = computed(() => {
 
 const handleCopy = (code: object) => {
   copy(Object.values(code)[active.value === 0 ? 0 : active.value - 1]);
-  Toast.success("Copied to clipboard");
+  Toast.success("Copied to clipboard", {
+    classes: {
+      toast:
+        "dark:!bg-metal-900/30 dark:!text-white dark:!border-metal-800 !bg-white !text-metal-900 !border-metal-50",
+    },
+  });
 };
 </script>
 
@@ -96,7 +101,7 @@ const handleCopy = (code: object) => {
       v-if="active === 0"
       :class="cn('bg-white px-2 py-3 md:p-6 dark:bg-[#0D1015]', props.class)">
       <div className="h-full w-full overflow-auto">
-        <slot></slot>
+        <slot />
       </div>
     </div>
   </div>

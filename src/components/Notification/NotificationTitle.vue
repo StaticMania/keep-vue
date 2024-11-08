@@ -19,6 +19,6 @@ const forwardedProps = useForwardProps(restProps);
     :class="
       cn('text-body-1 font-medium text-metal-900 dark:text-white', props.class)
     ">
-    <slot></slot>
+    <slot />
   </DialogTitle>
 </template>

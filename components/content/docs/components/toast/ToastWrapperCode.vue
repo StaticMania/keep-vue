@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import CodeHighlight from "~/components/content/CodeHighlight.vue";
-import { ContainerHorizontalPadding } from "./ContainerData";
+import { ToastWrapperCode } from "./toastCode";
 </script>
 
 <template>
-  <CodeHighlight :code="ContainerHorizontalPadding" />
+  <CodeHighlight :code="ToastWrapperCode" />
 </template>

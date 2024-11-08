@@ -9,6 +9,6 @@ const props = defineProps<ClassProps>();
 
 <template>
   <div v-bind="$attrs" :class="cn(carouselTheme.item.container, props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

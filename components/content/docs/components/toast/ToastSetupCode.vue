@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import CodeHighlight from "~/components/content/CodeHighlight.vue";
-import { ToastWrapperCode } from "./toastCode";
+import { ToastSetupCode } from "./toastCode";
 </script>
 
 <template>
-  <CodeHighlight :code="ToastWrapperCode" />
+  <CodeHighlight :code="ToastSetupCode" />
 </template>

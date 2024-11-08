@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-import ComponentApiTable from "~/components/content/ComponentApiTable.vue";
-
-const popoverAPI = [
+const drawerAPIData = [
   {
     id: 1,
     propsName: "defaultOpen",
@@ -24,9 +22,16 @@ const popoverAPI = [
     propsType: "boolean",
     propsDescription: "The controlled open state of the popover.",
   },
+  {
+    id: 4,
+    propsName: "position",
+    propsType: ["left", "top", "right", "bottom"],
+    propsDescription: "Drawer position",
+    default: "bottom",
+  },
 ];
 </script>
 
 <template>
-  <ComponentApiTable :data="popoverAPI" />
+  <ComponentApiTable :data="drawerAPIData" />
 </template>

@@ -14,6 +14,6 @@ const forwardProps = useForwardPropsEmits(props, emits);
 
 <template>
   <DialogRoot v-bind="forwardProps">
-    <slot></slot>
+    <slot />
   </DialogRoot>
 </template>

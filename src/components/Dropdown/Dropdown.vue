@@ -14,6 +14,6 @@ const forwardPropsAndEmits = useForwardPropsEmits(props, emits);
 
 <template>
   <DropdownMenuRoot v-bind="forwardPropsAndEmits">
-    <slot></slot>
+    <slot />
   </DropdownMenuRoot>
 </template>

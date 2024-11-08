@@ -27,6 +27,6 @@ const { color } = useAlert();
     :class="
       cn(title.base, title.color[color as keyof ColorVariant], props.class)
     ">
-    <slot></slot>
+    <slot />
   </p>
 </template>

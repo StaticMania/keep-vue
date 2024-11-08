@@ -21,23 +21,24 @@ const props = withDefaults(
     position: "bottom",
   },
 );
+const emits = defineEmits<DrawerRootEmits>();
 
 const restProps = computed(() => {
   const { direction, position, class: _, ...delegated } = props;
   return delegated;
 });
 
-const emits = defineEmits<DrawerRootEmits>();
-
 const forwardProps = useForwardPropsEmits(restProps, emits);
 
-const updatedPosition = computed(() => props.position);
+const updatedPosition = computed(() => {
+  return props.position;
+});
 
 useProvideDrawer(updatedPosition);
 </script>
 
 <template>
   <DrawerRoot :direction="props.position" v-bind="forwardProps">
-    <slot></slot>
+    <slot />
   </DrawerRoot>
 </template>

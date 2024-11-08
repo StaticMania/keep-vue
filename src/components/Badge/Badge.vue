@@ -25,6 +25,6 @@ const restProps = computed(() => {
   <div
     v-bind="restProps"
     :class="cn(badgeVariants({ color, variant }), props.class)">
-    <slot></slot>
+    <slot />
   </div>
 </template>

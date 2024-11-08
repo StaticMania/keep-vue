@@ -22,8 +22,8 @@ const colorMode = useColorMode();
   <main class="relative pt-20">
     <!-- upper area -> docs layout  -->
     <div
-      class="sticky top-20 z-30 hidden h-4 w-full bg-primary-25 lg:block 2xl:h-20 dark:bg-[#0d1015]"></div>
-    <div class="docs-page"></div>
+      class="sticky top-20 z-30 hidden h-4 w-full bg-primary-25 lg:block 2xl:h-20 dark:bg-[#0d1015]" />
+    <div class="docs-page" />
     <!-- docs layout container  -->
     <div
       class="container relative z-20 grid grid-cols-12 gap-5 pt-10 2xl:pt-16">

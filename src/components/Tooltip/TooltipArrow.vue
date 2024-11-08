@@ -23,6 +23,6 @@ const { color } = useTooltip();
   <TooltipIndicator
     v-bind="restProps"
     :class="cn(toolTipTheme.arrowColor[color], props.class)">
-    <slot></slot>
+    <slot />
   </TooltipIndicator>
 </template>

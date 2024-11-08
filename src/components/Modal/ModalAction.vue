@@ -12,6 +12,6 @@ const restProps = computed(() => {
 
 <template>
   <DialogTrigger v-bind="restProps">
-    <slot></slot>
+    <slot />
   </DialogTrigger>
 </template>
