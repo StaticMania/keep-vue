@@ -61,25 +61,6 @@ export { default as CarouselSlides } from "./components/Carousel/CarouselSlides.
 export { default as CarouselViewport } from "./components/Carousel/CarouselViewport.vue";
 export { default as DotButton } from "./components/Carousel/DotButton.vue";
 
-// Charts
-export {
-  ArcElement,
-  Bar,
-  BarElement,
-  CategoryScale,
-  ChartTooltip,
-  Doughnut,
-  Filler,
-  KeepChart,
-  Legend,
-  Line,
-  LineElement,
-  LinearScale,
-  Pie,
-  PointElement,
-  Title,
-} from "./components/Charts/chart";
-
 //Checkbox component
 export { default as Checkbox } from "./components/Checkbox/Checkbox.vue";
 

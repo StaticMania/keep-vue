@@ -28,13 +28,6 @@ export const docsRoutes = ref<RouterPath[]>([
   },
   {
     id: generatedID.v4(),
-    name: "Area Chart",
-    href: "/docs/components/area-chart",
-    tag: false,
-    deprecate: false,
-  },
-  {
-    id: generatedID.v4(),
     name: "Avatar",
     href: "/docs/components/avatar",
     tag: false,
@@ -45,14 +38,6 @@ export const docsRoutes = ref<RouterPath[]>([
     name: "Badge",
 
     href: "/docs/components/badge",
-    tag: false,
-    deprecate: false,
-  },
-  {
-    id: generatedID.v4(),
-    name: "Bar Chart",
-
-    href: "/docs/components/bar-chart",
     tag: false,
     deprecate: false,
   },
@@ -150,14 +135,6 @@ export const docsRoutes = ref<RouterPath[]>([
   },
   {
     id: generatedID.v4(),
-    name: "Line Chart",
-
-    href: "/docs/components/line-chart",
-    tag: false,
-    deprecate: false,
-  },
-  {
-    id: generatedID.v4(),
     name: "Modal",
 
     href: "/docs/components/modal",
@@ -184,14 +161,6 @@ export const docsRoutes = ref<RouterPath[]>([
     id: generatedID.v4(),
     name: "Pagination",
     href: "/docs/components/pagination",
-    tag: false,
-    deprecate: false,
-  },
-  {
-    id: generatedID.v4(),
-    name: "Pie Chart",
-
-    href: "/docs/components/pie-chart",
     tag: false,
     deprecate: false,
   },
