@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { defineProps, type HtmlHTMLAttributes } from "vue";
+import { type HtmlHTMLAttributes } from "vue";
 import { cn } from "../../utils/cn";
 import { carouselTheme } from "./carouselTheme";
 import DotButton from "./DotButton.vue";
