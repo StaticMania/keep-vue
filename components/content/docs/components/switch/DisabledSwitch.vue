@@ -6,7 +6,7 @@ import { DisabledSwitchCode } from "./SwitchCode";
 
 <template>
   <CodeHighlightWithPreview :code="DisabledSwitchCode">
-    <div class="px-5 py-3">
+    <div class="flex items-center justify-center">
       <Switch disabled />
     </div>
   </CodeHighlightWithPreview>
