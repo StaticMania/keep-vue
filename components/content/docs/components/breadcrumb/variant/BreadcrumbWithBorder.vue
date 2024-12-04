@@ -11,7 +11,7 @@ import { breadcrumbWithBorderCode } from "../breadcrumbCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="breadcrumbWithBorderCode">
-    <div class="space-y-3">
+    <div class="flex flex-col items-center justify-center gap-4">
       <Breadcrumb>
         <BreadcrumbList border-type="border-xy">
           <BreadcrumbItem>

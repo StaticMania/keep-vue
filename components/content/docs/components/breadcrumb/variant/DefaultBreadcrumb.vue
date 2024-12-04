@@ -12,26 +12,28 @@ import { defaultBreadcrumbCode } from "../breadcrumbCode";
 
 <template>
   <CodeHighlightWithPreview :code="defaultBreadcrumbCode">
-    <Breadcrumb>
-      <BreadcrumbList>
-        <BreadcrumbItem>
-          <BreadcrumbLink href="/">
-            <PhosphorIconHouse :size="20" />
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbDivider />
+    <div class="flex items-center justify-center">
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">
+              <PhosphorIconHouse :size="20" />
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbDivider />
 
-        <BreadcrumbItem>
-          <BreadcrumbLink href="/docs/components/accordion" target="_">
-            Components
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbDivider />
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/docs/components/accordion" target="_">
+              Components
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbDivider />
 
-        <BreadcrumbItem>
-          <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
-        </BreadcrumbItem>
-      </BreadcrumbList>
-    </Breadcrumb>
+          <BreadcrumbItem>
+            <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+    </div>
   </CodeHighlightWithPreview>
 </template>
