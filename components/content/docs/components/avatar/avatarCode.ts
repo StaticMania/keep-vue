@@ -1,5 +1,5 @@
 const defaultAvatarCode = {
-  "AvatarComponent.Vue": `  
+  "AvatarComponent.vue": `  
     <script setup>
 import { Avatar, AvatarText } from "keep-vue";
 </script>
@@ -13,31 +13,27 @@ import { Avatar, AvatarText } from "keep-vue";
 };
 
 const avatarWithImagesCode = {
-  "AvatarComponent.Vue": `  
+  "AvatarComponent.vue": `  
     <script setup>
 import { Avatar, AvatarImage } from "keep-vue";
 </script>
 <template>
-  <div class="flex items-center gap-3">
     <Avatar>
       <AvatarImage />
     </Avatar>
     <Avatar>
       <AvatarImage src="/images/avatar/avatar-4.png" />
     </Avatar>
-  </div>
-</template>
-    `,
+</template>`,
 };
 
 const avatarWithStatusCode = {
-  "AvatarComponent.Vue": `  
+  "AvatarComponent.vue": `  
     <script setup>
 import { Avatar, AvatarBadge, AvatarImage } from "keep-vue";
 </script>
 
 <template>
-  <div class="flex items-center gap-3">
     <Avatar>
       <AvatarImage />
       <AvatarBadge />
@@ -46,13 +42,11 @@ import { Avatar, AvatarBadge, AvatarImage } from "keep-vue";
       <AvatarImage src="/images/avatar/avatar-4.png" />
       <AvatarBadge />
     </Avatar>
-  </div>
-</template>
-    `,
+</template>`,
 };
 
 const avatarGroupCode = {
-  "AvatarComponent.Vue": `<script setup>
+  "AvatarComponent.vue": `<script setup>
 import { Avatar, AvatarGroup, AvatarImage } from 'keep-vue'
 </script>
 
@@ -74,31 +68,7 @@ import { Avatar, AvatarGroup, AvatarImage } from 'keep-vue'
       <AvatarImage src="/images/avatar/avatar-5.png" />
     </Avatar>
   </AvatarGroup>
-</template>
-
-
-
-</script>
-<template>
-  <AvatarGroup>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-1.png" />
-    </Avatar>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-2.png" />
-    </Avatar>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-3.png" />
-    </Avatar>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-4.png" />
-    </Avatar>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-5.png" />
-    </Avatar>
-  </AvatarGroup>
-</template>
-    `,
+</template>`,
 };
 
 export {
