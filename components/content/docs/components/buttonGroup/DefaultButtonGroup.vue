@@ -4,7 +4,7 @@ import { defaultButtonGroupCode } from "./buttonGroupCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="defaultButtonGroupCode">
-    <div class="h-20 p-4">
+    <div class="flex items-center justify-center">
       <ButtonGroup>
         <Button position="start">Profile</Button>
         <Button position="center">Settings</Button>
