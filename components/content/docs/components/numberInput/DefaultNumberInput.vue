@@ -8,14 +8,16 @@ const inputValue = ref(0);
 
 <template>
   <CodeHighlightWithPreview :code="DefaultNumberInputCode">
-    <NumberInput>
-      <NumberInputButton>
-        <PhosphorIconMinus :size="16" />
-      </NumberInputButton>
-      <NumberInputBox v-model="inputValue" />
-      <NumberInputButton>
-        <PhosphorIconPlus :size="16" />
-      </NumberInputButton>
-    </NumberInput>
+    <div class="flex items-center justify-center">
+      <NumberInput class="w-full">
+        <NumberInputButton>
+          <PhosphorIconMinus :size="16" />
+        </NumberInputButton>
+        <NumberInputBox v-model="inputValue" />
+        <NumberInputButton>
+          <PhosphorIconPlus :size="16" />
+        </NumberInputButton>
+      </NumberInput>
+    </div>
   </CodeHighlightWithPreview>
 </template>
