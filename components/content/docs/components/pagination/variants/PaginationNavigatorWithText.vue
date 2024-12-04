@@ -6,7 +6,7 @@ import {
   PaginationList,
   PaginationNavigator,
 } from "~/src";
-import { PaginationNavigatorWithTextCode } from "./paginationCode";
+import { PaginationNavigatorWithTextCode } from "../paginationCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="PaginationNavigatorWithTextCode">

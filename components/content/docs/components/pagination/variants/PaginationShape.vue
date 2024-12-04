@@ -1,20 +1,12 @@
 <script lang="ts" setup>
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
-import {
-  Pagination,
-  PaginationItem,
-  PaginationList,
-  PaginationNavigator,
-} from "~/src";
-import { PaginationNavigatorWithIconCode } from "./paginationCode";
+import { Pagination, PaginationItem, PaginationList } from "~/src";
+import { PaginationShapeCode } from "../paginationCode";
 </script>
 <template>
-  <CodeHighlightWithPreview :code="PaginationNavigatorWithIconCode">
+  <CodeHighlightWithPreview :code="PaginationShapeCode">
     <div class="flex items-center justify-center">
       <Pagination shape="circle" class="w-auto">
-        <PaginationNavigator shape="circle">
-          <PhosphorIconCaretLeft size="18" />
-        </PaginationNavigator>
         <PaginationList>
           <PaginationItem>1</PaginationItem>
           <PaginationItem active>2</PaginationItem>
@@ -25,9 +17,6 @@ import { PaginationNavigatorWithIconCode } from "./paginationCode";
           </PaginationItem>
           <PaginationItem>10</PaginationItem>
         </PaginationList>
-        <PaginationNavigator shape="circle">
-          <PhosphorIconCaretRight size="18" />
-        </PaginationNavigator>
       </Pagination>
     </div>
   </CodeHighlightWithPreview>

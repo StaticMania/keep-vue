@@ -8,7 +8,7 @@ import {
   PaginationList,
   PaginationNavigator,
 } from "~/src";
-import { PaginationWithInputCode } from "./paginationCode";
+import { PaginationWithInputCode } from "../paginationCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="PaginationWithInputCode">

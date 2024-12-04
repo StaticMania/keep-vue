@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { Pagination, PaginationItem, PaginationList } from "~/src";
-import { PaginationShapeCode } from "./paginationCode";
+import { DefaultPaginationCode } from "../paginationCode";
 </script>
 <template>
-  <CodeHighlightWithPreview :code="PaginationShapeCode">
+  <CodeHighlightWithPreview :code="DefaultPaginationCode">
     <div class="flex items-center justify-center">
-      <Pagination shape="circle" class="w-auto">
+      <Pagination class="w-auto">
         <PaginationList>
           <PaginationItem>1</PaginationItem>
           <PaginationItem active>2</PaginationItem>
