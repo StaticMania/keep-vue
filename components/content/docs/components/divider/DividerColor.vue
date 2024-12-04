@@ -7,12 +7,14 @@ import { DividerColorCode } from "./dividerCode";
 
 <template>
   <CodeHighlightWithPreview :code="DividerColorCode">
-    <section class="space-y-4">
-      <Divider color="primary" />
-      <Divider color="secondary" />
-      <Divider color="success" />
-      <Divider color="warning" />
-      <Divider color="error" />
-    </section>
+    <div class="flex items-center justify-center">
+      <section class="w-full space-y-4">
+        <Divider color="primary" />
+        <Divider color="secondary" />
+        <Divider color="success" />
+        <Divider color="warning" />
+        <Divider color="error" />
+      </section>
+    </div>
   </CodeHighlightWithPreview>
 </template>

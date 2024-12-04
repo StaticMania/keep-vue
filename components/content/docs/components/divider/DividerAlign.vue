@@ -6,10 +6,12 @@ import { DividerAlignCode } from "./dividerCode";
 
 <template>
   <CodeHighlightWithPreview :code="DividerAlignCode">
-    <section class="space-y-3">
-      <Divider variant="start">Left Align</Divider>
-      <Divider variant="center">Center Align</Divider>
-      <Divider variant="end">Right Align</Divider>
-    </section>
+    <div class="flex items-center justify-center">
+      <section class="w-full space-y-3">
+        <Divider variant="start">Left Align</Divider>
+        <Divider variant="center">Center Align</Divider>
+        <Divider variant="end">Right Align</Divider>
+      </section>
+    </div>
   </CodeHighlightWithPreview>
 </template>
