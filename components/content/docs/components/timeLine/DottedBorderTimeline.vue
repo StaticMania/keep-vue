@@ -6,7 +6,7 @@ import { DottedBorderTimelineCode } from "./timelineCode";
 
 <template>
   <CodeHighlightWithPreview :code="DottedBorderTimelineCode">
-    <div class="px-5 py-6">
+    <div class="flex items-center justify-center">
       <Timeline class="border-dotted">
         <TimelineItem>
           <TimelinePoint />

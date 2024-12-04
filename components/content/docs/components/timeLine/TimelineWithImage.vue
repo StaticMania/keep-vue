@@ -5,7 +5,7 @@ import { TimelineWithImageCode } from "./timelineCode";
 
 <template>
   <CodeHighlightWithPreview :code="TimelineWithImageCode">
-    <div class="px-5 py-6">
+    <div class="flex items-center justify-center">
       <Timeline>
         <TimelineItem>
           <TimelinePoint />

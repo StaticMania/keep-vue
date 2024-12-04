@@ -6,7 +6,7 @@ import { DashedBorderTimelineCode } from "./timelineCode";
 
 <template>
   <CodeHighlightWithPreview :code="DashedBorderTimelineCode">
-    <div class="px-5 py-6">
+    <div class="flex items-center justify-center">
       <Timeline class="border-dashed">
         <TimelineItem>
           <TimelinePoint />
