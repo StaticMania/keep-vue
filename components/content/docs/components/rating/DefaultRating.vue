@@ -6,12 +6,14 @@ import { DefaultRatingCode } from "./ratingCode";
 
 <template>
   <CodeHighlightWithPreview :code="DefaultRatingCode">
-    <Rating>
-      <RatingStar :value="1" />
-      <RatingStar :value="2" />
-      <RatingStar :value="3" />
-      <RatingStar :value="4" />
-      <RatingStar :value="5" />
-    </Rating>
+    <div class="flex items-center justify-center">
+      <Rating>
+        <RatingStar :value="1" />
+        <RatingStar :value="2" />
+        <RatingStar :value="3" />
+        <RatingStar :value="4" />
+        <RatingStar :value="5" />
+      </Rating>
+    </div>
   </CodeHighlightWithPreview>
 </template>
