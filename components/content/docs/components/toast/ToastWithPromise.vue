@@ -11,17 +11,19 @@ const promise = () =>
 
 <template>
   <CodeHighlightWithPreview :code="ToastWithPromiseCode">
-    <Button
-      @click="
-        () =>
-          Toast.promise(promise, {
-            loading: 'Loading...',
-            success: (data: any) => {
-              return `${data.name} toast has been added`;
-            },
-          })
-      ">
-      Show Toast
-    </Button>
+    <div class="flex items-center justify-center">
+      <Button
+        @click="
+          () =>
+            Toast.promise(promise, {
+              loading: 'Loading...',
+              success: (data: any) => {
+                return `${data.name} toast has been added`;
+              },
+            })
+        ">
+        Show Toast
+      </Button>
+    </div>
   </CodeHighlightWithPreview>
 </template>

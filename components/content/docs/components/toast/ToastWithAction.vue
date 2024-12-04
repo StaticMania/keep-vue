@@ -6,18 +6,20 @@ import { ToastWithActionCode } from "./toastCode";
 
 <template>
   <CodeHighlightWithPreview :code="ToastWithActionCode">
-    <Button
-      color="secondary"
-      @click="
-        () =>
-          Toast('Keep Vue is Awesome', {
-            action: {
-              label: 'Action',
-              onClick: () => console.log('Action is pressed'),
-            },
-          })
-      ">
-      Show Toast
-    </Button>
+    <div class="flex items-center justify-center">
+      <Button
+        color="secondary"
+        @click="
+          () =>
+            Toast('Keep Vue is Awesome', {
+              action: {
+                label: 'Action',
+                onClick: () => console.log('Action is pressed'),
+              },
+            })
+        ">
+        Show Toast
+      </Button>
+    </div>
   </CodeHighlightWithPreview>
 </template>

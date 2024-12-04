@@ -6,8 +6,10 @@ import { DefaultToastCode } from "./toastCode";
 
 <template>
   <CodeHighlightWithPreview :code="DefaultToastCode">
-    <Button @click="() => Toast.info('Keep Vue is Awesome')">
-      Default Toast
-    </Button>
+    <div class="flex items-center justify-center">
+      <Button @click="() => Toast.info('Keep Vue is Awesome')">
+        Default Toast
+      </Button>
+    </div>
   </CodeHighlightWithPreview>
 </template>

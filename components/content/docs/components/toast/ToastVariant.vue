@@ -6,7 +6,7 @@ import { ToastVariantCode } from "./toastCode";
 
 <template>
   <CodeHighlightWithPreview :code="ToastVariantCode">
-    <div class="flex items-center gap-3">
+    <div class="flex items-center justify-center gap-3">
       <Button @click="() => Toast.info('Keep Vue is Awesome')">
         Info Toast
       </Button>
