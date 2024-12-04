@@ -4,7 +4,7 @@ import { buttonWithIconCode } from "../buttonCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="buttonWithIconCode">
-    <div class="flex h-24 flex-wrap items-center gap-2 p-4">
+    <div class="flex items-center justify-center gap-4">
       <Button>
         <PhosphorIconChatText size="20" class="mr-1.5" />
         Messages

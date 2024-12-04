@@ -1,5 +1,5 @@
 const buttonVariantTypeCode = {
-  "ButtonComponent.Vue": `<script setup>
+  "ButtonComponent.vue": `<script setup>
 import { Button } from "keep-vue";
 </script>
 <template>
@@ -23,61 +23,52 @@ import { Button } from "keep-vue";
 };
 
 const buttonColorVariantCode = {
-  "ButtonComponent.Vue": `<script setup>
+  "ButtonComponent.vue": `<script setup>
 import { Button } from "keep-vue";
 </script>
 
 <template>
-  <>
     <Button color="primary">Button</Button>
     <Button color="secondary">Button</Button>
     <Button color="success">Button</Button>
     <Button color="warning">Button</Button>
     <Button color="error">Button</Button>
-  </>
-</template>
-      `,
+</template>`,
 };
 
 const buttonShapeVariantCode = {
-  "ButtonComponent.Vue": `<script setup>
+  "ButtonComponent.vue": `<script setup>
 import { PhShoppingCart } from "@phosphor-icons/vue";
 import { Button } from "keep-vue";
 </script>
 <template>
-  <>
     <Button shape="icon"><PhShoppingCart size="16" /></Button>
     <Button shape="circle"><PhShoppingCart size="16" /></Button>
-  </>
-</template>
-      `,
+</template>`,
 };
 
 const buttonSizeVariantCode = {
-  "ButtonComponent.Vue": `<script setup>
+  "ButtonComponent.vue": `<script setup>
 import { Button } from "keep-vue";
 </script>
 
 <template>
-  <>
     <Button size="xs">Extra Small</Button>
     <Button size="sm">Small Button</Button>
     <Button size="md">Medium Button</Button>
     <Button size="lg">Large Button</Button>
     <Button size="xl">Extra Large</Button>
     <Button size="2xl">Button 2xl</Button>
-  </>
 </template>
       `,
 };
 
 const buttonWithIconCode = {
-  "ButtonComponent.Vue": `<script setup>
+  "ButtonComponent.vue": `<script setup>
 import { PhChatText, PhGear, PhSignIn } from "@phosphor-icons/vue";
 import { Button } from "keep-vue";
 </script>
 <template>
-  <>
     <Button>
       <PhChatText size="20" class="mr-1.5" />
       Messages
@@ -90,22 +81,19 @@ import { Button } from "keep-vue";
       <PhSignIn size="20" class="mr-1.5" />
       Sign In
     </Button>
-  </>
 </template>
       `,
 };
 
 const buttonRadiusVariantCode = {
-  "ButtonComponent.Vue": `<script setup>
+  "ButtonComponent.vue": `<script setup>
 import { Button } from "keep-vue";
 </script>
 <template>
- 
    <Button radius="full">
         <PhosphorIconShoppingCart size="16" />
         Add to cart
       </Button>
-
 </template>
       `,
 };
