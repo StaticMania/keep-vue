@@ -9,8 +9,8 @@ const inputValue = ref("");
 
 <template>
   <CodeHighlightWithPreview :code="inputWithIconCode">
-    <div class="p-2">
-      <fieldset class="relative max-w-md">
+    <div class="flex items-center justify-center p-2">
+      <fieldset class="relative w-full max-w-md">
         <Input
           v-model="inputValue"
           type="text"

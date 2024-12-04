@@ -9,13 +9,15 @@ const inputValue = ref("");
 
 <template>
   <CodeHighlightWithPreview :code="labelInput">
-    <fieldset class="max-w-md space-y-1 p-2">
-      <Label for="name">Enter Name</Label>
-      <Input
-        id="name"
-        v-model="inputValue"
-        placeholder="Enter name"
-        type="text" />
-    </fieldset>
+    <div class="flex items-center justify-center">
+      <fieldset class="w-full max-w-md space-y-1 p-2">
+        <Label for="name">Enter Name</Label>
+        <Input
+          id="name"
+          v-model="inputValue"
+          placeholder="Enter name"
+          type="text" />
+      </fieldset>
+    </div>
   </CodeHighlightWithPreview>
 </template>

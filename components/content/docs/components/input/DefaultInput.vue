@@ -10,11 +10,13 @@ console.log(inputValue.value);
 
 <template>
   <CodeHighlightWithPreview :code="defaultInput">
-    <div class="max-w-md p-2">
-      <Input
-        placeholder="Enter name"
-        type="text"
-        @update:model-value="inputValue as any" />
+    <div class="flex items-center justify-center">
+      <div class="w-full max-w-md p-2">
+        <Input
+          placeholder="Enter name"
+          type="text"
+          @update:model-value="inputValue as any" />
+      </div>
     </div>
   </CodeHighlightWithPreview>
 </template>

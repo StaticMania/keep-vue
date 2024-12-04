@@ -6,8 +6,10 @@ import { disabledInputCode } from "./inputCode";
 
 <template>
   <CodeHighlightWithPreview :code="disabledInputCode">
-    <div class="max-w-md p-2">
-      <Input type="text" disabled placeholder="Enter name" />
+    <div class="flex items-center justify-center">
+      <div class="w-full max-w-md p-2">
+        <Input type="text" disabled placeholder="Enter name" />
+      </div>
     </div>
   </CodeHighlightWithPreview>
 </template>
