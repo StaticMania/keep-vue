@@ -6,7 +6,7 @@ import { SpinnerColorsCode } from "./spinnerCode";
 
 <template>
   <CodeHighlightWithPreview :code="SpinnerColorsCode">
-    <div class="my-5 flex gap-3">
+    <div class="flex items-center justify-center gap-x-4">
       <Spinner color="failure" size="lg" />
       <Spinner color="gray" size="lg" />
       <Spinner color="info" size="lg" />

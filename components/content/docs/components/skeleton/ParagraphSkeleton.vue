@@ -6,11 +6,13 @@ import { ParagraphSkeletonCode } from "./skeletonCode";
 
 <template>
   <CodeHighlightWithPreview :code="ParagraphSkeletonCode">
-    <Skeleton class="max-w-xl space-y-2.5">
-      <SkeletonLine class="h-4 w-11/12" />
-      <SkeletonLine class="h-4 w-9/12" />
-      <SkeletonLine class="h-4 w-10/12" />
-      <SkeletonLine class="h-4 w-7/12" />
-    </Skeleton>
+    <div class="flex items-center justify-center">
+      <Skeleton class="max-w-xl space-y-2.5">
+        <SkeletonLine class="h-4 w-11/12" />
+        <SkeletonLine class="h-4 w-9/12" />
+        <SkeletonLine class="h-4 w-10/12" />
+        <SkeletonLine class="h-4 w-7/12" />
+      </Skeleton>
+    </div>
   </CodeHighlightWithPreview>
 </template>

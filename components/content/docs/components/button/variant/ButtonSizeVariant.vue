@@ -5,7 +5,7 @@ import { buttonSizeVariantCode } from "../buttonCode";
 
 <template>
   <CodeHighlightWithPreview :code="buttonSizeVariantCode">
-    <div class="flex flex-wrap items-end gap-2 p-5">
+    <div class="flex items-center justify-center gap-x-4">
       <Button size="xs">Extra Small</Button>
       <Button size="sm">Small Button</Button>
       <Button size="md">Medium Button</Button>

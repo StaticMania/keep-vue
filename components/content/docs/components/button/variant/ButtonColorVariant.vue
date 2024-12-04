@@ -5,7 +5,7 @@ import { buttonColorVariantCode } from "../buttonCode";
 
 <template>
   <CodeHighlightWithPreview :code="buttonColorVariantCode">
-    <div class="flex h-20 flex-wrap items-center gap-2 p-4">
+    <div class="flex items-center justify-center gap-4">
       <Button color="primary">Button</Button>
       <Button color="secondary">Button</Button>
       <Button color="success">Button</Button>

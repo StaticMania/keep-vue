@@ -10,7 +10,7 @@ watch(switchState, () => [console.log(switchState.value)]);
 
 <template>
   <CodeHighlightWithPreview :code="DefaultSwitchCode">
-    <div class="px-5 py-3">
+    <div class="flex items-center justify-center">
       <Switch v-model:checked="switchState" />
     </div>
   </CodeHighlightWithPreview>

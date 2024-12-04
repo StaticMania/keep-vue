@@ -4,7 +4,7 @@ import { buttonGroupWithIconCode } from "./buttonGroupCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="buttonGroupWithIconCode">
-    <div class="h-20 p-4">
+    <div class="flex items-center justify-center gap-x-4">
       <ButtonGroup>
         <Button position="start">
           <PhosphorIconCube :size="20" class="mr-1.5" />

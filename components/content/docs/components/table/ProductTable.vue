@@ -20,7 +20,9 @@ import { ProductTableCode } from "./tableCode";
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="ProductTableCode">
+  <CodeHighlightWithPreview
+    :code="ProductTableCode"
+    preview-class="mx-0 w-auto px-5">
     <Table>
       <TableCaption>
         <div class="flex items-center justify-between">
@@ -60,7 +62,7 @@ import { ProductTableCode } from "./tableCode";
           <TableHead>
             <div class="w-[60px]">Stock</div>
           </TableHead>
-          <TableHead></TableHead>
+          <TableHead />
         </TableRow>
       </TableHeader>
       <TableBody>

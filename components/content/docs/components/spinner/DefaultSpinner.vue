@@ -5,7 +5,7 @@ import { DefaultSpinnerCode } from "./spinnerCode";
 
 <template>
   <CodeHighlightWithPreview :code="DefaultSpinnerCode">
-    <div class="h-16 p-4">
+    <div class="flex items-center justify-center">
       <Spinner color="info" size="lg" />
     </div>
   </CodeHighlightWithPreview>

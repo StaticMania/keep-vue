@@ -6,7 +6,7 @@ import { SpinnerButtonCode } from "./spinnerCode";
 
 <template>
   <CodeHighlightWithPreview :code="SpinnerButtonCode">
-    <div class="flex w-full items-end gap-3">
+    <div class="flex w-full items-center justify-center gap-3">
       <Button>
         <span class="pr-2">
           <Spinner color="gray" size="sm" />

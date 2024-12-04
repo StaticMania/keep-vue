@@ -4,9 +4,9 @@ import { buttonRadiusVariantCode } from "../buttonCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="buttonRadiusVariantCode">
-    <div class="flex flex-wrap items-end gap-4 px-2 py-3">
+    <div class="flex items-center justify-center">
       <Button radius="full">
-        <PhosphorIconShoppingCart size="16" />
+        <PhosphorIconShoppingCart size="16" class="mr-1" />
         Add to cart
       </Button>
     </div>

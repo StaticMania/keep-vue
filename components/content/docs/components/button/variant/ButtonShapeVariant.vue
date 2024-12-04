@@ -4,7 +4,7 @@ import { buttonShapeVariantCode } from "../buttonCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="buttonShapeVariantCode">
-    <div class="flex flex-wrap items-end gap-4 px-2 py-3">
+    <div class="flex items-center justify-center gap-x-4">
       <Button shape="icon"><PhosphorIconShoppingCart size="16" /></Button>
       <Button shape="circle"><PhosphorIconShoppingCart size="16" /></Button>
     </div>

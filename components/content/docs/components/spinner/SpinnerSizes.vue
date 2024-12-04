@@ -6,7 +6,7 @@ import { SpinnerSizesCode } from "./spinnerCode";
 
 <template>
   <CodeHighlightWithPreview :code="SpinnerSizesCode">
-    <div class="my-3 flex items-end gap-3">
+    <div class="flex items-center justify-center gap-x-4">
       <Spinner color="info" size="xs" />
       <Spinner color="info" size="sm" />
       <Spinner color="info" size="md" />

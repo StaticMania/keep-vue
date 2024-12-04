@@ -5,8 +5,10 @@ import { defaultAvatarCode } from "./avatarCode";
 
 <template>
   <CodeHighlightWithPreview :code="defaultAvatarCode">
-    <Avatar>
-      <AvatarText>KV</AvatarText>
-    </Avatar>
+    <div class="flex items-center justify-center">
+      <Avatar>
+        <AvatarText>KV</AvatarText>
+      </Avatar>
+    </div>
   </CodeHighlightWithPreview>
 </template>

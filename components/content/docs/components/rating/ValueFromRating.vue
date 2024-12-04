@@ -11,11 +11,10 @@ const handleRating = (value: number | undefined) => {
 
 <template>
   <CodeHighlightWithPreview :code="ValueFromRatingCode">
-    <Rating :handle-rating="handleRating">
-      <RatingStar
-        v-for="rating in ratings"
-        :key="rating"
-        :value="rating"></RatingStar>
-    </Rating>
+    <div class="flex items-center justify-center">
+      <Rating :handle-rating="handleRating">
+        <RatingStar v-for="rating in ratings" :key="rating" :value="rating" />
+      </Rating>
+    </div>
   </CodeHighlightWithPreview>
 </template>

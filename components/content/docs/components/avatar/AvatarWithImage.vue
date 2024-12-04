@@ -4,7 +4,7 @@ import { avatarWithImagesCode } from "./avatarCode";
 </script>
 <template>
   <CodeHighlightWithPreview :code="avatarWithImagesCode">
-    <div class="flex items-center gap-3">
+    <div class="flex items-center justify-center gap-3">
       <Avatar>
         <AvatarImage />
       </Avatar>

@@ -6,22 +6,24 @@ import { RatingTypesCode } from "./ratingCode";
 
 <template>
   <CodeHighlightWithPreview :code="RatingTypesCode">
-    <Rating>
-      <RatingStar :value="1">
-        <PhosphorIconStar :size="20" />
-      </RatingStar>
-      <RatingStar :value="2">
-        <PhosphorIconStar :size="20" />
-      </RatingStar>
-      <RatingStar :value="3">
-        <PhosphorIconStar :size="20" />
-      </RatingStar>
-      <RatingStar :value="4">
-        <PhosphorIconStar :size="20" />
-      </RatingStar>
-      <RatingStar :value="5">
-        <PhosphorIconStar :size="20" />
-      </RatingStar>
-    </Rating>
+    <div class="flex items-center justify-center">
+      <Rating>
+        <RatingStar :value="1">
+          <PhosphorIconStar :size="20" />
+        </RatingStar>
+        <RatingStar :value="2">
+          <PhosphorIconStar :size="20" />
+        </RatingStar>
+        <RatingStar :value="3">
+          <PhosphorIconStar :size="20" />
+        </RatingStar>
+        <RatingStar :value="4">
+          <PhosphorIconStar :size="20" />
+        </RatingStar>
+        <RatingStar :value="5">
+          <PhosphorIconStar :size="20" />
+        </RatingStar>
+      </Rating>
+    </div>
   </CodeHighlightWithPreview>
 </template>

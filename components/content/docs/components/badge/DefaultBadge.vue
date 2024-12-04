@@ -5,7 +5,7 @@ import { defaultBadgeCode } from "./badgeCode";
 
 <template>
   <CodeHighlightWithPreview :code="defaultBadgeCode">
-    <div class="p-2">
+    <div class="flex items-center justify-center">
       <Badge>Default Badge</Badge>
     </div>
   </CodeHighlightWithPreview>
