@@ -13,7 +13,9 @@ import { data1 } from "./TableData";
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="DefaultTableCode">
+  <CodeHighlightWithPreview
+    :code="DefaultTableCode"
+    preview-class="mx-0 w-auto">
     <Table>
       <TableHeader>
         <TableRow>

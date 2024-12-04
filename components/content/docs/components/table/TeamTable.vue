@@ -60,7 +60,7 @@ import { TeamTableCode } from "./tableCode";
           <TableHead>Email</TableHead>
           <TableHead>Team</TableHead>
           <TableHead>Performance</TableHead>
-          <TableHead></TableHead>
+          <TableHead />
         </TableRow>
       </TableHeader>
       <TableBody>

@@ -115,13 +115,8 @@ const handleCopy = (code: object) => {
       <!-- component preview block  -->
       <div
         v-else
-        :class="
-          cn(
-            'flex min-h-[420px] w-full items-center justify-center bg-transparent px-20 py-14 dark:bg-[#0D1015]',
-            props.previewClass,
-          )
-        ">
-        <div class="mx-auto w-full">
+        class="flex min-h-[420px] w-full items-center justify-center bg-transparent px-20 py-14 dark:bg-[#0D1015]">
+        <div :class="cn('mx-auto w-full', props.previewClass)">
           <slot />
         </div>
       </div>

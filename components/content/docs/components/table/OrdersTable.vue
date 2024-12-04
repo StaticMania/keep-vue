@@ -98,7 +98,7 @@ import { OrdersTableCode } from "./tableCode";
               Location
             </p>
           </TableHead>
-          <TableHead></TableHead>
+          <TableHead />
         </TableRow>
       </TableHeader>
       <TableBody>
