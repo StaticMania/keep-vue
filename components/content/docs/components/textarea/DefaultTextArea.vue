@@ -11,6 +11,7 @@ const picked = ref("");
     <div class="p-2">
       <Textarea
         v-model="picked"
+        class="rounded-2xl"
         placeholder="Write your message here."
         :rows="8" />
     </div>

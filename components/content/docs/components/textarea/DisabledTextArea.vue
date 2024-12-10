@@ -7,7 +7,11 @@ import { disabledTextareaCode } from "./textareaCode";
 <template>
   <CodeHighlightWithPreview :code="disabledTextareaCode">
     <div class="p-2">
-      <Textarea disabled placeholder="Write your message here" :rows="8" />
+      <Textarea
+        disabled
+        placeholder="Write your message here"
+        :rows="8"
+        class="rounded-2xl" />
     </div>
   </CodeHighlightWithPreview>
 </template>
