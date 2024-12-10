@@ -23,12 +23,14 @@ const onDismiss = () => {
       <AlertContainer>
         <AlertIcon />
         <AlertTitle>Alert here</AlertTitle>
-        <AlertDescription>
+        <AlertDescription class="lg:line-clamp-1 2xl:line-clamp-none">
           A short description followed by two actions items.
         </AlertDescription>
       </AlertContainer>
       <AlertContainer>
-        <AlertLink href="/">Learn More</AlertLink>
+        <AlertLink href="/" class="lg:hidden 2xl:inline-flex">
+          Learn More
+        </AlertLink>
         <AlertDismiss @dismiss="onDismiss" />
       </AlertContainer>
     </Alert>
