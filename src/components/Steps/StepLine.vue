@@ -29,6 +29,6 @@ const restProps = computed(() => {
           'absolute bottom-0 left-0 top-0 rounded-full bg-primary-500',
           props.class,
         )
-      "></div>
+      " />
   </div>
 </template>

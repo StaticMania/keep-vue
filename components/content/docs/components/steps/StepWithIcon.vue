@@ -12,19 +12,19 @@ const active = ref(1);
     <div class="space-y-6 p-6">
       <Steps>
         <StepPoint variant="icon" :completed="active >= 1">
-          <PhosphorIconHourglass :size="20" />
+          <PhosphorIconHourglass :size="20" weight="bold" />
         </StepPoint>
         <StepLine :completed="active >= 2" />
         <StepPoint variant="icon" :completed="active >= 2">
-          <PhosphorIconRecycle :size="20" />
+          <PhosphorIconRecycle :size="20" weight="bold" />
         </StepPoint>
         <StepLine :completed="active >= 3" />
         <StepPoint variant="icon" :completed="active >= 3">
-          <PhosphorIconGear :size="20" />
+          <PhosphorIconGear :size="20" weight="bold" />
         </StepPoint>
         <StepLine :completed="active >= 4" />
         <StepPoint variant="icon" :completed="active >= 4">
-          <PhosphorIconPackage :size="20" />
+          <PhosphorIconPackage :size="20" weight="bold" />
         </StepPoint>
       </Steps>
 
@@ -54,6 +54,15 @@ const active = ref(1);
         <SkeletonLine class="h-4 w-11/12" />
         <SkeletonLine class="h-4 w-9/12" />
         <SkeletonLine class="h-4 w-7/12" />
+      </Skeleton>
+      <Skeleton
+        v-if="active === 4"
+        :animation="false"
+        class="w-full space-y-2.5">
+        <SkeletonLine class="h-4 w-7/12" />
+        <SkeletonLine class="h-4 w-11/12" />
+        <SkeletonLine class="h-4 w-9/12" />
+        <SkeletonLine class="h-4 w-10/12" />
       </Skeleton>
 
       <div class="flex items-center justify-between">
