@@ -1,53 +1,50 @@
 <script lang="ts" setup>
 import type { HTMLAttributes } from "vue";
-import { computed } from "vue";
 import { cn } from "../../utils/cn";
 import type { ClassProps } from "../../utils/interface";
-import {
-  spinnerTheme,
-  type SpinnerColorVariant,
-  type SpinnerSizeVariant,
-} from "./spinnerTheme";
+
+interface SpinnerColors {
+  primary: string;
+  secondary: string;
+  error: string;
+  success: string;
+  warning: string;
+}
+
+const fillClasses = {
+  primary: "fill-primary-500",
+  secondary: "fill-metal-900 dark:fill-white",
+  error: "fill-error-500",
+  success: "fill-success-500",
+  warning: "fill-warning-500",
+} as SpinnerColors;
 
 export interface SpinnerProps extends /*@vue-ignore*/ HTMLAttributes {
-  color?: keyof SpinnerColorVariant;
-  size?: keyof SpinnerSizeVariant;
+  color?: keyof SpinnerColors;
 }
 
 const props = withDefaults(defineProps<SpinnerProps & ClassProps>(), {
-  color: "info",
-  size: "md",
+  color: "primary",
   class: "",
-});
-
-const restProps = computed(() => {
-  const { color, size, class: _, ...rest } = props;
-
-  return rest;
 });
 </script>
 
 <template>
-  <span v-bind="restProps" :class="cn(props.class)">
-    <slot>
-      <svg
-        fill="none"
-        viewBox="0 0 100 101"
-        :class="
-          cn(
-            spinnerTheme.base,
-            spinnerTheme.color[color],
-            spinnerTheme.size[size],
-            props.class,
-          )
-        ">
-        <path
-          d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
-          fill="currentColor" />
-        <path
-          d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
-          fill="currentFill" />
-      </svg>
-    </slot>
-  </span>
+  <div aria-label="Loading..." role="status">
+    <svg
+      :class="
+        cn(
+          'size-8 animate-spin',
+          fillClasses[color as keyof SpinnerColors],
+          props.class,
+        )
+      "
+      viewBox="3 3 18 18">
+      <path
+        class="opacity-20"
+        d="M12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5ZM3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z" />
+      <path
+        d="M16.9497 7.05015C14.2161 4.31648 9.78392 4.31648 7.05025 7.05015C6.65973 7.44067 6.02656 7.44067 5.63604 7.05015C5.24551 6.65962 5.24551 6.02646 5.63604 5.63593C9.15076 2.12121 14.8492 2.12121 18.364 5.63593C18.7545 6.02646 18.7545 6.65962 18.364 7.05015C17.9734 7.44067 17.3403 7.44067 16.9497 7.05015Z" />
+    </svg>
+  </div>
 </template>

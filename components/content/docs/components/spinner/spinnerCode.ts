@@ -4,28 +4,7 @@ import { Spinner } from "keep-vue";
 </script>
 
 <template>
-    <Spinner color="info" size="lg" />
-</template>`,
-};
-
-const SpinnerButtonCode = {
-  "SpinnerCode.vue": `<script setup>
-import { Button, Spinner } from "keep-vue";
-</script>
-
-<template>
-    <Button>
-      <span class="pr-2">
-        <Spinner color="gray" size="sm" />
-      </span>
-      Loading
-    </Button>
-    <Button variant="outline">
-      <span class="pr-2">
-        <Spinner color="gray" size="sm" />
-      </span>
-      Loading
-    </Button>
+     <Spinner />
 </template>`,
 };
 
@@ -35,35 +14,12 @@ import { Spinner } from "keep-vue";
 </script>
 
 <template>
-    <Spinner color="failure" size="lg" />
-    <Spinner color="gray" size="lg" />
-    <Spinner color="info" size="lg" />
-    <Spinner color="pink" size="lg" />
-    <Spinner color="purple" size="lg" />
-    <Spinner color="success" size="lg" />
-    <Spinner color="warning" size="lg" />
+   <Spinner color="primary" />
+      <Spinner color="secondary" />
+      <Spinner color="success" />
+      <Spinner color="error" />
+      <Spinner color="warning" />
 </template>`,
 };
 
-const SpinnerSizesCode = {
-  "SpinnerCode.vue": `<script setup>
-import { Spinner } from "keep-vue";
-</script>
-
-<template>
-    <Spinner color="failure" size="lg" />
-    <Spinner color="gray" size="lg" />
-    <Spinner color="info" size="lg" />
-    <Spinner color="pink" size="lg" />
-    <Spinner color="purple" size="lg" />
-    <Spinner color="success" size="lg" />
-    <Spinner color="warning" size="lg" />
-</template>`,
-};
-
-export {
-  DefaultSpinnerCode,
-  SpinnerButtonCode,
-  SpinnerColorsCode,
-  SpinnerSizesCode,
-};
+export { DefaultSpinnerCode, SpinnerColorsCode };
