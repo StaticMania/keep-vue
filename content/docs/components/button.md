@@ -3,11 +3,25 @@ title: "Button"
 description: "The Button component in Keep Vue provides a variety of types, sizes, and states to meet your design needs. With options for icons and destructive actions, you can create visually appealing and functional buttons for your application. Phosphor Icons are used to demonstrate our examples."
 ---
 
-## Button Variant Types
+## Primary Button
 
-The Button component supports two variant types: `link` and `outline`, allowing you to choose a style that fits your design requirements.
+The primary button component. You can achieve this by using the `color="primary"` props.
 
-::ButtonVariantType
+::ButtonPrimary
+::
+
+## Button Outline Variant Types
+
+The Button component variant `outline` allowing you to choose a style that fits your design requirements. To Change the button color use color props, for more details see api reference.
+
+::ButtonOutlineVariant
+::
+
+## Button Link Variant Types
+
+The Button component variant `link` allowing you to choose a style that fits your design requirements. To Change the button color use color props, for more details see api reference.
+
+::ButtonLinkVariant
 ::
 
 ## Button Color Variants
@@ -19,14 +33,14 @@ The Button component comes with several color variants, including `primary`, `se
 
 ## Button Size Variants
 
-There are multiple size options available for the Button component, ranging from extra small (`xs`) to extra extra large (`2xl`). This allows you to adjust the button size based on your application's needs.
+There are multiple size options available for the Button component, ranging from extra small (`xs`) to extra extra large (`2xl`). This allows you to adjust the button size based on your application's needs. To Change the button color use color props, for more details see api reference.
 
 ::ButtonSizeVariant
 ::
 
 ## Button Shape Variants
 
-The Button component offers two shape variants: `icon` and `circle`, giving you flexibility to create buttons with different visual appearances, whether it's for a standard button or an icon-only button.
+The Button component offers two shape variants: `icon` and `circle`, giving you flexibility to create buttons with different visual appearances, whether it's for a standard button or an icon-only button. To Change the button color use color props, for more details see api reference.
 
 ::ButtonShapeVariant
 ::

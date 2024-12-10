@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import { Button } from "~/src";
-import { buttonColorVariantCode } from "../buttonCode";
+import { buttonPrimaryCode } from "../buttonCode";
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="buttonColorVariantCode">
+  <CodeHighlightWithPreview :code="buttonPrimaryCode">
     <div class="flex items-center justify-center gap-4">
-      <Button color="success">Button</Button>
+      <Button color="primary">Button</Button>
     </div>
   </CodeHighlightWithPreview>
 </template>

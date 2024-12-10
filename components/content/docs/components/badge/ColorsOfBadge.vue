@@ -6,11 +6,11 @@ import { colorsOfBadgeCode } from "./badgeCode";
 <template>
   <CodeHighlightWithPreview :code="colorsOfBadgeCode">
     <div class="flex items-center justify-center gap-x-4">
-      <Badge color="primary">Primary</Badge>
-      <Badge color="secondary">Secondary</Badge>
-      <Badge color="success">Success</Badge>
-      <Badge color="warning">Warning</Badge>
-      <Badge color="error">Error</Badge>
+      <Badge variant="base" color="primary">Primary</Badge>
+      <Badge variant="base" color="secondary">Secondary</Badge>
+      <Badge variant="base" color="success">Success</Badge>
+      <Badge variant="base" color="warning">Warning</Badge>
+      <Badge variant="base" color="error">Error</Badge>
     </div>
   </CodeHighlightWithPreview>
 </template>

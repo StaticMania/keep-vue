@@ -1,25 +1,22 @@
-const buttonVariantTypeCode = {
+const buttonOutlineVariantCode = {
   "ButtonComponent.vue": `<script setup>
 import { Button } from "keep-vue";
 </script>
 <template>
     <>
-      <Button color="primary" variant="outline">Button</Button>
       <Button color="secondary" variant="outline">Button</Button>
-      <Button color="success" variant="outline">Button</Button>
-      <Button color="warning" variant="outline">Button</Button>
-      <Button color="error" variant="outline">Button</Button>
     </>
-    
+</template>`,
+};
+const buttonLinkVariantCode = {
+  "ButtonComponent.vue": `<script setup>
+import { Button } from "keep-vue";
+</script>
+<template>
     <>
-      <Button color="primary" variant="link">Button</Button>
-      <Button color="secondary" variant="link">Button</Button>
-      <Button color="success" variant="link">Button</Button>
-      <Button color="warning" variant="link">Button</Button>
-      <Button color="error" variant="link">Button</Button>
+    <Button color="primary" variant="link">Button</Button>
     </>
-</template>
-      `,
+</template>`,
 };
 
 const buttonColorVariantCode = {
@@ -28,11 +25,17 @@ import { Button } from "keep-vue";
 </script>
 
 <template>
-    <Button color="primary">Button</Button>
-    <Button color="secondary">Button</Button>
-    <Button color="success">Button</Button>
-    <Button color="warning">Button</Button>
-    <Button color="error">Button</Button>
+   <Button color="secondary">Button</Button>
+</template>`,
+};
+
+const buttonPrimaryCode = {
+  "ButtonComponent.vue": `<script setup>
+import { Button } from "keep-vue";
+</script>
+
+<template>
+  <Button color="primary">Button</Button>
 </template>`,
 };
 
@@ -42,8 +45,13 @@ import { PhShoppingCart } from "@phosphor-icons/vue";
 import { Button } from "keep-vue";
 </script>
 <template>
-    <Button shape="icon"><PhShoppingCart size="16" /></Button>
-    <Button shape="circle"><PhShoppingCart size="16" /></Button>
+   <Button shape="icon" color="secondary">
+     <PhosphorIconShoppingCart size="16" />
+   </Button>
+      
+  <Button shape="circle" color="success">
+    <PhosphorIconShoppingCart size="16" />
+  </Button>
 </template>`,
 };
 
@@ -52,13 +60,8 @@ const buttonSizeVariantCode = {
 import { Button } from "keep-vue";
 </script>
 
-<template>
-    <Button size="xs">Extra Small</Button>
-    <Button size="sm">Small Button</Button>
-    <Button size="md">Medium Button</Button>
-    <Button size="lg">Large Button</Button>
-    <Button size="xl">Extra Large</Button>
-    <Button size="2xl">Button 2xl</Button>
+<template>  
+    <Button size="sm" color="error">Small Button</Button>
 </template>
       `,
 };
@@ -90,7 +93,7 @@ const buttonRadiusVariantCode = {
 import { Button } from "keep-vue";
 </script>
 <template>
-   <Button radius="full">
+   <Button radius="full" color="warning">
         <PhosphorIconShoppingCart size="16" />
         Add to cart
       </Button>
@@ -100,9 +103,11 @@ import { Button } from "keep-vue";
 
 export {
   buttonColorVariantCode,
+  buttonLinkVariantCode,
+  buttonOutlineVariantCode,
+  buttonPrimaryCode,
   buttonRadiusVariantCode,
   buttonShapeVariantCode,
   buttonSizeVariantCode,
-  buttonVariantTypeCode,
   buttonWithIconCode,
 };

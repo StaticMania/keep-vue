@@ -5,7 +5,7 @@ import { buttonRadiusVariantCode } from "../buttonCode";
 <template>
   <CodeHighlightWithPreview :code="buttonRadiusVariantCode">
     <div class="flex items-center justify-center">
-      <Button radius="full">
+      <Button radius="full" color="warning">
         <PhosphorIconShoppingCart size="16" class="mr-1" />
         Add to cart
       </Button>
