@@ -26,7 +26,7 @@ const restProps = computed(() => {
     :class="cn(accordionTheme.icon.base, props.class)">
     <slot>
       <svg
-        class="shrink-0 fill-metal-600 dark:fill-metal-300"
+        class="shrink-0 fill-metal-300 dark:fill-metal-500"
         width="16"
         height="16"
         xmlns="http://www.w3.org/2000/svg">
