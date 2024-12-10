@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Avatar, AvatarText } from "~/src";
+import { Avatar } from "~/src";
 import { defaultAvatarCode } from "./avatarCode";
 </script>
 
@@ -7,7 +7,7 @@ import { defaultAvatarCode } from "./avatarCode";
   <CodeHighlightWithPreview :code="defaultAvatarCode">
     <div class="flex items-center justify-center">
       <Avatar>
-        <AvatarText>KV</AvatarText>
+        <AvatarImage src="/images/avatar/avatar-4.png" />
       </Avatar>
     </div>
   </CodeHighlightWithPreview>

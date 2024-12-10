@@ -12,11 +12,11 @@ When you enable the placeholder option, a default avatar image appears when ther
 ::DefaultAvatar
 ::
 
-## Using User Images
+## Avatar with Text
 
-Display a image using the `src` prop. Provide the path to the user's image, whether it's a local or remote URL.
+Display a text as a placeholder for avatar. Use `<AvatarText/>` component.
 
-::AvatarWithImage
+::AvatarWithText
 ::
 
 ## Avatar Status

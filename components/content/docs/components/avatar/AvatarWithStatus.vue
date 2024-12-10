@@ -7,10 +7,6 @@ import { avatarWithStatusCode } from "./avatarCode";
   <CodeHighlightWithPreview :code="avatarWithStatusCode">
     <div class="flex items-center justify-center gap-3">
       <Avatar>
-        <AvatarImage />
-        <AvatarBadge />
-      </Avatar>
-      <Avatar>
         <AvatarImage src="/images/avatar/avatar-4.png" />
         <AvatarBadge />
       </Avatar>

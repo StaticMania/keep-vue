@@ -17,7 +17,7 @@ const restProps = computed(() => {
     v-bind="restProps"
     :class="
       cn(
-        'relative flex size-12 shrink-0 items-center justify-center rounded-full border border-metal-200 bg-metal-50 dark:border-metal-800 dark:bg-metal-800',
+        'relative flex size-12 shrink-0 items-center justify-center rounded-full bg-white dark:bg-black',
         props.class,
       )
     ">
