@@ -47,8 +47,6 @@ The Button component offers two shape variants: `icon` and `circle`, giving you 
 
 ## Button with Icon
 
-Our Button component allows you to position an icon on either the `left` or `right` side, depending on your design preference.
-
 ::ButtonWithIcon
 ::
 
