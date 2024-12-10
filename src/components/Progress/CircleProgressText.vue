@@ -22,7 +22,7 @@ const { progressBar } = useProgressStore()!;
     v-bind="restProps"
     :class="
       cn(
-        'absolute start-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-body-4 font-medium text-primary-500',
+        'absolute start-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-body-3 font-medium text-primary-500',
         props.class,
       )
     ">

@@ -9,9 +9,8 @@ Default Progress allows you to visually represent the progress or completion of 
 ::DefaultProgress
 ::
 
-## Progress Variant
+## Circle Progress
 
-The Progress component in our design system comes with two options: `LineProgress` and `CircleProgress`
 ::VariantOfProgress
 ::
 
@@ -20,7 +19,7 @@ The Progress component in our design system comes with two options: `LineProgres
 ::DefaultLineProgress
 ::
 
-## How To Customize
+## Customize Progress
 
 ::CustomizeProgress
 ::
