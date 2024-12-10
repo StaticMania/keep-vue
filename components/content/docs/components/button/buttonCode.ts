@@ -96,9 +96,8 @@ import { Button } from "keep-vue";
    <Button radius="full" color="warning">
         <PhosphorIconShoppingCart size="16" />
         Add to cart
-      </Button>
-</template>
-      `,
+  </Button>
+</template>`,
 };
 
 export {
