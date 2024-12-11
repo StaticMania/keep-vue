@@ -32,12 +32,14 @@ import { CardPopoverCode } from "./popoverCode";
               alt="image"
               :width="600"
               :height="400" />
-            <div class="space-y-2 p-6">
-              <PopoverTitle>Keep Design System</PopoverTitle>
-              <PopoverDescription>
-                You can customize the styles and behavior of this component
-                according to your requirements.
-              </PopoverDescription>
+            <div class="space-y-4 p-6">
+              <div>
+                <PopoverTitle>Keep Design System</PopoverTitle>
+                <PopoverDescription>
+                  You can customize the styles and behavior of this component
+                  according to your requirements.
+                </PopoverDescription>
+              </div>
               <Button>Learn More</Button>
             </div>
           </div>
@@ -59,12 +61,14 @@ import { CardPopoverCode } from "./popoverCode";
               alt="image"
               :width="600"
               :height="400" />
-            <div class="space-y-2 p-6">
-              <PopoverTitle>Keep Design System</PopoverTitle>
-              <PopoverDescription>
-                You can customize the styles and behavior of this component
-                according to your requirements.
-              </PopoverDescription>
+            <div class="space-y-4 p-6">
+              <div>
+                <PopoverTitle>Keep Design System</PopoverTitle>
+                <PopoverDescription>
+                  You can customize the styles and behavior of this component
+                  according to your requirements.
+                </PopoverDescription>
+              </div>
               <Button>Learn More</Button>
             </div>
           </div>
@@ -87,12 +91,14 @@ import { CardPopoverCode } from "./popoverCode";
               alt="image"
               :width="600"
               :height="400" />
-            <div class="space-y-2 p-6">
-              <PopoverTitle>Keep Design System</PopoverTitle>
-              <PopoverDescription>
-                You can customize the styles and behavior of this component
-                according to your requirements.
-              </PopoverDescription>
+            <div class="space-y-4 p-6">
+              <div>
+                <PopoverTitle>Keep Design System</PopoverTitle>
+                <PopoverDescription>
+                  You can customize the styles and behavior of this component
+                  according to your requirements.
+                </PopoverDescription>
+              </div>
               <Button>Learn More</Button>
             </div>
           </div>
@@ -115,12 +121,14 @@ import { CardPopoverCode } from "./popoverCode";
               alt="image"
               :width="600"
               :height="400" />
-            <div class="space-y-2 p-6">
-              <PopoverTitle>Keep Design System</PopoverTitle>
-              <PopoverDescription>
-                You can customize the styles and behavior of this component
-                according to your requirements.
-              </PopoverDescription>
+            <div class="space-y-4 p-6">
+              <div>
+                <PopoverTitle>Keep Design System</PopoverTitle>
+                <PopoverDescription>
+                  You can customize the styles and behavior of this component
+                  according to your requirements.
+                </PopoverDescription>
+              </div>
               <Button>Learn More</Button>
             </div>
           </div>

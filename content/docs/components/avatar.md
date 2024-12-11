@@ -12,13 +12,6 @@ When you enable the placeholder option, a default avatar image appears when ther
 ::DefaultAvatar
 ::
 
-## Using User Images
-
-Display a image using the `src` prop. Provide the path to the user's image, whether it's a local or remote URL.
-
-::AvatarWithImage
-::
-
 ## Avatar Status
 
 The avatar's status reflects the user's availability.

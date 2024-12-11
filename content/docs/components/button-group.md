@@ -17,6 +17,14 @@ The Button Group component supports buttons with accompanying icons, making it e
 ::ButtonGroupWithIcon
 ::
 
+## Button Group Size
+
+Button Group Component - Size Variants
+The Button Group component supports multiple size variations to fit different UI requirements. These sizes ensure optimal usability and aesthetic balance in various layouts. Below are the predefined size options with their specifications.
+
+::ButtonGroupSize
+::
+
 ## Button Group with Only Icons
 
 The Button Group component can also feature only icons, providing a compact and visually minimalistic design. This layout is ideal for situations where quick, easily recognizable actions are required without the need for text labels.

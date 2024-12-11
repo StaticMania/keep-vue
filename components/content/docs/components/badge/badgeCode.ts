@@ -4,7 +4,7 @@ import { Badge } from "keep-vue";
 </script>
 
 <template>
-    <Badge>Default Badge</Badge>
+  <Badge variant="base" color="primary">Default Badge</Badge>
 </template>
 `,
 };
@@ -15,11 +15,11 @@ import { Badge } from "keep-vue";
 </script>
 
 <template>
-    <Badge color="primary">Primary</Badge>
-    <Badge color="secondary">Secondary</Badge>
-    <Badge color="success">Success</Badge>
-    <Badge color="warning">Warning</Badge>
-    <Badge color="error">Error</Badge>
+     <Badge variant="base" color="primary">Primary</Badge>
+     <Badge variant="base" color="secondary">Secondary</Badge>
+     <Badge variant="base" color="success">Success</Badge>
+     <Badge variant="base" color="warning">Warning</Badge>
+     <Badge variant="base" color="error">Error</Badge>
 </template>
 `,
 };

@@ -19,12 +19,14 @@ import { AlertWithBgColorCode } from "./AlertCode";
         <AlertContainer>
           <AlertIcon />
           <AlertTitle>Primary Alert</AlertTitle>
-          <AlertDescription>
+          <AlertDescription class="lg:line-clamp-1 2xl:line-clamp-none">
             A short description followed by two actions items.
           </AlertDescription>
         </AlertContainer>
         <AlertContainer>
-          <AlertLink href="/">Learn More</AlertLink>
+          <AlertLink href="/" class="lg:hidden 2xl:inline-flex">
+            Learn More
+          </AlertLink>
           <AlertDismiss />
         </AlertContainer>
       </Alert>
@@ -32,12 +34,14 @@ import { AlertWithBgColorCode } from "./AlertCode";
         <AlertContainer>
           <AlertIcon />
           <AlertTitle>Secondary Alert</AlertTitle>
-          <AlertDescription>
+          <AlertDescription class="lg:line-clamp-1 2xl:line-clamp-none">
             A short description followed by two actions items.
           </AlertDescription>
         </AlertContainer>
         <AlertContainer>
-          <AlertLink href="/">Learn More</AlertLink>
+          <AlertLink href="/" class="lg:hidden 2xl:inline-flex">
+            Learn More
+          </AlertLink>
           <AlertDismiss />
         </AlertContainer>
       </Alert>
@@ -45,12 +49,14 @@ import { AlertWithBgColorCode } from "./AlertCode";
         <AlertContainer>
           <AlertIcon />
           <AlertTitle>Success Alert</AlertTitle>
-          <AlertDescription>
+          <AlertDescription class="lg:line-clamp-1 2xl:line-clamp-none">
             A short description followed by two actions items.
           </AlertDescription>
         </AlertContainer>
         <AlertContainer>
-          <AlertLink href="/">Learn More</AlertLink>
+          <AlertLink href="/" class="lg:hidden 2xl:inline-flex">
+            Learn More
+          </AlertLink>
           <AlertDismiss />
         </AlertContainer>
       </Alert>
@@ -58,12 +64,14 @@ import { AlertWithBgColorCode } from "./AlertCode";
         <AlertContainer>
           <AlertIcon />
           <AlertTitle>Warning Alert</AlertTitle>
-          <AlertDescription>
+          <AlertDescription class="lg:line-clamp-1 2xl:line-clamp-none">
             A short description followed by two actions items.
           </AlertDescription>
         </AlertContainer>
         <AlertContainer>
-          <AlertLink href="/">Learn More</AlertLink>
+          <AlertLink href="/" class="lg:hidden 2xl:inline-flex">
+            Learn More
+          </AlertLink>
           <AlertDismiss />
         </AlertContainer>
       </Alert>
@@ -71,12 +79,14 @@ import { AlertWithBgColorCode } from "./AlertCode";
         <AlertContainer>
           <AlertIcon />
           <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>
+          <AlertDescription class="lg:line-clamp-1 2xl:line-clamp-none">
             A short description followed by two actions items.
           </AlertDescription>
         </AlertContainer>
         <AlertContainer>
-          <AlertLink href="/">Learn More</AlertLink>
+          <AlertLink href="/" class="lg:hidden 2xl:inline-flex">
+            Learn More
+          </AlertLink>
           <AlertDismiss />
         </AlertContainer>
       </Alert>

@@ -5,8 +5,12 @@ import { buttonShapeVariantCode } from "../buttonCode";
 <template>
   <CodeHighlightWithPreview :code="buttonShapeVariantCode">
     <div class="flex items-center justify-center gap-x-4">
-      <Button shape="icon"><PhosphorIconShoppingCart size="16" /></Button>
-      <Button shape="circle"><PhosphorIconShoppingCart size="16" /></Button>
+      <Button shape="icon" color="secondary">
+        <PhosphorIconShoppingCart size="16" />
+      </Button>
+      <Button shape="circle" color="success">
+        <PhosphorIconShoppingCart size="16" />
+      </Button>
     </div>
   </CodeHighlightWithPreview>
 </template>

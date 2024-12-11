@@ -18,6 +18,6 @@ const restProps = computed(() => {
 
 <template>
   <div v-bind="restProps" :class="cn(props.class)">
-    <slot v-if="isFileExists"></slot>
+    <slot v-if="isFileExists" />
   </div>
 </template>

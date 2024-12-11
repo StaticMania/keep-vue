@@ -10,28 +10,16 @@ const active = ref(1);
 <template>
   <CodeHighlightWithPreview :code="StepWithBorderCode">
     <div class="space-y-6 p-6">
-      <Steps>
-        <StepPoint variant="border" :completed="active >= 1">
-          <p
-            class="flex size-5 items-center justify-center rounded-full border text-body-5 font-medium">
-            1
-          </p>
+      <Steps class="">
+        <StepPoint variant="border" class="px-3" :completed="active >= 1">
           <p class="text-body-4 font-medium">general info</p>
         </StepPoint>
         <StepLine :completed="active >= 2" />
-        <StepPoint variant="border" :completed="active >= 2">
-          <p
-            class="flex size-5 items-center justify-center rounded-full border text-body-5 font-medium">
-            2
-          </p>
+        <StepPoint variant="border" class="px-3" :completed="active >= 2">
           <p class="text-body-4 font-medium">payment details</p>
         </StepPoint>
         <StepLine :completed="active >= 3" />
-        <StepPoint variant="border" :completed="active >= 3">
-          <p
-            class="flex size-5 items-center justify-center rounded-full border text-body-5 font-medium">
-            3
-          </p>
+        <StepPoint variant="border" class="px-3" :completed="active >= 3">
           <p class="text-body-4 font-medium">benefits & extras</p>
         </StepPoint>
       </Steps>

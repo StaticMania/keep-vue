@@ -8,7 +8,8 @@ console.log(message.value);
 
 <template>
     <Textarea
-      v-model="message"
+      v-model="message" 
+      class="rounded-2xl"
       placeholder="Write your message here."
       :rows="8" />
 </template>`,
@@ -20,7 +21,11 @@ import { Textarea } from "keep-vue";
 </script>
 
 <template>
-    <Textarea disabled placeholder="Write your message here" :rows="8" />
+    <Textarea
+        disabled
+        placeholder="Write your message here"
+        :rows="8"
+        class="rounded-2xl" />
 </template>`,
 };
 
@@ -40,33 +45,35 @@ const handleSubmit = (event) => {
 
 <template>
   <form
-    class="mx-auto max-w-md space-y-3 rounded-md border border-metal-100 p-6 dark:border-metal-800"
-    @submit.prevent="handleSubmit">
-    <fieldset class="space-y-1">
-      <Label for="email">Email*</Label>
-      <div class="relative">
-        <Input
-          id="email"
-          v-model="inputValue"
-          placeholder="Enter email"
-          class="ps-11" />
-        <InputIcon>
-          <PhEnvelope :size="19" color="#AFBACA" />
-        </InputIcon>
-      </div>
-    </fieldset>
-    <fieldset class="space-y-1">
-      <Label for="m1">Message*</Label>
-      <Textarea
-        id="m1"
-        v-model="textAreaValue"
-        placeholder="Write your message here"
-        :rows="8" />
-    </fieldset>
-    <Button size="sm" color="secondary" type="submit" class="w-full">
-      Send Message
-    </Button>
-  </form>
+      class="mx-auto max-w-md space-y-3 rounded-md border border-metal-100 p-6 dark:border-metal-800"
+      @submit.prevent="handleSubmit">
+      <fieldset class="space-y-1">
+        <Label for="email">Email*</Label>
+        <div class="relative">
+          <Input
+            id="email"
+            v-model="inputValue"
+            type="email"
+            placeholder="Enter email"
+            class="ps-11" />
+          <InputIcon>
+            <PhosphorIconEnvelope :size="19" color="#AFBACA" />
+          </InputIcon>
+        </div>
+      </fieldset>
+      <fieldset class="space-y-1">
+        <Label for="m1">Message*</Label>
+        <Textarea
+          id="m1"
+          v-model="textAreaValue"
+          placeholder="Write your message here"
+          :rows="8"
+          class="rounded-2xl" />
+      </fieldset>
+      <Button size="sm" color="secondary" type="submit" class="!mt-5 w-full">
+        Send Message
+      </Button>
+    </form>
 </template>`,
 };
 
@@ -82,11 +89,12 @@ console.log(picked.value);
 <template>
   <fieldset className="space-y-1.5 p-2">
     <Label for="message">Your message*</Label>
-    <Textarea
-      id="message"
-      v-model="picked"
-      placeholder="Write your message here"
-      :rows="8" />
+        <Textarea
+        id="message"
+        v-model="picked"
+        placeholder="Write your message here"
+        :rows="8"
+        class="rounded-2xl" />
     <p className="text-body-4 font-normal text-metal-300">
       Message must be a at least 100 words.
     </p>

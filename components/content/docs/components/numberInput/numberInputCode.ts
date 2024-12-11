@@ -1,28 +1,6 @@
 const DefaultNumberInputCode = {
   "NumberInputComponent.vue": `<script setup>
 import { PhMinus, PhPlus } from "@phosphor-icons/vue";
-import {ref} from "vue"
-import { NumberInput, NumberInputBox, NumberInputButton } from "keep-vue";
-
-const inputValue = ref(0);
-</script>
-
-<template>
-  <NumberInput>
-      <NumberInputButton>
-        <PhosphorIconMinus :size="16" />
-      </NumberInputButton>
-      <NumberInputBox v-model="inputValue" />
-      <NumberInputButton>
-        <PhosphorIconPlus :size="16" />
-      </NumberInputButton>
-    </NumberInput>
-</template>`,
-};
-
-const NumberInputWithStateCode = {
-  "NumberInputComponent.vue": `<script setup>
-import { PhMinus, PhPlus } from "@phosphor-icons/vue";
 import { ref } from "vue";
 import { Label, NumberInput, NumberInputBox, NumberInputButton } from "keep-vue";
 
@@ -56,36 +34,4 @@ const decrementNum = () => {
 </template>`,
 };
 
-const NumberInputWithLabelCode = {
-  "NumberInputComponent.vue": `<script setup>
-import { PhMinus, PhPlus } from "@phosphor-icons/vue";
-import { ref } from "vue";
-import { Label, NumberInput, NumberInputBox, NumberInputButton } from "keep-vue";
-
-const inputValue = ref(20);
-</script>
-
-<template>
-  <fieldset class="space-y-1">
-      <Label>Choose Number</Label>
-      <NumberInput>
-        <NumberInputButton>
-          <PhosphorIconMinus :size="16" />
-        </NumberInputButton>
-        <NumberInputBox v-model="inputValue" />
-        <NumberInputButton>
-          <PhosphorIconPlus :size="16" />
-        </NumberInputButton>
-      </NumberInput>
-      <p class="text-body-4 font-normal text-metal-600 dark:text-metal-300">
-        Number Must be between 1 to 100
-      </p>
-    </fieldset>
-</template>`,
-};
-
-export {
-  DefaultNumberInputCode,
-  NumberInputWithLabelCode,
-  NumberInputWithStateCode,
-};
+export { DefaultNumberInputCode };

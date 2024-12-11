@@ -1,79 +1,65 @@
 const defaultAvatarCode = {
   "AvatarComponent.vue": `  
     <script setup>
-import { Avatar, AvatarText } from "keep-vue";
+import { Avatar, AvatarFallback, AvatarImage  } from "keep-vue";
 </script>
 
 <template>
-  <Avatar>
-    <AvatarText>KV</AvatarText>
-  </Avatar>
+   <Avatar>
+     <AvatarImage src="/images/avatar/avatar-4.png" />
+      <AvatarFallback>KV</AvatarFallback>
+   </Avatar>
 </template>
     `,
-};
-
-const avatarWithImagesCode = {
-  "AvatarComponent.vue": `  
-    <script setup>
-import { Avatar, AvatarImage } from "keep-vue";
-</script>
-<template>
-    <Avatar>
-      <AvatarImage />
-    </Avatar>
-    <Avatar>
-      <AvatarImage src="/images/avatar/avatar-4.png" />
-    </Avatar>
-</template>`,
 };
 
 const avatarWithStatusCode = {
   "AvatarComponent.vue": `  
     <script setup>
-import { Avatar, AvatarBadge, AvatarImage } from "keep-vue";
+import { Avatar, AvatarFallback, AvatarImage } from "keep-vue";
 </script>
 
 <template>
-    <Avatar>
-      <AvatarImage />
-      <AvatarBadge />
-    </Avatar>
-    <Avatar>
-      <AvatarImage src="/images/avatar/avatar-4.png" />
-      <AvatarBadge />
-    </Avatar>
+    <div class="relative">
+        <Avatar>
+          <AvatarImage src="/images/avatar/avatar-3.png" />
+          <AvatarFallback>KV</AvatarFallback>
+        </Avatar>
+        <div
+          class="absolute bottom-0 right-0 size-3 rounded-full bg-success-500" />
+      </div>
 </template>`,
 };
 
 const avatarGroupCode = {
   "AvatarComponent.vue": `<script setup>
-import { Avatar, AvatarGroup, AvatarImage } from 'keep-vue'
+import { Avatar, AvatarFallback, AvatarGroup, AvatarImage } from 'keep-vue'
 </script>
 
 <template>
-  <AvatarGroup>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-1.png" />
-    </Avatar>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-2.png" />
-    </Avatar>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-3.png" />
-    </Avatar>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-4.png" />
-    </Avatar>
-    <Avatar class="size-14">
-      <AvatarImage src="/images/avatar/avatar-5.png" />
-    </Avatar>
-  </AvatarGroup>
+   <AvatarGroup>
+        <Avatar>
+          <AvatarImage src="/images/avatar/avatar-1.png" />
+          <AvatarFallback>KV</AvatarFallback>
+        </Avatar>
+        <Avatar>
+          <AvatarImage src="/images/avatar/avatar-2.png" />
+          <AvatarFallback>DR</AvatarFallback>
+        </Avatar>
+        <Avatar>
+          <AvatarImage src="/images/avatar/avatar-3.png" />
+          <AvatarFallback>NR</AvatarFallback>
+        </Avatar>
+        <Avatar>
+          <AvatarImage src="/images/avatar/avatar-4.png" />
+          <AvatarFallback>MR</AvatarFallback>
+        </Avatar>
+        <Avatar>
+          <AvatarImage src="/images/avatar/avatar-5.png" />
+          <AvatarFallback>NC</AvatarFallback>
+        </Avatar>
+      </AvatarGroup>
 </template>`,
 };
 
-export {
-  avatarGroupCode,
-  avatarWithImagesCode,
-  avatarWithStatusCode,
-  defaultAvatarCode,
-};
+export { avatarGroupCode, avatarWithStatusCode, defaultAvatarCode };
