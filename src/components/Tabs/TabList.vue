@@ -25,6 +25,7 @@ const { variant } = useTabs();
         'mb-2 flex items-center',
         variant === 'underline' &&
           'border-y border-y-metal-100 dark:border-y-metal-800',
+        variant === 'fill' && 'max-w-max rounded-xl bg-metal-600/5 p-1',
         props.class,
       )
     ">
