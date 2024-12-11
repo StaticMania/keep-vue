@@ -36,10 +36,11 @@ const { dayShape } = useRangeCalender();
 
         // current data
         'data-[selected]:opacity-100',
-        '[&[data-today]:not([data-selected])]:bg-metal-100 [&[data-today]:not([data-selected])]:text-white',
+        '[&[data-today]:not([data-selected])]:bg-metal-100 [&[data-today]:not([data-selected])]:text-black',
+
         //current date dark
         'data-[selected]:opacity-100',
-        '[&[data-today]:not([data-selected])]:bg-metal-800',
+        'dark:[&[data-today]:not([data-selected])]:bg-metal-800',
 
         //data selected dark
         'dark:data-[selected]:text-white',

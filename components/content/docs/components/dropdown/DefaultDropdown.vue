@@ -4,7 +4,6 @@ import {
   Divider,
   Dropdown,
   DropdownAction,
-  DropdownArrow,
   DropdownContent,
   DropdownItem,
   DropdownList,
@@ -13,9 +12,7 @@ import { DefaultDropdownCode } from "./dropdownCode";
 </script>
 
 <template>
-  <CodeHighlightWithPreview
-    class="bg-metal-50 dark:bg-[#0D1015]"
-    :code="DefaultDropdownCode">
+  <CodeHighlightWithPreview class=" " :code="DefaultDropdownCode">
     <div class="flex items-center justify-center px-5 py-3">
       <Dropdown>
         <DropdownAction as-child>
@@ -33,7 +30,6 @@ import { DefaultDropdownCode } from "./dropdownCode";
             <DropdownItem>Account</DropdownItem>
             <DropdownItem>Logout</DropdownItem>
           </DropdownList>
-          <DropdownArrow />
         </DropdownContent>
       </Dropdown>
     </div>
