@@ -88,13 +88,7 @@ useProvideCalender(changedDayShaped);
         <!-- week name start  -->
 
         <!-- weekContainer  -->
-        <CalendarGridHead
-          :class="
-            cn(
-              'flex border-y border-metal-50 dark:border-metal-800',
-              props.classes?.weekContainer,
-            )
-          ">
+        <CalendarGridHead :class="cn('flex', props.classes?.weekContainer)">
           <!-- weekHeader -->
           <CalendarGridRow :class="cn(props.classes?.weekHeader)">
             <!-- weekLabel -->
