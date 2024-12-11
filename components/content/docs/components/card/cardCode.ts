@@ -113,56 +113,104 @@ import {
 </script>
 
 <template>
-  <Card class="max-w-sm">
-    <CardContent class="space-y-3">
-      <CardHeader>
-        <CardTitle>Create an account</CardTitle>
-        <CardDescription>
-          If you don&apos;t have any account then just click here
-        </CardDescription>
-      </CardHeader>
-      <div class="flex items-center justify-between gap-3">
-        <Button variant="outline" color="secondary" class="w-full">
-          <PhGoogleLogo :size="20" class="mr-1.5" />
-          Google
-        </Button>
-        <Button variant="outline" color="secondary" class="w-full">
-          <PhFacebookLogo :size="20" class="mr-1.5" />
-          Facebook
-        </Button>
-      </div>
-      <Divider variant="center">Or</Divider>
-      <form class="space-y-2">
-        <fieldset class="space-y-1">
-          <Label for="email">Email*</Label>
-          <div class="relative">
-            <Input
-              id="email"
-              type="email"
-              placeholder="Enter email"
-              class="ps-11" />
-            <InputIcon>
-              <PhEnvelope :size="19" color="#AFBACA" />
-            </InputIcon>
+  <div class="flex items-center justify-center">
+      <Card class="w-full max-w-[340px]">
+        <CardContent class="space-y-3">
+          <CardHeader class="flex flex-col items-center justify-center gap-y-2">
+            <div
+              class="flex size-8 items-center justify-center rounded-full bg-primary-50">
+              <NuxtImg src="/images/icon/figma.svg" class="" />
+            </div>
+
+            <div class="text-center">
+              <CardTitle
+                class="text-body-1 font-medium text-metal-900 dark:text-metal-200">
+                Log in your account
+              </CardTitle>
+              <CardDescription
+                class="text-body-4 font-normal text-metal-600 dark:text-metal-300">
+                Welcome back! Please enter your details.
+              </CardDescription>
+            </div>
+          </CardHeader>
+          <form class="space-y-2">
+            <fieldset class="space-y-1">
+              <Label for="email">
+                Email
+                <span class="text-error-500">*</span>
+              </Label>
+              <div class="relative">
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="Enter email"
+                  class="ps-11" />
+                <InputIcon>
+                  <PhosphorIconEnvelope :size="19" color="#AFBACA" />
+                </InputIcon>
+              </div>
+            </fieldset>
+            <fieldset class="space-y-1">
+              <Label for="password">
+                Password
+                <span class="text-error-500">*</span>
+              </Label>
+              <div class="relative">
+                <Input
+                  id="password"
+                  placeholder="Enter password"
+                  type="password"
+                  class="ps-11" />
+                <InputIcon>
+                  <PhosphorIconLock :size="19" color="#AFBACA" />
+                </InputIcon>
+              </div>
+            </fieldset>
+
+            <div class="flex items-center justify-between">
+              <fieldset class="flex items-center space-x-1">
+                <Checkbox id="rememberMe" default-checked />
+                <Label for="rememberMe" class="text-body-4">Remember Me</Label>
+              </fieldset>
+
+              <NuxtLink
+                href="/"
+                class="text-body-4 font-medium text-primary-500 dark:text-primary-300">
+                Forget Password
+              </NuxtLink>
+            </div>
+          </form>
+          <div class="!mt-6">
+            <Button class="flex w-full items-center gap-x-3 text-body-3">
+              Continue
+              <PhosphorIconCaretRight weight="bold" class="size-4" />
+            </Button>
           </div>
-        </fieldset>
-        <fieldset class="space-y-1">
-          <Label for="password">Password*</Label>
-          <div class="relative">
-            <Input
-              id="password"
-              placeholder="Enter password"
-              type="password"
-              class="ps-11" />
-            <InputIcon>
-              <PhLock :size="19" color="#AFBACA" />
-            </InputIcon>
+          <Divider variant="center" class="text-body-5">Or</Divider>
+
+          <div class="space-y-2">
+            <Button
+              class="flex w-full items-center justify-center gap-x-3 border-metal-300 py-6 text-body-3 text-metal-600 dark:text-metal-300"
+              variant="outline">
+              <div class="">
+                <NuxtImg
+                  src="/images/icon/google.svg"
+                  alt="googleImg"
+                  class="size-7" />
+              </div>
+              Login with Google
+            </Button>
+            <Button
+              class="flex w-full items-center justify-center gap-x-3 border-metal-300 py-6 text-body-3 text-metal-600 dark:text-metal-300"
+              variant="outline">
+              <PhosphorIconXLogo
+                class="text-heading-6 text-black dark:text-white" />
+              Login with X
+            </Button>
           </div>
-        </fieldset>
-        <Button type="submit" class="!mt-3 block w-full">Create Account</Button>
-      </form>
-    </CardContent>
-  </Card>
+        </CardContent>
+      </Card>
+    </div>
 </template>`,
 };
 
