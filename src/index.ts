@@ -17,10 +17,9 @@ export { default as AlertTitle } from "./components/Alert/AlertTitle.vue";
 
 //Avatar component
 export { default as Avatar } from "./components/Avatar/Avatar.vue";
-export { default as AvatarBadge } from "./components/Avatar/AvatarBadge.vue";
+export { default as AvatarFallback } from "./components/Avatar/AvatarFallback.vue";
 export { default as AvatarGroup } from "./components/Avatar/AvatarGroup.vue";
 export { default as AvatarImage } from "./components/Avatar/AvatarImage.vue";
-export { default as AvatarText } from "./components/Avatar/AvatarText.vue";
 
 //badge component
 export { default as Badge } from "./components/Badge/Badge.vue";

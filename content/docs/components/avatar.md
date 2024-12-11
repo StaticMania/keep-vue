@@ -12,13 +12,6 @@ When you enable the placeholder option, a default avatar image appears when ther
 ::DefaultAvatar
 ::
 
-## Avatar with Text
-
-Display a text as a placeholder for avatar. Use `<AvatarText/>` component.
-
-::AvatarWithText
-::
-
 ## Avatar Status
 
 The avatar's status reflects the user's availability.

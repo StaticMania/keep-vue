@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Avatar } from "~/src";
+import { Avatar, AvatarFallback, AvatarImage } from "~/src";
 import { defaultAvatarCode } from "./avatarCode";
 </script>
 
@@ -8,6 +8,7 @@ import { defaultAvatarCode } from "./avatarCode";
     <div class="flex items-center justify-center">
       <Avatar>
         <AvatarImage src="/images/avatar/avatar-4.png" />
+        <AvatarFallback>KV</AvatarFallback>
       </Avatar>
     </div>
   </CodeHighlightWithPreview>
