@@ -9,16 +9,3 @@ Default Number Input is a simple numeric input field with two buttons for increm
 
 ::DefaultNumberInput
 ::
-
-## Number Input With Label
-
-You can show a label and helper text to assist the user.
-::NumberInputWithLabel
-::
-
-## Number Input With State
-
-You can manage the input state with React state.
-
-::NumberInputWithState
-::
