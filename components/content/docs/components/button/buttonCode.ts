@@ -3,9 +3,7 @@ const buttonOutlineVariantCode = {
 import { Button } from "keep-vue";
 </script>
 <template>
-    <>
-      <Button color="secondary" variant="outline">Button</Button>
-    </>
+     <Button color="secondary" variant="outline">Add to Wishlist</Button>
 </template>`,
 };
 const buttonLinkVariantCode = {
@@ -13,9 +11,7 @@ const buttonLinkVariantCode = {
 import { Button } from "keep-vue";
 </script>
 <template>
-    <>
-    <Button color="primary" variant="link">Button</Button>
-    </>
+    <Button color="primary" variant="link">Click here</Button>
 </template>`,
 };
 
@@ -25,7 +21,7 @@ import { Button } from "keep-vue";
 </script>
 
 <template>
-   <Button color="secondary">Button</Button>
+    <Button color="success">Submit</Button>
 </template>`,
 };
 
@@ -35,7 +31,7 @@ import { Button } from "keep-vue";
 </script>
 
 <template>
-  <Button color="primary">Button</Button>
+  <Button color="primary">Login</Button>
 </template>`,
 };
 
@@ -61,29 +57,51 @@ import { Button } from "keep-vue";
 </script>
 
 <template>  
-    <Button size="sm" color="error">Small Button</Button>
+      <Button size="sm" color="error">Delete</Button>
 </template>
       `,
 };
 
-const buttonWithIconCode = {
+const ButtonWithLeftSideIcon = {
   "ButtonComponent.vue": `<script setup>
-import { PhChatText, PhGear, PhSignIn } from "@phosphor-icons/vue";
+import { WarningCircle, CheckCircle, Trash } from "@phosphor-icons/vue";
 import { Button } from "keep-vue";
 </script>
 <template>
-    <Button>
-      <PhChatText size="20" class="mr-1.5" />
-      Messages
-    </Button>
-    <Button>
-      <PhGear size="20" class="mr-1.5" />
-      Settings
-    </Button>
-    <Button>
-      <PhSignIn size="20" class="mr-1.5" />
-      Sign In
-    </Button>
+     <Button color="warning">
+        <PhosphorIconWarningCircle size="20" class="mr-1.5" />
+        Report
+      </Button>
+      <Button color="success">
+        <PhosphorIconCheckCircle size="20" class="mr-1.5" />
+        Approve
+      </Button>
+      <Button color="error">
+        <PhosphorIconTrash size="20" class="mr-1.5" />
+        Delete
+      </Button>
+</template>
+      `,
+};
+
+const ButtonWithRightSideIcon = {
+  "ButtonComponent.vue": `<script setup>
+import { PencilSimpleLine, ShareNetwork, DownloadSimple } from "@phosphor-icons/vue";
+import { Button } from "keep-vue";
+</script>
+<template>
+      <Button>
+        Edit
+        <PhosphorIconPencilSimpleLine size="20" class="ml-1.5" />
+      </Button>
+      <Button color="secondary">
+        Share
+        <PhosphorIconShareNetwork size="20" class="ml-1.5" />
+      </Button>
+      <Button color="error">
+        Download
+        <PhosphorIconDownloadSimple size="20" class="ml-1.5" />
+      </Button>
 </template>
       `,
 };
@@ -101,6 +119,8 @@ import { Button } from "keep-vue";
 };
 
 export {
+  ButtonWithLeftSideIcon,
+  ButtonWithRightSideIcon,
   buttonColorVariantCode,
   buttonLinkVariantCode,
   buttonOutlineVariantCode,
@@ -108,5 +128,4 @@ export {
   buttonRadiusVariantCode,
   buttonShapeVariantCode,
   buttonSizeVariantCode,
-  buttonWithIconCode,
 };
