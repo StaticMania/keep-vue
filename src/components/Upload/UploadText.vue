@@ -14,7 +14,7 @@ const restProps = computed(() => {
 </script>
 
 <template>
-  <div v-bind="restProps" :class="cn('my-5 space-y-2', props.class)">
+  <div v-bind="restProps" :class="cn('space-y-2', props.class)">
     <slot />
   </div>
 </template>

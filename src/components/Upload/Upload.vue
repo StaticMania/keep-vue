@@ -27,7 +27,8 @@ useProvideUpload({ options: props.options, horizontal: props.horizontal });
     v-bind="restProps"
     :class="
       cn(
-        'w-full max-w-[440px] rounded-xl border border-dashed border-metal-100 bg-white p-6 dark:border-metal-800 dark:bg-metal-900',
+        'w-full',
+        props.horizontal ? 'max-w-[468px]' : 'max-w-[440px]',
         props.class,
       )
     ">

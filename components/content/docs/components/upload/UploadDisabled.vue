@@ -36,7 +36,9 @@ watch(dragState, (newValue) => {
   <CodeHighlightWithPreview :code="UploadDisabledCode">
     <div class="flex items-center justify-center">
       <Upload :options="options">
-        <UploadBody v-model:isDragActive="dragState">
+        <UploadBody
+          v-model:isDragActive="dragState"
+          class="cursor-not-allowed space-y-4">
           <UploadIcon>
             <NuxtImg
               src="/images/icon/folder.svg"
@@ -60,6 +62,7 @@ watch(dragState, (newValue) => {
               DOCX, XLSX, PPTX, PDF, and JPG formats, up to 50 MB.
             </p>
           </UploadText>
+          <Button variant="outline" color="secondary">Browse</Button>
         </UploadBody>
         <UploadFooter :is-file-exists="files.length > 0">
           <p
