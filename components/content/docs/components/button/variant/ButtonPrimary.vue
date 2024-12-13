@@ -6,7 +6,7 @@ import { buttonPrimaryCode } from "../buttonCode";
 <template>
   <CodeHighlightWithPreview :code="buttonPrimaryCode">
     <div class="flex items-center justify-center gap-4">
-      <Button color="primary">Button</Button>
+      <Button color="primary">Login</Button>
     </div>
   </CodeHighlightWithPreview>
 </template>

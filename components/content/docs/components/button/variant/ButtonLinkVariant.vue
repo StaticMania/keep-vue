@@ -7,7 +7,7 @@ import { buttonLinkVariantCode } from "../buttonCode";
   <CodeHighlightWithPreview :code="buttonLinkVariantCode">
     <div
       class="flex h-32 flex-wrap items-center justify-center gap-2 gap-y-4 p-4">
-      <Button color="primary" variant="link">Button</Button>
+      <Button color="primary" variant="link">Click here</Button>
     </div>
   </CodeHighlightWithPreview>
 </template>

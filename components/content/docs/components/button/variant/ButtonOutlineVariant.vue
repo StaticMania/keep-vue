@@ -7,7 +7,7 @@ import { buttonOutlineVariantCode } from "../buttonCode";
   <CodeHighlightWithPreview :code="buttonOutlineVariantCode">
     <div
       class="flex h-32 flex-wrap items-center justify-center gap-2 gap-y-4 p-4">
-      <Button color="secondary" variant="outline">Button</Button>
+      <Button color="secondary" variant="outline">Add to Wishlist</Button>
     </div>
   </CodeHighlightWithPreview>
 </template>

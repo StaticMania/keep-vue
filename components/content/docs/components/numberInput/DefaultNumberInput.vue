@@ -22,11 +22,11 @@ const decrementNum = () => {
         <Label>Choose Number</Label>
         <NumberInput>
           <NumberInputButton :disabled="num === 0" @click="decrementNum">
-            <PhosphorIconMinus :size="16" />
+            <PhosphorIconMinus :size="16" weight="bold" />
           </NumberInputButton>
           <NumberInputBox v-model="num" />
           <NumberInputButton :disabled="num === 100" @click="incrementNum">
-            <PhosphorIconPlus :size="16" />
+            <PhosphorIconPlus :size="16" weight="bold" />
           </NumberInputButton>
         </NumberInput>
         <p class="text-body-4 font-normal text-metal-600 dark:text-metal-300">

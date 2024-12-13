@@ -38,30 +38,32 @@ watch(dragState, (newValue) => {
   <CodeHighlightWithPreview :code="HorizontalUploadCode">
     <div class="flex items-center justify-center">
       <Upload horizontal :options="options">
-        <UploadBody v-model:isDragActive="dragState">
-          <UploadIcon>
-            <NuxtImg
-              src="/images/icon/folder.svg"
-              alt="folder"
-              :height="28"
-              :width="28" />
-          </UploadIcon>
-          <UploadText>
-            <p
-              v-if="dragState"
-              class="text-body-3 font-medium text-metal-600 dark:text-white">
-              Drag File to Upload
-            </p>
-            <p
-              v-else
-              class="text-body-3 font-medium text-metal-600 dark:text-white">
-              Drag & Drop or Choose File to Upload
-            </p>
-            <p
-              class="text-body-4 font-normal text-metal-400 dark:text-metal-300">
-              DOCX, XLSX, PPTX, PDF, and JPG formats, up to 50 MB.
-            </p>
-          </UploadText>
+        <UploadBody
+          v-model:isDragActive="dragState"
+          class="flex items-center justify-between">
+          <div class="flex items-center gap-x-3">
+            <UploadIcon class="">
+              <PhosphorIconCloudArrowDown
+                class="size-7 fill-metal-600 dark:fill-white" />
+            </UploadIcon>
+            <UploadText>
+              <p
+                v-if="dragState"
+                class="text-body-3 font-medium text-metal-600 dark:text-white">
+                Drag File to Upload
+              </p>
+              <p
+                v-else
+                class="text-body-3 font-medium text-metal-600 dark:text-white">
+                Upload your cv
+              </p>
+              <p
+                class="text-body-4 font-normal text-metal-400 dark:text-metal-300">
+                DOCX or PDF formats, up to 5MB.
+              </p>
+            </UploadText>
+          </div>
+          <Button variant="outline" color="secondary">Upload</Button>
         </UploadBody>
         <UploadFooter :is-file-exists="files.length > 0">
           <p
