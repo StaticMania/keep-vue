@@ -18,7 +18,7 @@ import { DefaultDropdownCode } from "./dropdownCode";
         <DropdownAction as-child>
           <Button>Open Dropdown</Button>
         </DropdownAction>
-        <DropdownContent>
+        <DropdownContent align="end">
           <DropdownList>
             <DropdownItem>Contacts</DropdownItem>
             <DropdownItem>Phone</DropdownItem>

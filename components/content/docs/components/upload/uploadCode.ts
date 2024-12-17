@@ -1,6 +1,6 @@
 const DefaultUploadCode = {
   "UploadComponent.vue": `<script setup>
-import { PhInfo, PhTrash } from "phosphor-vue";  
+import { PhInfo, PhTrash } from "@phosphor-icons/vue";  
 import {ref,watch} from "vue";  
 import {
   Upload,
@@ -79,7 +79,7 @@ watch(dragState, (newValue) => {
 
 const HorizontalUploadCode = {
   "UploadComponent.vue": `<script setup>
-import { PhInfo, PhTrash } from "phosphor-vue";
+import { PhInfo, PhTrash } from "@phosphor-icons/vue";
 import {ref,watch} from "vue";    
 import {
   Upload,
@@ -162,7 +162,7 @@ watch(dragState, (newValue) => {
 
 const SingleUploadCode = {
   "UploadComponent.vue": `<script setup>
-import { PhInfo, PhTrash} from "phosphor-vue";
+import { PhInfo, PhTrash} from "@phosphor-icons/vue";
 import {ref,watch} from "vue";    
 import {
   Upload,
@@ -241,7 +241,7 @@ watch(dragState, (newValue) => {
 
 const UploadDisabledCode = {
   "UploadComponent.vue": `<script setup>
-import { PhInfo, PhTrash } from "phosphor-vue";
+import { PhInfo, PhTrash } from "@phosphor-icons/vue";
 import {ref,watch} from "vue";  
 import {
   Upload,

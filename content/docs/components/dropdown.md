@@ -27,6 +27,16 @@ If you don't want the arrow while showing the dropdown remove the `<DropdownArro
 ::DropdownWithoutArrowIcon
 ::
 
+## Dropdown Api
+
+::DropDownApi
+::
+
+## Dropdown Content Api
+
+::DropDownContentApi
+::
+
 ## Reference
 
 To learn more about the Dropdown and its attributes, please see the documentation of [Redix Vue Dropdown](https://www.radix-vue.com/components/dropdown-menu).

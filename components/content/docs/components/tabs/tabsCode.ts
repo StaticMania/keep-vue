@@ -56,7 +56,7 @@ import {
 
 const TabsFillCode = {
   "TabsComponent.vue": `<script setup>
-import { PhUser, PhGear, PhBuildings, PhShieldWarning } from "phosphor-vue";
+import { PhUser, PhGear, PhBuildings, PhShieldWarning } from "@phosphor-icons/vue";
 
 import {
   Skeleton,
@@ -126,7 +126,7 @@ import {
 
 const TabsWithIconCode = {
   "TabsComponent.vue": `<script setup>
-import { PhUser, PhGear, PhBuildings, PhShieldWarning } from "phosphor-vue";
+import { PhUser, PhGear, PhBuildings, PhShieldWarning } from "@phosphor-icons/vue";
 import {
   Skeleton,
   SkeletonLine,
@@ -195,7 +195,7 @@ import {
 
 const TabsUnderlineCode = {
   "TabsComponent.vue": `<script setup>
-import { PhUser, PhGear, PhBuildings, PhShieldWarning } from "phosphor-vue";
+import { PhUser, PhGear, PhBuildings, PhShieldWarning } from "@phosphor-icons/vue";
 import {
   Skeleton,
   SkeletonLine,
