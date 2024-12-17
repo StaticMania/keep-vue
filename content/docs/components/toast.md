@@ -8,6 +8,17 @@ Import the `ToastWrapper` component in in root directory and copy the below code
 ::ToastWrapperCode
 ::
 
+## Nuxt Plugin setup
+
+If you are using nuxt then you need to setup a plugin ex `sooner.client.ts` under `plugins` folder.
+::NuxtpluginForToast
+::
+
+then add the build code into your `nuxt.config.ts` file.
+
+::NuxtConfigForToast
+::
+
 ## Default Toast
 
 The default toast shows a short message to the user.

@@ -141,6 +141,29 @@ const colorMode = useColorMode();
   `,
 };
 
+const nuxtPluginForToast = {
+  "sooner.client.ts": `import { toast } from "vue-sonner";
+  import { ToastWrapper } from "keep-vue";
+  
+  export default defineNuxtPlugin((nuxtApp) => {
+    nuxtApp.vueApp.component("ToastWrapper", ToastWrapper);
+  
+    return {
+      provide: {
+        toast,
+      },
+    };
+  });`,
+};
+
+const nuxtConfigForToast = {
+  "nuxt.config.ts": `
+  //rest config
+   build: {
+    transpile: ["vue-sonner"],
+  },`,
+};
+
 const ToastSetupCode = {
   Vue: `npm i @vueuse/core\nyarn add @vueuse/core `,
   Nuxt: "npx nuxi module add color-mode",
@@ -148,6 +171,8 @@ const ToastSetupCode = {
 
 export {
   DefaultToastCode,
+  nuxtConfigForToast,
+  nuxtPluginForToast,
   ToastSetupCode,
   ToastVariantCode,
   ToastWithActionCode,
