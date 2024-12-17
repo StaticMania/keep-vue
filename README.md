@@ -2,7 +2,7 @@
 
 Keep Vue is an open-source component library built on Tailwind CSS and React.js. It provides a versatile set of pre-designed UI components that enable developers to streamline the creation of modern, responsive, and visually appealing web applications.
 
-![Keep Vue](https://images.prismic.io/staticmania/468819ab-dcc8-4393-85b2-b93913eee369_For+Github.png?auto=compress,format)
+![Keep Vue](./public/images/readme.png)
 
 ## Table of Contents
 
