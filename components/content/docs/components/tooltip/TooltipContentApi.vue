@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import ComponentApiTable from "~/components/content/ComponentApiTable.vue";
-import { tooltipApiData } from "./tooltipApiData";
+import { tooltipContentApi } from "./tooltipContentApi";
 </script>
 
 <template>
-  <ComponentApiTable :data="tooltipApiData" />
+  <ComponentApiTable :data="tooltipContentApi" />
 </template>

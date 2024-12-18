@@ -31,11 +31,16 @@ You can define the tooltip color by using the color prop such as `color="primary
 ::ToolTipColorVariant
 ::
 
-## API Reference
+## Tooltip API
 
 Explore the available props for the tooltip component
 
 ::TooltipApi
+::
+
+## Tooltip Content API
+
+::TooltipContentApi
 ::
 
 ## Reference
