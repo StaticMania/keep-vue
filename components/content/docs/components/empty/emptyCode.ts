@@ -11,10 +11,9 @@ import {
 <template>
   <Empty>
     <EmptyImage>
-      <NuxtImg
+      <img
         src="https://staticmania.cdn.prismic.io/staticmania/499b23f3-41ed-4bc9-a9eb-43d13779d2f8_Property+1%3DSad+screen_+Property+2%3DSm.svg"
-        :height="234"
-        :width="350"
+        class="w-[350px] h-[234px]"
         alt="404 Not Found" />
     </EmptyImage>
     <EmptyTitle class="mb-[14px] mt-5">Oops! You seem to be lost</EmptyTitle>
@@ -48,10 +47,9 @@ import {
 <template>
   <Empty>
     <EmptyImage>
-      <NuxtImg
+      <img
         src="https://staticmania.cdn.prismic.io/staticmania/7c82d76e-be06-41ca-a6ef-3db9009e6231_Property+1%3DFolder_+Property+2%3DSm.svg"
-        :height="234"
-        :width="350"
+        class="w-[350px] h-[234px]"
         alt="404 Empty Folder" />
     </EmptyImage>
     <EmptyTitle class="mb-[14px] mt-5">This folder has gone missing</EmptyTitle>
@@ -79,10 +77,9 @@ import {
 <template>
   <Empty>
     <EmptyImage>
-      <NuxtImg
+      <img
         src="https://staticmania.cdn.prismic.io/staticmania/16994ca5-ac01-4868-8ade-1b9e276ccdb3_Property+1%3DFolder_+Property+2%3DLg.svg"
-        :height="234"
-        width="350"
+        class="w-[350px] h-[234px]"
         alt="404 No Data Found" />
     </EmptyImage>
     <EmptyTitle class="mb-[14px] mt-5">No Data Found</EmptyTitle>
@@ -111,10 +108,9 @@ import {
 <template>
   <Empty>
     <EmptyImage>
-      <NuxtImg
+      <img
         src="https://staticmania.cdn.prismic.io/staticmania/a8befbc0-90ae-4835-bf37-8cd1096f450f_Property+1%3DSearch_+Property+2%3DSm.svg"
-        :height="234"
-        :width="350"
+        class="w-[350px] h-[234px]"
         alt="404 No Result Found" />
     </EmptyImage>
     <EmptyTitle class="mb-[14px] mt-5">Sorry, no result found!</EmptyTitle>
@@ -143,10 +139,9 @@ import {
 <template>
   <Empty>
     <EmptyImage>
-      <NuxtImg
+      <img
         src="https://staticmania.cdn.prismic.io/staticmania/ed90f683-c1df-4bad-afa4-65ce4c65287e_Property+1%3DSpaceship_+Property+2%3DMd.svg"
-        :height="234"
-        :width="350"
+        class="w-[350px] h-[234px]"
         alt="404 Not Found" />
     </EmptyImage>
     <EmptyTitle class="mb-[14px] mt-5">404 Not Found</EmptyTitle>
@@ -175,10 +170,9 @@ import {
 <template>
   <Empty>
     <EmptyImage>
-      <NuxtImg
+      <img
         src="https://staticmania.cdn.prismic.io/staticmania/aa469681-b2d1-4384-a990-91906711a24d_Property+1%3DNight+sky_+Property+2%3DSm.svg"
-        :height="234"
-        :width="350"
+        class="w-[350px] h-[234px]"
         alt="404 Page not available" />
     </EmptyImage>
     <EmptyTitle class="mb-[14px] mt-5">
