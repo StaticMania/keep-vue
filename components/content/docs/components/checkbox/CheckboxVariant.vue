@@ -2,7 +2,7 @@
 import { Checkbox, Label } from "~/src";
 import { CheckboxVariantCode } from "./checkboxCode";
 const statusOne = ref(false);
-const statusTwo = ref(false);
+const statusTwo = ref(true);
 const statusThree = ref(false);
 </script>
 <template>
@@ -13,22 +13,26 @@ const statusThree = ref(false);
           Checkbox Variant
         </p>
         <fieldset class="flex items-center gap-2">
-          <Checkbox id="default" v-model:checked="statusOne" />
+          <Checkbox
+            id="default"
+            :checked="statusOne"
+            @update:checked="(value) => (statusOne = value)" />
           <Label for="default">Default</Label>
         </fieldset>
         <fieldset class="flex items-center gap-2">
           <Checkbox
             id="rounded"
-            v-model:checked="statusTwo"
+            :checked="statusTwo"
             variant="rounded"
-            default-checked />
+            @update:checked="(value) => (statusTwo = value)" />
           <Label for="rounded">Rounded</Label>
         </fieldset>
         <fieldset class="flex items-center gap-2">
           <Checkbox
             id="circle"
-            v-model:checked="statusThree"
-            variant="circle" />
+            :checked="statusThree"
+            variant="circle"
+            @update:checked="(value) => (statusThree = value)" />
           <Label for="circle">Circle</Label>
         </fieldset>
       </div>

@@ -4,7 +4,7 @@ import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPrev
 import { Checkbox, Label } from "~/src";
 import { defaultCheckboxCode } from "./checkboxCode";
 
-const statusOne = ref(false);
+const statusOne = ref(true);
 const statusTwo = ref(false);
 </script>
 <template>
@@ -14,14 +14,18 @@ const statusTwo = ref(false);
         <p class="text-body-3 font-normal dark:text-metal-300">
           Keep Design System License
         </p>
-
         <fieldset class="flex items-center gap-2">
-          <Checkbox id="single" v-model:checked="statusOne" default-checked />
+          <Checkbox
+            id="single"
+            :checked="statusOne"
+            @update:checked="(value) => (statusOne = value)" />
           <Label for="single">Single License</Label>
         </fieldset>
-
         <fieldset class="flex items-center gap-2">
-          <Checkbox id="team" v-model:checked="statusTwo" />
+          <Checkbox
+            id="team"
+            :checked="statusTwo"
+            @update:checked="(value) => (statusTwo = value)" />
           <Label for="team">Team License</Label>
         </fieldset>
       </div>
