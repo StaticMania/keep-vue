@@ -23,12 +23,14 @@ The Icon Popover displays a popover with an icon, offering a compact and visuall
 ::IconPopover
 ::
 
-## API Reference
+## Popover API
 
 Explore the available props for the `Popover` component. For more props please go to the [Redix Vue Popover Root](https://www.radix-vue.com/components/popover#root).
 
 ::PopoverApi
 ::
+
+## Popover Content API
 
 Explore the available props for the `Popover Content` component. For more props please go to the [Redix Vue Popover Content](https://www.radix-vue.com/components/popover#content).
 
