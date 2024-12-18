@@ -205,7 +205,7 @@ import { Timeline, TimelineContent, TimelineItem, TimelinePoint } from "keep-vue
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima,
             incidunt.
           </p>
-          <Img
+          <img
             src="https://picsum.photos/400/230?v=1"
             class="!mt-4 block rounded-xl"
             alt="item1" />
@@ -226,7 +226,7 @@ import { Timeline, TimelineContent, TimelineItem, TimelinePoint } from "keep-vue
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima,
             incidunt.
           </p>
-          <Img
+          <img
             src="https://picsum.photos/400/230?v=2"
             class="!mt-4 block rounded-xl"
             alt="item2" />
@@ -247,7 +247,7 @@ import { Timeline, TimelineContent, TimelineItem, TimelinePoint } from "keep-vue
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima,
             incidunt.
           </p>
-          <Img
+          <img
             src="https://picsum.photos/400/230?v=3"
             class="!mt-4 block rounded-xl"
             alt="item3" />

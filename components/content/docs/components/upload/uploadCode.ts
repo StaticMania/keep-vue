@@ -32,7 +32,7 @@ watch(dragState, (newValue) => {
     <Upload :options="options">
         <UploadBody v-model:isDragActive="dragState" class="space-y-4">
           <UploadIcon>
-            <Img
+            <img
               src="/images/icon/folder.svg"
               alt="folder"
               :height="28"
@@ -115,11 +115,10 @@ watch(dragState, (newValue) => {
           class="flex items-center justify-between">
           <div class="flex items-center gap-x-3">
             <UploadIcon class="">
-              <Img
+              <img
                 src="/images/icon/CloudArrowUp.svg"
-                alt="folder"
-                :height="28"
-                :width="28" />
+                class="w-[28px] h-[28px]"
+                alt="folder" />
             </UploadIcon>
             <UploadText>
               <p
@@ -195,11 +194,10 @@ watch(dragState, (newValue) => {
    <Upload :options="options">
         <UploadBody v-model:isDragActive="dragState" class="space-y-4">
           <UploadIcon>
-            <Img
+            <img
               src="/images/icon/folder.svg"
-              alt="folder"
-              :height="28"
-              :width="28" />
+              class="size-[28px]"
+              alt="folder" />
           </UploadIcon>
           <UploadText>
             <p
@@ -274,11 +272,10 @@ watch(dragState, (newValue) => {
           v-model:isDragActive="dragState"
           class="cursor-not-allowed space-y-4">
           <UploadIcon>
-            <Img
+            <img
               src="/images/icon/folder.svg"
-              alt="folder"
-              :height="28"
-              :width="28" />
+              class="size-[28px]"
+              alt="folder" />
           </UploadIcon>
           <UploadText>
             <p

@@ -21,13 +21,10 @@ import {
       class="z-20 max-w-[300px] rounded-xl bg-white p-0 dark:bg-metal-900"
     >
       <div>
-        <Img
+        <img
           src="/images/keep-card.jpg"
-          class="rounded-t-xl"
-          alt="image"
-          :width="600"
-          :height="400"
-        />
+          class="rounded-t-xl w-[600px] h-[400px]"
+          alt="image"/>
         <div class="space-y-2 p-6">
           <PopoverTitle>Keep Design System</PopoverTitle>
           <PopoverDescription>

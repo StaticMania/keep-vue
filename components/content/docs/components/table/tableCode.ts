@@ -219,7 +219,7 @@ import { data2 } from "./TableData";
             </div>
           </TableCell>
           <TableCell class="flex items-center justify-center">
-            <Img :src="item.country" alt="flag" />
+            <img :src="item.country" alt="flag" />
           </TableCell>
           <TableCell>
             <Badge
@@ -595,7 +595,7 @@ import { data4 } from "./TableData";
             </div>
           </TableCell>
           <TableCell>
-            <Img :src="item.performance" alt="performance" />
+            <img :src="item.performance" alt="performance" />
           </TableCell>
 
           <TableCell>
