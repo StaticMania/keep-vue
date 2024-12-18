@@ -17,7 +17,7 @@ You can position the drawer in a specific direction, such as `left`, `right`, `t
 
 ## API Reference
 
-Explore the available props for the ``drawer component` component.
+Explore the available props for the `drawer component` component.
 ::DrawerApi
 ::
 
