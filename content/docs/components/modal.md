@@ -15,6 +15,12 @@ You can customize our modal as your desire except the modal functionality.
 ::CustomizeModal
 ::
 
+## Api Reference
+
+A list of common `<Modal> `component APIs is provided below. For additional details, please refer to the reference link.
+::ModalApi
+::
+
 ## Reference
 
 To learn more about the modal, please see the documentation of [Redix Vue Dialog](https://www.radix-vue.com/components/dialog.html#dialog).
