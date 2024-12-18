@@ -16,7 +16,6 @@
   "dependencies": {
     "@vueuse/core": "^11.0.1",
     "@vueuse/motion": "^2.2.6",
-    "chart.js": "^4.4.3",
     "clsx": "^2.1.1",
     "deepmerge": "^4.3.1",
     "embla-carousel-vue": "^8.2.1",
@@ -25,7 +24,6 @@
     "tailwindcss-animate": "^1.0.7",
     "vaul-vue": "^0.2.0",
     "vue": "^3.4.21",
-    "vue-chartjs": "^5.3.1",
     "vue-sonner": "^1.1.5",
     "vue3-dropzone": "^2.2.1"
   },
