@@ -1,5 +1,6 @@
 const defaultBreadcrumbCode = {
   "BreadcrumbComponent.vue": `<script setup>
+import { PhHouse } from "@phosphor-icons/vue";
 import {  Breadcrumb,
   BreadcrumbDivider,
   BreadcrumbItem,
@@ -14,7 +15,7 @@ import {  Breadcrumb,
       
         <BreadcrumbItem>
           <BreadcrumbLink href="/">
-            <PhosphorIconHouse :size="20" />
+            <PhHouse :size="20" />
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbDivider />
@@ -37,6 +38,7 @@ import {  Breadcrumb,
 
 const breadcrumbWithBorderCode = {
   "BreadcrumbComponent.vue": `<script setup>
+import { PhHouse } from "@phosphor-icons/vue";
 import {Breadcrumb,
   BreadcrumbDivider,
   BreadcrumbItem,
@@ -49,7 +51,7 @@ import {Breadcrumb,
         <BreadcrumbList border-type="border-xy">
           <BreadcrumbItem>
             <BreadcrumbLink href="/">
-              <PhosphorIconHouse :size="20" />
+              <PhHouse :size="20" />
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbDivider />
@@ -78,7 +80,7 @@ import {Breadcrumb,
         <BreadcrumbList border-type="border-y">
           <BreadcrumbItem>
             <BreadcrumbLink href="/">
-              <PhosphorIconHouse :size="20" />
+              <PhHouse :size="20" />
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbDivider />
@@ -107,6 +109,7 @@ import {Breadcrumb,
 
 const BreadcrumbDividerIconCode = {
   "BreadcrumbComponent.vue": `<script setup>
+import { PhAirplay, PhHouse, PhCircuitry, PhLaptop } from "@phosphor-icons/vue";
 import {Breadcrumb,
   BreadcrumbDivider,
   BreadcrumbItem,
@@ -119,7 +122,7 @@ import {Breadcrumb,
     <BreadcrumbList>
       <BreadcrumbItem>
         <BreadcrumbLink href="/">
-          <PhosphorIconHouse :size="16" />
+          <PhHouse :size="16" />
           <span>Home</span>
         </BreadcrumbLink>
       </BreadcrumbItem>
@@ -127,7 +130,7 @@ import {Breadcrumb,
 
       <BreadcrumbItem>
         <BreadcrumbLink href="/">
-          <PhosphorIconAirplay :size="16" />
+          <PhAirplay :size="16" />
           <span>Products</span>
         </BreadcrumbLink>
       </BreadcrumbItem>
@@ -135,7 +138,7 @@ import {Breadcrumb,
 
       <BreadcrumbItem>
         <BreadcrumbLink href="/">
-          <PhosphorIconCircuitry :size="16" />
+          <PhCircuitry :size="16" />
           <span>Electronics</span>
         </BreadcrumbLink>
       </BreadcrumbItem>
@@ -143,7 +146,7 @@ import {Breadcrumb,
 
       <BreadcrumbItem>
         <BreadcrumbPage>
-          <PhosphorIconLaptop :size="16" />
+          <PhLaptop :size="16" />
           <span>Laptop</span>
         </BreadcrumbPage>
       </BreadcrumbItem>
@@ -155,7 +158,7 @@ import {Breadcrumb,
 
 const BreadcrumbWithEllipsisCode = {
   "BreadcrumbComponent.vue": `<script setup>
-
+import { PhHouse } from "@phosphor-icons/vue";
 import { Breadcrumb,
   BreadcrumbDivider,
   BreadcrumbEllipsis,
@@ -169,7 +172,7 @@ import { Breadcrumb,
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink href="/">
-            <PhosphorIconHouse :size="20" />
+            <PhHouse :size="20" />
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbDivider />
@@ -191,6 +194,7 @@ import { Breadcrumb,
 
 const BreadcrumbActiveBarOutlineCode = {
   "BreadcrumbComponent.vue": `<script setup>
+import { PhHouse } from "@phosphor-icons/vue";
 import {
   Breadcrumb,
   BreadcrumbDivider,
@@ -206,7 +210,7 @@ import {
   <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink><PhosphorIconHouse :size="20" /></BreadcrumbLink>
+          <BreadcrumbLink><PhHouse :size="20" /></BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbDivider />
 
@@ -229,7 +233,7 @@ import {
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink><PhosphorIconHouse :size="20" /></BreadcrumbLink>
+          <BreadcrumbLink><PhHouse :size="20" /></BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbDivider />
 
@@ -254,7 +258,7 @@ import {
 export {
   BreadcrumbActiveBarOutlineCode,
   BreadcrumbDividerIconCode,
-  BreadcrumbWithEllipsisCode,
   breadcrumbWithBorderCode,
+  BreadcrumbWithEllipsisCode,
   defaultBreadcrumbCode,
 };
