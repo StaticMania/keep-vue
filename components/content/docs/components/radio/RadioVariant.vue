@@ -32,12 +32,11 @@ const selected = ref("bangladesh");
         </fieldset>
         <fieldset class="flex items-center gap-2">
           <Radio
-            id="in"
+            id="palestine"
             v-model="selected"
             name="country"
-            variant="circle"
-            value="india" />
-          <Label for="in">India</Label>
+            value="palestine" />
+          <Label for="palestine">Palestine</Label>
         </fieldset>
       </form>
     </div>

@@ -21,8 +21,12 @@ const picked = ref("bangladesh");
           <Label for="bd">Bangladesh</Label>
         </fieldset>
         <fieldset class="flex items-center gap-2">
-          <Radio id="india" v-model="picked" name="country" value="india" />
-          <Label for="india">India</Label>
+          <Radio
+            id="palestine"
+            v-model="picked"
+            name="country"
+            value="palestine" />
+          <Label for="palestine">Palestine</Label>
         </fieldset>
       </form>
     </div>
