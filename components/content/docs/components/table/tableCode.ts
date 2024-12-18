@@ -101,6 +101,8 @@ import { data1 } from "./TableData";
 
 const OrdersTableCode = {
   "TableComponent.vue": `<script setup>
+import { PhPlus, PhFunnel, PhIconArrowsDownUp, PhIconCalendar, PhIconFlag, PhIconSpinner ,PhIconDotsNine, PhIconCurrencyDollar, PhIconNavigationArrow, PhIconDotsThreeOutlineVertical } from "@phosphor-icons/vue";
+
 import {
   Badge,
   Button,
@@ -118,6 +120,7 @@ import {
   TableHeader,
   TableRow,
 } from "keep-vue";
+ 
 import { data2 } from "./TableData";
 </script>
 
@@ -134,11 +137,11 @@ import { data2 } from "./TableData";
           </div>
           <div class="flex items-center gap-5">
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconPlus class="size-4 fill-primary-400" />
+              <PhPlus class="size-4 fill-primary-400" />
               Add Order
             </Button>
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconFunnel class="size-4 fill-primary-400" />
+              <PhFunnel class="size-4 fill-primary-400" />
               Filter Order
             </Button>
           </div>
@@ -151,48 +154,48 @@ import { data2 } from "./TableData";
           </TableHead>
           <TableHead>
             <p class="flex w-[100px] items-center gap-1.5">
-              <PhosphorIconArrowsDownUp
+              <PhArrowsDownUp
                 class="size-4 fill-metal-900 dark:fill-white" />
               Type
             </p>
           </TableHead>
           <TableHead>
             <p class="flex w-[100px] items-center gap-1.5">
-              <PhosphorIconCalendar
+              <PhCalendar
                 class="size-4 fill-metal-900 dark:fill-white" />
               Date
             </p>
           </TableHead>
           <TableHead>
             <p class="flex items-center gap-1.5">
-              <PhosphorIconFlag class="size-4 fill-metal-900 dark:fill-white" />
+              <PhFlag class="size-4 fill-metal-900 dark:fill-white" />
               Country
             </p>
           </TableHead>
           <TableHead>
             <p class="flex items-center gap-1.5">
-              <PhosphorIconSpinner
+              <PhSpinner
                 class="size-4 fill-metal-900 dark:fill-white" />
               Status
             </p>
           </TableHead>
           <TableHead>
             <p class="flex items-center gap-1.5">
-              <PhosphorIconDotsNine
+              <PhDotsNine
                 class="size-4 fill-metal-900 dark:fill-white" />
               Quant.
             </p>
           </TableHead>
           <TableHead>
             <p class="flex w-[100px] items-center gap-1.5">
-              <PhosphorIconCurrencyDollar
+              <PhCurrencyDollar
                 class="size-4 fill-metal-900 dark:fill-white" />
               Total Price
             </p>
           </TableHead>
           <TableHead>
             <p class="flex w-[120px] items-center gap-1.5">
-              <PhosphorIconNavigationArrow
+              <PhNavigationArrow
                 class="size-4 fill-metal-900 dark:fill-white" />
               Location
             </p>
@@ -216,7 +219,7 @@ import { data2 } from "./TableData";
             </div>
           </TableCell>
           <TableCell class="flex items-center justify-center">
-            <NuxtImg :src="item.country" alt="flag" />
+            <Img :src="item.country" alt="flag" />
           </TableCell>
           <TableCell>
             <Badge
@@ -239,7 +242,7 @@ import { data2 } from "./TableData";
             <Dropdown>
               <DropdownAction as-child>
                 <button>
-                  <PhosphorIconDotsThreeOutlineVertical
+                  <PhDotsThreeOutlineVertical
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
@@ -329,6 +332,7 @@ import { data2 } from "./TableData";
 
 const ProductTableCode = {
   "TableComponent.vue": `<script setup>
+import { PhPlus, PhFunnel, PhDotsThreeOutlineVertical  } from "@phosphor-icons/vue";
 import {
   Badge,
   Button,
@@ -361,11 +365,11 @@ import { data3 } from "./TableData";
           </div>
           <div class="flex items-center gap-5">
             <Button variant="outline" class="flex gap-1.5">
-              <PhosphorIconPlus class="size-4 fill-primary-400" />
+              <PhPlus class="size-4 fill-primary-400" />
               Add Product
             </Button>
             <Button variant="outline" class="flex gap-1.5">
-              <PhosphorIconFunnel class="size-4 fill-primary-400" />
+              <PhFunnel class="size-4 fill-primary-400" />
               Filter Product
             </Button>
           </div>
@@ -402,7 +406,7 @@ import { data3 } from "./TableData";
             <Dropdown>
               <DropdownAction as-child>
                 <button>
-                  <PhosphorIconDotsThreeOutlineVertical
+                  <PhDotsThreeOutlineVertical
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
@@ -493,6 +497,8 @@ import { data3 } from "./TableData";
 
 const TeamTableCode = {
   "TableComponent.vue": `<script setup>
+import { PhPlus, PhMagnifyingGlass, PhDotsThreeOutlineVertical } from "@phosphor-icons/vue";
+
 import {
   Avatar,
   AvatarImage,
@@ -512,6 +518,7 @@ import {
   TableHeader,
   TableRow,
 } from "keep-vue";
+ 
 import { data4 } from "./TableData";
 </script>
 
@@ -528,11 +535,11 @@ import { data4 } from "./TableData";
           </div>
           <div class="flex items-center gap-5">
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconPlus class="size-4 fill-primary-400" />
+              <PhPlus class="size-4 fill-primary-400" />
               New Member
             </Button>
             <Button variant="outline" class="gap-1.5">
-              <PhosphorIconMagnifyingGlass class="size-4 fill-primary-400" />
+              <PhMagnifyingGlass class="size-4 fill-primary-400" />
               Search
             </Button>
           </div>
@@ -588,14 +595,14 @@ import { data4 } from "./TableData";
             </div>
           </TableCell>
           <TableCell>
-            <NuxtImg :src="item.performance" alt="performance" />
+            <Img :src="item.performance" alt="performance" />
           </TableCell>
 
           <TableCell>
             <Dropdown>
               <DropdownAction as-child>
                 <button>
-                  <PhosphorIconDotsThreeOutlineVertical
+                  <PhDotsThreeOutlineVertical
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
