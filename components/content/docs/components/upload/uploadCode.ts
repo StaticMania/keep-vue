@@ -32,7 +32,7 @@ watch(dragState, (newValue) => {
     <Upload :options="options">
         <UploadBody v-model:isDragActive="dragState" class="space-y-4">
           <UploadIcon>
-            <NuxtImg
+            <Img
               src="/images/icon/folder.svg"
               alt="folder"
               :height="28"
@@ -60,7 +60,7 @@ watch(dragState, (newValue) => {
         <UploadFooter :is-file-exists="files.length > 0">
           <p
             class="my-2 flex items-center gap-1 text-body-4 font-normal text-metal-600 dark:text-metal-300">
-            <PhosphorIconInfo :size="16" />
+            <PhInfo :size="16" />
             Uploaded Files
           </p>
           <ul class="space-y-1">
@@ -69,7 +69,7 @@ watch(dragState, (newValue) => {
               :key="file?.name"
               class="flex items-center justify-between border-l-4 border-l-metal-100 bg-metal-25 px-4 py-2.5 text-left text-body-4 font-normal capitalize text-metal-600 dark:border-l-metal-600 dark:bg-metal-800 dark:text-metal-300">
               {{ file?.name }}
-              <PhosphorIconTrash :size="16" color="red" />
+              <PhTrash :size="16" color="red" />
             </li>
           </ul>
         </UploadFooter>
@@ -115,7 +115,7 @@ watch(dragState, (newValue) => {
           class="flex items-center justify-between">
           <div class="flex items-center gap-x-3">
             <UploadIcon class="">
-              <NuxtImg
+              <Img
                 src="/images/icon/CloudArrowUp.svg"
                 alt="folder"
                 :height="28"
@@ -143,7 +143,7 @@ watch(dragState, (newValue) => {
         <UploadFooter :is-file-exists="files.length > 0">
           <p
             class="my-2 flex items-center gap-1 text-body-4 font-normal text-metal-600 dark:text-metal-300">
-            <PhosphorIconInfo :size="16" />
+            <PhInfo :size="16" />
             Uploaded Files
           </p>
           <ul class="space-y-1">
@@ -152,7 +152,7 @@ watch(dragState, (newValue) => {
               :key="file?.name"
               class="flex items-center justify-between border-l-4 border-l-metal-100 bg-metal-25 px-4 py-2.5 text-left text-body-4 font-normal capitalize text-metal-600 dark:border-l-metal-600 dark:bg-metal-800 dark:text-metal-300">
               {{ file?.name }}
-              <PhosphorIconTrash :size="16" color="red" />
+              <PhTrash :size="16" color="red" />
             </li>
           </ul>
         </UploadFooter>
@@ -195,7 +195,7 @@ watch(dragState, (newValue) => {
    <Upload :options="options">
         <UploadBody v-model:isDragActive="dragState" class="space-y-4">
           <UploadIcon>
-            <NuxtImg
+            <Img
               src="/images/icon/folder.svg"
               alt="folder"
               :height="28"
@@ -222,7 +222,7 @@ watch(dragState, (newValue) => {
         <UploadFooter :is-file-exists="files.length > 0">
           <p
             class="my-2 flex items-center gap-1 text-body-4 font-normal text-metal-600 dark:text-metal-300">
-            <PhosphorIconInfo :size="16" />
+            <PhInfo :size="16" />
             Uploaded Files
           </p>
           <ul class="space-y-1">
@@ -231,7 +231,7 @@ watch(dragState, (newValue) => {
               :key="file?.name"
               class="flex items-center justify-between border-l-4 border-l-metal-100 bg-metal-25 px-4 py-2.5 text-left text-body-4 font-normal capitalize text-metal-600 dark:border-l-metal-600 dark:bg-metal-800 dark:text-metal-300">
               {{ file?.name }}
-              <PhosphorIconTrash :size="16" color="red" />
+              <PhTrash :size="16" color="red" />
             </li>
           </ul>
         </UploadFooter>
@@ -274,7 +274,7 @@ watch(dragState, (newValue) => {
           v-model:isDragActive="dragState"
           class="cursor-not-allowed space-y-4">
           <UploadIcon>
-            <NuxtImg
+            <Img
               src="/images/icon/folder.svg"
               alt="folder"
               :height="28"
@@ -301,7 +301,7 @@ watch(dragState, (newValue) => {
         <UploadFooter :is-file-exists="files.length > 0">
           <p
             class="my-2 flex items-center gap-1 text-body-4 font-normal text-metal-600 dark:text-metal-300">
-            <PhosphorIconInfo :size="16" />
+            <PhInfo :size="16" />
             Uploaded Files
           </p>
           <ul class="space-y-1">
@@ -310,7 +310,7 @@ watch(dragState, (newValue) => {
               :key="file?.name"
               class="flex items-center justify-between border-l-4 border-l-metal-100 bg-metal-25 px-4 py-2.5 text-left text-body-4 font-normal capitalize text-metal-600 dark:border-l-metal-600 dark:bg-metal-800 dark:text-metal-300">
               {{ file?.name }}
-              <PhosphorIconTrash :size="16" color="red" />
+              <PhTrash :size="16" color="red" />
             </li>
           </ul>
         </UploadFooter>
