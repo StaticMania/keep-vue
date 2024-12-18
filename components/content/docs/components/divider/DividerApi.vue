@@ -23,13 +23,6 @@ const dividerDataAPI = [
     propsDescription: "Available variants for the divider alignment.",
     default: "center",
   },
-  {
-    id: 4,
-    propsName: "children",
-    propsType: "ReactNode",
-    propsDescription: "Content to be placed within the divider, if any.",
-    default: "",
-  },
 ];
 </script>
 
