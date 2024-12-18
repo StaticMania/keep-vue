@@ -19,9 +19,14 @@ Default Progress allows you to visually represent the progress or completion of 
 ::DefaultLineProgress
 ::
 
-## Customize Progress
+## Customize Circle Progress
 
-::CustomizeProgress
+::CustomizeCircleProgress
+::
+
+## Customize Line Progress
+
+::CustomizeLineProgress
 ::
 
 ## Circle Progress API
