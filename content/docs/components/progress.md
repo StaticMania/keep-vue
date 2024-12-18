@@ -9,11 +9,6 @@ Default Progress allows you to visually represent the progress or completion of 
 ::DefaultProgress
 ::
 
-## Circle Progress
-
-::VariantOfProgress
-::
-
 ## Line Progress
 
 ::DefaultLineProgress

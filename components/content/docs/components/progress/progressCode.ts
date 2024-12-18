@@ -62,29 +62,10 @@ import { CircleProgress, CircleProgressLine, CircleProgressText } from "keep-vue
   </div>
 </template>`,
 };
-const VariantOfProgressCode = {
-  "ProgressComponent.vue": `<script setup>
-import {
-  CircleProgress,
-  CircleProgressLine,
-  CircleProgressText,
-} from "keep-vue";
-</script>
-
-<template>
-  <div class="mx-auto flex max-w-lg flex-col gap-5">
-    <CircleProgress :progress="55">
-      <CircleProgressLine />
-      <CircleProgressText />
-    </CircleProgress>
-  </div>
-</template>`,
-};
 
 export {
   CustomizeCircleProgressCode,
   customizeLineProgress,
   DefaultLineProgressCode,
   DefaultProgressCode,
-  VariantOfProgressCode,
 };
