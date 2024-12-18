@@ -57,7 +57,7 @@ const handleSubmit = (event) => {
             placeholder="Enter email"
             class="ps-11" />
           <InputIcon>
-            <PhosphorIconEnvelope :size="19" color="#AFBACA" />
+            <PhEnvelope :size="19" color="#AFBACA" />
           </InputIcon>
         </div>
       </fieldset>
@@ -104,8 +104,8 @@ console.log(picked.value);
 };
 
 export {
-  TextAreaWithFormCode,
-  TextAreaWithHelperTextCode,
   defaultTextAreaCode,
   disabledTextareaCode,
+  TextAreaWithFormCode,
+  TextAreaWithHelperTextCode,
 };
