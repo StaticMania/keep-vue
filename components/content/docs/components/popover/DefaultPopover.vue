@@ -2,6 +2,7 @@
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import {
   Avatar,
+  AvatarFallback,
   AvatarImage,
   Button,
   Popover,
@@ -28,6 +29,7 @@ import { DefaultPopoverCode } from "./popoverCode";
             <div>
               <Avatar>
                 <AvatarImage src="/images/avatar/avatar-3.png" />
+                <AvatarFallback>KV</AvatarFallback>
               </Avatar>
             </div>
             <div>
