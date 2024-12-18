@@ -14,7 +14,7 @@ const handleSubmit = () => {};
   <CodeHighlightWithPreview :code="inputUseCasesCode">
     <div class="flex items-center justify-center">
       <form
-        class="mx-auto w-full max-w-md space-y-2 rounded-lg border p-8 shadow-md"
+        class="mx-auto w-full max-w-md space-y-3 rounded-lg border p-8 shadow-md"
         @submit.prevent="handleSubmit">
         <fieldset class="space-y-1">
           <Label for="name">Email*</Label>
