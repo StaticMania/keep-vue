@@ -4,5 +4,5 @@ import { tooltipApiData } from "./tooltipApiData";
 </script>
 
 <template>
-  <ComponentApiTable :data="tooltipApiData"></ComponentApiTable>
+  <ComponentApiTable :data="tooltipApiData" />
 </template>

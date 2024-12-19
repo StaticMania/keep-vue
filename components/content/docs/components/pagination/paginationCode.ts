@@ -3,8 +3,8 @@ const DefaultPaginationCode = {
 import { PhDotsThree } from "@phosphor-icons/vue";
 import { Pagination, PaginationItem, PaginationList } from "keep-vue";
 
-const activePage = ref<number>(1);
-const handlePageClick = (pageNumber: number) => {
+const activePage = ref(1);
+const handlePageClick = (pageNumber) => {
   activePage.value = pageNumber;
 };
 </script>
@@ -32,7 +32,7 @@ const handlePageClick = (pageNumber: number) => {
             4
           </PaginationItem>
           <PaginationItem>
-            <PhosphorIconDotsThree size="20" />
+            <PhDotsThree size="20" />
           </PaginationItem>
           <PaginationItem
             :active="activePage === 10"
@@ -50,8 +50,8 @@ const PaginationNavigatorWithIconCode = {
 import { PhCaretLeft, PhCaretRight, PhDotsThree } from "@phosphor-icons/vue";
 import {Pagination, PaginationItem, PaginationList, PaginationNavigator} from "keep-vue";
 
-const activePage = ref<number>(1);
-const handlePageClick = (pageNumber: number) => {
+const activePage = ref(1);
+const handlePageClick = (pageNumber) => {
   activePage.value = pageNumber;
 };
 
@@ -70,7 +70,6 @@ const prevPage = () => {
     activePage.value -= 1;
   }
 };
-
 </script>
 
 <template>
@@ -79,7 +78,7 @@ const prevPage = () => {
           shape="circle"
           :disabled="activePage === 1"
           @click="prevPage">
-          <PhosphorIconCaretLeft size="18" />
+          <PhCaretLeft size="18" />
         </PaginationNavigator>
         <PaginationList>
           <PaginationItem
@@ -103,7 +102,7 @@ const prevPage = () => {
             4
           </PaginationItem>
           <PaginationItem>
-            <PhosphorIconDotsThree size="20" />
+            <PhDotsThree size="20" />
           </PaginationItem>
           <PaginationItem
             :active="activePage === 10"
@@ -115,7 +114,7 @@ const prevPage = () => {
           shape="circle"
           :disabled="activePage === 10"
           @click="nextPage">
-          <PhosphorIconCaretRight size="18" />
+          <PhCaretRight size="18" />
         </PaginationNavigator>
       </Pagination>
 </template>`,
@@ -154,7 +153,7 @@ const prevPage = () => {
           :disabled="activePage === 1"
           class="gap-1"
           @click="prevPage">
-          <PhosphorIconCaretLeft size="18" />
+          <PhCaretLeft size="18" />
           Previous
         </PaginationNavigator>
         <PaginationList>
@@ -179,7 +178,7 @@ const prevPage = () => {
             4
           </PaginationItem>
           <PaginationItem>
-            <PhosphorIconDotsThree size="20" />
+            <PhDotsThree size="20" />
           </PaginationItem>
           <PaginationItem
             :active="activePage === 10"
@@ -192,7 +191,7 @@ const prevPage = () => {
           class="gap-1"
           @click="nextPage">
           Next
-          <PhosphorIconCaretRight size="18" />
+          <PhCaretRight size="18" />
         </PaginationNavigator>
       </Pagination>
 </template>`,
@@ -202,9 +201,9 @@ const PaginationShapeCode = {
   "PaginationComponent.vue": `<script setup>
 import { PhDotsThree } from "@phosphor-icons/vue";
 import { Pagination, PaginationItem, PaginationList } from "keep-vue";
-const activePage = ref<number>(1);
 
-const handlePageClick = (pageNumber: number) => {
+const activePage = ref(1);
+const handlePageClick = (pageNumber) => {
   activePage.value = pageNumber;
 };
 
@@ -233,7 +232,7 @@ const handlePageClick = (pageNumber: number) => {
             4
           </PaginationItem>
           <PaginationItem>
-            <PhosphorIconDotsThree size="20" />
+            <PhDotsThree size="20" />
           </PaginationItem>
           <PaginationItem
             :active="activePage === 10"
@@ -244,16 +243,17 @@ const handlePageClick = (pageNumber: number) => {
       </Pagination>
 </template>`,
 };
+
 const PaginationWithInputCode = {
   "PaginationComponent.vue": `<script setup>
 import { PhCaretLeft, PhCaretRight, PhDotsThree } from "@phosphor-icons/vue";
 import { Input, Pagination, PaginationGoTo, PaginationItem, PaginationList, PaginationNavigator,} from "keep-vue";
 
-const activePage = ref<number>(1);
-const inputPage = ref<string>("");
+const activePage = ref(1);
+const inputPage = ref("");
 const totalPages = 200;
 
-const handlePageClick = (pageNumber: number) => {
+const handlePageClick = (pageNumber) => {
   activePage.value = pageNumber;
   inputPage.value = "";
 };
@@ -297,7 +297,7 @@ const handleGoToPage = () => {
           shape="circle"
           :disabled="activePage === 1"
           @click="prevPage">
-          <PhosphorIconCaretLeft size="18" />
+          <PhCaretLeft size="18" />
         </PaginationNavigator>
         <PaginationList>
           <PaginationItem
@@ -321,7 +321,7 @@ const handleGoToPage = () => {
             4
           </PaginationItem>
           <PaginationItem>
-            <PhosphorIconDotsThree size="20" />
+            <PhDotsThree size="20" />
           </PaginationItem>
           <PaginationItem
             :active="activePage === 10"
@@ -333,7 +333,7 @@ const handleGoToPage = () => {
           shape="circle"
           :disabled="activePage === totalPages"
           @click="nextPage">
-          <PhosphorIconCaretRight size="18" />
+          <PhCaretRight size="18" />
         </PaginationNavigator>
         <PaginationGoTo>
           <span>/ Go to</span>

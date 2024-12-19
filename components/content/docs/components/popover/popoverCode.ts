@@ -21,13 +21,10 @@ import {
       class="z-20 max-w-[300px] rounded-xl bg-white p-0 dark:bg-metal-900"
     >
       <div>
-        <NuxtImg
+        <img
           src="/images/keep-card.jpg"
-          class="rounded-t-xl"
-          alt="image"
-          :width="600"
-          :height="400"
-        />
+          class="rounded-t-xl w-[600px] h-[400px]"
+          alt="image"/>
         <div class="space-y-2 p-6">
           <PopoverTitle>Keep Design System</PopoverTitle>
           <PopoverDescription>
@@ -68,7 +65,7 @@ import {
           <div>
             <div
               class="flex size-14 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white">
-              <PhosphorIconConfetti :size="24" weight="fill" />
+              <PhConfetti :size="24" weight="fill" />
             </div>
             <div class="space-y-2 pt-4">
               <PopoverTitle class="text-body-2 font-semibold">
@@ -100,6 +97,7 @@ const DefaultPopoverCode = {
   "PopoverComponent.vue": `<script setup>
 import {
   Avatar,
+  AvatarFallback
   AvatarImage,
   Button,
   Popover,
@@ -121,6 +119,7 @@ import {
           <div>
             <Avatar>
               <AvatarImage src="/images/avatar/avatar-3.png" />
+              <AvatarFallback>KV</AvatarFallback>
             </Avatar>
           </div>
           <div>

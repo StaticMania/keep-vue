@@ -2,6 +2,7 @@ const CustomDropdownCode = {
   "DropdownComponent.vue": `<script setup>
 import {
   Avatar,
+  AvatarFallback,
   AvatarImage,
   Button,
   Dropdown,
@@ -57,6 +58,7 @@ const dropdownData = [
             <div>
               <Avatar>
                 <AvatarImage :src="data.img" />
+                <AvatarFallback>{{data.name}}</AvatarFallback>
               </Avatar>
             </div>
             <div>

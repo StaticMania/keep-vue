@@ -20,8 +20,12 @@ console.log(picked);
       <Label for="bd">Bangladesh</Label>
     </fieldset>
     <fieldset class="flex items-center gap-2">
-      <Radio id="india" v-model="picked" name="country" value="india" />
-      <Label for="india">India</Label>
+      <Radio
+        id="palestine"
+        v-model="picked"
+        name="country"
+        value="palestine" />
+      <Label for="palestine">Palestine</Label>
     </fieldset>
   </form>
 </template>
@@ -59,12 +63,11 @@ console.log(selected)
         <Label for="bangladesh">Bangladesh</Label>
       </fieldset>
       <fieldset class="flex items-center gap-2">
-        <Radio
-         id="india"
-          v-model="selected"
-          name="country"
-          variant="circle"
-          value="india" />
+         <Radio
+            id="palestine"
+            v-model="selected"
+            name="country"
+            value="palestine" />
         <Label for="india">India</Label>
       </fieldset>
     </form>

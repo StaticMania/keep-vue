@@ -1,6 +1,8 @@
 const DefaultStepCode = {
   "StepsComponent.vue": `<script setup>
 import { ref } from "vue";
+import { PhHourglass, PhRecycle, PhGear, PhPackage } from "@phosphor-icons/vue";
+
 import {
   Button,
   Skeleton,
@@ -150,19 +152,19 @@ const active = ref(1);
   <div class="space-y-6 p-6">
     <Steps>
       <StepPoint variant="icon" :completed="active >= 1">
-        <PhosphorIconHourglass :size="20" weight="bold" />
+        <PhHourglass :size="20" weight="bold" />
       </StepPoint>
       <StepLine :completed="active >= 2" />
       <StepPoint variant="icon" :completed="active >= 2">
-        <PhosphorIconRecycle :size="20" weight="bold" />
+        <PhRecycle :size="20" weight="bold" />
       </StepPoint>
       <StepLine :completed="active >= 3" />
       <StepPoint variant="icon" :completed="active >= 3">
-        <PhosphorIconGear :size="20" weight="bold" />
+        <PhGear :size="20" weight="bold" />
       </StepPoint>
       <StepLine :completed="active >= 4" />
       <StepPoint variant="icon" :completed="active >= 4">
-        <PhosphorIconPackage :size="20" weight="bold" />
+        <PhPackage :size="20" weight="bold" />
       </StepPoint>
     </Steps>
     

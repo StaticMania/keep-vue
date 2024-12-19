@@ -40,7 +40,7 @@ const handleSubmit = () => {
 
 <template>
   <form
-    class="mx-auto max-w-md space-y-2 rounded-lg border p-8 shadow-md"
+    class="mx-auto max-w-md space-y-3 rounded-lg border p-8 shadow-md"
     @submit.prevent="handleSubmit"
   >
     <fieldset class="space-y-1">

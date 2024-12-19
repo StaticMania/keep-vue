@@ -28,21 +28,21 @@ import { Button, ButtonGroup } from "keep-vue";
           variant="outline"
           class="flex items-center gap-x-1 border-metal-300 text-metal-600 dark:border-metal-400 dark:text-metal-300"
           position="start">
-          <PhosphorIconCube :size="20" class="mr-1.5" />
+          <PhCube :size="20" class="mr-1.5" />
           Profile
         </Button>
         <Button
           variant="outline"
           class="flex items-center gap-x-1 border-metal-300 text-metal-600 dark:border-metal-400 dark:text-metal-300"
           position="center">
-          <PhosphorIconGear :size="20" class="mr-1.5" />
+          <PhGear :size="20" class="mr-1.5" />
           Settings
         </Button>
         <Button
           variant="outline"
           class="flex items-center gap-x-1 border-metal-300 text-metal-600 dark:border-metal-400 dark:text-metal-300"
           position="end">
-          <PhosphorIconChatCircleDots :size="24" class="mr-1.5" />
+          <PhChatCircleDots :size="24" class="mr-1.5" />
           Messages
         </Button>
       </ButtonGroup>
@@ -62,21 +62,21 @@ import { Button, ButtonGroup } from 'keep-vue'
           class="border-metal-300 text-metal-600 dark:border-metal-400 dark:text-metal-300"
           position="start"
           shape="icon">
-          <PhosphorIconCube :size="20" />
+          <PhCube :size="20" />
         </Button>
         <Button
           variant="outline"
           class="border-metal-300 text-metal-600 dark:border-metal-400 dark:text-metal-300"
           position="center"
           shape="icon">
-          <PhosphorIconGear :size="20" />
+          <PhGear :size="20" />
         </Button>
         <Button
           variant="outline"
           class="border-metal-300 text-metal-600 dark:border-metal-400 dark:text-metal-300"
           position="end"
           shape="icon">
-          <PhosphorIconChatCircleDots :size="20" />
+          <PhChatCircleDots :size="20" />
         </Button>
       </ButtonGroup>
 </template>`,

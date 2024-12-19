@@ -16,25 +16,26 @@ import { Rating, RatingStar } from "keep-vue";
 
 const RatingTypesCode = {
   "RatingComponent.vue": `<script setup>
-import { Rating, RatingStar } from "keep-vue";
+import { PhStar } from "@phosphor-icons/vue";
+  import { Rating, RatingStar } from "keep-vue";
 </script>
 
 <template>
   <Rating>
     <RatingStar :value="1">
-      <PhosphorIconStar :size="20" />
+      <PhStar :size="20" />
     </RatingStar>
     <RatingStar :value="2">
-      <PhosphorIconStar :size="20" />
+      <PhStar :size="20" />
     </RatingStar>
     <RatingStar :value="3">
-      <PhosphorIconStar :size="20" />
+      <PhStar :size="20" />
     </RatingStar>
     <RatingStar :value="4">
-      <PhosphorIconStar :size="20" />
+      <PhStar :size="20" />
     </RatingStar>
     <RatingStar :value="5">
-      <PhosphorIconStar :size="20" />
+      <PhStar :size="20" />
     </RatingStar>
   </Rating>
 </template>

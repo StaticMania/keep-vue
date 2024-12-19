@@ -78,6 +78,19 @@ const installKeepVueForNuxt = {
   pnpm: "pnpm add keep-vue\npnpm add -D nuxt-phosphor-icons",
 };
 
+const installNuxtColorMode = {
+  npx: `npx nuxi module add color-mode`,
+};
+
+const nuxtColorModeModuleAdd = {
+  " nuxt.config.ts": ` export default defineNuxtConfig({
+  //rest modules
+  modules: [
+    '@nuxtjs/color-mode'
+  ]
+})`,
+};
+
 const phIconNuxt = {
   "nuxt.config.ts": `export default defineNuxtConfig({ modules: [
   //rest module...
@@ -140,13 +153,15 @@ const ImportKeepNuxt = {
 </template>`,
 };
 export {
-  ImportKeepNuxt,
-  ImportKeepVue,
-  NuxtInstall,
   addTwCssForNuxt,
   addTwCssForVue,
+  ImportKeepNuxt,
+  ImportKeepVue,
   installKeepVue,
   installKeepVueForNuxt,
+  installNuxtColorMode,
+  nuxtColorModeModuleAdd,
+  NuxtInstall,
   phIconNuxt,
   twConfigForNuxt,
   twConfigForVue,

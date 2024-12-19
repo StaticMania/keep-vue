@@ -1,6 +1,5 @@
 const DefaultModalCode = {
   "ModalComponent.vue": `<script setup>
-import { PhCloudArrowUp } from "@phosphor-icons/vue";
 import {
   Button,
   Modal,
@@ -82,7 +81,7 @@ import {
             class="mb-6 flex flex-col items-center justify-center space-y-3">
             <div
               className="flex h-20 w-20 items-center justify-center rounded-full border border-metal-100 bg-success-50 text-success-500 dark:border-metal-800 dark:bg-metal-800 dark:text-white">
-              <PhosphorIconCheckCircle weight="fill" :size="60" />
+              <PhCheckCircle weight="fill" :size="60" />
             </div>
             <div class="space-y-1 text-center">
               <ModalTitle>Payment Successful</ModalTitle>

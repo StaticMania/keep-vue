@@ -93,12 +93,11 @@ import {
       </NotificationAction>
       <NotificationContent
         class="mb-2 max-w-xs space-y-4 overflow-hidden rounded-xl">
-        <NuxtImg
+        <img
           src="https://via.placeholder.com/600x400"
           alt="image"
-          class="rounded-lg"
-          :width="600"
-          :height="400" />
+          class="rounded-lg w-[600px] h-[400px]"
+         />
         <div>
           <NotificationTitle>Can we store cookies?</NotificationTitle>
           <NotificationDescription>
