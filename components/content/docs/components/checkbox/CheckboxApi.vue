@@ -11,9 +11,9 @@ const CheckBoxApiData = [
   },
   {
     id: 3,
-    propsName: "checked",
-    propsType: "v-model",
-    propsDescription: "Checked state of the checkbox",
+    propsName: "default-checked",
+    propsType: "boolean",
+    propsDescription: "Default Checked state of the checkbox",
   },
 ];
 </script>
