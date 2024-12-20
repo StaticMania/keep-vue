@@ -14,8 +14,7 @@ const picked = ref("");
         id="message"
         v-model="picked"
         placeholder="Write your message here"
-        :rows="8"
-        class="rounded-2xl" />
+        :rows="8" />
       <p className="text-body-4 font-normal text-metal-300">
         Message must be a at least 100 words.
       </p>
