@@ -21,10 +21,10 @@ Customize the dropdown according to your preferences.
 ::CustomDropdown
 ::
 
-## Dropdown Without Arrow
+## Dropdown With Arrow
 
 If you don't want the arrow while showing the dropdown remove the `<DropdownArrow />` while using the dropdown.
-::DropdownWithoutArrowIcon
+::DropdownWithArrowIcon
 ::
 
 ## Dropdown Api

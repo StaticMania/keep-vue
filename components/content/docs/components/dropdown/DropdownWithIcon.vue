@@ -3,7 +3,6 @@ import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPrev
 import {
   Dropdown,
   DropdownAction,
-  DropdownArrow,
   DropdownContent,
   DropdownItem,
   DropdownList,
@@ -53,7 +52,6 @@ import { DropdownWithIconCode } from "./dropdownCode";
               Logout
             </DropdownItem>
           </DropdownList>
-          <DropdownArrow />
         </DropdownContent>
       </Dropdown>
     </div>
