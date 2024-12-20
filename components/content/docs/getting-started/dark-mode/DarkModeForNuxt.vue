@@ -8,7 +8,11 @@ import {
   NuxtModuleAddCode,
   nuxtThemeSwitcherCode,
 } from "./darkModeCodes";
-import ThemeSwitcherForDoc from "./ThemeSwitcherForDoc.vue";
+const colorMode = useColorMode();
+
+const toggleTheme = () => {
+  colorMode.preference = colorMode.preference === "dark" ? "light" : "dark";
+};
 </script>
 
 <template>
@@ -80,7 +84,23 @@ import ThemeSwitcherForDoc from "./ThemeSwitcherForDoc.vue";
         </p>
         <div class="!my-4">
           <CodeHighlightWithPreview :code="nuxtThemeSwitcherCode">
-            <ThemeSwitcherForDoc />
+            <div class="flex items-center justify-center">
+              <ClientOnly>
+                <Button
+                  class="rounded-lg bg-primary-25 p-2.5 hover:bg-primary-50 dark:bg-metal-600 dark:hover:bg-metal-700"
+                  @click="() => toggleTheme()">
+                  <PhosphorIconMoon
+                    v-if="colorMode.preference === 'dark'"
+                    :size="21"
+                    class="transition duration-300 ease-in-out" />
+                  <PhosphorIconSunDim
+                    v-else
+                    color="black"
+                    :size="21"
+                    class="transition duration-300 ease-in-out" />
+                </Button>
+              </ClientOnly>
+            </div>
           </CodeHighlightWithPreview>
         </div>
       </TimelineContent>
