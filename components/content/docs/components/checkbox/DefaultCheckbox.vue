@@ -1,11 +1,7 @@
 <script lang="ts" setup>
-import { ref } from "vue";
 import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPreview.vue";
 import { Checkbox, Label } from "~/src";
 import { defaultCheckboxCode } from "./checkboxCode";
-
-const statusOne = ref(true);
-const statusTwo = ref(false);
 </script>
 <template>
   <CodeHighlightWithPreview :code="defaultCheckboxCode">
@@ -15,17 +11,11 @@ const statusTwo = ref(false);
           Keep Design System License
         </p>
         <fieldset class="flex items-center gap-2">
-          <Checkbox
-            id="single"
-            :checked="statusOne"
-            @update:checked="(value) => (statusOne = value)" />
+          <Checkbox id="single" default-checked />
           <Label for="single">Single License</Label>
         </fieldset>
         <fieldset class="flex items-center gap-2">
-          <Checkbox
-            id="team"
-            :checked="statusTwo"
-            @update:checked="(value) => (statusTwo = value)" />
+          <Checkbox id="team" />
           <Label for="team">Team License</Label>
         </fieldset>
       </div>

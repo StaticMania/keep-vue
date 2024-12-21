@@ -72,7 +72,6 @@ const dropdownData = [
             </div>
           </DropdownItem>
         </DropdownList>
-        <DropdownArrow />
       </DropdownContent>
     </Dropdown>
 </template>`,
@@ -180,20 +179,20 @@ import {
             Logout
           </DropdownItem>
         </DropdownList>
-        <DropdownArrow />
       </DropdownContent>
     </Dropdown>
   </div>
 </template>`,
 };
 
-const DropdownWithoutArrowIconCode = {
+const DropdownWithArrowIconCode = {
   "DropdownComponent.vue": `<script setup>
 import {
   Button,
   Divider,
   Dropdown,
   DropdownAction,
+  DropdownArrow,
   DropdownContent,
   DropdownItem,
   DropdownList,
@@ -206,7 +205,7 @@ import {
       <DropdownAction as-child>
         <Button>Open Dropdown</Button>
       </DropdownAction>
-      <DropdownContent>
+       <DropdownContent class="border-0">
         <DropdownList>
           <DropdownItem>Contacts</DropdownItem>
           <DropdownItem>Phone</DropdownItem>
@@ -218,6 +217,7 @@ import {
           <DropdownItem>Account</DropdownItem>
           <DropdownItem>Logout</DropdownItem>
         </DropdownList>
+         <DropdownArrow />
       </DropdownContent>
     </Dropdown>
   </div>
@@ -227,6 +227,6 @@ import {
 export {
   CustomDropdownCode,
   DefaultDropdownCode,
+  DropdownWithArrowIconCode,
   DropdownWithIconCode,
-  DropdownWithoutArrowIconCode,
 };

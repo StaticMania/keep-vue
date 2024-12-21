@@ -6,7 +6,6 @@ import {
   Button,
   Dropdown,
   DropdownAction,
-  DropdownArrow,
   DropdownContent,
   DropdownList,
 } from "~/src";
@@ -75,7 +74,6 @@ const dropdownData = [
               </div>
             </DropdownItem>
           </DropdownList>
-          <DropdownArrow />
         </DropdownContent>
       </Dropdown>
     </div>

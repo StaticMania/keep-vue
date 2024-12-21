@@ -5,6 +5,8 @@ description: "The slider component in the Keep Vue allows users to select a valu
 
 ## Default Slider
 
+To use the Slider, you must bind the slider's `ref` value to the `v-model`.
+
 ::DefaultSlider
 ::
 

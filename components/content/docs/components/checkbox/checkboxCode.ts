@@ -1,33 +1,24 @@
 const defaultCheckboxCode = {
   "CheckboxComponent.vue": `<script setup>
 import { Checkbox, Label } from 'keep-vue'
-import { ref } from 'vue'
-
-const statusOne = ref(true);
-const statusTwo = ref(false);
-console.log(statusOne.value, statusTwo.value)
 </script>
 
 <template>
-  <div class="space-y-3 p-3">
+  <div class="flex items-center justify-center">
+      <div class="space-y-3 p-3">
         <p class="text-body-3 font-normal dark:text-metal-300">
           Keep Design System License
         </p>
         <fieldset class="flex items-center gap-2">
-          <Checkbox
-            id="single"
-            :checked="statusOne"
-            @update:checked="(value) => (statusOne = value)" />
+          <Checkbox id="single" default-checked />
           <Label for="single">Single License</Label>
         </fieldset>
         <fieldset class="flex items-center gap-2">
-          <Checkbox
-            id="team"
-            :checked="statusTwo"
-            @update:checked="(value) => (statusTwo = value)" />
+          <Checkbox id="team" />
           <Label for="team">Team License</Label>
         </fieldset>
       </div>
+    </div>
 </template>`,
 };
 

@@ -35,8 +35,7 @@ const handleSubmit = () => {};
           id="m1"
           v-model="textAreaValue"
           placeholder="Write your message here"
-          :rows="8"
-          class="rounded-2xl" />
+          :rows="8" />
       </fieldset>
       <Button size="sm" color="secondary" type="submit" class="!mt-5 w-full">
         Send Message

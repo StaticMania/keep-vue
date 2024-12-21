@@ -2,6 +2,8 @@
 import {
   CheckboxIndicator,
   CheckboxRoot,
+  useForwardPropsEmits,
+  type CheckboxRootEmits,
   type CheckboxRootProps,
 } from "radix-vue";
 import { computed } from "vue";
@@ -20,25 +22,21 @@ const props = withDefaults(
     class: "",
     iconClass: "",
     variant: "default",
-    checked: false,
   },
 );
 
-// Define emits
-const emit = defineEmits<{
-  "update:checked": [value: boolean];
-}>();
+const emits = defineEmits<CheckboxRootEmits>();
 
 const restProps = computed(() => {
-  const { class: _, iconClass, checked, variant, ...rest } = props;
+  const { class: _, iconClass, variant, ...rest } = props;
   return rest;
 });
+const forwarded = useForwardPropsEmits(restProps, emits);
 </script>
 
 <template>
   <CheckboxRoot
-    v-bind="restProps"
-    :checked="checked"
+    v-bind="forwarded"
     :class="
       cn(
         'peer relative h-4 w-4 shrink-0 border border-metal-200 ring-offset-primary-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-100 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary-500 data-[state=checked]:text-primary-500 dark:border-metal-100 dark:ring-offset-primary-500 dark:focus-visible:ring-primary-500 dark:data-[state=checked]:text-primary-500',
@@ -52,8 +50,7 @@ const restProps = computed(() => {
           'rounded data-[state=checked]:before:rounded-sm',
         props.class,
       )
-    "
-    @update:checked="(value) => emit('update:checked', value)">
+    ">
     <!-- indicator -->
     <CheckboxIndicator
       v-if="props.variant === 'default'"
