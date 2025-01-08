@@ -1,0 +1,8 @@
+{
+  "cSpell.words": ["embla", "Nuxt", "Sonner", "Triggerable", "vnode", "wght"],
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.classRegex": [
+    ["keepTw\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ]
+}

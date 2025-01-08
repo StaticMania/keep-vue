@@ -1,0 +1,11 @@
+# Ignore artifacts:
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist 
+node_modules
+lib
+# Ignore specific files:
+package-lock.json
