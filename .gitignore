@@ -30,3 +30,7 @@ package-lock.json
 
 pages\test
 src\components\Test
+
+# Ide files
+.idea
+.vscode
