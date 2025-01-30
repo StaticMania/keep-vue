@@ -235,6 +235,7 @@ const presetFn = (color: ColorThemeType) => {
 const keepTheme = (config: Config, color = colors): Config => {
   const twConfig = {
     darkMode: "selector",
+    content: ["node_modules/keep-vue/**/*.{js,jsx,ts,tsx}"],
     presets: [presetFn(color)],
     plugins: [tailwindAnimate],
   };

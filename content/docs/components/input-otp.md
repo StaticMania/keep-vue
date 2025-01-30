@@ -10,7 +10,7 @@ A basic OTP input component designed for straightforward entry of one-time passw
 ::DefaultInputOtp
 ::
 
-## Group Input OTP
+## Input OTP with Separator
 
 An OTP input component that groups input fields together, providing a more organized and compact layout for entering one-time passwords efficiently.
 
