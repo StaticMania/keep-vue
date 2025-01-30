@@ -15,6 +15,15 @@ import { Button } from "keep-vue";
 </template>`,
 };
 
+const buttonSoftBgVariantCode = {
+  "ButtonComponent.vue": `<script setup>
+import { Button } from "keep-vue";
+</script>
+<template>
+    <Button color="primary" variant="softBg">Click here</Button>
+</template>`,
+};
+
 const buttonColorVariantCode = {
   "ButtonComponent.vue": `<script setup>
 import { Button } from "keep-vue";
@@ -119,8 +128,6 @@ import { Button } from "keep-vue";
 };
 
 export {
-  ButtonWithLeftSideIcon,
-  ButtonWithRightSideIcon,
   buttonColorVariantCode,
   buttonLinkVariantCode,
   buttonOutlineVariantCode,
@@ -128,4 +135,7 @@ export {
   buttonRadiusVariantCode,
   buttonShapeVariantCode,
   buttonSizeVariantCode,
+  buttonSoftBgVariantCode,
+  ButtonWithLeftSideIcon,
+  ButtonWithRightSideIcon,
 };

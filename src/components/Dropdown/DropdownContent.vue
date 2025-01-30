@@ -19,6 +19,7 @@ const props = withDefaults(
   {
     sideOffset: 4,
     class: "",
+    align: "center",
   },
 );
 const emits = defineEmits<DropdownMenuContentEmits>();

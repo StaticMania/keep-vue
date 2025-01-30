@@ -17,7 +17,7 @@ const restProps = computed(() => {
 </script>
 
 <template>
-  <slot v-if="asChild" v-bind="restProps"></slot>
+  <slot v-if="asChild" v-bind="restProps" />
   <button v-else type="button" v-bind="restProps" :class="cn(props.class)">
     <slot />
   </button>

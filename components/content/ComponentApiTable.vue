@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-interface ComponentApiProps {
+export interface ComponentApiProps {
   id: number;
   propsName: string;
   propsDescription: string;

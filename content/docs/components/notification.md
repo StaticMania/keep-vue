@@ -31,4 +31,4 @@ Explore the available props for the Notification component.
 
 ## Reference
 
-To learn more about the Notification component, please see the documentation of [Redix Vue Dialog](https://www.radix-vue.com/components/dialog.html#dialog).
+To learn more about the Notification component, please see the documentation of [Radix Vue Dialog](https://www.radix-vue.com/components/dialog.html#dialog).

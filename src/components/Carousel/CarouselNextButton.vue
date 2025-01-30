@@ -21,7 +21,7 @@ const { canScrollNext, scrollNext } = useCarousel();
 </script>
 
 <template>
-  <slot v-if="asChild" :can-scroll-next :scroll-next v-bind="restProps"></slot>
+  <slot v-if="asChild" :can-scroll-next :scroll-next v-bind="restProps" />
 
   <button
     v-else

@@ -10,15 +10,15 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  DrawerTrigger,
+  DrawerAction,
 } from "keep-vue";
 </script>
 
 <template>
    <Drawer position="bottom">
-    <DrawerTrigger as-child>
+    <DrawerAction as-child>
       <Button>Open Drawer</Button>
-    </DrawerTrigger>
+    </DrawerAction>
     <DrawerContent>
       <DrawerBar />
       <div class="mx-auto my-10 w-full max-w-sm">
@@ -57,7 +57,7 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  DrawerTrigger,
+  DrawerAction,
 } from "keep-vue";
 
 const positionValue = ["left", "right", "top", "bottom"];
@@ -69,9 +69,9 @@ const positionValue = ["left", "right", "top", "bottom"];
         v-for="position in positionValue"
         :key="position"
         :position="position as any">
-        <DrawerTrigger as-child>
+        <DrawerAction as-child>
           <Button>{{ position }}</Button>
-        </DrawerTrigger>
+        </DrawerAction>
         <DrawerContent>
           <DrawerBar />
           <div class="mx-auto my-auto w-full max-w-sm">

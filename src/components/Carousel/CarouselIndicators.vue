@@ -19,10 +19,11 @@ const { selectedIndex, scrollSnaps, onDotButtonClick } = useCarousel()!;
     <DotButton
       v-for="(number, index) in scrollSnaps"
       :key="number"
+      :data-active="index === selectedIndex"
       :class="
         cn(
           carouselTheme.controls.indicators.dot,
-          index === selectedIndex && 'border-metal-900 dark:border-metal-100',
+          'data-[active=true]:border-metal-900 dark:data-[active=true]:border-metal-100',
           props.dotButtonStyle,
         )
       "

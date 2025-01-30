@@ -74,12 +74,25 @@ export { default as RangeDatePicker } from "./components/RangeCalender/RangeCale
 export { default as Dropdown } from "./components/Dropdown/Dropdown.vue";
 export { default as DropdownAction } from "./components/Dropdown/DropdownAction.vue";
 export { default as DropdownArrow } from "./components/Dropdown/DropdownArrow.vue";
+export { default as DropdownCheckboxItem } from "./components/Dropdown/DropdownCheckboxItem.vue";
 export { default as DropdownContent } from "./components/Dropdown/DropdownContent.vue";
+export { default as DropdownDivider } from "./components/Dropdown/DropdownDivider.vue";
+export { default as DropdownGroup } from "./components/Dropdown/DropdownGroup.vue";
 export { default as DropdownItem } from "./components/Dropdown/DropdownItem.vue";
-export { default as DropdownList } from "./components/Dropdown/DropdownList.vue";
+export { default as DropdownLabel } from "./components/Dropdown/DropdownLabel.vue";
+export { default as DropdownRadioGroup } from "./components/Dropdown/DropdownRadioGroup.vue";
+export { default as DropdownRadioItem } from "./components/Dropdown/DropdownRadioItem.vue";
+export { default as DropdownShortcut } from "./components/Dropdown/DropdownShortcut.vue";
+export { default as DropdownSub } from "./components/Dropdown/DropdownSub.vue";
+export { default as DropdownSubAction } from "./components/Dropdown/DropdownSubAction.vue";
+export { default as DropdownSubContent } from "./components/Dropdown/DropdownSubContent.vue";
 
 //Drawer component
-export { DrawerClose, DrawerPortal, DrawerTrigger } from "vaul-vue";
+export {
+  DrawerTrigger as DrawerAction,
+  DrawerClose,
+  DrawerPortal,
+} from "vaul-vue";
 export { default as Drawer } from "./components/Drawer/Drawer.vue";
 export { default as DrawerBar } from "./components/Drawer/DrawerBar.vue";
 export { default as DrawerContent } from "./components/Drawer/DrawerContent.vue";
@@ -98,6 +111,12 @@ export { default as EmptyTitle } from "./components/Empty/EmptyTitle.vue";
 //Input component
 export { default as Input } from "./components/Input/Input.vue";
 export { default as InputIcon } from "./components/Input/InputIcon.vue";
+
+//Input OTP
+export { default as InputOTP } from "./components/InputOTP/InputOTP.vue";
+export { default as InputOTPDivider } from "./components/InputOTP/InputOTPDivider.vue";
+export { default as InputOTPGroup } from "./components/InputOTP/InputOTPGroup.vue";
+export { default as InputOTPInputField } from "./components/InputOTP/InputOTPInputField.vue";
 
 //Label component
 export { default as Label } from "./components/Label/Label.vue";
@@ -155,6 +174,17 @@ export { default as Radio } from "./components/Radio/Radio.vue";
 //Rating component
 export { default as Rating } from "./components/Rating/Rating.vue";
 export { default as RatingStar } from "./components/Rating/RatingStar.vue";
+
+export { default as Select } from "./components/Select/Select.vue";
+export { default as SelectAction } from "./components/Select/SelectAction.vue";
+export { default as SelectContent } from "./components/Select/SelectContent.vue";
+export { default as SelectDivider } from "./components/Select/SelectDivider.vue";
+export { default as SelectGroup } from "./components/Select/SelectGroup.vue";
+export { default as SelectItem } from "./components/Select/SelectItem.vue";
+export { default as SelectLabel } from "./components/Select/SelectLabel.vue";
+export { default as SelectScrollDownButton } from "./components/Select/SelectScrollDownButton.vue";
+export { default as SelectScrollUpButton } from "./components/Select/SelectScrollUpButton.vue";
+export { default as SelectValue } from "./components/Select/SelectValue.vue";
 
 //skeleton component
 export { default as Skeleton } from "./components/Skeleton/Skeleton.vue";

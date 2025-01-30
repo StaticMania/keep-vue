@@ -8,8 +8,8 @@ export interface TableCaptionProps extends /* @vue-ignore*/ HTMLAttributes {}
 
 const props = defineProps<TableCaptionProps & ClassProps>();
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
 </script>
 

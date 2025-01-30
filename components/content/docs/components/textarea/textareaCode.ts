@@ -87,7 +87,7 @@ console.log(picked.value);
 </script>
 
 <template>
-  <fieldset className="space-y-1.5 p-2">
+  <fieldset class="space-y-1.5 p-2">
     <Label for="message">Your message*</Label>
         <Textarea
         id="message"
@@ -95,7 +95,7 @@ console.log(picked.value);
         placeholder="Write your message here"
         :rows="8"
         class="rounded-2xl" />
-    <p className="text-body-4 font-normal text-metal-300">
+    <p class="text-body-4 font-normal text-metal-300">
       Message must be a at least 100 words.
     </p>
   </fieldset>

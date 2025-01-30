@@ -3,6 +3,7 @@ import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPrev
 import {
   Button,
   Drawer,
+  DrawerAction,
   DrawerBar,
   DrawerClose,
   DrawerContent,
@@ -10,7 +11,6 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  DrawerTrigger,
 } from "~/src";
 import { DefaultDrawerCode } from "./drawerCode";
 </script>
@@ -19,9 +19,9 @@ import { DefaultDrawerCode } from "./drawerCode";
   <CodeHighlightWithPreview :code="DefaultDrawerCode">
     <div class="flex items-center justify-center">
       <Drawer position="bottom">
-        <DrawerTrigger as-child>
+        <DrawerAction as-child>
           <Button>Open Drawer</Button>
-        </DrawerTrigger>
+        </DrawerAction>
         <DrawerContent>
           <DrawerBar />
           <div class="mx-auto my-10 w-full max-w-sm">

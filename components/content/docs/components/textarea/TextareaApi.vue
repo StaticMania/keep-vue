@@ -3,13 +3,6 @@ import ComponentApiTable from "~/components/content/ComponentApiTable.vue";
 
 const textareaApiData = [
   {
-    id: 1,
-    propsName: "className",
-    propsType: "string",
-    propsDescription: "className for custom style",
-    default: "",
-  },
-  {
     id: 2,
     propsName: "disabled",
     propsType: "boolean",

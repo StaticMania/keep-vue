@@ -17,9 +17,9 @@ const props = withDefaults(defineProps<TabsProps & ClassProps>(), {
 });
 
 const restProps = computed(() => {
-  const { class: _, defaultActive, variant, ...delegated } = props;
+  const { class: _, defaultActive, variant, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 
 const changedDefaultActive = computed(() => {

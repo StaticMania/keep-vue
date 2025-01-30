@@ -54,4 +54,4 @@ Here is a list of the props that you can pass to the DatePicker and RangeDatePic
 
 ## Reference
 
-To learn more about the DatePicker, please see the documentation of [Redix Vue Calender](https://www.radix-vue.com/components/calendar) and [Redix Vue Range Calendar](https://www.radix-vue.com/components/range-calendar).
+To learn more about the DatePicker, please see the documentation of [Radix Vue Calender](https://www.radix-vue.com/components/calendar) and [Radix Vue Range Calendar](https://www.radix-vue.com/components/range-calendar).

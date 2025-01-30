@@ -61,4 +61,4 @@ Explore the available props for the Accordion component
 
 ## Reference
 
-To learn more about the Accordion, please see the documentation of [Redix Vue Accordion](https://www.radix-vue.com/components/accordion)
+To learn more about the Accordion, please see the documentation of [Radix Vue Accordion](https://www.radix-vue.com/components/accordion)

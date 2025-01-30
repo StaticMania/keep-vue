@@ -22,7 +22,7 @@ const { canScrollPrev, scrollPrev } = useCarousel();
 </script>
 
 <template>
-  <slot v-if="asChild" :can-scroll-prev :scroll-prev v-bind="restProps"></slot>
+  <slot v-if="asChild" :can-scroll-prev :scroll-prev v-bind="restProps" />
 
   <button
     v-else

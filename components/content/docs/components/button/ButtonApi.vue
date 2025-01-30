@@ -10,23 +10,23 @@ const buttonApiData = ref([
   {
     id: 2,
     propsName: "variant",
-    propsType: ["link", "outline"],
+    propsType: ["default", "link", "outline", "softBg"],
     propsDescription: "Variant of the button.",
-    default: "outline",
+    default: "default",
   },
   {
     id: 3,
     propsName: "shape",
     propsType: ["circle", "icon"],
     propsDescription: "Apply circular styling to the button.",
-    default: "circle",
+    default: "",
   },
   {
     id: 4,
     propsName: "position",
     propsType: ["start", "end", "center"],
     propsDescription: "Position of the button within a button group.",
-    default: "start",
+    default: "",
   },
   {
     id: 5,

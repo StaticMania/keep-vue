@@ -4,8 +4,8 @@ import {
   Dropdown,
   DropdownAction,
   DropdownContent,
+  DropdownGroup,
   DropdownItem,
-  DropdownList,
 } from "~/src";
 import { DropdownWithIconCode } from "./dropdownCode";
 </script>
@@ -20,7 +20,7 @@ import { DropdownWithIconCode } from "./dropdownCode";
           <Button>Open Dropdown</Button>
         </DropdownAction>
         <DropdownContent>
-          <DropdownList>
+          <DropdownGroup>
             <DropdownItem>
               <PhosphorIconUsers :size="20" />
               Contacts
@@ -51,7 +51,7 @@ import { DropdownWithIconCode } from "./dropdownCode";
               <PhosphorIconSignOut :size="20" />
               Logout
             </DropdownItem>
-          </DropdownList>
+          </DropdownGroup>
         </DropdownContent>
       </Dropdown>
     </div>

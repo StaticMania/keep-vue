@@ -31,13 +31,13 @@ const props = withDefaults(
 
 const emits = defineEmits<RangeCalendarRootEmits>();
 
-const delegatedProps = computed(() => {
-  const { class: _, classes, dayShape, ...delegated } = props;
+const restProps = computed(() => {
+  const { class: _, classes, dayShape, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 
-const forwarded = useForwardPropsEmits(delegatedProps, emits);
+const forwarded = useForwardPropsEmits(restProps, emits);
 
 const changedDayShaped = computed(() => {
   return props.dayShape;

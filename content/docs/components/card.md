@@ -25,6 +25,6 @@ Any component can be placed inside the card, including avatars.
 
 ## Register Card
 
-Here we design a demo register card for the user. Customize it as desired using the className props.
+Here we design a demo register card for the user. Customize it as desired using the class props.
 ::RegisterCard
 ::

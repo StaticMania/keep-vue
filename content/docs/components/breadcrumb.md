@@ -71,4 +71,4 @@ Explore the available props for the `<BreadcrumbPage>` component.
 
 ## Reference
 
-To explore the achild porperty see [Redix vue asChild](https://www.radix-vue.com/guides/composition)
+To explore the achild porperty see [Radix Vue asChild](https://www.radix-vue.com/guides/composition)

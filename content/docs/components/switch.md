@@ -29,4 +29,4 @@ Refer to the API documentation for detailed information about the Toggle Switch 
 
 ## Reference
 
-To learn more about the Switch, please see the documentation of [Redix Vue Switch](https://www.radix-vue.com/components/switch).
+To learn more about the Switch, please see the documentation of [Radix Vue Switch](https://www.radix-vue.com/components/switch).

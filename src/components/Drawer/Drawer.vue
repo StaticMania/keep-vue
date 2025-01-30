@@ -24,8 +24,8 @@ const props = withDefaults(
 const emits = defineEmits<DrawerRootEmits>();
 
 const restProps = computed(() => {
-  const { direction, position, class: _, ...delegated } = props;
-  return delegated;
+  const { direction, position, class: _, ...rest } = props;
+  return rest;
 });
 
 const forwardProps = useForwardPropsEmits(restProps, emits);

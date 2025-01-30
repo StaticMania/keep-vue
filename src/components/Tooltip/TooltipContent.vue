@@ -23,13 +23,12 @@ const props = withDefaults(defineProps<TooltipContentProps & ClassProps>(), {
 
 const emits = defineEmits<TooltipContentEmits>();
 
-const delegatedProps = computed(() => {
-  const { class: _, ...delegated } = props;
-
-  return delegated;
+const restProps = computed(() => {
+  const { class: _, ...rest } = props;
+  return rest;
 });
 
-const forwarded = useForwardPropsEmits(delegatedProps, emits);
+const forwarded = useForwardPropsEmits(restProps, emits);
 
 const { color } = useTooltip();
 </script>
