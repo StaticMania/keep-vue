@@ -7,7 +7,7 @@ import {
   InputOTPInputField,
   Toast,
 } from "~/src";
-import { defaultInputOTPCode } from "./inputOTPCode";
+import { inputOtpSeparatorCode } from "./inputOTPCode";
 
 const value = ref<string[]>([]);
 
@@ -17,7 +17,7 @@ const handleComplete = (e: string[]) => {
 </script>
 
 <template>
-  <CodeHighlightWithPreview :code="defaultInputOTPCode">
+  <CodeHighlightWithPreview :code="inputOtpSeparatorCode">
     <div class="flex items-center justify-center">
       <InputOTP
         id="pin-input"

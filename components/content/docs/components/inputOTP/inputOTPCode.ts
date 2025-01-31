@@ -11,7 +11,7 @@ function handleComplete(e: string[]) {
 </script>
 
 <template>
-      <InputOTP id="pin-input" :model-value="value" @complete="handleComplete">
+      <InputOTP id="pin-input" v-model="value" @complete="handleComplete">
         <InputOTPGroup>
           <template v-for="(id, index) in 5" :key="id">
             <InputOTPInputField :index="index" />
@@ -21,4 +21,41 @@ function handleComplete(e: string[]) {
 </template>`,
 };
 
-export { defaultInputOTPCode };
+const inputOtpSeparatorCode = {
+  "DefaultInputOTP.vue": `<script lang="ts" setup>
+import {
+  InputOTP,
+  InputOTPDivider,
+  InputOTPGroup,
+  InputOTPInputField,
+  Toast,
+} from "keep-vue";
+import { defaultInputOTPCode } from "./inputOTPCode";
+
+const value = ref<string[]>([]);
+
+const handleComplete = (e: string[]) => {
+  Toast(e.join(""));
+};
+</script>
+
+<template>
+      <InputOTP
+        id="pin-input"
+        v-model="value"
+        placeholder="○"
+        @complete="handleComplete">
+        <InputOTPGroup>
+          <template v-for="(id, index) in 5" :key="id">
+            <InputOTPInputField :index="index" />
+            <template v-if="index !== 4">
+              <InputOTPDivider />
+            </template>
+          </template>
+        </InputOTPGroup>
+      </InputOTP>
+</template>
+`,
+};
+
+export { defaultInputOTPCode, inputOtpSeparatorCode };
