@@ -1,5 +1,5 @@
 const defaultSelectCode = {
-  "DefaultSelect.vue": `<script lang="ts" setup>
+  "SelectComponent.vue": `<script lang="ts" setup>
 import {
   Select,
   SelectAction,
@@ -39,7 +39,7 @@ const handleModelValue = (data: string) => {
 };
 
 const selectActionWithIconCode = {
-  "SelectActionWithIcon.vue": `<script lang="ts" setup>
+  "SelectComponent.vue": `<script lang="ts" setup>
 import {
   Select,
   SelectAction,
@@ -75,7 +75,7 @@ import {
 `,
 };
 const selectItemWithIconCode = {
-  "SelectActionWithIcon.vue": `<script lang="ts" setup>
+  "SelectComponent.vue": `<script lang="ts" setup>
 import {
   Select,
   SelectAction,
