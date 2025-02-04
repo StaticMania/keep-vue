@@ -9,6 +9,19 @@ const radioApiData = [
     propsDescription: "Specifies the shape of the radio input.",
     default: "rounded",
   },
+  {
+    id: 2,
+    propsName: "v-model",
+    propsType: "string",
+    propsDescription: "The controlled value of the radio item to check.",
+  },
+  {
+    id: 2,
+    propsName: "@update:model-value",
+    propsType: "[payload: string]",
+    propsDescription:
+      "Event handler called when the radio group value changes.",
+  },
 ];
 </script>
 

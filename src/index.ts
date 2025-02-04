@@ -245,3 +245,5 @@ export { default as UploadBody } from "./components/Upload/UploadBody.vue";
 export { default as UploadFooter } from "./components/Upload/UploadFooter.vue";
 export { default as UploadIcon } from "./components/Upload/UploadIcon.vue";
 export { default as UploadText } from "./components/Upload/UploadText.vue";
+
+export { default as VisuallyHidden } from "./components/Helpers/VisuallyHidden.vue";
