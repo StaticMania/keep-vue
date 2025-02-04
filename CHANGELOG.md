@@ -16,22 +16,27 @@ We are thrilled to announce the initial release of Keep vue, our open-source com
 
 ### v1.1.0 (2025-02-05)
 
-#### Features
+### Features
 
-- <AvatarFallback> component added in Avatar component.
-- Button component new variant (default and softBg) Added.
-- Checked component api documentation updated.
-- <CarouselDotButton> component api added.
-- Drawer Component api updated.
-- Dropdown component three new component (Dropdown Submenu , Dropdown with radio, Dropdown with checkbox ) variant added.
-- <DropdownList> component name changed to <DropdownAction>.
-- Dropdown component api documentation updated.
-- Input component api documentation updated.
-- New component <Input OTP> added.
-- Radio component api updated.
-- New component <Select> added.
+- **`<AvatarFallback>`** component added to the Avatar component.
+- **Button Component:** New variants added - `default` and `softBg`.
+- **Checkbox Component:** API documentation updated.
+- **`<CarouselDotButton>`** component API added.
+- **Drawer Component:** API updated.
+- **Dropdown Component:** Added three new variants:
+  - **Dropdown Submenu**
+  - **Dropdown with Radio**
+  - **Dropdown with Checkbox**
+- **Renamed:** `<DropdownList>` is now `<DropdownAction>`.
+- **Dropdown Component:** API documentation updated.
+- **Input Component:** API documentation updated.
+- **New Component:** `<InputOTP>` added.
+- **Radio Component:** API updated.
+- **New Component:** `<Select>` added.
 
-#### Bug fixes
+---
 
-- Switch Component prop suggestions Issue
-- Input component catch input value Issue.
+### Bug Fixes
+
+- **Switch Component:** Fixed prop suggestion issues.
+- **Input Component:** Resolved issue with capturing input values.
