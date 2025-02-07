@@ -193,17 +193,33 @@ const presetFn = (color: ColorThemeType) => {
             "50%": { transform: "scale(1.1)" },
             "100%": { transform: "scale(1)" },
           },
+          fadeInUp: {
+            "0%": {
+              opacity: "0",
+              transform: "translateY(20px)",
+            },
+            "100%": {
+              opacity: "1",
+              transform: "translateY(auto)",
+            },
+          },
+          blinkIn: {
+            "0%,70%,100%": { opacity: "1" },
+            "20%,50%": { opacity: "0" },
+          },
           "accordion-down": {
-            from: { height: 0 },
+            from: { height: "0" },
             to: { height: "var(--radix-accordion-content-height)" },
           },
           "accordion-up": {
             from: { height: "var(--radix-accordion-content-height)" },
-            to: { height: 0 },
+            to: { height: "0" },
           },
         },
         animation: {
           zoomIn: "zoomIn 0.3s ease-in-out",
+          fadeInUp: "fadeInUp 0.3s ease-out",
+          blinkIn: "blinkIn 1.25s ease-out infinite",
           "accordion-down": "accordion-down 0.2s ease-out",
           "accordion-up": "accordion-up 0.2s ease-out",
         },
@@ -217,14 +233,14 @@ const presetFn = (color: ColorThemeType) => {
 };
 
 const keepTheme = (config: Config, color = colors): Config => {
-  const twConfigForKeepReact = {
+  const twConfig = {
     darkMode: "selector",
-    content: ["node_modules/keep-vue/**/*.{vue,ts,js}"],
+    content: ["node_modules/keep-vue/**/*.{js,jsx,ts,tsx}"],
     presets: [presetFn(color)],
     plugins: [tailwindAnimate],
   };
 
-  return merge(twConfigForKeepReact, { ...config });
+  return merge(twConfig, { ...config });
 };
 
 export { colors, keepTheme };

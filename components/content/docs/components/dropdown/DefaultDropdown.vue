@@ -6,7 +6,6 @@ import {
   DropdownAction,
   DropdownContent,
   DropdownItem,
-  DropdownList,
 } from "~/src";
 import { DefaultDropdownCode } from "./dropdownCode";
 </script>
@@ -18,18 +17,16 @@ import { DefaultDropdownCode } from "./dropdownCode";
         <DropdownAction as-child>
           <Button>Open Dropdown</Button>
         </DropdownAction>
-        <DropdownContent align="end">
-          <DropdownList>
-            <DropdownItem>Contacts</DropdownItem>
-            <DropdownItem>Phone</DropdownItem>
-            <DropdownItem>Statistics</DropdownItem>
-            <Divider />
-            <DropdownItem>Rename</DropdownItem>
-            <DropdownItem>Duplicate</DropdownItem>
-            <Divider />
-            <DropdownItem>Account</DropdownItem>
-            <DropdownItem>Logout</DropdownItem>
-          </DropdownList>
+        <DropdownContent align="center">
+          <DropdownItem>Contacts</DropdownItem>
+          <DropdownItem>Phone</DropdownItem>
+          <DropdownItem>Statistics</DropdownItem>
+          <Divider />
+          <DropdownItem>Rename</DropdownItem>
+          <DropdownItem>Duplicate</DropdownItem>
+          <Divider />
+          <DropdownItem>Account</DropdownItem>
+          <DropdownItem>Logout</DropdownItem>
         </DropdownContent>
       </Dropdown>
     </div>

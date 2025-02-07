@@ -23,4 +23,4 @@ A list of common `<Modal> `component APIs is provided below. For additional deta
 
 ## Reference
 
-To learn more about the modal, please see the documentation of [Redix Vue Dialog](https://www.radix-vue.com/components/dialog.html#dialog).
+To learn more about the modal, please see the documentation of [Radix Vue Dialog](https://www.radix-vue.com/components/dialog.html#dialog).

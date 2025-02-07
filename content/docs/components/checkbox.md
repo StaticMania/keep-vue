@@ -26,4 +26,4 @@ Here is a list of the props that you can pass to the Checkbox component
 
 ## Reference
 
-Our checkbox component is built using the `redix-vue/checkbox` package. For more information , follow the documentation [Redix Vue Checkbox](https://www.radix-vue.com/components/checkbox).
+Our checkbox component is built using the `redix-vue/checkbox` package. For more information , follow the documentation [Radix Vue Checkbox](https://www.radix-vue.com/components/checkbox).

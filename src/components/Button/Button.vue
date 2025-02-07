@@ -13,7 +13,7 @@ import {
 export interface ButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {
   size?: keyof ButtonSizeVariant;
   color?: keyof ButtonColorVariant;
-  variant?: "link" | "outline";
+  variant?: "link" | "outline" | "softBg" | "default";
   shape?: "circle" | "icon";
   position?: "center" | "start" | "end";
   radius?: "default" | "full";
@@ -23,6 +23,7 @@ const props = withDefaults(defineProps<ButtonProps & ClassProps>(), {
   size: "md",
   color: "primary",
   radius: "default",
+  variant: "default",
 });
 
 const restProps = computed(() => {

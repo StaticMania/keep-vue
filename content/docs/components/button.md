@@ -24,6 +24,13 @@ The Button component variant `link` allowing you to choose a style that fits you
 ::ButtonLinkVariant
 ::
 
+## Button SoftBg Variant
+
+The Button component variant `softBg` allowing you to choose a style that fits your design requirements. To Change the button color use color props, for more details see api reference.
+
+::ButtonSoftBgVariant
+::
+
 ## Button Color Variant
 
 The Button component comes with several color variants, including `primary`, `secondary`, `success`, `warning`, and `error`. Each variant provides a unique color scheme to match different use cases and design aesthetics.

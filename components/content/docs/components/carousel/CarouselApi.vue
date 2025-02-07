@@ -7,21 +7,18 @@ const carouselDataApi = [
     propsName: "options",
     propsType: "EmblaOptionsType",
     propsDescription: "Embla carousel options.",
-    default: "{}",
   },
   {
     id: 2,
     propsName: "plugins",
     propsType: "EmblaPluginType[]",
     propsDescription: "Embla carousel plugins for adding more variants.",
-    default: "",
   },
   {
     id: 3,
-    propsName: "carouselViewportClasses",
+    propsName: "view-port-class",
     propsType: "String",
     propsDescription: "Customize the viewport of the carousel container",
-    default: `''`,
   },
 ];
 </script>

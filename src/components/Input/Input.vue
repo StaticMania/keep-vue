@@ -6,7 +6,7 @@ import type { ClassProps } from "../../utils/interface";
 import { inputTheme } from "./inputTheme";
 
 export interface InputProps extends /* @vue-ignore */ InputHTMLAttributes {
-  type: string;
+  type?: string;
   // eslint-disable-next-line vue/require-default-prop
   defaultValue?: string | number;
   placeholder: string;
@@ -27,6 +27,11 @@ const modelValue = useVModel(props, "modelValue", emits, {
   passive: true,
   defaultValue: props.defaultValue,
 });
+const handleInput = (event: Event) => {
+  const target = event.target as HTMLInputElement;
+  const value = target.value;
+  emits("update:modelValue", value);
+};
 </script>
 
 <template>
@@ -34,5 +39,6 @@ const modelValue = useVModel(props, "modelValue", emits, {
     v-model="modelValue"
     :type="props.type"
     :placeholder="props.placeholder"
-    :class="cn(inputTheme.input, props.class)" />
+    :class="cn(inputTheme.input, props.class)"
+    @input="handleInput" />
 </template>

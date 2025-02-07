@@ -45,4 +45,4 @@ Explore the available props for the tooltip component
 
 ## Reference
 
-To learn more about the Tooltip, please see the documentation of [Redix Vue Tooltip](https://www.radix-vue.com/components/tooltip)
+To learn more about the Tooltip, please see the documentation of [Radix Vue Tooltip](https://www.radix-vue.com/components/tooltip)

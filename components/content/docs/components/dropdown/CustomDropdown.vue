@@ -7,7 +7,7 @@ import {
   Dropdown,
   DropdownAction,
   DropdownContent,
-  DropdownList,
+  DropdownGroup,
 } from "~/src";
 import { CustomDropdownCode } from "./dropdownCode";
 
@@ -55,7 +55,7 @@ const dropdownData = [
           <Button>Open Dropdown</Button>
         </DropdownAction>
         <DropdownContent>
-          <DropdownList>
+          <DropdownGroup>
             <DropdownItem v-for="data in dropdownData" :key="data.id">
               <div>
                 <Avatar>
@@ -73,7 +73,7 @@ const dropdownData = [
                 </p>
               </div>
             </DropdownItem>
-          </DropdownList>
+          </DropdownGroup>
         </DropdownContent>
       </Dropdown>
     </div>

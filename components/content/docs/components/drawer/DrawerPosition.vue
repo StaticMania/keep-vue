@@ -3,6 +3,7 @@ import CodeHighlightWithPreview from "~/components/content/CodeHighlightWithPrev
 import {
   Button,
   Drawer,
+  DrawerAction,
   DrawerBar,
   DrawerClose,
   DrawerContent,
@@ -10,7 +11,6 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  DrawerTrigger,
 } from "~/src";
 import { DrawerPositionCode } from "./drawerCode";
 
@@ -24,9 +24,9 @@ const positionValue = ["left", "right", "top", "bottom"];
         v-for="position in positionValue"
         :key="position"
         :position="position as any">
-        <DrawerTrigger as-child>
+        <DrawerAction as-child>
           <Button>{{ position }}</Button>
-        </DrawerTrigger>
+        </DrawerAction>
         <DrawerContent>
           <DrawerBar />
           <div class="mx-auto my-auto w-full max-w-sm">

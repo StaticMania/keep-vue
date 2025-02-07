@@ -34,3 +34,10 @@ An example demonstrating the usage of input fields.
 
 ::InputUseCases
 ::
+
+## Input Api
+
+Below is a list of available APIs for the Input component, allowing customization and control over its behavior and appearance.
+
+::InputApi
+::

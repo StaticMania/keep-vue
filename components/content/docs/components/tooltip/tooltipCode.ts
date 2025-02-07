@@ -60,10 +60,10 @@ import {
       </TooltipAction>
 
       <TooltipContent>
-        <p className="text-body-4 font-medium text-white">
+        <p class="text-body-4 font-medium text-white">
           Tooltips - Title here
         </p>
-        <p className="text-body-5 font-normal text-white">
+        <p class="text-body-5 font-normal text-white">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </p>

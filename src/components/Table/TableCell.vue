@@ -8,8 +8,8 @@ export interface TableCellProps extends /* @vue-ignore*/ TableHTMLAttributes {}
 const props = defineProps<TableCellProps>();
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
-  return delegated;
+  const { class: _, ...rest } = props;
+  return rest;
 });
 </script>
 

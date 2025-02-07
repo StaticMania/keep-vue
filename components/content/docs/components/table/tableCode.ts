@@ -111,7 +111,7 @@ import {
   DropdownAction,
   DropdownContent,
   DropdownItem,
-  DropdownList,
+  DropdownGroup,
   Table,
   TableBody,
   TableCaption,
@@ -246,13 +246,12 @@ import { data2 } from "./TableData";
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
-              <DropdownContent align="end"
-                class="max-w-[200px] border border-metal-100 p-3">
-                <DropdownList>
-                  <DropdownItem>Edit</DropdownItem>
-                  <DropdownItem>Move</DropdownItem>
-                  <DropdownItem>Delete</DropdownItem>
-                </DropdownList>
+               <DropdownContent
+                align="end"
+                class="max-w-[200px] border border-metal-100 p-3 dark:border-metal-800">
+                <DropdownItem>Edit</DropdownItem>
+                <DropdownItem>Move</DropdownItem>
+                <DropdownItem>Delete</DropdownItem>
               </DropdownContent>
             </Dropdown>
           </TableCell>
@@ -340,7 +339,7 @@ import {
   DropdownAction,
   DropdownContent,
   DropdownItem,
-  DropdownList,
+  DropdownGroup,
   Table,
   TableBody,
   TableCaption,
@@ -410,14 +409,13 @@ import { data3 } from "./TableData";
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
-              <DropdownContent align="end"
-                class="max-w-[200px] border border-metal-100 p-3">
-                <DropdownList>
+               <DropdownContent
+                  align="end"
+                  class="w-[200px] border border-metal-100 p-3 dark:border-metal-800">
                   <DropdownItem>Edit</DropdownItem>
                   <DropdownItem>Move</DropdownItem>
                   <DropdownItem>Delete</DropdownItem>
-                </DropdownList>
-              </DropdownContent>
+                </DropdownContent>
             </Dropdown>
           </TableCell>
         </TableRow>
@@ -509,7 +507,7 @@ import {
   DropdownAction,
   DropdownContent,
   DropdownItem,
-  DropdownList,
+  DropdownGroup,
   Table,
   TableBody,
   TableCaption,
@@ -606,13 +604,12 @@ import { data4 } from "./TableData";
                     class="size-4 fill-metal-900 dark:fill-white" />
                 </button>
               </DropdownAction>
-              <DropdownContent align="end"
-                class="max-w-[200px] border border-metal-100 p-3">
-                <DropdownList>
-                  <DropdownItem>Edit</DropdownItem>
-                  <DropdownItem>Move</DropdownItem>
-                  <DropdownItem>Delete</DropdownItem>
-                </DropdownList>
+             <DropdownContent
+                align="end"
+                class="w-[200px] border border-metal-100 p-3 dark:border-metal-800">
+                <DropdownItem>Edit</DropdownItem>
+                <DropdownItem>Move</DropdownItem>
+                <DropdownItem>Delete</DropdownItem>
               </DropdownContent>
             </Dropdown>
           </TableCell>

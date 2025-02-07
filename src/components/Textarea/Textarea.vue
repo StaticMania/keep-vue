@@ -15,8 +15,8 @@ const emits = defineEmits<{
 }>();
 
 const restProps = computed(() => {
-  const { class: _, value, ...delegated } = props;
-  return delegated;
+  const { class: _, value, ...rest } = props;
+  return rest;
 });
 
 const modelValue = useVModel(props, "modelValue", emits, {

@@ -6,8 +6,8 @@ import {
   DropdownAction,
   DropdownArrow,
   DropdownContent,
+  DropdownGroup,
   DropdownItem,
-  DropdownList,
 } from "~/src";
 import { DropdownWithArrowIconCode } from "./dropdownCode";
 </script>
@@ -22,7 +22,7 @@ import { DropdownWithArrowIconCode } from "./dropdownCode";
           <Button>Open Dropdown</Button>
         </DropdownAction>
         <DropdownContent class="border-0">
-          <DropdownList>
+          <DropdownGroup>
             <DropdownItem>Contacts</DropdownItem>
             <DropdownItem>Phone</DropdownItem>
             <DropdownItem>Statistics</DropdownItem>
@@ -32,7 +32,7 @@ import { DropdownWithArrowIconCode } from "./dropdownCode";
             <Divider />
             <DropdownItem>Account</DropdownItem>
             <DropdownItem>Logout</DropdownItem>
-          </DropdownList>
+          </DropdownGroup>
           <DropdownArrow />
         </DropdownContent>
       </Dropdown>

@@ -45,6 +45,13 @@ Explore the available props for the carousel component
 ::CarouselApi
 ::
 
+## Carousel Indicators Api
+
+Explore the available props for the CarouselDotButton
+
+::CarouselIndicatorsApi
+::
+
 ## Reference
 
 To learn more about the Carousel, please see the documentation of [Embla Carousel Vue ](https://www.embla-carousel.com/get-started/vue/)

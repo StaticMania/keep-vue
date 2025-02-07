@@ -16,9 +16,9 @@ const props = withDefaults(defineProps<NumberInputBoxProps & ClassProps>(), {
 });
 
 const restProps = computed(() => {
-  const { class: _, ...delegated } = props;
+  const { class: _, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 
 const numberInputRef = ref<HTMLInputElement>();

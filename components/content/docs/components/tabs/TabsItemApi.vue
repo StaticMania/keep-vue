@@ -11,16 +11,16 @@ const tabsItemApiData = [
   },
   {
     id: 2,
-    propsName: "contentClassName",
+    propsName: "contentClass",
     propsType: "string",
-    propsDescription: "Content className",
+    propsDescription: "Add custom css style into tabsItem.",
     default: "",
   },
   {
     id: 3,
-    propsName: "bgClassName",
+    propsName: "bgClass",
     propsType: "string",
-    propsDescription: "Content Background className",
+    propsDescription: "Add bg class and  css style into tabsItem",
     default: "",
   },
 ];

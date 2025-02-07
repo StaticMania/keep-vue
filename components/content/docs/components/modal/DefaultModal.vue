@@ -20,13 +20,11 @@ import { DefaultModalCode } from "./modalCode";
         <ModalAction as-child>
           <Button>Open Modal</Button>
         </ModalAction>
-        <ModalContent
-          class="sm:max-w-[425px] dark:border-metal-900 dark:bg-metal-900">
+        <ModalContent class="sm:max-w-[425px]">
           <ModalClose class="absolute right-4 top-4" />
-
           <ModalHeader>
             <div
-              className="flex h-12 w-12 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white mb-4">
+              class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -46,10 +44,14 @@ import { DefaultModalCode } from "./modalCode";
           </ModalHeader>
 
           <ModalFooter>
-            <Button type="submit" variant="outline" color="secondary">
-              Cancel
-            </Button>
-            <Button type="submit">Confirm</Button>
+            <ModalClose as-child>
+              <Button type="submit" variant="outline" color="secondary">
+                Cancel
+              </Button>
+            </ModalClose>
+            <ModalClose as-child>
+              <Button type="submit">Confirm</Button>
+            </ModalClose>
           </ModalFooter>
         </ModalContent>
       </Modal>

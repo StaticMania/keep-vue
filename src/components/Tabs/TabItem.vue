@@ -7,22 +7,16 @@ import { useTabs } from "./useTabs";
 
 export interface TabItemProps extends /*@vue-ignore */ ButtonHTMLAttributes {
   value: string;
-  contentClassName?: string;
-  bgClassName?: string;
+  contentClass?: string;
+  bgClass?: string;
 }
 
 const props = defineProps<TabItemProps & ClassProps>();
 
 const restProps = computed(() => {
-  const {
-    class: _,
-    value,
-    bgClassName,
-    contentClassName,
-    ...delegated
-  } = props;
+  const { class: _, value, bgClass, contentClass, ...rest } = props;
 
-  return delegated;
+  return rest;
 });
 
 const { activeItem, handleActive, variant } = useTabs();
@@ -58,15 +52,15 @@ const { activeItem, handleActive, variant } = useTabs();
             'rounded-lg border border-metal-100 bg-transparent',
           variant === 'underline' &&
             '-mb-[1px] rounded-none border-b-2 border-b-primary-500',
-          props.bgClassName,
+          props.bgClass,
         )
-      "></span>
+      " />
 
     <span
       :class="
         cn(
           'relative z-10 flex items-center justify-center gap-1 transition-all duration-500',
-          props.contentClassName,
+          props.contentClass,
         )
       ">
       <slot />

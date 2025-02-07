@@ -19,12 +19,12 @@ import {
           <Button>Open Modal</Button>
         </ModalAction>
         <ModalContent
-          class="sm:max-w-[425px] dark:border-metal-900 dark:bg-metal-900">
+          class="sm:max-w-[425px]">
           <ModalClose class="absolute right-4 top-4" />
 
            <ModalHeader>
             <div
-              className="flex h-12 w-12 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white mb-4">
+              class="flex h-12 w-12 items-center justify-center rounded-full bg-metal-50 text-metal-900 dark:bg-metal-800 dark:text-white mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -44,8 +44,14 @@ import {
           </ModalHeader>
 
           <ModalFooter>
-            <Button type="submit">Cancel</Button>
-            <Button type="submit">Confirm</Button>
+            <ModalClose as-child>
+              <Button type="submit" variant="outline" color="secondary">
+                Cancel
+              </Button>
+            </ModalClose>
+            <ModalClose as-child>
+              <Button type="submit">Confirm</Button>
+            </ModalClose>
           </ModalFooter>
         </ModalContent>
       </Modal>
@@ -75,12 +81,12 @@ import {
           <Button>Open Modal</Button>
         </ModalAction>
         <ModalContent
-          class="w-[20rem] lg:w-[26rem] dark:border-metal-900 dark:bg-metal-900">
+          class="w-[20rem] lg:w-[26rem]">
           <ModalClose class="absolute right-4 top-4" />
           <ModalHeader
             class="mb-6 flex flex-col items-center justify-center space-y-3">
             <div
-              className="flex h-20 w-20 items-center justify-center rounded-full border border-metal-100 bg-success-50 text-success-500 dark:border-metal-800 dark:bg-metal-800 dark:text-white">
+              class="flex h-20 w-20 items-center justify-center rounded-full border border-metal-100 bg-success-50 text-success-500 dark:border-metal-800 dark:bg-metal-800 dark:text-white">
               <PhCheckCircle weight="fill" :size="60" />
             </div>
             <div class="space-y-1 text-center">
@@ -91,8 +97,10 @@ import {
               </ModalDescription>
             </div>
           </ModalHeader>
-          <ModalFooter class="justify-center">
-            <Button>Confirm</Button>
+         <ModalFooter class="justify-center">
+            <ModalClose as-child>
+              <Button>Confirm</Button>
+            </ModalClose>
           </ModalFooter>
         </ModalContent>
       </Modal>

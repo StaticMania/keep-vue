@@ -7,7 +7,6 @@ import {
   DropdownAction,
   DropdownContent,
   DropdownItem,
-  DropdownList,
   Table,
   TableBody,
   TableCaption,
@@ -81,12 +80,10 @@ import { ProductTableCode } from "./tableCode";
                 </DropdownAction>
                 <DropdownContent
                   align="end"
-                  class="max-w-[200px] border border-metal-100 p-3">
-                  <DropdownList>
-                    <DropdownItem>Edit</DropdownItem>
-                    <DropdownItem>Move</DropdownItem>
-                    <DropdownItem>Delete</DropdownItem>
-                  </DropdownList>
+                  class="w-[200px] border border-metal-100 p-3 dark:border-metal-800">
+                  <DropdownItem>Edit</DropdownItem>
+                  <DropdownItem>Move</DropdownItem>
+                  <DropdownItem>Delete</DropdownItem>
                 </DropdownContent>
               </Dropdown>
             </TableCell>

@@ -135,6 +135,13 @@ export const docsRoutes = ref<RouterPath[]>([
   },
   {
     id: generatedID.v4(),
+    name: "Input OTP",
+    href: "/docs/components/input-otp",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
     name: "Modal",
 
     href: "/docs/components/modal",
@@ -190,6 +197,13 @@ export const docsRoutes = ref<RouterPath[]>([
     id: generatedID.v4(),
     name: "Rating",
     href: "/docs/components/rating",
+    tag: false,
+    deprecate: false,
+  },
+  {
+    id: generatedID.v4(),
+    name: "Select",
+    href: "/docs/components/select",
     tag: false,
     deprecate: false,
   },

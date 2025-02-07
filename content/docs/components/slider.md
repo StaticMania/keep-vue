@@ -26,4 +26,4 @@ For more props see the documentation of [Radix Vue Slider](https://www.radix-vue
 
 ## Reference
 
-To learn more about the Slider, please see the documentation of [Redix Vue Slider](https://www.radix-vue.com/components/slider.html).
+To learn more about the Slider, please see the documentation of [Radix Vue Slider](https://www.radix-vue.com/components/slider.html).

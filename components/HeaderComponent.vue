@@ -4,11 +4,11 @@ import { docsRoutes, gettingStaredRoutes, navbarRoutes } from "~/Routes/routes";
 import {
   buttonVariants,
   Drawer,
+  DrawerAction,
   DrawerClose,
   DrawerContent,
   DrawerDescription,
   DrawerTitle,
-  DrawerTrigger,
 } from "~/src";
 import { cn } from "~/src/utils/cn";
 import SearchBar from "./SearchBar.vue";
@@ -113,7 +113,7 @@ const isActive = (str: string): boolean => {
 
           <!-- mobile drawer  -->
           <Drawer v-model:open="active" position="right">
-            <DrawerTrigger as-child>
+            <DrawerAction as-child>
               <button
                 class="rounded-lg border border-metal-100 bg-white p-2.5 transition-all duration-300 hover:bg-metal-25 laptop:hidden dark:border-metal-800 dark:bg-metal-900 dark:hover:border-metal-600 dark:hover:bg-metal-900"
                 @click="() => (active = true)">
@@ -129,7 +129,7 @@ const isActive = (str: string): boolean => {
                     class="text-metal-900 dark:text-white" />
                 </span>
               </button>
-            </DrawerTrigger>
+            </DrawerAction>
 
             <DrawerContent
               class="w-full overflow-y-auto overflow-x-hidden sm:w-1/2 lg:hidden dark:border-metal-900 dark:bg-metal-900">
